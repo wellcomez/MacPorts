@@ -3791,7 +3791,7 @@ portdir sysutils/disktype platforms darwin description {Detects the content form
 doodle 379
 description {Doodle is a tool to quickly search the documents on a computer.} portdir sysutils/doodle homepage http://ovmj.org/doodle/ epoch 0 platforms darwin depends_lib lib:libextractor.1:libextractor name doodle maintainers olegb@opendarwin.org long_description {{Doodle is a tool to quickly search the documents on a computer.}} categories sysutils version 0.6.1 revision 0
 dpkg 351
-variants {darwin freebsd} description {Debian package maintenance system} portdir sysutils/dpkg homepage http://www.debian.org/ epoch 0 platforms {darwin freebsd} depends_lib {lib:XXXlibintl.3:gettext lib:XXXlibiconv.2:libiconv bin:perl:perl5.8} name dpkg maintainers landonf@opendarwin.org categories {sysutils archivers} version 1.10.25 revision 10
+variants {darwin freebsd} description {Debian package maintenance system} portdir sysutils/dpkg homepage http://www.debian.org/ epoch 0 platforms {darwin freebsd} depends_lib {lib:XXXlibintl.3:gettext lib:XXXlibiconv.2:libiconv bin:perl:perl5.8} name dpkg maintainers landonf@opendarwin.org categories {sysutils archivers} version 1.10.25 revision 11
 erni 343
 portdir sysutils/erni platforms darwin description {replacement for su that works on accounts without login shell} name erni version 0.50.0 categories sysutils homepage http://www.brandxdev.net/erni/index.site revision 0 epoch 0 maintainers mww@opendarwin.org long_description {{replacement for su that works on accounts without login shell}}
 fcron 568
