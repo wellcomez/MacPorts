@@ -108,7 +108,7 @@ al proprio file ~/.profile
 
 	port install <portname>
 
-    Per cercare un port specifico si può digitare "port search".
+    Per cercare un port specifico si puo` digitare "port search".
 
 	port search vi
 
