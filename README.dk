@@ -6,8 +6,9 @@ FreeBSD ports har, og stadigt have muligheden for at lave fremtidige
 udvidelser. 
 
     DarwinPorts kan på nuværende tidspunkt bygges og køres på
-MacOS X 10.2 (Darwin 6.0) og MacOS X 10.3. Systemet er flytbart, 
-skrevet i TCL med et begrænset antal TCL udvidelser skrevet i C.
+MacOS X 10.2 (Darwin 6.0) og MacOS X 10.3 (Darwin 7.0). Systemet 
+er flytbart, skrevet i TCL med et begrnset antal TCL udvidelser
+skrevet i C.
 
     "DarwinPorts User Guiden" er tilgængelig på:
     	http://www.opendarwin.org/projects/darwinports/guide/
@@ -51,11 +52,22 @@ INSTALLATION
 		stedet hvor de forskellige port system data er gemt, 
 		kan du ændre de følgende indstillinger: 
 
-		portdbpath - Specificerer stien til hvor ports 
-		systemet data bliver gemt.
+		portdbpath	Specificerer stien til hvor ports 
+				systemet data bliver gemt.
 
-		prefix - Specificerer biblioteket til hvor ports bliver 
-		installeret.
+		prefix          Specificerer biblioteket hvor
+				ports bliver installeret.
+
+
+		[Mac OS X 10.2 kræver følgende ændring]
+		Fordi Tcl 8.3 p Mac OS X 10.2 ikke inkluderer [file
+		link] funktionen som Port Images benytter, skal du
+		ændre installationtype i /etc/ports/ports.conf.
+
+		Ændre den linien:
+			portinstalltype		image
+		til:
+			portinstalltype		direct
 
 	5. [frivilligt] rediger /etc/ports/sources.conf
 		/etc/ports/sources.conf filen indeholder en liste over
