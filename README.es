@@ -92,26 +92,26 @@ Panther)
 
 	Los cambios no tomaran efecto hasta que haya abierto otro shell.
 
-	El siguiente comando compilara e instalara un puerto:
+	El siguiente comando compilara e instalara un porte:
 
-		port install <nombre-de-puerto>
+		port install <nombre-de-porte>
 
-	Para encontrar un puerto en especifico, intente usar "port search":
+	Para encontrar un porte en especifico, intente usar "port search":
 
 		port search vi
 
-	Por favor refierase al manual de port para una documentacion completa del comando
+	Por favor refierase al manual de port(1) para una documentacion completa del comando
 port.
 
-	Tambien es posible hacer operaciones, como compilar o bajar, para todos los puertos
+	Tambien es posible hacer operaciones, como compilar o bajar, para todos los portes
 en el sistema usando el comando "portall". Toma escencialmente los mismos argumentos que el
-comando "port" pero opera iterativamente en cada puerto en dports/. Cuando se corre "make clean"
+comando "port" pero opera iterativamente en cada porte en dports/. Cuando se corre "make clean"
 desde este directorio, por ejemplo, "port clean" tambien es invocado para limpiar todo completamente.
 
 
-CREANDO NUEVOS PUERTOS
+CREANDO PORTES NUEVOS
 
-	Puertos consisten de un directorio conteniendo tanto un Portfile como documentos asociados.
+	Portes consisten de un directorio conteniendo tanto un Portfile como documentos asociados.
 Actualmente los unicos documentos incluidos son parches, y estos probablemente seran mantenidos
 a un minimo.
 
