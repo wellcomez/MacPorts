@@ -1,5 +1,3 @@
-cyrillic, koi8-r codepage
-
 Что такое система DarwinPorts
 
 	DarwinPorts - это програмное обеспечение для сборки, установки и
