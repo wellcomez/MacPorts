@@ -20,6 +20,9 @@ WAS IST DAS DARWIN PORTS SYSTEM
 
 INSTALLATION
 
+	Die Datei base/doc/README.platforms enthaelt plattform-spezifische Hinweise zur
+	Installation von DarwinPorts auf nicht Darwin-basierten Betriebsystemen.
+
     Installations-Schritte:
     
 	1. cd base/

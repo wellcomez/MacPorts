@@ -22,6 +22,8 @@ documentation on /etc/ports/sources.conf below.
 
 INSTALLATION
 
+	For platform specific instructions, read base/doc/README.platforms.
+
     Installation Steps:
 
 	1. cd base/
