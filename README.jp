@@ -1,0 +1,131 @@
+DarwinPorts システムとは
+
+    DarwinPorts とは、FreeBSD の ports と同様の機能を持つと同時に将来の拡張性も
+維持するように作られた、ソフトウェアのビルド、インストール、およびパッケージ
+作成のための基盤です。
+
+    DarwinPorts は現在のところ MacOS X 10.2 (Darwin 6.0) と MacOS X 10.3 上で
+作成され、これらの上で動作します。
+このシステムは C 言語拡張のみを利用した TCL で書かれていますから、高い移植性が
+あります。
+
+    "DarwinPorts User Guide" が以下にあります:
+        http://www.opendarwin.org/projects/darwinports/guide/
+
+    ports システムの内部構造についてより深く知るためには、base/doc/INTERNALS
+を参照してください。
+
+    DarwinPorts は 2 つの部分に分かれていることに注意してください。1 つは
+"darwin ports infrastructure" であり、これは base/ サブディレクトリに存在する
+このシステムの中核に当たります。もう 1 つは "dports" ディレクトリで、ここには
+実際に移植されたソフトウェアの説明などが置かれています。後者は必要に応じて
+ネットワーク越しに手に入れることもできますし、手元にあるコピーを利用することも
+可能です。後述する /etc/ports/sources.conf についての説明を参照してください。
+
+インストール
+
+        プラットホーム別の説明は base/doc/README.platforms にあります。
+
+    インストール手順:
+
+        1. cd base/
+           ./configure
+                base/ ディレクトリにて configure スクリプトを実行します。
+                configure スクリプトにはいくつかの引数を与えることができます
+                (後述)。
+
+        2. make
+                make コマンドを実行してすべての必須ソフトウェアをコンパイル
+                します。
+
+        3. sudo make install
+                DarwinPorts をこのシステムにインストールします。
+
+        4. /etc/ports/ports.conf の編集 [省略可能]
+                設定ファイルである /etc/ports/ports.conf では、DarwinPorts
+                のためのいくつかの設定項目が定義されています。インストール先の
+                パスや port システムのためのいろいろなデータが保存されている
+                場所を変更したいときは、以下の設定を変更します:
+
+                portdbpath - ports システムのためのデータを保存する場所
+
+                prefix - ports をインストールするディレクトリ
+
+        5. /etc/ports/sources.conf の編集 [省略可能]
+                /etc/ports/sources.conf には、ネットワーク上と手元との両方に
+                ついて、ソフトウェア階層の場所の一覧が記述されています。
+                ./configure スクリプトに --with-dports-dir=DIR という引数が
+                与えられていなければ、デフォルトの dports-tree (先ほどの
+                インストールによって作られた darwinports/dports) が
+                sources.conf に追加されます。
+
+    すべての必須コードと TCL は以下のようにインストールされます:
+        [Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
+        [Mac OS X 10.3] /Library/Tcl/darwinports1.0
+        [FreeBSD] /usr/local/lib/tcl8.3/darwinports1.0
+            - DarwinPorts システムを利用するための TCL ライブラリ
+
+        PREFIX は標準では /opt/local になりますが、base/ ディレクトリにて
+        ./configure スクリプトを動かすときに --prefix 引数で指定することで
+        これを変えることができます。
+
+        $PREFIX/bin/port
+            - コマンドラインから port を作成するためのユーティリティ
+        $PREFIX/share/darwinports/
+            - ports システム内部で利用する TCL ライブラリ群
+
+        以下のファイルはシステムをカスタマイズするためのものです:
+
+        /etc/ports/ports.conf
+            - ユーザが port の設定を変えるためのファイル
+        /etc/ports/sources.conf
+            - port のソース (どこから ports のデータを入手するか) の一覧
+
+
+port コマンドを使う
+
+    最初に /opt/local/bin (または DarwinPorts をインストールしたディレクトリに
+応じた $PREFIX/bin) をコマンドサーチパスに追加します。
+
+        Jaguar (OS X 10.2) を使っているなら、~/.cshrc に次の行を追加します。
+(この方法は Panther 上で tcsh を使っているときにも利用できます。)
+
+        set path=($path /opt/local/bin)
+
+        Panther (OS X 10.3) を使っているなら、~/.profile に次の行を追加します。
+(この方法は Jaguar 上で bourne shell を使っているときにも利用できます。)
+
+        export PATH=$PATH:/opt/local/bin
+
+    上記の設定は新しいシェルを起動するまで有効になりません。
+
+    port をビルドしてインストールしたいときは次のコマンドを使います:
+
+        port install <portname>
+
+    ある port を探したいときは "port search" を使います:
+
+        port search vi
+
+    port コマンドについての詳しい説明はオンラインマニュアルを参照してください。
+
+    システム上のすべての port をビルドしたり入手したりすることも可能で、これは
+    portall コマンドを使います。このコマンドには port コマンドと同じ引数を
+    与えることができ、このコマンドは dports/ 以下にある各 port に対して同じ 
+    動作を繰り返します。例えばこのディレクトリで "make clean" を実行しようと
+    すると、"portall clean" が呼び出されてすべてを clean にしてくれます。
+
+
+新しい ports を作る
+
+    ports は Portfile とそれに関連するファイル群を保存したディレクトリによって
+構成されます。今のところ、そのようなファイルの数がもっとも少なくなるように、
+patch ファイル群だけがそこに保存されています。
+
+    Portfile には、DarwinPorts システムに付属する TCL インタプリタによって
+評価された TCL コードが含まれています。Portfile は、作者が必要に応じて TCL の
+機能を自在に使うことができるよう、名前と値の組によるとても単純な構造を持って
+います。
+
+    まずは base/doc/exampleport と portfile(7) のオンラインマニュアルを読む
+ことから始めるとよいでしょう。
