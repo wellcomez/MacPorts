@@ -3536,8 +3536,8 @@ diffutils 414
 variants normal description {GNU diff utilities} portdir sysutils/diffutils homepage http://www.gnu.org/software/diffutils/ epoch 0 platforms {darwin sunos} name diffutils long_description {diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. Their features are a superset of the Unix features and they are significantly faster.} maintainers blb@pobox.com categories sysutils version 2.8.1 revision 0
 disktype 392
 portdir sysutils/disktype platforms darwin description {Detects the content format of a disk or disk image} name disktype version 7 categories sysutils homepage http://disktype.sourceforge.net/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {Detects the content format of a disk or disk image by checking for signatures of file systems, partition tables, and boot codes.}
-dpkg 354
-variants {darwin freebsd} depends_build bin:perl:perl5.8 portdir sysutils/dpkg description {Debian package maintenance system} homepage http://www.debian.org/ epoch 0 platforms darwin name dpkg depends_lib {lib:XXXlibintl.3:gettext lib:XXXlibiconv.2:libiconv} maintainers landonf@opendarwin.org version 1.10.25 categories {sysutils archivers} revision 9
+dpkg 341
+variants {darwin freebsd} description {Debian package maintenance system} portdir sysutils/dpkg homepage http://www.debian.org/ epoch 0 platforms darwin depends_lib {lib:XXXlibintl.3:gettext lib:XXXlibiconv.2:libiconv bin:perl:perl5.8} name dpkg maintainers landonf@opendarwin.org categories {sysutils archivers} version 1.10.25 revision 10
 erni 343
 portdir sysutils/erni platforms darwin description {replacement for su that works on accounts without login shell} name erni version 0.50.0 categories sysutils homepage http://www.brandxdev.net/erni/index.site revision 0 epoch 0 maintainers mww@opendarwin.org long_description {{replacement for su that works on accounts without login shell}}
 fcron 568
