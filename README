@@ -4,8 +4,9 @@ WHAT IS THE DARWIN PORTS SYSTEM
 designed to meet the same functionality requirements as the FreeBSD ports
 architecture while maintaining extensibility for future enhancement.
 
-    DarwinPorts currently builds and runs on MacOS X 10.2 (Darwin 6.0) and MacOS X 10.3. 
-The system is portable, written in TCL with a limited set of TCL extensions in C.
+    DarwinPorts currently builds and runs on MacOS X 10.2 (Darwin 6.0) and 
+MacOS X 10.3.  The system is portable, written in TCL with a limited set of 
+TCL extensions in C.
 
     The "DarwinPorts User Guide" is available at:
 	http://www.opendarwin.org/projects/darwinports/guide/
@@ -48,15 +49,15 @@ INSTALLATION
 		prefix - Specifies directory in which to install ports
 
 	5. [optional] edit /etc/ports/sources.conf
-		The /etc/ports/sources.conf file lists the location of
-		both local and remote port software hierarchies. If the --with-dports-dir=DIR
-		argument was not specified for the ./configure script, the default dports-tree
-		(darwinports/dports, the copy from which you install) will be added to
-		sources.conf.
+		The /etc/ports/sources.conf file lists the location of both local 
+		and remote port software hierarchies. If the --with-dports-dir=DIR 
+		argument was not specified for the ./configure script, the default 
+		dports-tree (darwinports/dports, the copy from which you install) 
+		will be added to sources.conf.
 
     All necessary code and TCL will be compiled and installed as follows:
-	[Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
 	[Mac OS X 10.3] /Library/Tcl/darwinports1.0
+	[Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
 	[FreeBSD] /usr/local/lib/tcl8.3/darwinports1.0
 	    - TCL library for interfacing with the DarwinPorts System
 
@@ -82,18 +83,18 @@ USING THE PORT COMMAND
     If you haven't already, add /opt/local/bin to your path (or $PREFIX/bin
 if you've elected to install DarwinPorts somewhere else). 
 
-	If you're unsure how, and using Jaguar (OS X 10.2), add the following 
-line to your ~/.cshrc file.  (This also applies if you're using tcsh in 
-Panther.)
-
-	set path=($path /opt/local/bin)
-	
 	If you're using Panther (OS X 10.3), add the following line to your 
 ~/.profile file.  (This also applies if you're using a bourne shell in 
 Jaguar.)
 	
 	export PATH=$PATH:/opt/local/bin
 
+	If you're unsure how, and using Jaguar (OS X 10.2), add the following 
+line to your ~/.cshrc file.  (This also applies if you're using tcsh in 
+Panther.)
+
+	set path=($path /opt/local/bin)
+	
     Your changes will not take effect until you have opened a new shell.
 
     The following command will build and install a port:
@@ -125,4 +126,5 @@ instantiated by the DarwinPorts System. Portfiles use extremely straight-
 forward key/value pair syntax, while allowing the author to use the full
 extent of TCL's functionality where necessary.
 
-    To get started, refer to base/doc/exampleport and the portfile(7) man page.
+    To get started, refer to base/doc/exampleport and the portfile(7) man page,
+or The DarwinPorts Guide, at http://darwinports.opendarwin.org/docs.
