@@ -58,7 +58,18 @@ INSTALLATION
 		spécifiques au système de ports.
 
 		prefix - Indique la base dans laquelle installer les ports
+		
+		[REQUIS pour Mac OS X 10.2]
+		Tcl 8.3 qui est fourni avec Mac OS X 10.2 n'inclut pas la
+		fonction [file link] utilisée par le méchanisme appelé
+		"Port Images", donc pour utiliser DarwinPorts vous devrez
+		changer le type d'installation dans /etc/ports/ports.conf
 
+		Changez la ligne suivante :
+			portinstalltype		image
+		en :
+			portinstalltype		direct
+		
 	5. [optionnel] éditez /etc/ports/sources.conf
 		Le fichier /etc/ports/sources.conf liste l'emplacement des
 		hiérarchies des ports locales et distantes. Si l'argument
