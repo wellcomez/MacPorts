@@ -29,6 +29,9 @@ QU'EST-CE QUE DARWINPORTS
 
 INSTALLATION
 
+	Pour des instructions d'installation spécifiques à d'autres
+	plateformes, reportez-vous au fichier base/docs/README.platforms.
+
     Étapes de l'installation :
 
 	1. cd base/
