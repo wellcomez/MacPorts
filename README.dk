@@ -24,6 +24,8 @@ lokal kopi. Se dokumentation om /etc/ports/sources.conf herunder.
 
 INSTALLATION
 
+	For platforms specifikke instruktioner læs base/doc/README.platforms.
+
     Installations Skridt:
 	1. cd base/
 	   ./configure
