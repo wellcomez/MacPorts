@@ -1,0 +1,111 @@
+DARWIN PORT 系統是什麼
+
+    DarwinPorts 的設計就是要提供類似 FreeBSD ports 的架構般的功能需求：當作為軟體編譯、
+    軟體安裝以及套件製作的基礎設施。此外，還須保持在將來改善時所需的擴充性。
+    
+    DarwinPorts 目前可在 MacOS X 10.2 (Darwin 6.0) 以及 MacOS X 10.3 下編譯及執行。系
+    統本身是用 TCL 語言及一些用 C 語言寫的 TCL 延伸模組所撰寫，所以也能夠移植到別處。
+    
+    "DarwinPort 使用者指南" 可以從以下網址取得。
+    http://www.opendarwin.org/projects/darwinports/guide/
+
+    如果想要找有關 ports 系統架構內部更深入的資料，請參閱 base/doc/INTERNALS 檔案。
+
+    請注意 DarwinPorts 分成兩部份：在 base/ 子目錄中的是 "Darwin ports 基礎"；同時也是本
+    系統必要的部份。第二部份在 "dports" 目錄中包含了被移植軟體的真正敘述。後者是可另外選用並
+    且可以等到用的時候再連到網路上抓或自己存下來用。詳見以下 /etc/ports/source.conf 部份
+    相關說明。
+
+安裝
+
+	如要各別平台專門的安裝指引，請參閱 base/doc/README.platforms 檔案。
+
+    安裝步驟：
+
+	1. cd base/
+	   ./configure
+		切換到 base/ 目錄，並執行 configure script。非必要的參數可以傳進 configure 
+		script 裡（見下面說明）。
+    
+	2. make
+		執行 'make' 來編譯所需的軟體。
+		
+	3. sudo make install
+		執行 'sudo make install' 將 DarwinPorts 安裝到你的系統裡。
+
+	4.	[選用] edit /etc/ports/ports.conf
+		/etc/ports/port.conf 設定檔定義了 DarwinPorts 架構所需的幾個選項。
+		如果你希望更動安裝路徑，或是各個 port 系統的相關資料存放位置，請修改下列的設定：
+
+		portdbpath - 存放 ports 系統相關資料的路徑
+		prefix - 預設會將 ports 安裝到這個目錄下
+
+	5.	[選用] edit /etc/ports/sources.conf
+		/etc/ports/sources.conf 設定檔紀錄被移植軟體的敘述檔目錄在本地端與遠端位置。如
+		果沒有在 ./configure 中指定 --with-dports-dir=DIR 參數，sources.conf 會使
+		用預設的 dports 敘述檔目錄（darwinports/dports，即安裝時抓回來的 dports 路徑）。
+
+	所有必要的程式碼以及 TCL 指令會被編譯並安裝成以下的：
+	[Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
+	[Mac OS X 10.3] /Library/Tcl/darwinports1.0
+	[FreeBSD] /usr/local/lib/tcl8.3/darwinports1.0
+		- 用來和 DarwinPorts 系統作中介的 TCL 程式庫
+
+	雖然 PREFIX 預設成 /opt/local，但是也可以更改為特定的 base/ 目錄，然後在手動執行 
+	./configure 時加上 --prefix 參數。
+
+	$PREFIX/bin/port
+	    - 在命令列下的 port 工具
+	$PREFIX/share/darwinports/
+	    - port 系統內的 TCL 程式庫
+        
+	以下的檔案可用來自定系統
+
+	/etc/ports/ports.conf
+	    - 使用者可自定的 port 設定
+	/etc/ports/sources.conf
+	    - ports 的原始碼列表 (取得 port 資料的地方)
+
+使用 port 命令
+
+    如果你還沒準備好，請將 /opt/local/bin 加到你的執行路徑 (path) 中 (或者，如果你選擇把 
+    DarwinPorts 安裝在不同的地方，請把 $PREFIX/bin 加到執行路徑中。)
+
+    如果你不確定如何改變執行路徑，而且你是使用 Jaguar (OS X 10.2), 把下面這行加入到你的 
+    ~/.cshrc 檔。 (如果你是在 Panther 中使用 tcsh，你也需要把下面這行加入到你的 ~/.cshrc 
+    檔。)
+
+	set path=($path /opt/local/bin)
+	
+    如果你是使用 Panther (OS X 10.3), 把下面這行加入你的 ~/.profile 檔。 (如果你在 Jaguar 
+    中是使用 bourne shell，你也需要把下面這行加入你的 ~/.profile 檔。)
+
+	export PATH=$PATH:/opt/local/bin
+
+    在重新執行一個新的 shell 之前，你所做的改變不會有任何作用。
+
+    下面的命令將會建立與安裝一個 port 套件:
+
+	port install <portname>
+
+    要找一個特定的 port 套件，可以試用 "port search" 如
+
+	port search vi
+
+    如要得到關於 port 指令的完整的文件，請參閱 port 的系統手冊 (man page)。
+
+    如使用 portall 命令就可以對所有的 port 同時做建立套件或是取得原始檔等等的操作。基本上，
+    portall 的參數與 port 命令是相同的，但 portall 會對所有在 dport/ 之下的 port 套件一
+    一執行所指定的特定操作。例如，當你在 dport/ 的目錄裡執行 "make clean" 時，"portall clean" 
+    也會被呼叫出來把所有東西都清理的乾乾淨淨。
+
+建立新的 PORT
+
+    Port 是由 Portfile 檔與其他相關檔案及其目錄所組成。目前隨 port 內附的檔案只有修補檔，而且
+    原則是把檔案數目盡量減少。
+
+	Portfile 檔是由 TCL 指令組成，這些指令還要在 DarwinPorts 系統所用的 TCL 直譯器下測試過
+	沒問題才行。Portfile 檔案使用了極為直觀的鍵/對應值配對（key-value pairs）語法，這樣讓作
+	者必要時可以使用到全部 TCL 的功能。
+
+    新手可以參閱 base/doc/exampleport 檔案以及 portfile(7) 手冊。
