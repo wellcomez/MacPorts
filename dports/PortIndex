@@ -4021,7 +4021,7 @@ portdir textproc/dumpasn1 description {an ASN.1 decoder and pretty-printer} plat
 enca 406
 description {character set analyser} portdir textproc/enca homepage http://trific.ath.cx/software/enca/ epoch 0 platforms darwin depends_lib bin:iconv:libiconv name enca long_description {Enca is an Extremely Naive Charset Analyser. It detects character set and encoding of text files and can also convert them to other encodings.} maintainers mww@opendarwin.org categories textproc version 1.4 revision 0
 expat 269
-portdir textproc/expat description {XML 1.0 parser written in C} platforms darwin name expat version 1.95.8 categories {textproc devel} homepage http://expat.sourceforge.net/ revision 0 epoch 0 maintainers blb@pobox.com long_description {{XML 1.0 parser written in C}}
+portdir textproc/expat description {XML 1.0 parser written in C} platforms {darwin freebsd} name expat version 1.95.8 categories {textproc devel} homepage http://expat.sourceforge.net/ revision 0 epoch 0 maintainers blb@pobox.com long_description {{XML 1.0 parser written in C}}
 figlet 254
 portdir textproc/figlet description {banner-like program prints strings as ASCII art} platforms {darwin freebsd} name figlet version 2.2.1 categories {textproc amusements} homepage http://www.figlet.org/ revision 0 epoch 0 maintainers jkh@opendarwin.org
 fribidi 440
