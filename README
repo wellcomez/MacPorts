@@ -96,14 +96,14 @@ USING THE PORT COMMAND
 if you've elected to install DarwinPorts somewhere else). 
 
 	If you're using Panther (OS X 10.3), add the following line to your 
-~/.profile file.  (This also applies if you're using a bourne shell in 
-Jaguar.)
+~/.profile file.  If this file does not exist, create it. (This also 
+applies if you're using a bourne shell in Jaguar.)
 	
 	export PATH=$PATH:/opt/local/bin
 
 	If you're unsure how, and using Jaguar (OS X 10.2), add the following 
-line to your ~/.cshrc file.  (This also applies if you're using tcsh in 
-Panther.)
+line to your ~/.cshrc file.  If this file does not exist, create it. (This 
+also applies if you're using tcsh in Panther.)
 
 	set path=($path /opt/local/bin)
 	
