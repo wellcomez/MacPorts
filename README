@@ -5,8 +5,8 @@ designed to meet the same functionality requirements as the FreeBSD ports
 architecture while maintaining extensibility for future enhancement.
 
     DarwinPorts currently builds and runs on MacOS X 10.2 (Darwin 6.0) and 
-MacOS X 10.3.  The system is portable, written in TCL with a limited set of 
-TCL extensions in C.
+MacOS X 10.3 (Darwin 7.0).  The system is portable, written in TCL with a 
+limited set of TCL extensions in C.
 
     The "DarwinPorts User Guide" is available at:
 	http://www.opendarwin.org/projects/darwinports/guide/
@@ -29,8 +29,9 @@ INSTALLATION
 
 	1. cd base/
 	   ./configure
-		Switch to the base/ directory and run the configure-script. Optionally
-		parameters can be passed to the configure-script (see below).
+		Switch to the base/ directory and run the configure-script. 
+		Optionally parameters can be passed to the configure-script 
+		(see below).
     
 	2. make
 		Run 'make' to compile all necessary software.
@@ -45,15 +46,26 @@ INSTALLATION
 		which various port system specific data is stored, change the
 		following settings:
 
-		portdbpath - Specifies path to store ports system specific data.
-		prefix - Specifies directory in which to install ports
+		portdbpath	Specifies path to store ports system specific 
+				data.
+		prefix		Specifies directory in which to install ports.
+
+		[Required on Mac OS X 10.2] 
+		Because Tcl 8.3 on Mac OS X 10.2 does not include the 
+		[file link] function used for Port Images, you will need to 
+		change the installation type in /etc/ports/ports.conf.  
+		Change the following line:
+			portinstalltype         image
+		to: 	
+			portinstalltype         direct
 
 	5. [optional] edit /etc/ports/sources.conf
-		The /etc/ports/sources.conf file lists the location of both local 
-		and remote port software hierarchies. If the --with-dports-dir=DIR 
-		argument was not specified for the ./configure script, the default 
-		dports-tree (darwinports/dports, the copy from which you install) 
-		will be added to sources.conf.
+		The /etc/ports/sources.conf file lists the location of both 
+		local and remote port software hierarchies. If the 
+		--with-dports-dir=DIR argument was not specified for the 
+		./configure script, the default dports-tree 
+		(darwinports/dports, the copy from which you install) will be 
+		added to sources.conf.
 
     All necessary code and TCL will be compiled and installed as follows:
 	[Mac OS X 10.3] /Library/Tcl/darwinports1.0
