@@ -41,7 +41,7 @@ INSTALLATION
 		(cf. ci-dessous).
 
 	2. make
-                Lancez 'make' pour compiler tout ce qui est nécessaire.
+        Lancez 'make' pour compiler tout ce qui est nécessaire.
 
 	3. sudo make install
 		Lancez 'sudo make install' pour installer DarwinPorts
@@ -87,8 +87,6 @@ INSTALLATION
 	Les fichiers suivants sont fournis en vue de la personnalisation
         du système :
 
-	/etc/defaults/ports.conf
-	    - Réglages par défaut des ports pour tout le système
 	/etc/ports/ports.conf
 	    - Réglages personnels des ports pour les utilisateurs
 	/etc/ports/sources.conf

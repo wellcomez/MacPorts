@@ -82,8 +82,6 @@ INSTALLATION
 
 	De følgende filer er til at tilpasse systemet:
 
-	/etc/defaults/ports.conf
-	    - Port standard indstillinger.
 	/etc/ports/ports.conf
 	    - Bruger indstilbare port indstillinger.
 	/etc/ports/sources.conf

@@ -71,8 +71,6 @@ INSTALLATION
 
 	The following files are provided for customization of the system:
 
-	/etc/defaults/ports.conf
-	    - System-wide port default settings
 	/etc/ports/ports.conf
 	    - User customizable port settings
 	/etc/ports/sources.conf

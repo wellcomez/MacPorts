@@ -71,6 +71,13 @@ INSTALLATION
 	$PREFIX/share/darwinports/
         - interne TCL Bibliotheken fuer das DarwinPorts System.
 
+	Folgende Konfigurations-Dateien werden verwendet:
+
+	/etc/ports/ports.conf
+		- allgemeine Konfigurationsdatei
+	/etc/ports/sources.conf
+	    - enthaelt Pfade zu dports/-Verzeichnissen
+
 DAS PORT KOMMANDO BENUTZEN
     
     Falls noch nicht geschehen, sollte /opt/local/bin der 'path'-Variablen

@@ -68,8 +68,6 @@ INSTALACION
 
 		Los siguientes documentos son provistos para personalizacion del sistema:
 
-		/etc/defaults/ports.conf
-		    - Settings globales por defecto de DarwinPorts
 		/etc/ports/ports.conf
 		    - Settings de DarwinPorts personalizables por el usuario
 		/etc/ports/sources.conf
