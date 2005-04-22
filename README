@@ -19,7 +19,7 @@ infrastructure", which lives in the base/ subdirectory and is the only
 mandatory component of the system, and the "dports" directory which contains
 the actual ported software descriptions.  The latter is optional and can be
 either fetched on demand over the net or a local copy can be used.  See
-documentation on /etc/ports/sources.conf below.
+documentation on ${prefix}/etc/ports/sources.conf below.
 
 INSTALLATION
 
@@ -39,8 +39,8 @@ INSTALLATION
 	3. sudo make install
 		Run 'sudo make install' to install DarwinPorts on your system.
 
-	4. [optional] edit /etc/ports/ports.conf
-		The /etc/ports/ports.conf configuration file defines several
+	4. [optional] edit ${prefix}/etc/ports/ports.conf
+		The ${prefix}/etc/ports/ports.conf configuration file defines several
 		configuration options for the DarwinPorts infrastructure. If
 		you wish to change installation paths or the location at
 		which various port system specific data is stored, change the
@@ -50,17 +50,8 @@ INSTALLATION
 				data.
 		prefix		Specifies directory in which to install ports.
 
-		[Required on Mac OS X 10.2] 
-		Because Tcl 8.3 on Mac OS X 10.2 does not include the 
-		[file link] function used for Port Images, you will need to 
-		change the installation type in /etc/ports/ports.conf.  
-		Change the following line:
-			portinstalltype         image
-		to: 	
-			portinstalltype         direct
-
-	5. [optional] edit /etc/ports/sources.conf
-		The /etc/ports/sources.conf file lists the location of both 
+	5. [optional] edit ${prefix}/etc/ports/sources.conf
+		The ${prefix}/etc/ports/sources.conf file lists the location of both 
 		local and remote port software hierarchies. If the 
 		--with-dports-dir=DIR argument was not specified for the 
 		./configure script, the default dports-tree 
@@ -73,37 +64,36 @@ INSTALLATION
 	[FreeBSD] /usr/local/lib/tcl8.3/darwinports1.0
 	    - TCL library for interfacing with the DarwinPorts System
 
-	PREFIX is set to /opt/local but can be overridden by changing
+	${prefix} is set to /opt/local but can be overridden by changing
 	directory to the base/ directory and running ./configure
 	manually with a --prefix argument
 
-	$PREFIX/bin/port
+	${prefix}/bin/port
 	    - Command line port building utility
-	$PREFIX/share/darwinports/
+	${prefix}/share/darwinports/
 	    - TCL libraries internal to the ports system
 
 	The following files are provided for customization of the system:
 
-	/etc/ports/ports.conf
+	${prefix}/etc/ports/ports.conf
 	    - User customizable port settings
-	/etc/ports/sources.conf
+	${prefix}/etc/ports/sources.conf
 	    - List of port sources (places to get ports data from)
 
 
 USING THE PORT COMMAND
 
-    If you haven't already, add /opt/local/bin to your path (or $PREFIX/bin
+    If you haven't already, add /opt/local/bin to your path (or ${prefix}/bin
 if you've elected to install DarwinPorts somewhere else). 
 
-	If you're using Panther (OS X 10.3), add the following line to your 
-~/.profile file.  If this file does not exist, create it. (This also 
-applies if you're using a bourne shell in Jaguar.)
+	If you're unsure how and using Panther (OS X 10.3), add the following
+line to your ~/.profile file.  If this file does not exist, create it. (This
+also applies if you're using a bourne shell in Jaguar.)
 	
 	export PATH=$PATH:/opt/local/bin
 
-	If you're unsure how, and using Jaguar (OS X 10.2), add the following 
-line to your ~/.cshrc file.  If this file does not exist, create it. (This 
-also applies if you're using tcsh in Panther.)
+	If using Jaguar (OS X 10.2), add the following line to your ~/.cshrc file.
+If this file does not exist, create it. (This also applies if you're using tcsh in Panther.)
 
 	set path=($path /opt/local/bin)
 	
@@ -117,14 +107,13 @@ also applies if you're using tcsh in Panther.)
 
 	port search vi
 
-    Please refer to the port man page for complete documentation on the port
+    Please refer to the port(1) man page for complete documentation on the port
     command.
 
     It is also possible to do operations, like building or fetching, for
     all ports on the system using the portall command.  It takes essentially
     the same arguments as the port command but operates iteratively on every
-    port in dports/.  When you do a "make clean" from this directory, for
-    example, a "portall clean" is also invoked to completely clean things up.
+    port in dports/.
 
 
 CREATING NEW PORTS
@@ -139,4 +128,4 @@ forward key/value pair syntax, while allowing the author to use the full
 extent of TCL's functionality where necessary.
 
     To get started, refer to base/doc/exampleport and the portfile(7) man page,
-or The DarwinPorts Guide, at http://darwinports.opendarwin.org/docs.
+or The DarwinPorts Guide, at http://darwinports.opendarwin.org/docs .
