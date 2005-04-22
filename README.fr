@@ -24,8 +24,8 @@ QU'EST-CE QUE DARWINPORTS
         portés. Le dernier composant peut être optionnel et peut être
         récupéré sur le net ou une copie locale peut également être
         utilisée.
-        Reportez-vous à la documentation sur /etc/ports/sources.conf
-        ci-dessous.
+        Reportez-vous à la documentation sur ${prefix}/etc/ports/sources
+        .conf ci-dessous.
 
 INSTALLATION
 
@@ -47,8 +47,8 @@ INSTALLATION
 		Lancez 'sudo make install' pour installer DarwinPorts
 		sur votre système.
 
-	4. [optionnel] éditez /etc/ports/ports.conf
-		Le fichier de configuration "/etc/ports/ports.conf"
+	4. [optionnel] éditez ${prefix}/etc/ports/ports.conf
+		Le fichier de configuration "${prefix}/etc/ports/ports.conf"
 		définit la majeure partie des options de configuration de
 		l'infrastructure de DarwinPorts si vous desirez changer les
 		chemins et emplacements ou sonts stockés les données,
@@ -59,20 +59,8 @@ INSTALLATION
 
 		prefix - Indique la base dans laquelle installer les ports
 		
-		[REQUIS pour Mac OS X 10.2]
-		Tcl 8.3 qui est fourni avec Mac OS X 10.2 n'inclut pas la
-		fonction [file link] utilisée par le méchanisme appelé
-		"Port Images", donc pour utiliser DarwinPorts vous devrez
-		changer le type d'installation dans /etc/ports/ports.conf
-
-		Changez la ligne suivante :
-			portinstalltype		image
-		en :
-			portinstalltype		direct
-		
-	5. [optionnel] éditez /etc/ports/sources.conf
-		Le fichier /etc/ports/sources.conf liste l'emplacement des
-		hiérarchies des ports locales et distantes. Si l'argument
+	5. [optionnel] éditez ${prefix}/etc/ports/sources.conf
+		Le fichier "${prefix}/etc/ports/sources.conf" liste l'emplacement 		des hiérarchies des ports locales et distantes. Si l'argument
 		"--with-dports-dir=RÉP." n'a pas été utilisé lors du
 		lancement du script "./configure", la hiérarchie de dports
 		(darwinports/dports, depuis la copie que vous avez
@@ -86,21 +74,21 @@ INSTALLATION
 	 	        - Librairie TCL permettant d'interagir avec le
                           système DarwinPorts.
 
-	PREFIX est situé par défaut à /opt/local mais ce choix peut être
+	${prefix} est situé par défaut à /opt/local mais ce choix peut être
 	modifié en changeant le répertoire  pour base/ et en lançeant
 	manuellement ./configure avec l'argument --prefix
 
-	$PREFIX/bin/port
+	${prefix}/bin/port
 		- Utilitaire en mode texte pour la compilation de port
-	$PREFIX/share/darwinports/
+	${prefix}/share/darwinports/
 		- Librairies TCL internes du système de ports
 
 	Les fichiers suivants sont fournis en vue de la personnalisation
         du système :
 
-	/etc/ports/ports.conf
+	${prefix}/etc/ports/ports.conf
 	    - Réglages personnels des ports pour les utilisateurs
-	/etc/ports/sources.conf
+	${prefix}/etc/ports/sources.conf
 	    - Liste des sources pour les ports (endroit où récupérer les
 	      données des ports)
 
@@ -108,7 +96,7 @@ INSTALLATION
 UTILISATION DE LA COMMANDE 'PORT'
 
     Si vous ne l'avez déjà fait, ajoutez /opt/local/bin à votre variable
-    path (ou $PREFIX/bin si vous avez choisi d'installer DarwinPorts dans
+    path (ou ${prefix}/bin si vous avez choisi d'installer DarwinPorts dans
     un autre emplacement). Si vous ne savez pas comment faire, ajoutez la
     ligne suivante dans votre fichier ~/.cshrc (cela est valable si vous
     utilisez tcsh sous Panther également). Si ce fichier n'existe pas,
@@ -133,16 +121,13 @@ UTILISATION DE LA COMMANDE 'PORT'
 
 	port search vi
 
-    Référez-vous à la page man de "port" pour une documentation plus
+    Référez-vous à la page man de port(1) pour une documentation plus
     complète sur cette commande.
 
     Il est également possible d'effectuer des opérations, comme compiler
     ou récupérer tous les ports du système en utilisant la commande
     "portall". Elle prend les mêmes arguments essentiels que la commande
     "port" mais opère de façon interactive sur chaque port dans dports/.
-    Lorsque vous effectuez un "make clean" depuis ce répertoire, par
-    exemple, un "portall clean" est également invoqué pour nettoyer
-    complètement.
 
 CRÉER DE NOUVEAUX PORTS
 
