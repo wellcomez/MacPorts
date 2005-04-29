@@ -9,7 +9,7 @@ DarwinPorts システムとは
 TCLエクステンションを利用した C で書かれていますから、高い移植性があります。
 
     "DarwinPorts User Guide" が以下にあります:
-        http://www.opendarwin.org/projects/darwinports/guide/
+        http://darwinports.opendarwin.org/docs
 
     ports システムの内部構造についてより深く知るためには、base/doc/INTERNALS
 を参照してください。

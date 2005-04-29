@@ -9,7 +9,7 @@ MacOS X 10.3 (Darwin 7.0).  The system is portable, written in TCL with a
 limited set of TCL extensions in C.
 
     The "DarwinPorts User Guide" is available at:
-	http://www.opendarwin.org/projects/darwinports/guide/
+	http://darwinports.opendarwin.org/docs
 
     For in-depth documentation on the internals of the ports system
 architecture, refer to base/doc/INTERNALS.

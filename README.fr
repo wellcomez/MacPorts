@@ -11,7 +11,7 @@ QU'EST-CE QUE DARWINPORTS
 	en C.
 
 		Le "DarwinPorts User Guide" est disponible à :
-		http://www.opendarwin.org/projects/darwinports/guide/
+		http://darwinports.opendarwin.org/docs
 	
 	Pour une documentation plus appronfondie sur l'architecture
 	interne de ce système de ports, reportez-vous au fichier

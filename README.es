@@ -8,7 +8,7 @@ manteniendo al mismo tiempo extensibilidad para futuras mejoras.
 El sistema es portable, escrito en TCL con un set limitado de extensiones en C de TCL.
 
 	La guia de usuario de DarwinPorts ("DarwinPorts User Guide") esta disponible en:
-		http://www.opendarwin.org/projects/darwinports/guide/
+		http://darwinports.opendarwin.org/docs
 
 	Para documentacion mas avanzada acerca de los procesos internos de la arquitectura del sistema
 DarwinPorts, refierase a base/doc/INTERNALS.

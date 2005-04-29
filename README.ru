@@ -11,7 +11,7 @@
 	написаных на языке C.
 
 	"Руководство пользователя" доступно по адресу 
-		http://www.opendarwin.org/projects/darwinports/guide/
+		http://darwinports.opendarwin.org/docs
 
 	За дополнениями о внутренней организации системы портов - обратитесь к
 	base/doc/INTERNALS.

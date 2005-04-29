@@ -9,7 +9,7 @@ WAS IST DAS DARWIN PORTS SYSTEM
     TCL-Erweiterungen, die in C geschrieben sind.
 
 	Der "DarwinPorts User Guide" ist online verfuegbar unter der Adresse:
-	http://www.opendarwin.org/projects/darwinports/guide/
+	http://darwinports.opendarwin.org/docs
 
     In base/doc/INTERNALS ist eine detaillierte Beschreibung der Architektur 
     zu finden.

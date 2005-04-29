@@ -11,7 +11,7 @@ er flytbart, skrevet i TCL med et begrnset antal TCL udvidelser
 skrevet i C.
 
     "DarwinPorts User Guiden" er tilgængelig på:
-    	http://www.opendarwin.org/projects/darwinports/guide/
+    	http://darwinports.opendarwin.org/docs
 
     For i dybdegående dokumentation om det indre af ports systemets
 arkitektur, henvises til base/doc/INTERNALS.

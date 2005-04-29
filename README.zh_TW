@@ -7,7 +7,7 @@ DARWIN PORT 系統是什麼
     統本身是用 TCL 語言及一些用 C 語言寫的 TCL 延伸模組所撰寫，所以也能夠移植到別處。
     
     "DarwinPort 使用者指南" 可以從以下網址取得。
-    http://www.opendarwin.org/projects/darwinports/guide/
+    http://darwinports.opendarwin.org/docs
 
     如果想要找有關 ports 系統架構內部更深入的資料，請參閱 base/doc/INTERNALS 檔案。
 
