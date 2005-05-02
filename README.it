@@ -6,132 +6,137 @@ stesse funzionalita` dei Ports di FreeBSD, mantenendo allo stesso tempo una
 estensibilita` per possibili futuri perfezionamenti.
 
     DarwinPorts attualmente compila e funziona su MacOS X 10.2 (Darwin 6.0)
-and MacOS X 10.3. Il sistema e` portabile ed e` scritto in TCL con un set
-limitato di estensioni in C.
+and MacOS X 10.3 (Darwin 7.0). Il sistema e` portabile ed e` scritto in TCL 
+con un set limitato di estensioni in C.
 
     La guida ufficiale "DarwinPorts User Guide" e` disponibile su:
-	http://www.opendarwin.org/projects/darwinports/guide/
+	http://darwinports.opendarwin.org/docs
 
-    Per una documentazione piu` dettagliata riguardo DarwinPorts ed i suoi
-processi interni si puo` consultare il file base/doc/INTERNALS.
+    Per una documentazione piu` dettagliata riguardo i processi interni 
+all'architettura del sistema dei ports, consulta il file base/doc/INTERNALS.
 
-    E` bene ricordare che DarwinPorts e` diviso in due componenti.
-Il primo, "Infrastruttura di DarwinPorts", che risiede nella subdirectory base/
-e` l'unico componente base del sistema; il secondo e` "dports", nel quale sono
-incluse tutte le descrizioni del software attualmente portato. Quest'ultimo e`
-opzionale e lo si puo` prelevare su richiesta tramite rete o si puo` usare la
-copia locale (Vedi commenti sul file /etc/ports/sources.conf qui di seguito)
+    E` bene ricordare che DarwinPorts e` diviso in due componenti: la 
+"darwin" ports infrastructure", che risiede nella subdirectory base/ ed e`
+l'unica componente necessaria del sistema, e la directory "dports", nella 
+quale sono incluse tutte le descrizioni del software attualmente portato. 
+Quest'ultima componente e` opzionale e la si puo` prelevare su richiesta 
+tramite rete o si puo` usare la copia locale. (Leggi la documentazione su 
+${prefix}/etc/ports/sources.conf qui di seguito).
 
 INSTALLAZIONE
 
-	Per piattaforme specifiche leggere il file base/doc/README.platforms.
+	Le istruzioni per l'installazione su piattaforme specifiche sono 
+riportate in base/doc/README.platforms .
 
-    Passi:
+    Passi dell'installzione:
 
 	1. cd base/
-	   ./configure
-		Entrare nella directory base/ directory ed eseguire lo script
-		configure. I parametri opzionali possono essere passati allo
-		script.
+           ./configure
+		Entra nella directory base/ ed esegui lo script di 
+		configurazione. Puoi passare anche dei parametri opzionali 
+		(leggi sotto).
 
 	2. make
-		Eseguire 'make' per compilare il software necessario.
+                Esegui 'make' per compilare il software necessario.
 
 	3. sudo make install
-		Eseguire 'sudo make install' per installare DarwinPorts nel
-		proprio sistema.
+                Esegui 'sudo make install' per installare DarwinPorts nel
+		sistema.
 
-	4. [opzionale] edit /etc/ports/ports.conf
-		Il file /etc/ports/ports.conf definisce varie opzioni di
-		configurazione per l'infrastruttura DarwinPorts. Se si desidera
-		cambiare il percorso dell'installazione o la posizione nella
-		quale sono salvati i diversi dati dei ports basta modificare
-		le seguenti impostazioni:
+	4. [opzionale] edit ${prefix}/etc/ports/ports.conf
+                Nel file ${prefix}/etc/ports/ports.conf sono definite varie 
+		opzioni di configurazione per l'infrastruttura DarwinPorts. 
+		Se desideri cambiare i percorsi di installazione oppure la 
+		posizione dove sono contenuti i dati specifici dei vari 
+		ports, modifica le seguenti impostazioni: 
 
-		portdbpath - Specifica il percorso dove il sistema dei ports
-		             salvera` i dati specifici.
-		prefix - Specifica la directory dove verra` installato  il nuovo
-		         software.
+		portdbpath	Specifica il percorso contenente i dati
+				specifici dei ports. 
+		prefix		Specifica la directory di installazione dei
+				ports.
+  
+	5. [opzionale] edit ${prefix}/etc/ports/sources.conf
+		Il file ${prefix}/etc/ports/sources.conf elenca la posizione 
+		e locale e remota delle gerarchie dei ports. Se l'argomento
+		--with-dports-dir=DIR non e` stato specificato allo script di
+		configurazione l'albero default dei dports (darwinports/dports, 
+		la copia dalla quale installi) verra` aggiunto a tale file.
 
-	5. [opzionale] edit /etc/ports/sources.conf
-		Il file /etc/ports/sources.conf elenca la posizione locale e
-		remota delle gerarchie dei ports. Se l'argomento
-		--with-dports-dir=DIR non e` specificato sullo script
-		./configure l'albero dei dports (darwinports/dports, la copia
-		dalla quale si installa) di default verra` aggiunto a tale file.
-
-    Tutto il codice necessario e il TCL saranno compilati ed installati come
+    Tutto il codice necessario ed il TCL saranno compilati ed installati come
     segue:
-	[Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
 	[Mac OS X 10.3] /Library/Tcl/darwinports1.0
+	[Mac OS X 10.2] /System/Library/Tcl/darwinports1.0
 	[FreeBSD] /usr/local/lib/tcl8.3/darwinports1.0
-	    - Libreria TCL di interfaccia per il Sistema DarwinPorts
+            - Libreria TCL per l'interfaccia con il Sistema DarwinPorts
 
-	PREFIX e` settato in /opt/local ma puo` essere cambiato andando nella
-	directory base/ ed eseguendo ./configure specificando manualmente
-	l'argomento --prefix
+	${prefix} e` settato in /opt/local ma puo` essere cambiato 
+	posizionandosi nella directory base/ ed eseguendo ./configure 
+	specificando manualmente l'argomento --prefix
 
-	$PREFIX/bin/port
-	    - Utility a riga di comando per la creazione del software
-	$PREFIX/share/darwinports/
-	    - Librerie TCL interne a DarwinPorts
+	${prefix}/bin/port
+	    - Utility a riga di comando per costruire i ports
+	${prefix}/share/darwinports/
+	    - Librerie TCL interne al sistema DarwinPorts
 
 	I file seguenti sono utilizzati per la personalizzazione del sistema:
 
-	/etc/ports/ports.conf
+	${prefix}/etc/ports/ports.conf
 	    - Impostazioni personalizzabili per l'utente
-	/etc/ports/sources.conf
-	    - Lista dei sorgenti dei ports (da dove prelevare i dati)
+	${prefix}/etc/ports/sources.conf
+	    - Lista dei sorgenti dei ports (luoghi da dove prelevare i dati)
 
 
 USO DEL COMANDO PORT
 
-    Qualora non fosse stato ancora fatto, aggiungere /opt/local/bin al proprio
-path (o $PREFIX/bin nel caso si e` scelto di installare DarwinPorts in un altra
-destinazione)
+    Se non l'hai ancora fatto, aggiungi /opt/local/bin al tuo path (oppure 
+${prefix}/bin nel caso in cui hai scelto di installare DarwinPorts in un'altra
+destinazione).
 
-	Se non si conosce il modo per effettuare tale operazione e si sta usando
-Jaguar (OS X 10.2) basta aggiungere la seguente riga al proprio file ~/.cshrc
-(Si puo` applicare anche se si sta usando tcsh in Panther.)
-
-	set path=($path /opt/local/bin)
-	
-	Coloro che usano Panther (OS X 10.3) possono aggiungere la riga seguente
-al proprio file ~/.profile
-(Si puo` applicare anche se si sta usando bash in Jaguar.)
+	Se non sai come effettuare questa operazione e stai utilizzando 
+Panther (OS X 10.3), aggiungi la seguente riga al file ~/.profile . Se il file 
+non esiste, crealo. (Questa modifica e` necessaria anche se stai utilizzando
+una bourne shell su Jaguar.)
 
 	export PATH=$PATH:/opt/local/bin
 
+	Se invece stai utilizzando Jaguar (OS X 10.2), aggiungi la seguente
+riga al file ~/.cshrc . Se il file non esiste, crealo. (Questa modifica e`
+necessaria anche se stai utilizzando tcsh su Panther.)   
+
+	set path=($path /opt/local/bin)
+        
     I cambiamenti avranno effetto solo dopo aver aperto una nuova shell.
 
-    Questo comando crea ed installa un port:
+    Il seguente comando crea ed installa un port:
 
 	port install <portname>
 
-    Per cercare un port specifico si puo` digitare "port search".
+    Per cercare un port specifico puoi digitare "port search".
 
-	port search vi
+        port search vi
 
-    Per una completa documentazione si puo` fare riferimento alle pagine di
-    manuale digitando "man port".
+    Per una completa documentazione puoi fare riferimento alle pagine di
+manuale del comando port(1).
 
-    Usando il comando portall e` possibile prelevare e compilare tutti i ports
-    del sistema. Sostanzialmente possono essere specificati gli stessi
-    argomenti del comando, ma portall opera iterativamente in tutti i ports
-    della directory dports/. Ad esempio, quando si digitera` "make clean" da
-    questa directory, "portall clean" sara` chiamato per fare il clean.
+    E` anche possibile effettuare operazioni su tutti i ports presenti nel
+sistema utilizzando il comando portall. Sostanzialmente possono essere 
+specificati gli stessi argomenti del comando port, ma portall opera 
+ricorsivamente su tutti i ports presenti in dports/ .
 
 
 CREARE NUOVI PORTS
 
-    Un Ports e` formato da una directory che contiene il Portfile e altri files
-connessi. Al momento i soli files che sono inclusi nei ports sono file di patch
-e questi probabilmente saranno tenuti al minimo.
+    Un Port e` formato da una directory che contiene un Portfile e altri 
+files associati ad esso. Al momento i soli files che sono inclusi nei ports 
+sono files di patch, i quali saranno sempre mantenuti in modo tale da non 
+occupare troppo spazio.
 
-    Un Portfile e` un file formato da codice TCL valutato da un interprete TCL
-inizializzato dal Sistema DarwinPorts. I Portfiles hanno una sintassi
-estremamente chiara e diretta, permettendo comunque all'autore di utilizzare
-tutte le funzionalita` del TCL dove necessario.
+    Un Portfile e` un file di codice TCL, valutato da un interprete TCL
+inizializzato dal sistema DarwinPorts. I Portfiles hanno una sintassi
+estremamente chiara e diretta, composta da coppie di chiave/valore, che
+permette all'autore di utilizzare tutte le funzionalita` del TCL dove
+necessario.
 
-    Un buon inizio e` leggere il file base/doc/exampleport oltre a consultare
-man portfile(7).
+    Un buon inizio e` leggere il file base/doc/exampleport e consultare le
+pagine di manuale di portfile(7), oppure la Guida a DarwinPorts all'indirizzo
+http://darwinports.opendarwin.org/docs .
