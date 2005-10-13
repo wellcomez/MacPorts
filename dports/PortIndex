@@ -629,7 +629,7 @@ variants {darwin darwin_6 darwin_7} portdir devel/commoncpp2 description {GNU Co
 cook 569
 portdir devel/cook description {Cook is a replacement for the traditional make(1) tool.} platforms darwin name cook version 2.25 categories devel homepage http://www.canb.auug.org.au/~millerp/cook/cook.html revision 0 epoch 0 maintainers waqar@opendarwin.org long_description {Cook is a tool for constructing files. It is given a set of files to create, and recipes of how to create them. In any non-trivial program there will be prerequisites to performing the actions necessary to creating any file, such as include files. Cook provides a mechanism to define these.}
 cpphs 339
-depends_build bin:ghc:ghc description {cpp implemented in Haskell.} portdir devel/cpphs homepage http://www.haskell.org/cpphs/ epoch 0 platforms darwin name cpphs long_description {cpphs is a liberalised re-implementation of cpp, the C pre-processor, in Haskell.} maintainers gwright@opendarwin.org categories devel version 0.9 revision 0
+depends_build bin:ghc:ghc description {cpp implemented in Haskell.} portdir devel/cpphs homepage http://www.haskell.org/cpphs/ epoch 0 platforms darwin name cpphs long_description {cpphs is a liberalised re-implementation of cpp, the C pre-processor, in Haskell.} maintainers gwright@opendarwin.org categories devel version 1.0 revision 0
 cppunit 406
 portdir devel/cppunit platforms darwin description {unit testing framework for C++} name cppunit version 1.11.0 categories devel homepage http://cppunit.sourceforge.net/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {CppUnit is the C++ port of the famous JUnit framework for unit testing. Test output is in XML or text format for automatic testing and GUI based for supervised tests.}
 cryptlib 733
@@ -2340,8 +2340,8 @@ ocamlduce 436
 description {Objective Caml extensions for manipulating XML} portdir lang/ocamlduce homepage http://www.cduce.org/ocaml.html epoch 0 platforms darwin depends_lib bin:camlp4:ocaml name ocamlduce long_description {OCamlDuce is a merger between OCaml and CDuce. It comes as a modified version of OCaml which integrates CDuce features: expressions, types, patterns.} maintainers anil@recoil.org categories lang version 3.08.4pl3 revision 1
 onlisp 238
 portdir lang/onlisp description {Lytha Ayth's texinfo version of Paul Graham's book On Lisp.} name onlisp version 0.0.1 categories lang homepage http://t2100cdt.kippona.net/linux/lisp/ revision 2 epoch 0 maintainers kogule@opendarwin.org
-openmcl 495
-portdir lang/openmcl platforms darwin description {The OpenMCL Common Lisp Implementation} name openmcl version 0.14.3 categories lang homepage http://www.openmcl.com revision 0 epoch 0 maintainers {waqar@opendarwin.org gwright@opendarwin.org} long_description {OpenMCL is an opensourced Common Lisp implementation, derived from Digitool's Macintosh Common Lisp product. OpenMCL currently runs under LinuxPPC and, as of version 0.10, under Darwin, the BSD/Mach layer on which MacOS X is based.}
+openmcl 492
+portdir lang/openmcl platforms darwin description {The OpenMCL Common Lisp Implementation} name openmcl version 1.0 categories lang homepage http://www.openmcl.com revision 0 epoch 0 maintainers {waqar@opendarwin.org gwright@opendarwin.org} long_description {OpenMCL is an opensourced Common Lisp implementation, derived from Digitool's Macintosh Common Lisp product. OpenMCL currently runs under LinuxPPC and, as of version 0.10, under Darwin, the BSD/Mach layer on which MacOS X is based.}
 otcl 369
 depends_build {port:autoconf port:automake} description {MIT Object Tcl} portdir lang/otcl homepage http://otcl-tclcl.sourceforge.net/otcl/ epoch 0 depends_lib {port:tcl port:tk} name otcl long_description {OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming.} maintainers ben@opendarwin.org categories lang version 1.9 revision 0
 perl5.8 493
