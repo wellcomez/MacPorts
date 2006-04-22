@@ -89,7 +89,7 @@ depends_build {{path:${prefix}/bin/python2.3:python23} {path:${prefix}/lib/pytho
 a52decX 373
 portdir aqua/a52decX platforms darwin description {Converts AC-3 file to an AIFF file} name a52decX version 0.25 categories {aqua multimedia} homepage http://homepage1.nifty.com/~toku/software_en.html#a52decX revision 0 epoch 0 maintainers darwinports@opendarwin.org long_description {a52decX converts an AC-3 file being used for the sound of DVD-Video into an AIFF file.}
 adium 598
-portdir aqua/adium description {a multiple protocol instant messaging client} name adium version 0.86 categories {aqua net} revision 0 epoch 0 maintainers toby@opendarwin.org long_description {A multiple protocol instant messaging client. This is a culmination of a year long rewrite of Adium, which now utilizes libgaim (the core part of gaim) to connect to multiple protocols, and is also based on a new plugin architecture. Partial address book integration, cool looking tabs, multiple protocols for instant messaging, and a compact contact list are some of the many features of the new Adium.}
+portdir aqua/adium description {a multiple protocol instant messaging client} name adium version 0.89 categories {aqua net} revision 0 epoch 0 maintainers toby@opendarwin.org long_description {A multiple protocol instant messaging client. This is a culmination of a year long rewrite of Adium, which now utilizes libgaim (the core part of gaim) to connect to multiple protocols, and is also based on a new plugin architecture. Partial address book integration, cool looking tabs, multiple protocols for instant messaging, and a compact contact list are some of the many features of the new Adium.}
 aquaterm 543
 variants {darwin_7 darwin_8} description {AquaTerm is a viewer that displays vector graphics on Mac OS X} portdir aqua/aquaterm homepage http://aquaterm.sourceforge.net/ epoch 0 platforms darwin name aquaterm long_description {AquaTerm is a viewer app that displays vector graphics. Other apps connect to AquaTerm using a simple remote object messaging protocol. By adding adapters to legacy code very little coding is needed to bring it to OS X.} maintainers darwinports@opendarwin.org categories {aqua math science} version 1.0.0 revision 0
 audioslicer 896
@@ -2516,66 +2516,110 @@ kdeutils3 312
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE utilities. NB No KDE sound support.} portdir kde/kdeutils3 epoch 0 platforms darwin depends_lib {port:kdebase3 port:gmp} name kdeutils3 maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.1 revision 1
 kdewebdev3 332
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE web development tools. NB No KDE sound support.} portdir kde/kdewebdev3 epoch 0 platforms darwin depends_lib {port:kdebase3 port:libgcrypt} name kdewebdev3 maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.1 revision 2
-koffice 372
-variants {i386 darwin_6} depends_build {port:autoconf port:automake} description {KDE office suite. NB KDE sound does not work.} portdir kde/koffice epoch 0 platforms darwin depends_lib {port:kdebase3 port:ImageMagick port:lcms port:libwpd port:mysql4 port:wv2} name koffice maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.4.2 revision 3
-koffice-i18n-bg 299
-portdir kde/koffice-i18n-bg description {KOffice bulgarian language files.} platforms darwin name koffice-i18n-bg depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice bulgarian language files.}}
-koffice-i18n-ca 295
-portdir kde/koffice-i18n-ca description {KOffice catalan language files.} platforms darwin name koffice-i18n-ca depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice catalan language files.}}
-koffice-i18n-cs 291
-portdir kde/koffice-i18n-cs description {KOffice czech language files.} platforms darwin name koffice-i18n-cs depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice czech language files.}}
-koffice-i18n-cy 291
-portdir kde/koffice-i18n-cy description {KOffice welsh language files.} platforms darwin name koffice-i18n-cy depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice welsh language files.}}
-koffice-i18n-da 293
-portdir kde/koffice-i18n-da description {KOffice danish language files.} platforms darwin name koffice-i18n-da depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice danish language files.}}
-koffice-i18n-de 293
-portdir kde/koffice-i18n-de description {KOffice german language files.} platforms darwin name koffice-i18n-de depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice german language files.}}
-koffice-i18n-el 291
-portdir kde/koffice-i18n-el description {KOffice greek language files.} platforms darwin name koffice-i18n-el depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice greek language files.}}
-koffice-i18n-en_GB 307
-portdir kde/koffice-i18n-en_GB description {KOffice uk-english language files.} platforms darwin name koffice-i18n-en_GB depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice uk-english language files.}}
-koffice-i18n-es 295
-portdir kde/koffice-i18n-es description {KOffice spanish language files.} platforms darwin name koffice-i18n-es depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice spanish language files.}}
-koffice-i18n-et 297
-portdir kde/koffice-i18n-et description {KOffice estonian language files.} platforms darwin name koffice-i18n-et depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice estonian language files.}}
-koffice-i18n-eu 293
-portdir kde/koffice-i18n-eu description {KOffice basque language files.} platforms darwin name koffice-i18n-eu depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice basque language files.}}
-koffice-i18n-fi 295
-portdir kde/koffice-i18n-fi description {KOffice finnish language files.} platforms darwin name koffice-i18n-fi depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice finnish language files.}}
-koffice-i18n-fr 293
-portdir kde/koffice-i18n-fr description {KOffice french language files.} platforms darwin name koffice-i18n-fr depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice french language files.}}
-koffice-i18n-hu 299
-portdir kde/koffice-i18n-hu description {KOffice hungarian language files.} platforms darwin name koffice-i18n-hu depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice hungarian language files.}}
-koffice-i18n-it 295
-portdir kde/koffice-i18n-it description {KOffice italian language files.} platforms darwin name koffice-i18n-it depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice italian language files.}}
-koffice-i18n-nb 315
-portdir kde/koffice-i18n-nb description {KOffice norwegian-bokmaal language files.} platforms darwin name koffice-i18n-nb depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice norwegian-bokmaal language files.}}
-koffice-i18n-nl 291
-portdir kde/koffice-i18n-nl description {KOffice dutch language files.} platforms darwin name koffice-i18n-nl depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice dutch language files.}}
-koffice-i18n-nn 315
-portdir kde/koffice-i18n-nn description {KOffice norwegian-nynorsk language files.} platforms darwin name koffice-i18n-nn depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice norwegian-nynorsk language files.}}
-koffice-i18n-pl 293
-portdir kde/koffice-i18n-pl description {KOffice polish language files.} platforms darwin name koffice-i18n-pl depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice polish language files.}}
-koffice-i18n-pt 299
-portdir kde/koffice-i18n-pt description {KOffice portugese language files.} platforms darwin name koffice-i18n-pt depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice portugese language files.}}
-koffice-i18n-pt_BR 325
-portdir kde/koffice-i18n-pt_BR description {KOffice brazilian-portugese language files.} platforms darwin name koffice-i18n-pt_BR depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice brazilian-portugese language files.}}
-koffice-i18n-ru 295
-portdir kde/koffice-i18n-ru description {KOffice russian language files.} platforms darwin name koffice-i18n-ru depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice russian language files.}}
-koffice-i18n-serbian-latin-script 357
-portdir kde/koffice-i18n-serbian-latin-script description {KOffice serbian-latin-script language files.} platforms darwin name koffice-i18n-serbian-latin-script depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice serbian-latin-script language files.}}
-koffice-i18n-sl 299
-portdir kde/koffice-i18n-sl description {KOffice slovenian language files.} platforms darwin name koffice-i18n-sl depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice slovenian language files.}}
-koffice-i18n-sr 295
-portdir kde/koffice-i18n-sr description {KOffice serbian language files.} platforms darwin name koffice-i18n-sr depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice serbian language files.}}
-koffice-i18n-sv 295
-portdir kde/koffice-i18n-sv description {KOffice swedish language files.} platforms darwin name koffice-i18n-sv depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice swedish language files.}}
-koffice-i18n-ta 291
-portdir kde/koffice-i18n-ta description {KOffice tamil language files.} platforms darwin name koffice-i18n-ta depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice tamil language files.}}
-koffice-i18n-tg 291
-portdir kde/koffice-i18n-tg description {KOffice tajik language files.} platforms darwin name koffice-i18n-tg depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice tajik language files.}}
-koffice-i18n-zh_CN 323
-portdir kde/koffice-i18n-zh_CN description {KOffice chinese-simplified language files.} platforms darwin name koffice-i18n-zh_CN depends_lib port:koffice version 1.4.2 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice chinese-simplified language files.}}
+koffice 366
+variants darwin_6 depends_build {port:autoconf port:unsermake} description {KDE office suite. NB KDE sound does not work.} portdir kde/koffice epoch 0 platforms darwin depends_lib {port:kdebase3 port:ImageMagick port:lcms port:libwpd port:mysql4 port:wv2} name koffice maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.0 revision 0
+koffice-i18n-afrikaans 311
+portdir kde/koffice-i18n-afrikaans description {KOffice afrikaans language files.} platforms darwin name koffice-i18n-afrikaans depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice afrikaans language files.}}
+koffice-i18n-arabic 299
+portdir kde/koffice-i18n-arabic description {KOffice arabic language files.} platforms darwin name koffice-i18n-arabic depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice arabic language files.}}
+koffice-i18n-basque 299
+portdir kde/koffice-i18n-basque description {KOffice basque language files.} platforms darwin name koffice-i18n-basque depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice basque language files.}}
+koffice-i18n-bengali 303
+portdir kde/koffice-i18n-bengali description {KOffice bengali language files.} platforms darwin name koffice-i18n-bengali depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice bengali language files.}}
+koffice-i18n-bosnian 303
+portdir kde/koffice-i18n-bosnian description {KOffice bosnian language files.} platforms darwin name koffice-i18n-bosnian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice bosnian language files.}}
+koffice-i18n-brazilian-portugese 351
+portdir kde/koffice-i18n-brazilian-portugese description {KOffice brazilian-portugese language files.} platforms darwin name koffice-i18n-brazilian-portugese depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice brazilian-portugese language files.}}
+koffice-i18n-breton 299
+portdir kde/koffice-i18n-breton description {KOffice breton language files.} platforms darwin name koffice-i18n-breton depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice breton language files.}}
+koffice-i18n-bulgarian 311
+portdir kde/koffice-i18n-bulgarian description {KOffice bulgarian language files.} platforms darwin name koffice-i18n-bulgarian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice bulgarian language files.}}
+koffice-i18n-catalan 303
+portdir kde/koffice-i18n-catalan description {KOffice catalan language files.} platforms darwin name koffice-i18n-catalan depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice catalan language files.}}
+koffice-i18n-chinese-simplified 347
+portdir kde/koffice-i18n-chinese-simplified description {KOffice chinese-simplified language files.} platforms darwin name koffice-i18n-chinese-simplified depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice chinese-simplified language files.}}
+koffice-i18n-czech 295
+portdir kde/koffice-i18n-czech description {KOffice czech language files.} platforms darwin name koffice-i18n-czech depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice czech language files.}}
+koffice-i18n-danish 299
+portdir kde/koffice-i18n-danish description {KOffice danish language files.} platforms darwin name koffice-i18n-danish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice danish language files.}}
+koffice-i18n-dutch 295
+portdir kde/koffice-i18n-dutch description {KOffice dutch language files.} platforms darwin name koffice-i18n-dutch depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice dutch language files.}}
+koffice-i18n-esperanto 311
+portdir kde/koffice-i18n-esperanto description {KOffice esperanto language files.} platforms darwin name koffice-i18n-esperanto depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice esperanto language files.}}
+koffice-i18n-estonian 307
+portdir kde/koffice-i18n-estonian description {KOffice estonian language files.} platforms darwin name koffice-i18n-estonian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice estonian language files.}}
+koffice-i18n-finnish 303
+portdir kde/koffice-i18n-finnish description {KOffice finnish language files.} platforms darwin name koffice-i18n-finnish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice finnish language files.}}
+koffice-i18n-french 299
+portdir kde/koffice-i18n-french description {KOffice french language files.} platforms darwin name koffice-i18n-french depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice french language files.}}
+koffice-i18n-frisian 303
+portdir kde/koffice-i18n-frisian description {KOffice frisian language files.} platforms darwin name koffice-i18n-frisian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice frisian language files.}}
+koffice-i18n-german 299
+portdir kde/koffice-i18n-german description {KOffice german language files.} platforms darwin name koffice-i18n-german depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice german language files.}}
+koffice-i18n-greek 295
+portdir kde/koffice-i18n-greek description {KOffice greek language files.} platforms darwin name koffice-i18n-greek depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice greek language files.}}
+koffice-i18n-hebrew 299
+portdir kde/koffice-i18n-hebrew description {KOffice hebrew language files.} platforms darwin name koffice-i18n-hebrew depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice hebrew language files.}}
+koffice-i18n-hindi 295
+portdir kde/koffice-i18n-hindi description {KOffice hindi language files.} platforms darwin name koffice-i18n-hindi depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice hindi language files.}}
+koffice-i18n-hungarian 311
+portdir kde/koffice-i18n-hungarian description {KOffice hungarian language files.} platforms darwin name koffice-i18n-hungarian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice hungarian language files.}}
+koffice-i18n-icelandic 311
+portdir kde/koffice-i18n-icelandic description {KOffice icelandic language files.} platforms darwin name koffice-i18n-icelandic depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice icelandic language files.}}
+koffice-i18n-irish-gaelic 323
+portdir kde/koffice-i18n-irish-gaelic description {KOffice irish-gaelic language files.} platforms darwin name koffice-i18n-irish-gaelic depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice irish-gaelic language files.}}
+koffice-i18n-italian 303
+portdir kde/koffice-i18n-italian description {KOffice italian language files.} platforms darwin name koffice-i18n-italian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice italian language files.}}
+koffice-i18n-japanese 307
+portdir kde/koffice-i18n-japanese description {KOffice japanese language files.} platforms darwin name koffice-i18n-japanese depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice japanese language files.}}
+koffice-i18n-lithuanian 315
+portdir kde/koffice-i18n-lithuanian description {KOffice lithuanian language files.} platforms darwin name koffice-i18n-lithuanian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice lithuanian language files.}}
+koffice-i18n-low-saxon 311
+portdir kde/koffice-i18n-low-saxon description {KOffice low-saxon language files.} platforms darwin name koffice-i18n-low-saxon depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice low-saxon language files.}}
+koffice-i18n-macedonian 315
+portdir kde/koffice-i18n-macedonian description {KOffice macedonian language files.} platforms darwin name koffice-i18n-macedonian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice macedonian language files.}}
+koffice-i18n-northern-sami 327
+portdir kde/koffice-i18n-northern-sami description {KOffice northern-sami language files.} platforms darwin name koffice-i18n-northern-sami depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice northern-sami language files.}}
+koffice-i18n-norwegian-bokmaal 343
+portdir kde/koffice-i18n-norwegian-bokmaal description {KOffice norwegian-bokmaal language files.} platforms darwin name koffice-i18n-norwegian-bokmaal depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice norwegian-bokmaal language files.}}
+koffice-i18n-norwegian-nynorsk 343
+portdir kde/koffice-i18n-norwegian-nynorsk description {KOffice norwegian-nynorsk language files.} platforms darwin name koffice-i18n-norwegian-nynorsk depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice norwegian-nynorsk language files.}}
+koffice-i18n-polish 299
+portdir kde/koffice-i18n-polish description {KOffice polish language files.} platforms darwin name koffice-i18n-polish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice polish language files.}}
+koffice-i18n-portugese 311
+portdir kde/koffice-i18n-portugese description {KOffice portugese language files.} platforms darwin name koffice-i18n-portugese depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice portugese language files.}}
+koffice-i18n-punjabi 303
+portdir kde/koffice-i18n-punjabi description {KOffice punjabi language files.} platforms darwin name koffice-i18n-punjabi depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice punjabi language files.}}
+koffice-i18n-romanian 307
+portdir kde/koffice-i18n-romanian description {KOffice romanian language files.} platforms darwin name koffice-i18n-romanian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice romanian language files.}}
+koffice-i18n-russian 303
+portdir kde/koffice-i18n-russian description {KOffice russian language files.} platforms darwin name koffice-i18n-russian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice russian language files.}}
+koffice-i18n-serbian 303
+portdir kde/koffice-i18n-serbian description {KOffice serbian language files.} platforms darwin name koffice-i18n-serbian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice serbian language files.}}
+koffice-i18n-serbian-latin-script 355
+portdir kde/koffice-i18n-serbian-latin-script description {KOffice serbian-latin-script language files.} platforms darwin name koffice-i18n-serbian-latin-script depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice serbian-latin-script language files.}}
+koffice-i18n-slovak 299
+portdir kde/koffice-i18n-slovak description {KOffice slovak language files.} platforms darwin name koffice-i18n-slovak depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice slovak language files.}}
+koffice-i18n-slovenian 311
+portdir kde/koffice-i18n-slovenian description {KOffice slovenian language files.} platforms darwin name koffice-i18n-slovenian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice slovenian language files.}}
+koffice-i18n-spanish 303
+portdir kde/koffice-i18n-spanish description {KOffice spanish language files.} platforms darwin name koffice-i18n-spanish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice spanish language files.}}
+koffice-i18n-swedish 303
+portdir kde/koffice-i18n-swedish description {KOffice swedish language files.} platforms darwin name koffice-i18n-swedish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice swedish language files.}}
+koffice-i18n-tajik 295
+portdir kde/koffice-i18n-tajik description {KOffice tajik language files.} platforms darwin name koffice-i18n-tajik depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice tajik language files.}}
+koffice-i18n-tamil 295
+portdir kde/koffice-i18n-tamil description {KOffice tamil language files.} platforms darwin name koffice-i18n-tamil depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice tamil language files.}}
+koffice-i18n-turkish 303
+portdir kde/koffice-i18n-turkish description {KOffice turkish language files.} platforms darwin name koffice-i18n-turkish depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice turkish language files.}}
+koffice-i18n-uk-english 315
+portdir kde/koffice-i18n-uk-english description {KOffice uk-english language files.} platforms darwin name koffice-i18n-uk-english depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice uk-english language files.}}
+koffice-i18n-ukranian 307
+portdir kde/koffice-i18n-ukranian description {KOffice ukranian language files.} platforms darwin name koffice-i18n-ukranian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice ukranian language files.}}
+koffice-i18n-upper-sorbian 327
+portdir kde/koffice-i18n-upper-sorbian description {KOffice upper-sorbian language files.} platforms darwin name koffice-i18n-upper-sorbian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice upper-sorbian language files.}}
+koffice-i18n-welsh 295
+portdir kde/koffice-i18n-welsh description {KOffice welsh language files.} platforms darwin name koffice-i18n-welsh depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KOffice welsh language files.}}
 konversation 310
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE IRC client. NB No KDE sound support.} portdir kde/konversation epoch 0 platforms darwin depends_lib {port:kdebase3 port:doxygen port:graphviz} name konversation maintainers ben@opendarwin.org categories kde version 0.19 revision 1
 4th 558
@@ -3470,8 +3514,8 @@ mudix 380
 portdir net/mudix description {ncurses-based MUD client with triggers, aliases, colors} platforms darwin name mudix version 4.3 categories net homepage http://dw.nl.eu.org/mudix.html revision 2 epoch 0 maintainers darwinports@opendarwin.org long_description {ncurses-based MUD client, targeted at people that dislike tintin++, tinyfugue, and don't want to use an X11 MUD client.}
 mutella 354
 description {A command line Gnutella client} portdir net/mutella homepage http://mutella.sourceforge.net/ epoch 0 platforms darwin depends_lib lib:readline:readline name mutella long_description {Mutella is a terminal-mode Gnutella client with an intuitive and easy to use interface.} maintainers max@clarksys.com categories net version 0.4.5 revision 0
-nagios 562
-variants monarch-gui depends_build port:gd2 portdir net/nagios description {Nagios is a host and service monitoring program} homepage http://nagios.org epoch 0 platforms darwin name nagios depends_lib {port:openssl port:nagios-plugins} maintainers markd@opendarwin.org long_description {A network service and host monitor that can notify you when servers go down by monitoring for external services such as HTTP, FTP, SMTP, SNMP, as well as internal host checks for things such as CPU and disk usage and many other things.} version 2.2 categories net revision 0
+nagios 558
+variants monarch depends_build port:gd2 portdir net/nagios description {Nagios is a host and service monitoring program} homepage http://nagios.org epoch 0 platforms darwin name nagios depends_lib {port:openssl port:nagios-plugins} maintainers markd@opendarwin.org long_description {A network service and host monitor that can notify you when servers go down by monitoring for external services such as HTTP, FTP, SMTP, SNMP, as well as internal host checks for things such as CPU and disk usage and many other things.} version 2.2 categories net revision 0
 nagios-plugins 524
 variants {darwin_6 darwin_7 mysql4 qstat} depends_build {port:fping port:p5-net-snmp port:p5-digest-sha1 port:p5-digest-hmac port:p5-crypt-des} portdir net/nagios-plugins description {Nagios plugins for the Nagios host and service monitor} homepage http://nagios.org epoch 0 platforms darwin name nagios-plugins maintainers markd@opendarwin.org long_description {Nagios plugins are standalone programs that report the status of hosts and services to the Nagios monitoring framework.} version 1.4.2 categories net revision 0
 naim 366
@@ -6101,7 +6145,7 @@ portdir www/cgilib description {CGI Library} platforms darwin name cgilib versio
 cheetah 627
 portdir www/cheetah platforms darwin description {very minimal web server} name cheetah version 1.7 categories www homepage http://www.neuro-tech.net/archives/000044.html revision 0 epoch 0 maintainers mww@opendarwin.org long_description {cheetah is a very minimal web server for testing small local sites, or to continue to serve some content while configuring your primary web server. It has very few features (and is single-threaded with optional fork support), except that it will serve files in a directory under a user-specified port, does not require root access and can serve Last Modified information to aid caching.}
 clearsilver 574
-description {Language-neutral template system.} portdir www/clearsilver homepage http://www.clearsilver.net epoch 0 platforms darwin depends_lib {port:python24 port:perl5.8 port:zlib port:gettext} name clearsilver long_description {Clearsilver is a fast, powerful, and language-neutral HTML template system. In both static content sites and dynamic HTML applications, it provides a separation between presentation code and application logic which makes working with your project easier.} maintainers dluke@geeklair.net categories {www python perl} version 0.9.14 revision 2
+description {Language-neutral template system.} portdir www/clearsilver homepage http://www.clearsilver.net epoch 0 platforms darwin depends_lib {port:python24 port:perl5.8 port:zlib port:gettext} name clearsilver long_description {Clearsilver is a fast, powerful, and language-neutral HTML template system. In both static content sites and dynamic HTML applications, it provides a separation between presentation code and application logic which makes working with your project easier.} maintainers dluke@geeklair.net categories {www python perl} version 0.10.3 revision 0
 cloudwiki 562
 description {stand-alone wiki engine written in python} portdir www/cloudwiki homepage http://cloudwiki.sourceforge.net/ epoch 0 platforms darwin name cloudwiki depends_lib {{path:${prefix}/bin/python2.4:python24} {path:${prefix}/lib/python2.4/site-packages/sqlite:py-sqlite}} long_description {cloud wiki is a wiki engine written in python and backed by sqlite, providing user authentication, powerful command line administration facilities, and a concise, efficient Web interface.} maintainers mww@opendarwin.org version 1.1 categories {www python} revision 0
 dillo 830
