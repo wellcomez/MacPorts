@@ -5559,7 +5559,7 @@ variants {darwin_8 dp_completion utf8} portdir shells/zsh-devel description {Zsh
 DarwinPortsStartup 238
 portdir sysutils/DarwinPortsStartup description {System startup item to start things installed from darwinports} platforms darwin name DarwinPortsStartup version 1.1 categories sysutils revision 0 epoch 0 maintainers kevin@opendarwin.org
 FDclone 364
-variants {nojpnmes emacs lv less jless autosort} description {File & Directory Maintenance Tool} portdir sysutils/FDclone homepage http://hp.vector.co.jp/authors/VA012337/soft/fd/index.html epoch 0 platforms darwin name FDclone long_description {{File & Directory Maintenance Tool}} maintainers takanori@opendarwin.org categories sysutils version 2.08b revision 0
+variants {nojpnmes emacs lv less jless autosort} description {File & Directory Maintenance Tool} portdir sysutils/FDclone homepage http://hp.vector.co.jp/authors/VA012337/soft/fd/index.html epoch 0 platforms darwin name FDclone long_description {{File & Directory Maintenance Tool}} maintainers takanori@opendarwin.org categories sysutils version 2.08c revision 0
 RCng 324
 portdir sysutils/RCng description {NetBSD-based RCng system for starting daemons installed by DarwinPorts.} platforms {darwin freebsd} name RCng version 1.0 categories sysutils revision 0 epoch 0 maintainers landonf@opendarwin.org long_description {{NetBSD-based RCng system for starting daemons installed by DarwinPorts.}}
 agrep 325
