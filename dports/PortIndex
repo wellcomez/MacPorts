@@ -5675,7 +5675,7 @@ portdir sysutils/di platforms darwin description {disk information utility} name
 diffutils 436
 variants normal description {GNU diff utilities} portdir sysutils/diffutils homepage http://www.gnu.org/software/diffutils/ epoch 0 platforms {darwin sunos} name diffutils long_description {diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. Their features are a superset of the Unix features and they are significantly faster.} maintainers blb@opendarwin.org categories {sysutils textproc devel} version 2.8.1 revision 1
 disktype 392
-portdir sysutils/disktype platforms darwin description {Detects the content format of a disk or disk image} name disktype version 8 categories sysutils homepage http://disktype.sourceforge.net/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {Detects the content format of a disk or disk image by checking for signatures of file systems, partition tables, and boot codes.}
+portdir sysutils/disktype platforms darwin description {Detects the content format of a disk or disk image} name disktype version 9 categories sysutils homepage http://disktype.sourceforge.net/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {Detects the content format of a disk or disk image by checking for signatures of file systems, partition tables, and boot codes.}
 doodle 385
 description {Doodle is a tool to quickly search the documents on a computer.} portdir sysutils/doodle homepage http://ovmj.org/doodle/ epoch 0 platforms darwin depends_lib lib:libextractor.1:libextractor name doodle maintainers darwinports@opendarwin.org long_description {{Doodle is a tool to quickly search the documents on a computer.}} categories sysutils version 0.6.1 revision 0
 dpkg 350
