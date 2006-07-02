@@ -3691,7 +3691,7 @@ variants {gtk2 no_ssl no_pcre} portdir net/nmap description {Port scanning utili
 nrg 558
 variants {{darwin powerpc} {darwin intel} pingd_server} portdir net/nrg description {Network Resource Grapher} homepage http://nrg.hep.wisc.edu/ epoch 0 platforms darwin name nrg depends_lib port:rrdtool maintainers markd@opendarwin.org long_description {NRG is an RRDtool front-end tool to monitor traffic and load on network links or any other resource utilization source. It automatically creates and maintains web pages and RRDtool databases, while providing short and long-term graph web pages just like MRTG.} version 0.99.26 categories net revision 2
 nrpe 302
-portdir net/nrpe description {Nagios Remote Plugin Executor} platforms darwin name nrpe version 2.5.1 categories net homepage http://nagios.org revision 1 epoch 0 maintainers markd@opendarwin.org long_description {Allows local Nagios plugins to run on remote hosts and report back to a Nagios server.}
+portdir net/nrpe description {Nagios Remote Plugin Executor} platforms darwin name nrpe version 2.5.2 categories net homepage http://nagios.org revision 0 epoch 0 maintainers markd@opendarwin.org long_description {Allows local Nagios plugins to run on remote hosts and report back to a Nagios server.}
 ns-2 334
 depends_build {port:autoconf port:automake} description {The Network Simulator} portdir net/ns-2 homepage http://www.isi.edu/nsnam/ns/ epoch 0 depends_lib port:tclcl name ns-2 long_description {Ns is a discrete event simulator targeted at networking research} maintainers ben@opendarwin.org categories net version 20050728 revision 0
 nsca 477
