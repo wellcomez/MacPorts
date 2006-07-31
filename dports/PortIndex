@@ -1961,7 +1961,7 @@ description {xchat-gnome is a new frontend to X-Chat.} portdir gnome/xchat-gnome
 yelp 357
 description {Help browser for GNOME.} portdir gnome/yelp homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib {lib:libgtkhtml:libgtkhtml port:libxslt} name yelp maintainers gnome-darwinports@opendarwin.org long_description {Help browser for GNOME 2.0 which supports docbook documents, info and man.} categories gnome version 2.6.5 revision 0
 zenity 482
-description {zenity allows you to display dialog boxes from the commandline.} portdir gnome/zenity homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib {lib:libgnomeui-2:libgnomeui port:gnome-doc-utils} name zenity maintainers gnome-darwinports@opendarwin.org long_description {This is zenity - a rewrite of gdialog, the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.} categories gnome version 2.14.2 revision 0
+description {zenity allows you to display dialog boxes from the commandline.} portdir gnome/zenity homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib {lib:libgnomeui-2:libgnomeui port:gnome-doc-utils} name zenity maintainers gnome-darwinports@opendarwin.org long_description {This is zenity - a rewrite of gdialog, the GNOME port of dialog which allows you to display dialog boxes from the commandline and shell scripts.} categories gnome version 2.14.3 revision 0
 ArtResources 501
 portdir gnustep/ArtResources platforms darwin description {FreeFonts and Vera fonts for gnustep art backend.} name ArtResources version 0.1.2 revision 0 epoch 0 maintainers yves@opendarwin.org long_description {FreeFonts and Vera fonts and mknfonts for gnustep art backend. The Vera fonts are well-suited to on-screen use, and it is recommended that you use these as your default fonts. The FreeFonts are not as well-suited as the Vera fonts to on-screen use, but they contain a lot more characters.}
 Gorm 291
@@ -2460,130 +2460,134 @@ xom 476
 depends_build bin:ant:apache-ant portdir java/xom description {A tree-based API for XML processing} homepage http://www.xom.nu/ epoch 0 platforms darwin name xom depends_lib bin:java:kaffe maintainers jberry@opendarwin.org long_description {XOM is a new XML object model. It is an open source (LGPL), tree-based API for processing XML with Java that strives for correctness, simplicity, and performance, in that order.} version 1.0 categories {java devel textproc} revision 0
 kde 367
 variants {accessibility devel fun graphics all} description {KDE Desktop bundle} portdir kde/kde homepage http://www.kde.org/ epoch 0 depends_lib {port:kdelibs3 port:kdebase3 port:kdenetwork3 port:kdepim3 port:kdeutils3} name kde long_description {{KDE Desktop bundle}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.1 revision 0
-kde-i18n-bg 284
-portdir kde/kde-i18n-bg description {KDE bulgarian language files.} platforms darwin name kde-i18n-bg depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bulgarian language files.}}
-kde-i18n-bn 280
-portdir kde/kde-i18n-bn description {KDE bengali language files.} platforms darwin name kde-i18n-bn depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bengali language files.}}
-kde-i18n-br 278
-portdir kde/kde-i18n-br description {KDE breton language files.} platforms darwin name kde-i18n-br depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE breton language files.}}
-kde-i18n-bs 280
-portdir kde/kde-i18n-bs description {KDE bosnian language files.} platforms darwin name kde-i18n-bs depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bosnian language files.}}
-kde-i18n-ca 280
-portdir kde/kde-i18n-ca description {KDE catalan language files.} platforms darwin name kde-i18n-ca depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE catalan language files.}}
-kde-i18n-cs 276
-portdir kde/kde-i18n-cs description {KDE czech language files.} platforms darwin name kde-i18n-cs depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE czech language files.}}
-kde-i18n-cy 276
-portdir kde/kde-i18n-cy description {KDE welsh language files.} platforms darwin name kde-i18n-cy depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE welsh language files.}}
-kde-i18n-da 278
-portdir kde/kde-i18n-da description {KDE danish language files.} platforms darwin name kde-i18n-da depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE danish language files.}}
-kde-i18n-de 278
-portdir kde/kde-i18n-de description {KDE german language files.} platforms darwin name kde-i18n-de depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE german language files.}}
-kde-i18n-el 276
-portdir kde/kde-i18n-el description {KDE greek language files.} platforms darwin name kde-i18n-el depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE greek language files.}}
-kde-i18n-en_GB 292
-portdir kde/kde-i18n-en_GB description {KDE uk-english language files.} platforms darwin name kde-i18n-en_GB depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE uk-english language files.}}
-kde-i18n-eo 284
-portdir kde/kde-i18n-eo description {KDE esperanto language files.} platforms darwin name kde-i18n-eo depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE esperanto language files.}}
-kde-i18n-es 280
-portdir kde/kde-i18n-es description {KDE spanish language files.} platforms darwin name kde-i18n-es depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE spanish language files.}}
-kde-i18n-et 282
-portdir kde/kde-i18n-et description {KDE estonian language files.} platforms darwin name kde-i18n-et depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE estonian language files.}}
-kde-i18n-eu 278
-portdir kde/kde-i18n-eu description {KDE basque language files.} platforms darwin name kde-i18n-eu depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE basque language files.}}
-kde-i18n-fa 276
-portdir kde/kde-i18n-fa description {KDE farsi language files.} platforms darwin name kde-i18n-fa depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE farsi language files.}}
-kde-i18n-fi 280
-portdir kde/kde-i18n-fi description {KDE finnish language files.} platforms darwin name kde-i18n-fi depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE finnish language files.}}
-kde-i18n-fr 278
-portdir kde/kde-i18n-fr description {KDE french language files.} platforms darwin name kde-i18n-fr depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE french language files.}}
-kde-i18n-fy 280
-portdir kde/kde-i18n-fy description {KDE frisian language files.} platforms darwin name kde-i18n-fy depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE frisian language files.}}
-kde-i18n-ga 290
-portdir kde/kde-i18n-ga description {KDE irish-gaelic language files.} platforms darwin name kde-i18n-ga depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE irish-gaelic language files.}}
-kde-i18n-gl 282
-portdir kde/kde-i18n-gl description {KDE galician language files.} platforms darwin name kde-i18n-gl depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE galician language files.}}
-kde-i18n-he 278
-portdir kde/kde-i18n-he description {KDE hebrew language files.} platforms darwin name kde-i18n-he depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hebrew language files.}}
-kde-i18n-hi 276
-portdir kde/kde-i18n-hi description {KDE hindi language files.} platforms darwin name kde-i18n-hi depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hindi language files.}}
-kde-i18n-hr 282
-portdir kde/kde-i18n-hr description {KDE croatian language files.} platforms darwin name kde-i18n-hr depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE croatian language files.}}
+kde-i18n-afrikaans 298
+portdir kde/kde-i18n-afrikaans description {KDE afrikaans language files.} platforms darwin name kde-i18n-afrikaans depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE afrikaans language files.}}
+kde-i18n-arabic 286
+portdir kde/kde-i18n-arabic description {KDE arabic language files.} platforms darwin name kde-i18n-arabic depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE arabic language files.}}
+kde-i18n-azerbaijani 306
+portdir kde/kde-i18n-azerbaijani description {KDE azerbaijani language files.} platforms darwin name kde-i18n-azerbaijani depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE azerbaijani language files.}}
+kde-i18n-basque 286
+portdir kde/kde-i18n-basque description {KDE basque language files.} platforms darwin name kde-i18n-basque depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE basque language files.}}
+kde-i18n-bengali 290
+portdir kde/kde-i18n-bengali description {KDE bengali language files.} platforms darwin name kde-i18n-bengali depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bengali language files.}}
+kde-i18n-bosnian 290
+portdir kde/kde-i18n-bosnian description {KDE bosnian language files.} platforms darwin name kde-i18n-bosnian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bosnian language files.}}
+kde-i18n-brazilian-portugese 338
+portdir kde/kde-i18n-brazilian-portugese description {KDE brazilian-portugese language files.} platforms darwin name kde-i18n-brazilian-portugese depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE brazilian-portugese language files.}}
+kde-i18n-breton 286
+portdir kde/kde-i18n-breton description {KDE breton language files.} platforms darwin name kde-i18n-breton depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE breton language files.}}
+kde-i18n-bulgarian 298
+portdir kde/kde-i18n-bulgarian description {KDE bulgarian language files.} platforms darwin name kde-i18n-bulgarian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE bulgarian language files.}}
+kde-i18n-catalan 290
+portdir kde/kde-i18n-catalan description {KDE catalan language files.} platforms darwin name kde-i18n-catalan depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE catalan language files.}}
+kde-i18n-chinese 290
+portdir kde/kde-i18n-chinese description {KDE chinese language files.} platforms darwin name kde-i18n-chinese depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE chinese language files.}}
+kde-i18n-chinese-simplified 334
+portdir kde/kde-i18n-chinese-simplified description {KDE chinese-simplified language files.} platforms darwin name kde-i18n-chinese-simplified depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE chinese-simplified language files.}}
+kde-i18n-croatian 294
+portdir kde/kde-i18n-croatian description {KDE croatian language files.} platforms darwin name kde-i18n-croatian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE croatian language files.}}
+kde-i18n-czech 282
+portdir kde/kde-i18n-czech description {KDE czech language files.} platforms darwin name kde-i18n-czech depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE czech language files.}}
+kde-i18n-danish 286
+portdir kde/kde-i18n-danish description {KDE danish language files.} platforms darwin name kde-i18n-danish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE danish language files.}}
+kde-i18n-dutch 282
+portdir kde/kde-i18n-dutch description {KDE dutch language files.} platforms darwin name kde-i18n-dutch depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE dutch language files.}}
+kde-i18n-esperanto 298
+portdir kde/kde-i18n-esperanto description {KDE esperanto language files.} platforms darwin name kde-i18n-esperanto depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE esperanto language files.}}
+kde-i18n-estonian 294
+portdir kde/kde-i18n-estonian description {KDE estonian language files.} platforms darwin name kde-i18n-estonian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE estonian language files.}}
+kde-i18n-farsi 282
+portdir kde/kde-i18n-farsi description {KDE farsi language files.} platforms darwin name kde-i18n-farsi depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE farsi language files.}}
+kde-i18n-finnish 290
+portdir kde/kde-i18n-finnish description {KDE finnish language files.} platforms darwin name kde-i18n-finnish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE finnish language files.}}
+kde-i18n-french 286
+portdir kde/kde-i18n-french description {KDE french language files.} platforms darwin name kde-i18n-french depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE french language files.}}
+kde-i18n-frisian 290
+portdir kde/kde-i18n-frisian description {KDE frisian language files.} platforms darwin name kde-i18n-frisian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE frisian language files.}}
+kde-i18n-galician 294
+portdir kde/kde-i18n-galician description {KDE galician language files.} platforms darwin name kde-i18n-galician depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE galician language files.}}
+kde-i18n-german 286
+portdir kde/kde-i18n-german description {KDE german language files.} platforms darwin name kde-i18n-german depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE german language files.}}
+kde-i18n-greek 282
+portdir kde/kde-i18n-greek description {KDE greek language files.} platforms darwin name kde-i18n-greek depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE greek language files.}}
+kde-i18n-hebrew 286
+portdir kde/kde-i18n-hebrew description {KDE hebrew language files.} platforms darwin name kde-i18n-hebrew depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hebrew language files.}}
+kde-i18n-hindi 282
+portdir kde/kde-i18n-hindi description {KDE hindi language files.} platforms darwin name kde-i18n-hindi depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hindi language files.}}
 kde-i18n-hsb 294
 portdir kde/kde-i18n-hsb description {KDE upper-sorbian language files.} platforms darwin name kde-i18n-hsb depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE upper-sorbian language files.}}
-kde-i18n-hu 284
-portdir kde/kde-i18n-hu description {KDE hungarian language files.} platforms darwin name kde-i18n-hu depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hungarian language files.}}
-kde-i18n-is 284
-portdir kde/kde-i18n-is description {KDE icelandic language files.} platforms darwin name kde-i18n-is depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE icelandic language files.}}
-kde-i18n-it 280
-portdir kde/kde-i18n-it description {KDE italian language files.} platforms darwin name kde-i18n-it depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE italian language files.}}
-kde-i18n-ja 282
-portdir kde/kde-i18n-ja description {KDE japanese language files.} platforms darwin name kde-i18n-ja depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE japanese language files.}}
-kde-i18n-km 276
-portdir kde/kde-i18n-km description {KDE khmer language files.} platforms darwin name kde-i18n-km depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE khmer language files.}}
-kde-i18n-ko 278
-portdir kde/kde-i18n-ko description {KDE korean language files.} platforms darwin name kde-i18n-ko depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE korean language files.}}
-kde-i18n-lt 286
-portdir kde/kde-i18n-lt description {KDE lithuanian language files.} platforms darwin name kde-i18n-lt depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE lithuanian language files.}}
-kde-i18n-lv 280
-portdir kde/kde-i18n-lv description {KDE latvian language files.} platforms darwin name kde-i18n-lv depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE latvian language files.}}
-kde-i18n-mk 286
-portdir kde/kde-i18n-mk description {KDE macedonian language files.} platforms darwin name kde-i18n-mk depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE macedonian language files.}}
-kde-i18n-mn 284
-portdir kde/kde-i18n-mn description {KDE mongolian language files.} platforms darwin name kde-i18n-mn depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE mongolian language files.}}
-kde-i18n-ms 276
-portdir kde/kde-i18n-ms description {KDE malay language files.} platforms darwin name kde-i18n-ms depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE malay language files.}}
-kde-i18n-nb 300
-portdir kde/kde-i18n-nb description {KDE norwegian-bokmaal language files.} platforms darwin name kde-i18n-nb depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE norwegian-bokmaal language files.}}
-kde-i18n-nds 286
-portdir kde/kde-i18n-nds description {KDE low-saxon language files.} platforms darwin name kde-i18n-nds depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE low-saxon language files.}}
-kde-i18n-nl 276
-portdir kde/kde-i18n-nl description {KDE dutch language files.} platforms darwin name kde-i18n-nl depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE dutch language files.}}
-kde-i18n-nn 300
-portdir kde/kde-i18n-nn description {KDE norwegian-nynorsk language files.} platforms darwin name kde-i18n-nn depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE norwegian-nynorsk language files.}}
-kde-i18n-pa 280
-portdir kde/kde-i18n-pa description {KDE punjabi language files.} platforms darwin name kde-i18n-pa depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE punjabi language files.}}
-kde-i18n-pl 278
-portdir kde/kde-i18n-pl description {KDE polish language files.} platforms darwin name kde-i18n-pl depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE polish language files.}}
-kde-i18n-pt 284
-portdir kde/kde-i18n-pt description {KDE portugese language files.} platforms darwin name kde-i18n-pt depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE portugese language files.}}
-kde-i18n-pt_BR 310
-portdir kde/kde-i18n-pt_BR description {KDE brazilian-portugese language files.} platforms darwin name kde-i18n-pt_BR depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE brazilian-portugese language files.}}
-kde-i18n-ro 282
-portdir kde/kde-i18n-ro description {KDE romanian language files.} platforms darwin name kde-i18n-ro depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE romanian language files.}}
-kde-i18n-ru 280
-portdir kde/kde-i18n-ru description {KDE russian language files.} platforms darwin name kde-i18n-ru depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE russian language files.}}
-kde-i18n-rw 288
-portdir kde/kde-i18n-rw description {KDE kinyarwanda language files.} platforms darwin name kde-i18n-rw depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE kinyarwanda language files.}}
-kde-i18n-se 292
-portdir kde/kde-i18n-se description {KDE northern-sami language files.} platforms darwin name kde-i18n-se depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE northern-sami language files.}}
+kde-i18n-hungarian 298
+portdir kde/kde-i18n-hungarian description {KDE hungarian language files.} platforms darwin name kde-i18n-hungarian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE hungarian language files.}}
+kde-i18n-icelandic 298
+portdir kde/kde-i18n-icelandic description {KDE icelandic language files.} platforms darwin name kde-i18n-icelandic depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE icelandic language files.}}
+kde-i18n-irish-gaelic 310
+portdir kde/kde-i18n-irish-gaelic description {KDE irish-gaelic language files.} platforms darwin name kde-i18n-irish-gaelic depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE irish-gaelic language files.}}
+kde-i18n-italian 290
+portdir kde/kde-i18n-italian description {KDE italian language files.} platforms darwin name kde-i18n-italian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE italian language files.}}
+kde-i18n-japanese 294
+portdir kde/kde-i18n-japanese description {KDE japanese language files.} platforms darwin name kde-i18n-japanese depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE japanese language files.}}
+kde-i18n-khmer 282
+portdir kde/kde-i18n-khmer description {KDE khmer language files.} platforms darwin name kde-i18n-khmer depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE khmer language files.}}
+kde-i18n-kinyarwanda 306
+portdir kde/kde-i18n-kinyarwanda description {KDE kinyarwanda language files.} platforms darwin name kde-i18n-kinyarwanda depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE kinyarwanda language files.}}
+kde-i18n-korean 286
+portdir kde/kde-i18n-korean description {KDE korean language files.} platforms darwin name kde-i18n-korean depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE korean language files.}}
+kde-i18n-latvian 290
+portdir kde/kde-i18n-latvian description {KDE latvian language files.} platforms darwin name kde-i18n-latvian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE latvian language files.}}
+kde-i18n-lithuanian 302
+portdir kde/kde-i18n-lithuanian description {KDE lithuanian language files.} platforms darwin name kde-i18n-lithuanian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE lithuanian language files.}}
+kde-i18n-low-saxon 298
+portdir kde/kde-i18n-low-saxon description {KDE low-saxon language files.} platforms darwin name kde-i18n-low-saxon depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE low-saxon language files.}}
+kde-i18n-macedonian 302
+portdir kde/kde-i18n-macedonian description {KDE macedonian language files.} platforms darwin name kde-i18n-macedonian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE macedonian language files.}}
+kde-i18n-malay 282
+portdir kde/kde-i18n-malay description {KDE malay language files.} platforms darwin name kde-i18n-malay depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE malay language files.}}
+kde-i18n-mongolian 298
+portdir kde/kde-i18n-mongolian description {KDE mongolian language files.} platforms darwin name kde-i18n-mongolian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE mongolian language files.}}
+kde-i18n-northern-sami 314
+portdir kde/kde-i18n-northern-sami description {KDE northern-sami language files.} platforms darwin name kde-i18n-northern-sami depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE northern-sami language files.}}
+kde-i18n-norwegian-bokmaal 330
+portdir kde/kde-i18n-norwegian-bokmaal description {KDE norwegian-bokmaal language files.} platforms darwin name kde-i18n-norwegian-bokmaal depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE norwegian-bokmaal language files.}}
+kde-i18n-norwegian-nynorsk 330
+portdir kde/kde-i18n-norwegian-nynorsk description {KDE norwegian-nynorsk language files.} platforms darwin name kde-i18n-norwegian-nynorsk depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE norwegian-nynorsk language files.}}
+kde-i18n-polish 286
+portdir kde/kde-i18n-polish description {KDE polish language files.} platforms darwin name kde-i18n-polish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE polish language files.}}
+kde-i18n-portugese 298
+portdir kde/kde-i18n-portugese description {KDE portugese language files.} platforms darwin name kde-i18n-portugese depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE portugese language files.}}
+kde-i18n-punjabi 290
+portdir kde/kde-i18n-punjabi description {KDE punjabi language files.} platforms darwin name kde-i18n-punjabi depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE punjabi language files.}}
+kde-i18n-romanian 294
+portdir kde/kde-i18n-romanian description {KDE romanian language files.} platforms darwin name kde-i18n-romanian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE romanian language files.}}
+kde-i18n-russian 290
+portdir kde/kde-i18n-russian description {KDE russian language files.} platforms darwin name kde-i18n-russian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE russian language files.}}
+kde-i18n-serbian 290
+portdir kde/kde-i18n-serbian description {KDE serbian language files.} platforms darwin name kde-i18n-serbian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE serbian language files.}}
 kde-i18n-serbian-latin-script 342
-portdir kde/kde-i18n-serbian-latin-script description {KDE serbian-latin-script language files.} platforms darwin name kde-i18n-serbian-latin-script depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE serbian-latin-script language files.}}
-kde-i18n-sk 278
-portdir kde/kde-i18n-sk description {KDE slovak language files.} platforms darwin name kde-i18n-sk depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE slovak language files.}}
-kde-i18n-sl 284
-portdir kde/kde-i18n-sl description {KDE slovenian language files.} platforms darwin name kde-i18n-sl depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE slovenian language files.}}
-kde-i18n-sr 280
-portdir kde/kde-i18n-sr description {KDE serbian language files.} platforms darwin name kde-i18n-sr depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE serbian language files.}}
-kde-i18n-sr@Latn 316
-portdir kde/kde-i18n-sr@Latn description {KDE serbian-latin-script language files.} platforms darwin name kde-i18n-sr@Latn depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE serbian-latin-script language files.}}
-kde-i18n-ss 276
-portdir kde/kde-i18n-ss description {KDE swati language files.} platforms darwin name kde-i18n-ss depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE swati language files.}}
-kde-i18n-sv 280
-portdir kde/kde-i18n-sv description {KDE swedish language files.} platforms darwin name kde-i18n-sv depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE swedish language files.}}
-kde-i18n-ta 276
-portdir kde/kde-i18n-ta description {KDE tamil language files.} platforms darwin name kde-i18n-ta depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE tamil language files.}}
-kde-i18n-tg 276
-portdir kde/kde-i18n-tg description {KDE tajik language files.} platforms darwin name kde-i18n-tg depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE tajik language files.}}
-kde-i18n-tr 280
-portdir kde/kde-i18n-tr description {KDE turkish language files.} platforms darwin name kde-i18n-tr depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE turkish language files.}}
-kde-i18n-uk 282
-portdir kde/kde-i18n-uk description {KDE ukranian language files.} platforms darwin name kde-i18n-uk depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE ukranian language files.}}
-kde-i18n-uz 276
-portdir kde/kde-i18n-uz description {KDE uzbek language files.} platforms darwin name kde-i18n-uz depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE uzbek language files.}}
-kde-i18n-zh_CN 308
-portdir kde/kde-i18n-zh_CN description {KDE chinese-simplified language files.} platforms darwin name kde-i18n-zh_CN depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE chinese-simplified language files.}}
-kde-i18n-zh_TW 286
-portdir kde/kde-i18n-zh_TW description {KDE chinese language files.} platforms darwin name kde-i18n-zh_TW depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE chinese language files.}}
+portdir kde/kde-i18n-serbian-latin-script description {KDE serbian-latin-script language files.} platforms darwin name kde-i18n-serbian-latin-script depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE serbian-latin-script language files.}}
+kde-i18n-slovak 286
+portdir kde/kde-i18n-slovak description {KDE slovak language files.} platforms darwin name kde-i18n-slovak depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE slovak language files.}}
+kde-i18n-slovenian 298
+portdir kde/kde-i18n-slovenian description {KDE slovenian language files.} platforms darwin name kde-i18n-slovenian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE slovenian language files.}}
+kde-i18n-spanish 290
+portdir kde/kde-i18n-spanish description {KDE spanish language files.} platforms darwin name kde-i18n-spanish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE spanish language files.}}
+kde-i18n-swati 282
+portdir kde/kde-i18n-swati description {KDE swati language files.} platforms darwin name kde-i18n-swati depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE swati language files.}}
+kde-i18n-swedish 290
+portdir kde/kde-i18n-swedish description {KDE swedish language files.} platforms darwin name kde-i18n-swedish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE swedish language files.}}
+kde-i18n-tajik 282
+portdir kde/kde-i18n-tajik description {KDE tajik language files.} platforms darwin name kde-i18n-tajik depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE tajik language files.}}
+kde-i18n-tamil 282
+portdir kde/kde-i18n-tamil description {KDE tamil language files.} platforms darwin name kde-i18n-tamil depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE tamil language files.}}
+kde-i18n-turkish 290
+portdir kde/kde-i18n-turkish description {KDE turkish language files.} platforms darwin name kde-i18n-turkish depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE turkish language files.}}
+kde-i18n-uk-english 302
+portdir kde/kde-i18n-uk-english description {KDE uk-english language files.} platforms darwin name kde-i18n-uk-english depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE uk-english language files.}}
+kde-i18n-ukranian 294
+portdir kde/kde-i18n-ukranian description {KDE ukranian language files.} platforms darwin name kde-i18n-ukranian depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE ukranian language files.}}
+kde-i18n-uzbek 282
+portdir kde/kde-i18n-uzbek description {KDE uzbek language files.} platforms darwin name kde-i18n-uzbek depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE uzbek language files.}}
+kde-i18n-welsh 282
+portdir kde/kde-i18n-welsh description {KDE welsh language files.} platforms darwin name kde-i18n-welsh depends_lib port:kdelibs3 version 3.5.1 categories kde revision 0 epoch 0 maintainers {ben@opendarwin.org takanori@opendarwin.org} long_description {{KDE welsh language files.}}
 kdeaccessibility3 327
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE accessibility tools. NB No KDE sound support.} portdir kde/kdeaccessibility3 epoch 0 platforms darwin depends_lib port:kdebase3 name kdeaccessibility3 maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.1 revision 1
 kdeaddons3 342
@@ -3260,8 +3264,8 @@ octave 793
 variants {darwin_8_powerpc darwin_8_i386 test} depends_build {bin:texinfo:texinfo bin:tex:teTeX} portdir math/octave description {a Matlab-like environment for numerical analysis} homepage http://www.octave.org depends_run {bin:gnuplot:gnuplot port:gcc34} epoch 0 platforms darwin name octave depends_lib {lib:libreadline.5:readline port:hdf5 port:fftw-3} maintainers {persquare@mac.com persquare@users.sourceforge.net} long_description {Octave provides a convenient command line interface for solving linear and nonlinear problems numerically, using a language that is mostly compatible with Matlab. It is easily extensible and customizable via user-defined functions or using dynamically loaded modules written in e.g. C++, C or Fortran.} categories {math science} version 2.1.72 revision 5
 oleo 734
 variants x11 description {Lightweight spreadsheet program} portdir math/oleo homepage http://www.gnu.org/software/oleo/oleo.html epoch 0 platforms darwin name oleo long_description {GNU Oleo is a spreadsheet program with the following features: Works on character terminals and under X Macro language (still a bit untidy in places, but it works) Charts generated from spreadsheet data (interface is not yet stable, but the capability is in there) Sizeable library of expressions (doesn't currently include statistical regressions) File format conversions (support of this is still pretty {primitive;} don't plan on importing E*cel files anytime soon)} maintainers darwinports@opendarwin.org categories math version 1.99.16 revision 1
-pari 403
-portdir math/pari description {PARI/GP computer algebra system} name pari version 2.2.12 categories math homepage http://pari.math.u-bordeaux.fr/ depends_build bin:tex:teTeX revision 0 epoch 0 maintainers mvitocruz@gmail.com long_description {PARI/GP is a widely used computer algebra system designed for fast computations in number theory (factorizations, algebraic number theory, elliptic curves...)}
+pari 424
+portdir math/pari description {PARI/GP computer algebra system} name pari version 2.3.0 categories math homepage http://pari.math.u-bordeaux.fr/ depends_build {bin:tex:teTeX port:readline} revision 0 epoch 0 maintainers vincent-opdarw@vinc17.org long_description {PARI/GP is a widely used computer algebra system designed for fast computations in number theory (factorizations, algebraic number theory, elliptic curves...)}
 pdc 612
 description {programmers desktop caclulator in bc style} portdir math/pdc homepage http://www.redfelineninja.dsl.pipex.com/software/all.html#pdc epoch 0 platforms darwin depends_lib port:readline name pdc long_description {PDC is a desktop caclulator in the bc style with features designed for programmers. It does not support floating point maths but does provide all the C operators (logical, bitwise, shifts etc.) and implements ISO C operator precedence. Additionally functions are available to perform population counts and byte swaps.} maintainers mww@opendarwin.org categories math version 0.9 revision 0
 ploticus 702
@@ -4313,7 +4317,7 @@ description {modules for parsing (and creating!) MIME entities} portdir perl/p5-
 p5-mime-types 332
 description {Definition of MIME types} portdir perl/p5-mime-types homepage http://search.cpan.org/dist/MIME-Types/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8}} name p5-mime-types long_description {{Definition of MIME types}} maintainers darwinports@opendarwin.org categories perl version 1.16 revision 0
 p5-module-build 1036
-description {Build and install perl modules (MakeMaker replacement)} portdir perl/p5-module-build homepage http://search.cpan.org/dist/Module-Build/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8} port:p5-yaml port:p5-archive-tar port:p5-version} name p5-module-build long_description {Module::Build is a system for building, testing, and installing Perl modules. It is meant to be a replacement for ExtUtils::MakeMaker. Developers may alter the behavior of the module through subclassing in a much more straightforward way than with MakeMaker. It also does not require a make on your system - most of the Module::Build code is pure-perl and written in a very cross-platform way. In fact, you don't even need a shell, so even platforms like MacOS (traditional) can use it fairly easily. Its only prerequisites are modules that are included with perl 5.6.0, and it works fine on perl 5.005 if you can install a few additional modules.} maintainers narf_tm@opendarwin.org categories perl version 0.2804 revision 0
+description {Build and install perl modules (MakeMaker replacement)} portdir perl/p5-module-build homepage http://search.cpan.org/dist/Module-Build/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8} port:p5-yaml port:p5-archive-tar port:p5-version} name p5-module-build long_description {Module::Build is a system for building, testing, and installing Perl modules. It is meant to be a replacement for ExtUtils::MakeMaker. Developers may alter the behavior of the module through subclassing in a much more straightforward way than with MakeMaker. It also does not require a make on your system - most of the Module::Build code is pure-perl and written in a very cross-platform way. In fact, you don't even need a shell, so even platforms like MacOS (traditional) can use it fairly easily. Its only prerequisites are modules that are included with perl 5.6.0, and it works fine on perl 5.005 if you can install a few additional modules.} maintainers narf_tm@opendarwin.org categories perl version 0.2805 revision 0
 p5-net-dns 452
 description {Perl interface to the DNS resolver} portdir perl/p5-net-dns homepage http://search.cpan.org/dist/Net-DNS/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8} port:p5-digest-hmac} name p5-net-dns long_description {Net::DNS is a DNS resolver implemented in Perl. It allows the programmer to perform nearly any type of DNS query from a Perl script.} maintainers yves@opendarwin.org categories perl version 0.57 revision 0
 p5-net-ident 516
@@ -5188,12 +5192,18 @@ rdiff-backup-devel 1165
 description {backs up one directory to another, possibly over a network} portdir python/rdiff-backup-devel homepage http://www.nongnu.org/rdiff-backup/ epoch 0 platforms darwin name rdiff-backup-devel depends_lib {{path:${prefix}/bin/python2.4:python24} lib:librsync:librsync} long_description {rdiff-backup backs up one directory to another, possibly over a network. The target directory ends up a copy of the source directory, but extra reverse diffs are stored in a special subdirectory of that target directory, so you can still recover files lost some time ago. The idea is to combine the best features of a mirror and an incremental backup. rdiff-backup also preserves subdirectories, hard links, dev files, permissions, uid/gid ownership, and modification times. Also, rdiff-backup can operate in a bandwidth efficient manner over a pipe, like rsync. Thus you can use rdiff-backup and ssh to securely back a hard drive up to a remote location, and only the differences will be transmitted. Finally, rdiff-backup is easy to use and settings have sensical defaults.} maintainers arsptr@optusnet.com.au version 1.1.5 categories {python net sysutils} revision 0
 rb-acl 319
 description {Simple Access Control List} portdir ruby/rb-acl homepage http://www2a.biglobe.ne.jp/~seki/ruby/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-acl long_description {{Simple Access Control List}} maintainers darwinports@opendarwin.org categories ruby version 1.0.1 revision 1
+rb-actionmailer 474
+portdir ruby/rb-actionmailer description {Simplifies the creation of mail service classes.} name rb-actionmailer depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems port:rb-actionpack} version 1.2.3 categories {ruby devel} homepage http://rubyforge.org/projects/actionmailer revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Simplifies the creation of mail service classes that uses Action View (from Action Pack) to render the body templates.}
+rb-actionpack 561
+portdir ruby/rb-actionpack description {Eases web-request routing, handling, and response.} name rb-actionpack depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems port:rb-activesupport} version 1.12.3 categories {ruby devel} homepage http://rubyforge.org/projects/actionpack revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Eases web-request routing, handling, and response as a half-way front, half-way page controller. Implemented with specific emphasis on enabling easy unit/integration testing that doesn't require a browser.}
+rb-actionwebservice 576
+portdir ruby/rb-actionwebservice description {Simple support for publishing Web Service APIs for Rails applications.} name rb-actionwebservice depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems port:rb-activesupport port:rb-actionpack port:rb-activerecord} version 1.1.4 categories {ruby devel} homepage http://rubyforge.org/projects/actionwebservice revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Simple support for publishing Web Service APIs for Rails applications. Supports SOAP and XML-RPC, as well as generating WSDL for SOAP bindings.}
 rb-activeldap 665
 description {Object oriented inteface to Ruby/LDAP} portdir ruby/rb-activeldap homepage http://rubyforge.org/projects/ruby-activeldap/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-ldap port:rb-log4r} name rb-activeldap long_description {Ruby/ActiveLDAP provides an object oriented interface to LDAP. This library was inspired by ActiveRecord (both the concept and the library). It maps LDAP entries to Ruby objects with LDAP attribute accessors exposed as methods dynamically assigned based on your LDAP schema and each object's objectClasses.} maintainers tristan@opendarwin.org categories {ruby databases} version 0.5.3 revision 0
-rb-activerecord 590
-portdir ruby/rb-activerecord description {Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM.} name rb-activerecord depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-activesupport} version 1.13.2 categories {ruby devel} homepage http://rubyforge.org/projects/activerecord revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM. It ties database tables and classes together for business objects, like Customer or Subscription, that can find, save, and destroy themselves without resorting to manual SQL.}
-rb-activesupport 442
-portdir ruby/rb-activesupport description {Ruby utility classes and extension to the standard library.} name rb-activesupport depends_lib {{path:${prefix}/bin/ruby:ruby}} version 1.2.5 categories {ruby devel} homepage http://rubyforge.org/projects/activesupport revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Utility classes and extension to the standard library that were required by Rails, but found of general use.}
+rb-activerecord 607
+portdir ruby/rb-activerecord description {Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM.} name rb-activerecord depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems port:rb-activesupport} version 1.14.3 categories {ruby devel} homepage http://rubyforge.org/projects/activerecord revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM. It ties database tables and classes together for business objects, like Customer or Subscription, that can find, save, and destroy themselves without resorting to manual SQL.}
+rb-activesupport 459
+portdir ruby/rb-activesupport description {Ruby utility classes and extension to the standard library.} name rb-activesupport depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems} version 1.3.1 categories {ruby devel} homepage http://rubyforge.org/projects/activesupport revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Utility classes and extension to the standard library that were required by Rails, but found of general use.}
 rb-aes 448
 description {An AES encryption algorithm for ruby, using the AESCrypt library} portdir ruby/rb-aes homepage http://aescrypt.sourceforge.net/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-aes long_description {An all-C (for performance) implementation of the AES encryption algorithm for Ruby, implementing ECB and CFB-128 modes} maintainers tristan@opendarwin.org categories {ruby security} version 0.1.0 revision 0
 rb-algorithm-diff 646
@@ -5356,8 +5366,10 @@ rb-product 350
 description {Direct product class for enumerables} portdir ruby/rb-product homepage http://www.notwork.org/~gotoken/ruby/p/product/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-product long_description {Direct product class for enumerables} maintainers tristan@opendarwin.org categories ruby version 1.0.0 revision 0
 rb-purple 520
 description {Purple implements a main memory database for ruby objects.} portdir ruby/rb-purple homepage http://purple.rubyforge.org epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-purple long_description {In a way, Purple works similarly to Marshal/PStore. Just that you can retrieve any object, not just the whole thing. Also you can make changes to just one object and save just that object again.} maintainers tristan@opendarwin.org categories {ruby databases} version 0.5.1 revision 0
-rb-rake 901
-description {Ruby make-like utility using standard Ruby syntax} portdir ruby/rb-rake homepage http://rubyforge.org/projects/rake epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-rake long_description {This package contains Rake, a simple ruby build program with capabilities similar to make. Rake has the following features: * Rakefiles (rake's version of Makefiles) are completely defined in standard Ruby syntax. No XML files to edit. No quirky Makefile syntax to worry about (is that a tab or a space?) * Users can specify tasks with prerequisites. * Rake supports rule patterns to sythesize implicit tasks. * Rake is lightweight. It can be distributed with other projects as a single file. Projects that depend upon rake do not require that rake be installed on target systems.} maintainers darwinports@opendarwin.org categories {ruby devel} version 0.4.15 revision 1
+rb-rails 681
+portdir ruby/rb-rails description {Ruby web-application framework for the MVC pattern.} name rb-rails depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems port:rb-rake port:rb-activesupport port:rb-actionpack port:rb-actionwebservice port:rb-actionmailer port:rb-activerecord} version 1.1.4 categories {ruby www devel} homepage http://rubyforge.org/projects/rails revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {Rails is a web-application framework for the MVC pattern that includes both a template engine, controller framework, and object-relational mapping package. Everything needed to develop web-apps that can run on CGI, FastCGI, and mod_ruby.}
+rb-rake 894
+portdir ruby/rb-rake description {Ruby make-like utility using standard Ruby syntax} name rb-rake depends_lib {{path:${prefix}/bin/ruby:ruby} port:rb-rubygems} version 0.7.1 categories {ruby devel} homepage http://rubyforge.org/projects/rake revision 0 epoch 0 maintainers rcavanaugh@gmail.com long_description {This package contains Rake, a simple ruby build program with capabilities similar to make. Rake has the following features: * Rakefiles (rake's version of Makefiles) are completely defined in standard Ruby syntax. No XML files to edit. No quirky Makefile syntax to worry about (is that a tab or a space?) * Users can specify tasks with prerequisites. * Rake supports rule patterns to sythesize implicit tasks. * Rake is lightweight. It can be distributed with other projects as a single file. Projects that depend upon rake do not require that rake be installed on target systems.}
 rb-rbtree 401
 description {Red-black tree for ruby.} portdir ruby/rb-rbtree homepage http://www.geocities.co.jp/SiliconValley-PaloAlto/3388/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-rbtree long_description {Ruby/RBTree is a implementation of Red-Black Tree for Ruby. It's something like ordered Hash.} maintainers tristan@opendarwin.org categories ruby version 0.1.3 revision 0
 rb-redcloth 470
@@ -5383,7 +5395,7 @@ portdir ruby/rb-rss description {RSS Parser in Ruby} name rb-rss depends_lib {{p
 rb-rubycon 725
 description {Toolkit for building concept processing and reasoning systems.} portdir ruby/rb-rubycon homepage http://www.geocities.com/ben_bongalon/rubycon/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-rubycon long_description {RubyCon is an open-source, rapid development toolkit for building concept processing and other intelligent reasoning systems. RubyCon builds upon the work of the ConceptNet project (http://web.media.mit.edu/~hugo/conceptnet/), implementing ConceptNets semantic network of 280,000+ assertions and graph-processing algorithms into a set of reusable objects in the Ruby programming language.} maintainers tristan@opendarwin.org categories ruby version 0.8 revision 0
 rb-rubygems 398
-description {a package management framework for Ruby} portdir ruby/rb-rubygems homepage http://rubyforge.org/projects/rubygems epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-rubygems long_description {RubyGems is the Ruby standard for publishing and managing third party libraries.} maintainers yuhei@pop21.odn.ne.jp categories {ruby devel} version 0.8.11 revision 0
+description {a package management framework for Ruby} portdir ruby/rb-rubygems homepage http://rubyforge.org/projects/rubygems epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-rubygems long_description {RubyGems is the Ruby standard for publishing and managing third party libraries.} maintainers yuhei@pop21.odn.ne.jp categories {ruby devel} version 0.8.11 revision 1
 rb-runt 537
 description {Ruby API for scheduling recurring/occuring events} portdir ruby/rb-runt homepage http://rubyforge.org/projects/runt epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/ruby:ruby}} name rb-runt long_description {Runt provides a simple API for scheduling recurring/occuring events through a hackneyed implementation of otherwise excellent temporal patterns created by Martin Fowler. It is a Ruby version of ChronicJ (http://chronicj.org).} maintainers darwinports@opendarwin.org categories ruby version 0.2.0 revision 0
 rb-sds 545
@@ -5730,8 +5742,8 @@ daemon 539
 portdir sysutils/daemon platforms darwin description {Daemon turns other process into daemons} name daemon version 0.6.3 categories sysutils homepage http://libslack.org/daemon/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {Daemon turns other process into daemons. There are many tasks that need to be performed to correctly set up a daemon process. This can be tedious. Daemon performs these tasks for other processes. This is useful for writing daemons in languages other than C, C++ or Perl (e.g. /bin/sh, Java).}
 daemontools 462
 portdir sysutils/daemontools platforms darwin description {collection of tools for managing UNIX services} name daemontools version 0.76 categories sysutils homepage http://cr.yp.to/daemontools.html revision 1 epoch 0 maintainers mww@opendarwin.org long_description {daemontools is an extensive collection of tools for managing UNIX services. It includes tools for starting, restarting, stopping, monitoring and logging any services that you might wish to run.}
-DarwinPorts 479
-variants {darwin_7 darwin_8 darwin_8_powerpc darwin_8_i386} description {The DarwinPorts Infrastructure} portdir sysutils/darwinports homepage http://www.darwinports.org epoch 0 platforms {darwin freebsd} name DarwinPorts long_description {DarwinPorts provides the infrastructure that allows easy installation and management of freely available software on Mac OS X 10.3 (Darwin 7) or newer systems.} maintainers portmgr@opendarwin.org categories sysutils version 1.3 revision 0
+DarwinPorts 481
+variants {darwin_7 darwin_8 darwin_8_powerpc darwin_8_i386} description {The DarwinPorts Infrastructure} portdir sysutils/darwinports homepage http://www.darwinports.org epoch 0 platforms {darwin freebsd} name DarwinPorts long_description {DarwinPorts provides the infrastructure that allows easy installation and management of freely available software on Mac OS X 10.3 (Darwin 7) or newer systems.} maintainers portmgr@opendarwin.org categories sysutils version 1.3.1 revision 0
 dcfldd 280
 portdir sysutils/dcfldd description {Enhanced dd with md5 checksums} platforms darwin name dcfldd version 1.3.4 categories sysutils homepage http://dcfldd.sourceforge.net/ revision 0 epoch 0 maintainers opendarwin.org@darkart.com long_description {Enhanced dd with md5 checksums}
 dd_rescue 307
