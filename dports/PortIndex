@@ -752,8 +752,8 @@ cups-headers 215
 portdir devel/cups-headers description {temporary port providing cups headers for jaguar} platforms darwin name cups-headers version 1.1.15 categories devel revision 0 epoch 0 maintainers darwinports@opendarwin.org
 curlhandle 405
 variants darwin_8 portdir devel/curlhandle description {CURLHandle is a framework wrapper around a CURL} homepage http://curlhandle.sourceforge.net/ epoch 0 platforms darwin name curlhandle depends_lib {lib:libz.1:zlib lib:libssl.0.9:openssl port:curl} maintainers ben@opendarwin.org long_description {{CURLHandle is a framework wrapper around a CURL}} version 1.9 categories {devel framework} revision 0
-cvs 449
-variants {gssapi proxy} description {Concurrent Versions System} portdir devel/cvs-port homepage https://www.cvshome.org/ epoch 0 platforms darwin name cvs maintainers yeled@opendarwin.org long_description {CVS is the Concurrent Versions System, the dominant open-source network-transparent version control system. CVS is useful for everyone from individual developers to large, distributed teams:} categories {devel net} version 1.11.22 revision 0
+cvs 451
+variants {gssapi proxy} description {Concurrent Versions System} portdir devel/cvs-port homepage http://www.nongnu.org/cvs/ epoch 0 platforms darwin name cvs maintainers yeled@opendarwin.org long_description {CVS is the Concurrent Versions System, the dominant open-source network-transparent version control system. CVS is useful for everyone from individual developers to large, distributed teams:} categories {devel net} version 1.11.22 revision 0
 cvs2svn 510
 description {Tool for converting from CVS to subversion} portdir devel/cvs2svn homepage http://cvs2svn.tigris.org epoch 0 platforms darwin name cvs2svn depends_lib {{path:${prefix}/bin/python2.4:python24} port:py-bsddb} long_description {cvs2svn is a Python script that converts a CVS repository to a Subversion repository. It is designed for one-time conversions, not for repeated synchronizations between CVS and Subversion.} maintainers dluke@geeklair.net version 1.3.1 categories {python devel} revision 0
 cvsdelta 589
@@ -3421,7 +3421,7 @@ portdir net/darkstat description {network traffic analyzer} platforms darwin nam
 dcd 353
 portdir net/dcd platforms darwin description {Direct Connect Hub clone} name dcd version 0.3.4 categories net homepage http://www.dc.ds.pg.gda.pl revision 0 epoch 0 maintainers mww@opendarwin.org long_description {DConnect Daemon is a Direct Connect Hub clone for Unix. It allow people to share their resources, i.e.: programs, graphics, all files ...}
 ddclient 368
-description {Update dynamic DNS entries} portdir net/ddclient homepage http://ddclient.sourceforge.net/ depends_run bin:perl:perl5.8 epoch 0 platforms darwin name ddclient long_description {ddclient is a Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services.} maintainers yeled@opendarwin.org categories net version 3.6.7 revision 0
+description {Update dynamic DNS entries} portdir net/ddclient homepage http://ddclient.sourceforge.net/ depends_run bin:perl:perl5.8 epoch 0 platforms darwin name ddclient long_description {ddclient is a Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services.} maintainers yeled@opendarwin.org categories net version 3.7.0 revision 0
 ddnsu 409
 portdir net/ddnsu platforms darwin description {simple, reliable and small updating client for dynamic DNS} name ddnsu version 0.3.0 categories net homepage http://psydev.sourceforge.net/new/ddnsu/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {ddnsu is a dynamic DNS updating client that aims to be simple, reliable, and above all very small. It works with services such as DynDNS.org.}
 desproxy 333
