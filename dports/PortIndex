@@ -1830,8 +1830,8 @@ gnome-print 412
 description {This is an implementation of the Gnome Printing Architecture.} portdir gnome/gnome-print homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib {lib:libgdk-pixbuf:gdk-pixbuf lib:libgnome:gnome-libs} name gnome-print maintainers macports-dev@lists.macosforge.org long_description {{This is an implementation of the Gnome Printing Architecture.}} categories gnome version 0.36 revision 0
 gnome-python-desktop 412
 portdir gnome/gnome-python-desktop description {Python modules for some GNOME Desktop libraries.} name gnome-python-desktop depends_lib {port:gnome-platform-suite port:py-gnome port:libwnck port:metacity} version 2.14.0 categories {gnome python} homepage http://www.pygtk.org/ revision 0 epoch 0 maintainers macports-dev@lists.macosforge.org long_description {{Python modules for some GNOME Desktop libraries.}}
-gnome-session 405
-description {Session component for the GNOME 2 desktop} portdir gnome/gnome-session homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib port:gnome-desktop name gnome-session maintainers macports-dev@lists.macosforge.org long_description {Session component for the GNOME 2.0 desktop. This package contains the commands needed to start GNOME 2.0.} categories gnome version 2.16.1 revision 0
+gnome-session 427
+description {Session component for the GNOME 2 desktop} portdir gnome/gnome-session homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib {port:gnome-desktop port:control-center} name gnome-session maintainers macports-dev@lists.macosforge.org long_description {Session component for the GNOME 2.0 desktop. This package contains the commands needed to start GNOME 2.0.} categories gnome version 2.16.1 revision 0
 gnome-speech 390
 description {The GNOME speech API.} portdir gnome/gnome-speech homepage http://www.gnome.org/ epoch 0 platforms darwin depends_lib lib:libgnome-mag:gnome-mag name gnome-speech maintainers macports-dev@lists.macosforge.org long_description {This is GNOME Speech. It's purpose is to provide a simple general API for producing text-to-speech output.} categories gnome version 0.4.5 revision 0
 gnome-system-monitor 418
@@ -2678,8 +2678,8 @@ kdeaddons3 338
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE addons. NB No KDE sound support.} portdir kde/kdeaddons3 epoch 0 platforms darwin depends_lib {port:kdebase3 port:kdegames3 port:libsdl port:doxygen} name kdeaddons3 maintainers {ben@macports.org takanori@macports.org} categories kde version 3.5.1 revision 2
 kdeartwork3 310
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE additional artwork. NB No KDE sound support.} portdir kde/kdeartwork3 epoch 0 platforms darwin depends_lib port:kdebase3 name kdeartwork3 maintainers {ben@macports.org takanori@macports.org} categories kde version 3.5.1 revision 1
-kdebase3 347
-variants {darwin_6 apidox} depends_build {port:autoconf port:automake} description {Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.} portdir kde/kdebase3 epoch 0 platforms darwin depends_lib {port:kdelibs3 port:libusb} name kdebase3 maintainers {ben@macports.org takanori@macports.org} categories kde version 3.5.1 revision 3
+kdebase3 364
+variants {darwin_6 apidox} depends_build {port:autoconf port:automake} description {Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.} portdir kde/kdebase3 epoch 0 platforms darwin depends_lib {port:cyrus-sasl2 port:kdelibs3 port:libusb} name kdebase3 maintainers {ben@macports.org takanori@macports.org} categories kde version 3.5.1 revision 3
 kdeedu3 314
 variants darwin_6 depends_build {port:autoconf port:automake} description {KDE educational games and software. NB No KDE sound support.} portdir kde/kdeedu3 epoch 0 platforms darwin depends_lib port:kdebase3 name kdeedu3 maintainers {ben@macports.org takanori@macports.org} categories kde version 3.5.1 revision 1
 kdegames3 293
@@ -3760,8 +3760,8 @@ mutella 354
 description {A command line Gnutella client} portdir net/mutella homepage http://mutella.sourceforge.net/ epoch 0 platforms darwin depends_lib lib:readline:readline name mutella long_description {Mutella is a terminal-mode Gnutella client with an intuitive and easy to use interface.} maintainers max@clarksys.com categories net version 0.4.5 revision 0
 nagios 558
 variants monarch depends_build port:gd2 portdir net/nagios description {Nagios is a host and service monitoring program} homepage http://nagios.org epoch 0 platforms darwin name nagios depends_lib {port:openssl port:nagios-plugins} maintainers markd@opendarwin.org long_description {A network service and host monitor that can notify you when servers go down by monitoring for external services such as HTTP, FTP, SMTP, SNMP, as well as internal host checks for things such as CPU and disk usage and many other things.} version 2.5 categories net revision 0
-nagios-plugins 549
-variants {darwin_6 darwin_7 mysql4 qstat} depends_build {port:fping port:p5-net-snmp port:p5-digest-sha1 port:p5-digest-hmac port:p5-crypt-des} portdir net/nagios-plugins description {Nagios plugins for the Nagios host and service monitor} homepage http://nagios.org epoch 0 platforms darwin name nagios-plugins depends_lib port:perl5.8 maintainers markd@opendarwin.org long_description {Nagios plugins are standalone programs that report the status of hosts and services to the Nagios monitoring framework.} version 1.4.2 categories net revision 1
+nagios-plugins 547
+variants {darwin_6 darwin_7 mysql4 qstat} depends_build {port:fping port:p5-net-snmp port:p5-digest-sha1 port:p5-digest-hmac port:p5-crypt-des} portdir net/nagios-plugins description {Nagios plugins for the Nagios host and service monitor} homepage http://nagios.org epoch 0 platforms darwin name nagios-plugins depends_lib port:perl5.8 maintainers markd@macports.org long_description {Nagios plugins are standalone programs that report the status of hosts and services to the Nagios monitoring framework.} version 1.4.4 categories net revision 0
 naim 366
 portdir net/naim description {ncurses-based client for multiple messenger systems.} platforms darwin name naim version 0.11.8.1 categories net homepage http://site.n.ml.org/info/naim/ revision 0 epoch 0 maintainers toby@opendarwin.org long_description {naim is a ncurses-based messenger client, that supports all major messaging protocol such as AIM, ICQ, IRC etc.}
 nbtstat 431
