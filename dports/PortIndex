@@ -4838,6 +4838,8 @@ espgs 591
 variants {x11 extra_fonts} portdir print/espgs description {Interpreter for PostScript and PDF} homepage http://www.cups.org/ghostscript.php epoch 0 platforms darwin name espgs depends_lib {port:jpeg port:libpng port:zlib} maintainers michaelm@opendarwin.org long_description {Easy Software Products now produces maintenance updates of GNU Ghostscript under the name ESP Ghostscript. These updates incorporate bug fixes to the current GNU version of Ghostscript as well as the latest CUPS, GIMP-print, and other add-ons to Ghostscript.} version 7.07.1 categories {print textproc} revision 0
 fondu 619
 portdir print/fondu platforms darwin description {A set of programs to interconvert between mac font formats and pfb, ttf, otf and bdf files on unix.} name fondu version 060102 categories print homepage http://fondu.sourceforge.net/ revision 0 epoch 0 long_description {Dealing with mac fonts is hard on other operating systems because mac fonts are stored in the resource fork, and other operating systems do not support this concept. Fondu will extract the resource fork from either a macbinary file or a binhex file. Ufond will create a resource fork inside a macbinary file.} maintainers darwinports@opendarwin.org
+fonttools 560
+depends_build port:py-numeric portdir print/fonttools description {XML<->TrueType/OpenType Converter} homepage http://www.letterror.com/code/ttx/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/python2.4:python24}} name fonttools long_description {TTX is a tool to convert OpenType and TrueType fonts to and from XML. FontTools is a library for manipulating fonts, written in Python. It supports TrueType, OpenType, AFM and to an extent Type 1 and some Mac-specific formats.} maintainers pguyot@kallisys.net categories print version 2.0b1 revision 1
 freetype 612
 variants {x86 bytecode} portdir print/freetype description {A software font engine} homepage http://freetype.sourceforge.net/ epoch 0 platforms darwin name freetype depends_lib port:zlib maintainers darwinports@opendarwin.org long_description {FreeType2 is a software font engine that is designed to be small, efficient, highly customizable and portable while capable of producing high-quality output (glyph images). It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.} version 2.1.10 categories {print graphics} revision 1
 freetype1 616
@@ -6402,6 +6404,8 @@ docbook-dsssl 227
 portdir textproc/docbook-dsssl description {the docbook dsssl stylesheets} platforms darwin name docbook-dsssl version 1.79 categories textproc homepage http://docbook.sf.net/ revision 0 epoch 0 maintainers decibel@decibel.org
 docbook-xml 215
 portdir textproc/docbook-xml description {the docbook xml dtds} platforms darwin name docbook-xml version 4.3 categories textproc depends_build bin:unzip:unzip revision 0 epoch 0 maintainers michaelm@opendarwin.org
+docbook-xml-412 228
+portdir textproc/docbook-xml-412 description {the docbook xml dtds} platforms darwin name docbook-xml-412 version 4.1.2 categories textproc depends_build bin:xmlcatalog:libxml2 revision 0 epoch 0 maintainers rhwood@macports.org
 docbook-xml-scrollkeeper 244
 portdir textproc/docbook-xml-scrollkeeper description {the docbook xml dtds} platforms darwin name docbook-xml-scrollkeeper version 4.2 categories textproc depends_build bin:unzip:unzip revision 0 epoch 0 maintainers darwinports@opendarwin.org
 docbook-xsl 227
