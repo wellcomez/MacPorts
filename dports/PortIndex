@@ -1149,7 +1149,7 @@ depends_build port:ghc description {Haskell utility functions} portdir devel/mis
 ml-pnet 483
 variants darwin_8 description {Mono Libraries for Portable.NET.} portdir devel/ml-pnet epoch 0 platforms darwin depends_lib bin:csunit:pnetlib name ml-pnet long_description {This distribution contains a number of build scripts for building some of the Mono class libraries and utility programs with Portable.NET's C# compiler, so that they can be installed and used with Portable.NET's runtime engine.} maintainers nomaintainer@macports.org categories devel version 0.7.4 revision 0
 modglue 440
-description {A Plan9-inspired extension of the Unix pipe concept} portdir devel/modglue homepage http://www.aei.mpg.de/~peekas/cadabra/ epoch 0 platforms darwin depends_lib port:libsigcxx2 name modglue long_description {Modglue is a combination of several software tools that assist in writing and running programs connected to each other using standard Unix pipes.} maintainers gwright@macports.org categories devel version 1.2 revision 0
+description {A Plan9-inspired extension of the Unix pipe concept} portdir devel/modglue homepage http://www.aei.mpg.de/~peekas/cadabra/ epoch 0 platforms darwin depends_lib port:libsigcxx2 name modglue long_description {Modglue is a combination of several software tools that assist in writing and running programs connected to each other using standard Unix pipes.} maintainers gwright@macports.org categories devel version 1.2 revision 2
 mono 502
 variants {darwin_8 darwin_9} portdir devel/mono description {Implementation of the .NET Development Framework} homepage http://www.go-mono.com/ epoch 0 platforms darwin name mono depends_lib {port:pkgconfig port:gettext port:glib2 port:icu port:boehmgc port:libiconv port:zlib} maintainers mww@opendarwin.org long_description {Mono is an effort to create an open source implementation of the .NET Development Framework including a C# compiler.} version 1.1.16.1 categories {devel lang mono} revision 0
 monodoc 411
@@ -1362,8 +1362,8 @@ trio 477
 portdir devel/trio platforms darwin description {trio is a set of printf and string functions} name trio version 1.10 categories devel homepage http://daniel.haxx.se/projects/trio/ revision 1 epoch 0 maintainers mww@opendarwin.org long_description {Trio is a fully matured and stable set of printf and string functions designed be used by applications with focus on portability or with the need for additional features that are not supported by standard stdio implementation.}
 uisp 328
 portdir devel/uisp description {AVR In-System Programmer} name uisp version 20050207 categories devel homepage http://www.nongnu.org/uisp/ revision 0 epoch 0 maintainers evgeni_dobrev@developer.bg long_description {UISP is a tool for AVR (and AT89S) microcontrollers which can interface to many hardware in-system programmers.}
-unsermake 387
-description {Replacement for automake} portdir devel/unsermake homepage http://www.kde.me.uk/index.php?page=unsermake depends_run {bin:python:python24 port:coreutils} epoch 0 platforms darwin name unsermake long_description {Unsermake is an automake replacement from the KDE project.} maintainers {ben@macports.org takanori@macports.org} categories devel version 0.4-20060316 revision 0
+unsermake 372
+description {Replacement for automake} portdir devel/unsermake homepage http://www.kde.me.uk/index.php?page=unsermake depends_run {bin:python:python24 port:coreutils} epoch 0 platforms darwin name unsermake long_description {Unsermake is an automake replacement from the KDE project.} maintainers nomaintainer@macports.org categories devel version 0.4-20060316 revision 0
 ustl 386
 portdir devel/ustl platforms darwin description {micro-STL is a partial implementation of the STL specification} name ustl version 0.8 categories devel homepage http://ustl.sourceforge.net/ revision 0 epoch 0 maintainers mww@opendarwin.org long_description {uSTL (micro-STL) is a partial implementation of the STL specification intended to reduce code size of the derivative programs.}
 viewcvs 623
@@ -2558,282 +2558,284 @@ xmlpull 744
 depends_build bin:ant:apache-ant portdir java/xmlpull description {XML pullparser API} homepage http://www.xmlpull.org/ epoch 0 platforms darwin name xmlpull depends_lib bin:java:kaffe maintainers mww@opendarwin.org long_description {XmlPull v1 API is a simple to use XML pull parsing API that was designed for simplicity and very good performance both in constrained environment such as defined by J2ME and on server side when used in J2EE application servers. XML pull parsing allows incremental (sometimes called streaming) parsing of XML where application is in control - the parsing can be interrupted at any given moment and resumed when application is ready to consume more input.} version 1.1.3.4b categories {java textproc} revision 0
 xom 474
 depends_build bin:ant:apache-ant portdir java/xom description {A tree-based API for XML processing} homepage http://www.xom.nu/ epoch 0 platforms darwin name xom depends_lib bin:java:kaffe maintainers jberry@macports.org long_description {XOM is a new XML object model. It is an open source (LGPL), tree-based API for processing XML with Java that strives for correctness, simplicity, and performance, in that order.} version 1.0 categories {java devel textproc} revision 0
-kde 380
-variants {accessibility devel fun graphics all} portdir kde/kde description {KDE Desktop bundle} homepage http://www.kde.org/ epoch 0 platforms darwin name kde depends_lib {port:kdelibs3 port:kdebase3 port:kdenetwork3 port:kdepim3 port:kdeutils3} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE Desktop bundle}} version 3.5.4 categories kde revision 0
-kde-i18n-afrikaans 327
-description {KDE afrikaans language files.} portdir kde/kde-i18n-afrikaans homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-afrikaans long_description {{KDE afrikaans language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-arabic 315
-description {KDE arabic language files.} portdir kde/kde-i18n-arabic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-arabic long_description {{KDE arabic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-azerbaijani 335
-description {KDE azerbaijani language files.} portdir kde/kde-i18n-azerbaijani homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-azerbaijani long_description {{KDE azerbaijani language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-basque 315
-description {KDE basque language files.} portdir kde/kde-i18n-basque homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-basque long_description {{KDE basque language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-bengali 319
-description {KDE bengali language files.} portdir kde/kde-i18n-bengali homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bengali long_description {{KDE bengali language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-bosnian 319
-description {KDE bosnian language files.} portdir kde/kde-i18n-bosnian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bosnian long_description {{KDE bosnian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-brazilian-portugese 367
-description {KDE brazilian-portugese language files.} portdir kde/kde-i18n-brazilian-portugese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-brazilian-portugese long_description {{KDE brazilian-portugese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-breton 315
-description {KDE breton language files.} portdir kde/kde-i18n-breton homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-breton long_description {{KDE breton language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-bulgarian 327
-description {KDE bulgarian language files.} portdir kde/kde-i18n-bulgarian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bulgarian long_description {{KDE bulgarian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-catalan 319
-description {KDE catalan language files.} portdir kde/kde-i18n-catalan homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-catalan long_description {{KDE catalan language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-chinese 319
-description {KDE chinese language files.} portdir kde/kde-i18n-chinese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-chinese long_description {{KDE chinese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-chinese-simplified 363
-description {KDE chinese-simplified language files.} portdir kde/kde-i18n-chinese-simplified homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-chinese-simplified long_description {{KDE chinese-simplified language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-croatian 323
-description {KDE croatian language files.} portdir kde/kde-i18n-croatian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-croatian long_description {{KDE croatian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-czech 311
-description {KDE czech language files.} portdir kde/kde-i18n-czech homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-czech long_description {{KDE czech language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-danish 315
-description {KDE danish language files.} portdir kde/kde-i18n-danish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-danish long_description {{KDE danish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-dutch 311
-description {KDE dutch language files.} portdir kde/kde-i18n-dutch homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-dutch long_description {{KDE dutch language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-esperanto 327
-description {KDE esperanto language files.} portdir kde/kde-i18n-esperanto homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-esperanto long_description {{KDE esperanto language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-estonian 323
-description {KDE estonian language files.} portdir kde/kde-i18n-estonian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-estonian long_description {{KDE estonian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-farsi 311
-description {KDE farsi language files.} portdir kde/kde-i18n-farsi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-farsi long_description {{KDE farsi language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-finnish 319
-description {KDE finnish language files.} portdir kde/kde-i18n-finnish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-finnish long_description {{KDE finnish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-french 315
-description {KDE french language files.} portdir kde/kde-i18n-french homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-french long_description {{KDE french language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-frisian 319
-description {KDE frisian language files.} portdir kde/kde-i18n-frisian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-frisian long_description {{KDE frisian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-galician 323
-description {KDE galician language files.} portdir kde/kde-i18n-galician homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-galician long_description {{KDE galician language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-german 315
-description {KDE german language files.} portdir kde/kde-i18n-german homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-german long_description {{KDE german language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-greek 311
-description {KDE greek language files.} portdir kde/kde-i18n-greek homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-greek long_description {{KDE greek language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-hebrew 315
-description {KDE hebrew language files.} portdir kde/kde-i18n-hebrew homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hebrew long_description {{KDE hebrew language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-hindi 311
-description {KDE hindi language files.} portdir kde/kde-i18n-hindi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hindi long_description {{KDE hindi language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-hsb 290
-portdir kde/kde-i18n-hsb description {KDE upper-sorbian language files.} platforms darwin name kde-i18n-hsb depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE upper-sorbian language files.}}
-kde-i18n-hungarian 327
-description {KDE hungarian language files.} portdir kde/kde-i18n-hungarian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hungarian long_description {{KDE hungarian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-icelandic 327
-description {KDE icelandic language files.} portdir kde/kde-i18n-icelandic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-icelandic long_description {{KDE icelandic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-irish-gaelic 339
-description {KDE irish-gaelic language files.} portdir kde/kde-i18n-irish-gaelic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-irish-gaelic long_description {{KDE irish-gaelic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-italian 319
-description {KDE italian language files.} portdir kde/kde-i18n-italian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-italian long_description {{KDE italian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-japanese 323
-description {KDE japanese language files.} portdir kde/kde-i18n-japanese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-japanese long_description {{KDE japanese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-kazakh 315
-description {KDE kazakh language files.} portdir kde/kde-i18n-kazakh homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-kazakh long_description {{KDE kazakh language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-khmer 311
-description {KDE khmer language files.} portdir kde/kde-i18n-khmer homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-khmer long_description {{KDE khmer language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-kinyarwanda 335
-description {KDE kinyarwanda language files.} portdir kde/kde-i18n-kinyarwanda homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-kinyarwanda long_description {{KDE kinyarwanda language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-korean 315
-description {KDE korean language files.} portdir kde/kde-i18n-korean homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-korean long_description {{KDE korean language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-latvian 319
-description {KDE latvian language files.} portdir kde/kde-i18n-latvian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-latvian long_description {{KDE latvian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-lithuanian 331
-description {KDE lithuanian language files.} portdir kde/kde-i18n-lithuanian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-lithuanian long_description {{KDE lithuanian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-low-saxon 327
-description {KDE low-saxon language files.} portdir kde/kde-i18n-low-saxon homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-low-saxon long_description {{KDE low-saxon language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-macedonian 331
-description {KDE macedonian language files.} portdir kde/kde-i18n-macedonian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-macedonian long_description {{KDE macedonian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-malay 311
-description {KDE malay language files.} portdir kde/kde-i18n-malay homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-malay long_description {{KDE malay language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-mongolian 327
-description {KDE mongolian language files.} portdir kde/kde-i18n-mongolian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-mongolian long_description {{KDE mongolian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-northern-sami 343
-description {KDE northern-sami language files.} portdir kde/kde-i18n-northern-sami homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-northern-sami long_description {{KDE northern-sami language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-norwegian-bokmaal 359
-description {KDE norwegian-bokmaal language files.} portdir kde/kde-i18n-norwegian-bokmaal homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-norwegian-bokmaal long_description {{KDE norwegian-bokmaal language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-norwegian-nynorsk 359
-description {KDE norwegian-nynorsk language files.} portdir kde/kde-i18n-norwegian-nynorsk homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-norwegian-nynorsk long_description {{KDE norwegian-nynorsk language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-polish 315
-description {KDE polish language files.} portdir kde/kde-i18n-polish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-polish long_description {{KDE polish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-portugese 327
-description {KDE portugese language files.} portdir kde/kde-i18n-portugese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-portugese long_description {{KDE portugese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-punjabi 319
-description {KDE punjabi language files.} portdir kde/kde-i18n-punjabi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-punjabi long_description {{KDE punjabi language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-romanian 323
-description {KDE romanian language files.} portdir kde/kde-i18n-romanian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-romanian long_description {{KDE romanian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-russian 319
-description {KDE russian language files.} portdir kde/kde-i18n-russian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-russian long_description {{KDE russian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-serbian 319
-description {KDE serbian language files.} portdir kde/kde-i18n-serbian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-serbian long_description {{KDE serbian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-serbian-latin-script 371
-description {KDE serbian-latin-script language files.} portdir kde/kde-i18n-serbian-latin-script homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-serbian-latin-script long_description {{KDE serbian-latin-script language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-slovak 315
-description {KDE slovak language files.} portdir kde/kde-i18n-slovak homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-slovak long_description {{KDE slovak language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-slovenian 327
-description {KDE slovenian language files.} portdir kde/kde-i18n-slovenian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-slovenian long_description {{KDE slovenian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-spanish 319
-description {KDE spanish language files.} portdir kde/kde-i18n-spanish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-spanish long_description {{KDE spanish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-swati 311
-description {KDE swati language files.} portdir kde/kde-i18n-swati homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-swati long_description {{KDE swati language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-swedish 319
-description {KDE swedish language files.} portdir kde/kde-i18n-swedish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-swedish long_description {{KDE swedish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-tajik 311
-description {KDE tajik language files.} portdir kde/kde-i18n-tajik homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-tajik long_description {{KDE tajik language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-tamil 311
-description {KDE tamil language files.} portdir kde/kde-i18n-tamil homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-tamil long_description {{KDE tamil language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-turkish 319
-description {KDE turkish language files.} portdir kde/kde-i18n-turkish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-turkish long_description {{KDE turkish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-uk-english 331
-description {KDE uk-english language files.} portdir kde/kde-i18n-uk-english homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-uk-english long_description {{KDE uk-english language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-ukranian 323
-description {KDE ukranian language files.} portdir kde/kde-i18n-ukranian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-ukranian long_description {{KDE ukranian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-upper-sorbian 343
-description {KDE upper-sorbian language files.} portdir kde/kde-i18n-upper-sorbian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-upper-sorbian long_description {{KDE upper-sorbian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.4.3 revision 0
-kde-i18n-uzbek 311
-description {KDE uzbek language files.} portdir kde/kde-i18n-uzbek homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-uzbek long_description {{KDE uzbek language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-vietnamese 331
-description {KDE vietnamese language files.} portdir kde/kde-i18n-vietnamese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-vietnamese long_description {{KDE vietnamese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kde-i18n-welsh 311
-description {KDE welsh language files.} portdir kde/kde-i18n-welsh homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-welsh long_description {{KDE welsh language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 3.5.4 revision 0
-kdeaccessibility3 406
-depends_build {port:autoconf port:unsermake} portdir kde/kdeaccessibility3 description {KDE accessibility tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeaccessibility3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE accessibility tools. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdeaddons3 409
-depends_build {port:autoconf port:unsermake} portdir kde/kdeaddons3 description {KDE addons. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeaddons3 depends_lib {port:doxygen port:kdebase3 port:kdegames3 port:kdepim3} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE addons. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdeartwork3 392
-depends_build {port:autoconf port:unsermake} portdir kde/kdeartwork3 description {KDE additional artwork. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeartwork3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE additional artwork. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdebase3 473
-variants apidox depends_build {port:autoconf port:unsermake} portdir kde/kdebase3 description {Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdebase3 depends_lib {port:cyrus-sasl2 port:kdelibs3 port:libusb} maintainers {ben@macports.org takanori@macports.org} long_description {{Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdeedu3 408
-depends_build {port:autoconf port:unsermake} portdir kde/kdeedu3 description {KDE educational games and software. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeedu3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE educational games and software. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdegames3 362
-depends_build {port:autoconf port:unsermake} portdir kde/kdegames3 description {KDE games. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdegames3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE games. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdegraphics3 451
-depends_build {port:autoconf port:unsermake} portdir kde/kdegraphics3 description {KDE graphics. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdegraphics3 depends_lib {port:fribidi port:imlib port:kdebase3 port:lcms port:libusb port:sane-backends port:xpdf} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE graphics. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdelibs3 861
-variants {darwin_9 darwin_8 darwin_7 darwin_6 apidox} depends_build {port:autoconf port:unsermake} portdir kde/kdelibs3 description {Essential libraries for KDE applications. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdelibs3 depends_lib {lib:libpoll:poll-emulator lib:libX11.6:XFree86 port:aspell port:bzip2 port:expat port:flex port:fontconfig port:freetype port:gettext port:glib2 port:hicolor-icon-theme port:jasper port:jpeg port:libart_lgpl port:libidn port:libiconv port:libpng port:libxml2 port:libxslt port:lua port:pcre port:tiff port:OpenEXR port:openssl port:perl5.8 port:pkgconfig port:qt3 port:Xft2 port:xrender port:zlib} maintainers {ben@macports.org takanori@macports.org} long_description {{Essential libraries for KDE applications. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdenetwork3 397
-depends_build {port:autoconf port:unsermake} portdir kde/kdenetwork3 description {KDE network tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdenetwork3 depends_lib {port:kdebase3 port:openslp} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE network tools. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdepim3 476
-depends_build {port:autoconf port:unsermake} portdir kde/kdepim3 description {KDE personal information management tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdepim3 depends_lib {port:gpgme port:kdeaccessibility3 port:kdebase3 port:libgpg-error} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE personal information management tools. NB No KDE sound support.}} version 3.5.4 categories kde revision 1
-kdesdk3 411
-depends_build {port:autoconf port:unsermake} portdir kde/kdesdk3 description {KDE SDK. NB No KDE sound support. No SVN support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdesdk3 depends_lib {port:db44 port:kdebase3 port:kdepim3} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE SDK. NB No KDE sound support. No SVN support.}} version 3.5.4 categories kde revision 1
-kdetoys3 358
-depends_build {port:autoconf port:unsermake} portdir kde/kdetoys3 description {KDE toys. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdetoys3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE toys. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdeutils3 381
-depends_build {port:autoconf port:unsermake} portdir kde/kdeutils3 description {KDE utilities. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeutils3 depends_lib {port:gmp port:kdebase3} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE utilities. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-kdewebdev3 396
-depends_build {port:autoconf port:unsermake} portdir kde/kdewebdev3 description {KDE web development tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdewebdev3 depends_lib port:kdebase3 maintainers {ben@macports.org takanori@macports.org} long_description {{KDE web development tools. NB No KDE sound support.}} version 3.5.4 categories kde revision 0
-koffice 472
-variants darwin_7 depends_build {port:autoconf port:unsermake} portdir kde/koffice description {KDE office suite. NB KDE sound does not work.} homepage http://www.koffice.org/ epoch 0 platforms darwin name koffice depends_lib {port:kdebase3 port:ImageMagick port:lcms port:libwpd port:mysql4 port:ruby port:wv2} maintainers {ben@macports.org takanori@macports.org} long_description {{KDE office suite. NB KDE sound does not work.}} version 1.5.2 categories kde revision 0
-koffice-i18n-afrikaans 346
-description {KOffice afrikaans language files.} portdir kde/koffice-i18n-afrikaans homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-afrikaans long_description {{KOffice afrikaans language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-arabic 334
-description {KOffice arabic language files.} portdir kde/koffice-i18n-arabic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-arabic long_description {{KOffice arabic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-basque 334
-description {KOffice basque language files.} portdir kde/koffice-i18n-basque homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-basque long_description {{KOffice basque language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-bengali 299
-portdir kde/koffice-i18n-bengali description {KOffice bengali language files.} platforms darwin name koffice-i18n-bengali depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KOffice bengali language files.}}
-koffice-i18n-bosnian 338
-description {KOffice bosnian language files.} portdir kde/koffice-i18n-bosnian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-bosnian long_description {{KOffice bosnian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-brazilian-portugese 386
-description {KOffice brazilian-portugese language files.} portdir kde/koffice-i18n-brazilian-portugese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-brazilian-portugese long_description {{KOffice brazilian-portugese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-breton 334
-description {KOffice breton language files.} portdir kde/koffice-i18n-breton homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-breton long_description {{KOffice breton language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-bulgarian 346
-description {KOffice bulgarian language files.} portdir kde/koffice-i18n-bulgarian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-bulgarian long_description {{KOffice bulgarian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-catalan 338
-description {KOffice catalan language files.} portdir kde/koffice-i18n-catalan homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-catalan long_description {{KOffice catalan language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-chinese 338
-description {KOffice chinese language files.} portdir kde/koffice-i18n-chinese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-chinese long_description {{KOffice chinese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-chinese-simplified 382
-description {KOffice chinese-simplified language files.} portdir kde/koffice-i18n-chinese-simplified homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-chinese-simplified long_description {{KOffice chinese-simplified language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-czech 330
-description {KOffice czech language files.} portdir kde/koffice-i18n-czech homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-czech long_description {{KOffice czech language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-danish 334
-description {KOffice danish language files.} portdir kde/koffice-i18n-danish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-danish long_description {{KOffice danish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-dutch 330
-description {KOffice dutch language files.} portdir kde/koffice-i18n-dutch homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-dutch long_description {{KOffice dutch language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-esperanto 346
-description {KOffice esperanto language files.} portdir kde/koffice-i18n-esperanto homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-esperanto long_description {{KOffice esperanto language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-estonian 342
-description {KOffice estonian language files.} portdir kde/koffice-i18n-estonian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-estonian long_description {{KOffice estonian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-finnish 338
-description {KOffice finnish language files.} portdir kde/koffice-i18n-finnish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-finnish long_description {{KOffice finnish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-french 334
-description {KOffice french language files.} portdir kde/koffice-i18n-french homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-french long_description {{KOffice french language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-frisian 299
-portdir kde/koffice-i18n-frisian description {KOffice frisian language files.} platforms darwin name koffice-i18n-frisian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KOffice frisian language files.}}
-koffice-i18n-german 334
-description {KOffice german language files.} portdir kde/koffice-i18n-german homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-german long_description {{KOffice german language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-greek 330
-description {KOffice greek language files.} portdir kde/koffice-i18n-greek homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-greek long_description {{KOffice greek language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-hebrew 334
-description {KOffice hebrew language files.} portdir kde/koffice-i18n-hebrew homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hebrew long_description {{KOffice hebrew language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-hindi 330
-description {KOffice hindi language files.} portdir kde/koffice-i18n-hindi homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hindi long_description {{KOffice hindi language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-hungarian 346
-description {KOffice hungarian language files.} portdir kde/koffice-i18n-hungarian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hungarian long_description {{KOffice hungarian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-icelandic 346
-description {KOffice icelandic language files.} portdir kde/koffice-i18n-icelandic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-icelandic long_description {{KOffice icelandic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-irish-gaelic 358
-description {KOffice irish-gaelic language files.} portdir kde/koffice-i18n-irish-gaelic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-irish-gaelic long_description {{KOffice irish-gaelic language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-italian 338
-description {KOffice italian language files.} portdir kde/koffice-i18n-italian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-italian long_description {{KOffice italian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-japanese 342
-description {KOffice japanese language files.} portdir kde/koffice-i18n-japanese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-japanese long_description {{KOffice japanese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-lithuanian 350
-description {KOffice lithuanian language files.} portdir kde/koffice-i18n-lithuanian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-lithuanian long_description {{KOffice lithuanian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-low-saxon 307
-portdir kde/koffice-i18n-low-saxon description {KOffice low-saxon language files.} platforms darwin name koffice-i18n-low-saxon depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KOffice low-saxon language files.}}
-koffice-i18n-macedonian 350
-description {KOffice macedonian language files.} portdir kde/koffice-i18n-macedonian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-macedonian long_description {{KOffice macedonian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-malay 330
-description {KOffice malay language files.} portdir kde/koffice-i18n-malay homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-malay long_description {{KOffice malay language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-northern-sami 362
-description {KOffice northern-sami language files.} portdir kde/koffice-i18n-northern-sami homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-northern-sami long_description {{KOffice northern-sami language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-norwegian-bokmaal 378
-description {KOffice norwegian-bokmaal language files.} portdir kde/koffice-i18n-norwegian-bokmaal homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-norwegian-bokmaal long_description {{KOffice norwegian-bokmaal language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-norwegian-nynorsk 378
-description {KOffice norwegian-nynorsk language files.} portdir kde/koffice-i18n-norwegian-nynorsk homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-norwegian-nynorsk long_description {{KOffice norwegian-nynorsk language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-polish 334
-description {KOffice polish language files.} portdir kde/koffice-i18n-polish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-polish long_description {{KOffice polish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-portugese 346
-description {KOffice portugese language files.} portdir kde/koffice-i18n-portugese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-portugese long_description {{KOffice portugese language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-punjabi 299
-portdir kde/koffice-i18n-punjabi description {KOffice punjabi language files.} platforms darwin name koffice-i18n-punjabi depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KOffice punjabi language files.}}
-koffice-i18n-romanian 342
-description {KOffice romanian language files.} portdir kde/koffice-i18n-romanian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-romanian long_description {{KOffice romanian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-russian 338
-description {KOffice russian language files.} portdir kde/koffice-i18n-russian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-russian long_description {{KOffice russian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-serbian 338
-description {KOffice serbian language files.} portdir kde/koffice-i18n-serbian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-serbian long_description {{KOffice serbian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-serbian-latin-script 390
-description {KOffice serbian-latin-script language files.} portdir kde/koffice-i18n-serbian-latin-script homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-serbian-latin-script long_description {{KOffice serbian-latin-script language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-slovak 334
-description {KOffice slovak language files.} portdir kde/koffice-i18n-slovak homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-slovak long_description {{KOffice slovak language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-slovenian 346
-description {KOffice slovenian language files.} portdir kde/koffice-i18n-slovenian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-slovenian long_description {{KOffice slovenian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-spanish 338
-description {KOffice spanish language files.} portdir kde/koffice-i18n-spanish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-spanish long_description {{KOffice spanish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-swedish 338
-description {KOffice swedish language files.} portdir kde/koffice-i18n-swedish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-swedish long_description {{KOffice swedish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-tajik 330
-description {KOffice tajik language files.} portdir kde/koffice-i18n-tajik homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-tajik long_description {{KOffice tajik language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-tamil 330
-description {KOffice tamil language files.} portdir kde/koffice-i18n-tamil homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-tamil long_description {{KOffice tamil language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-turkish 338
-description {KOffice turkish language files.} portdir kde/koffice-i18n-turkish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-turkish long_description {{KOffice turkish language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-uk-english 350
-description {KOffice uk-english language files.} portdir kde/koffice-i18n-uk-english homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-uk-english long_description {{KOffice uk-english language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-ukranian 342
-description {KOffice ukranian language files.} portdir kde/koffice-i18n-ukranian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-ukranian long_description {{KOffice ukranian language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-upper-sorbian 323
-portdir kde/koffice-i18n-upper-sorbian description {KOffice upper-sorbian language files.} platforms darwin name koffice-i18n-upper-sorbian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers {ben@macports.org takanori@macports.org} long_description {{KOffice upper-sorbian language files.}}
-koffice-i18n-uzbek 330
-description {KOffice uzbek language files.} portdir kde/koffice-i18n-uzbek homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-uzbek long_description {{KOffice uzbek language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-koffice-i18n-welsh 330
-description {KOffice welsh language files.} portdir kde/koffice-i18n-welsh homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-welsh long_description {{KOffice welsh language files.}} maintainers {ben@opendarwin.org takanori@opendarwin.org} categories kde version 1.5.2 revision 0
-konversation 391
-depends_build {port:autoconf port:unsermake} portdir kde/konversation description {KDE IRC client. NB No KDE sound support.} homepage http://konversation.kde.org/ epoch 0 platforms darwin name konversation depends_lib {port:kdebase3 port:doxygen port:graphviz} maintainers ben@macports.org long_description {{KDE IRC client. NB No KDE sound support.}} version 0.19 categories kde revision 2
+kde 365
+variants {accessibility devel fun graphics all} portdir kde/kde description {KDE Desktop bundle} homepage http://www.kde.org/ epoch 0 platforms darwin name kde depends_lib {port:kdelibs3 port:kdebase3 port:kdenetwork3 port:kdepim3 port:kdeutils3} maintainers nomaintainer@macports.org long_description {{KDE Desktop bundle}} version 3.5.5 categories kde revision 0
+kde-i18n-afrikaans 308
+description {KDE afrikaans language files.} portdir kde/kde-i18n-afrikaans homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-afrikaans long_description {{KDE afrikaans language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-arabic 296
+description {KDE arabic language files.} portdir kde/kde-i18n-arabic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-arabic long_description {{KDE arabic language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-azerbaijani 316
+description {KDE azerbaijani language files.} portdir kde/kde-i18n-azerbaijani homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-azerbaijani long_description {{KDE azerbaijani language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-basque 296
+description {KDE basque language files.} portdir kde/kde-i18n-basque homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-basque long_description {{KDE basque language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-bengali 300
+description {KDE bengali language files.} portdir kde/kde-i18n-bengali homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bengali long_description {{KDE bengali language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-bosnian 300
+description {KDE bosnian language files.} portdir kde/kde-i18n-bosnian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bosnian long_description {{KDE bosnian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-brazilian-portugese 348
+description {KDE brazilian-portugese language files.} portdir kde/kde-i18n-brazilian-portugese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-brazilian-portugese long_description {{KDE brazilian-portugese language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-breton 296
+description {KDE breton language files.} portdir kde/kde-i18n-breton homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-breton long_description {{KDE breton language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-bulgarian 308
+description {KDE bulgarian language files.} portdir kde/kde-i18n-bulgarian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-bulgarian long_description {{KDE bulgarian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-catalan 300
+description {KDE catalan language files.} portdir kde/kde-i18n-catalan homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-catalan long_description {{KDE catalan language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-chinese 300
+description {KDE chinese language files.} portdir kde/kde-i18n-chinese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-chinese long_description {{KDE chinese language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-chinese-simplified 344
+description {KDE chinese-simplified language files.} portdir kde/kde-i18n-chinese-simplified homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-chinese-simplified long_description {{KDE chinese-simplified language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-croatian 304
+description {KDE croatian language files.} portdir kde/kde-i18n-croatian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-croatian long_description {{KDE croatian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-czech 292
+description {KDE czech language files.} portdir kde/kde-i18n-czech homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-czech long_description {{KDE czech language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-danish 296
+description {KDE danish language files.} portdir kde/kde-i18n-danish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-danish long_description {{KDE danish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-dutch 292
+description {KDE dutch language files.} portdir kde/kde-i18n-dutch homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-dutch long_description {{KDE dutch language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-esperanto 308
+description {KDE esperanto language files.} portdir kde/kde-i18n-esperanto homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-esperanto long_description {{KDE esperanto language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-estonian 304
+description {KDE estonian language files.} portdir kde/kde-i18n-estonian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-estonian long_description {{KDE estonian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-farsi 292
+description {KDE farsi language files.} portdir kde/kde-i18n-farsi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-farsi long_description {{KDE farsi language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-finnish 300
+description {KDE finnish language files.} portdir kde/kde-i18n-finnish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-finnish long_description {{KDE finnish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-french 296
+description {KDE french language files.} portdir kde/kde-i18n-french homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-french long_description {{KDE french language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-frisian 300
+description {KDE frisian language files.} portdir kde/kde-i18n-frisian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-frisian long_description {{KDE frisian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-galician 304
+description {KDE galician language files.} portdir kde/kde-i18n-galician homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-galician long_description {{KDE galician language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-german 296
+description {KDE german language files.} portdir kde/kde-i18n-german homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-german long_description {{KDE german language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-greek 292
+description {KDE greek language files.} portdir kde/kde-i18n-greek homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-greek long_description {{KDE greek language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-hebrew 296
+description {KDE hebrew language files.} portdir kde/kde-i18n-hebrew homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hebrew long_description {{KDE hebrew language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-hindi 292
+description {KDE hindi language files.} portdir kde/kde-i18n-hindi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hindi long_description {{KDE hindi language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-hsb 275
+portdir kde/kde-i18n-hsb description {KDE upper-sorbian language files.} platforms darwin name kde-i18n-hsb depends_lib port:kdelibs3 version 3.5.1 categories x11 revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KDE upper-sorbian language files.}}
+kde-i18n-hungarian 308
+description {KDE hungarian language files.} portdir kde/kde-i18n-hungarian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-hungarian long_description {{KDE hungarian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-icelandic 308
+description {KDE icelandic language files.} portdir kde/kde-i18n-icelandic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-icelandic long_description {{KDE icelandic language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-irish-gaelic 320
+description {KDE irish-gaelic language files.} portdir kde/kde-i18n-irish-gaelic homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-irish-gaelic long_description {{KDE irish-gaelic language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-italian 300
+description {KDE italian language files.} portdir kde/kde-i18n-italian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-italian long_description {{KDE italian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-japanese 304
+description {KDE japanese language files.} portdir kde/kde-i18n-japanese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-japanese long_description {{KDE japanese language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-kazakh 296
+description {KDE kazakh language files.} portdir kde/kde-i18n-kazakh homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-kazakh long_description {{KDE kazakh language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-khmer 292
+description {KDE khmer language files.} portdir kde/kde-i18n-khmer homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-khmer long_description {{KDE khmer language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-kinyarwanda 316
+description {KDE kinyarwanda language files.} portdir kde/kde-i18n-kinyarwanda homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-kinyarwanda long_description {{KDE kinyarwanda language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-korean 296
+description {KDE korean language files.} portdir kde/kde-i18n-korean homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-korean long_description {{KDE korean language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-latvian 300
+description {KDE latvian language files.} portdir kde/kde-i18n-latvian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-latvian long_description {{KDE latvian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-lithuanian 312
+description {KDE lithuanian language files.} portdir kde/kde-i18n-lithuanian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-lithuanian long_description {{KDE lithuanian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-low-saxon 308
+description {KDE low-saxon language files.} portdir kde/kde-i18n-low-saxon homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-low-saxon long_description {{KDE low-saxon language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-macedonian 312
+description {KDE macedonian language files.} portdir kde/kde-i18n-macedonian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-macedonian long_description {{KDE macedonian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-malay 292
+description {KDE malay language files.} portdir kde/kde-i18n-malay homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-malay long_description {{KDE malay language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-mongolian 308
+description {KDE mongolian language files.} portdir kde/kde-i18n-mongolian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-mongolian long_description {{KDE mongolian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-northern-sami 324
+description {KDE northern-sami language files.} portdir kde/kde-i18n-northern-sami homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-northern-sami long_description {{KDE northern-sami language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-norwegian-bokmaal 340
+description {KDE norwegian-bokmaal language files.} portdir kde/kde-i18n-norwegian-bokmaal homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-norwegian-bokmaal long_description {{KDE norwegian-bokmaal language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-norwegian-nynorsk 340
+description {KDE norwegian-nynorsk language files.} portdir kde/kde-i18n-norwegian-nynorsk homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-norwegian-nynorsk long_description {{KDE norwegian-nynorsk language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-polish 296
+description {KDE polish language files.} portdir kde/kde-i18n-polish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-polish long_description {{KDE polish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-portugese 308
+description {KDE portugese language files.} portdir kde/kde-i18n-portugese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-portugese long_description {{KDE portugese language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-punjabi 300
+description {KDE punjabi language files.} portdir kde/kde-i18n-punjabi homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-punjabi long_description {{KDE punjabi language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-romanian 304
+description {KDE romanian language files.} portdir kde/kde-i18n-romanian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-romanian long_description {{KDE romanian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-russian 300
+description {KDE russian language files.} portdir kde/kde-i18n-russian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-russian long_description {{KDE russian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-serbian 300
+description {KDE serbian language files.} portdir kde/kde-i18n-serbian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-serbian long_description {{KDE serbian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-serbian-latin-script 352
+description {KDE serbian-latin-script language files.} portdir kde/kde-i18n-serbian-latin-script homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-serbian-latin-script long_description {{KDE serbian-latin-script language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-slovak 296
+description {KDE slovak language files.} portdir kde/kde-i18n-slovak homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-slovak long_description {{KDE slovak language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-slovenian 308
+description {KDE slovenian language files.} portdir kde/kde-i18n-slovenian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-slovenian long_description {{KDE slovenian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-spanish 300
+description {KDE spanish language files.} portdir kde/kde-i18n-spanish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-spanish long_description {{KDE spanish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-swati 292
+description {KDE swati language files.} portdir kde/kde-i18n-swati homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-swati long_description {{KDE swati language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-swedish 300
+description {KDE swedish language files.} portdir kde/kde-i18n-swedish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-swedish long_description {{KDE swedish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-tajik 292
+description {KDE tajik language files.} portdir kde/kde-i18n-tajik homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-tajik long_description {{KDE tajik language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-tamil 292
+description {KDE tamil language files.} portdir kde/kde-i18n-tamil homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-tamil long_description {{KDE tamil language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-turkish 300
+description {KDE turkish language files.} portdir kde/kde-i18n-turkish homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-turkish long_description {{KDE turkish language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-uk-english 312
+description {KDE uk-english language files.} portdir kde/kde-i18n-uk-english homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-uk-english long_description {{KDE uk-english language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-ukranian 304
+description {KDE ukranian language files.} portdir kde/kde-i18n-ukranian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-ukranian long_description {{KDE ukranian language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-upper-sorbian 324
+description {KDE upper-sorbian language files.} portdir kde/kde-i18n-upper-sorbian homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-upper-sorbian long_description {{KDE upper-sorbian language files.}} maintainers nomaintainer@macports.org categories kde version 3.4.3 revision 0
+kde-i18n-uzbek 292
+description {KDE uzbek language files.} portdir kde/kde-i18n-uzbek homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-uzbek long_description {{KDE uzbek language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-vietnamese 312
+description {KDE vietnamese language files.} portdir kde/kde-i18n-vietnamese homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-vietnamese long_description {{KDE vietnamese language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kde-i18n-welsh 292
+description {KDE welsh language files.} portdir kde/kde-i18n-welsh homepage http://www.kde.org/ epoch 0 platforms darwin depends_lib port:kdebase3 name kde-i18n-welsh long_description {{KDE welsh language files.}} maintainers nomaintainer@macports.org categories kde version 3.5.5 revision 0
+kdeaccessibility3 391
+depends_build {port:autoconf port:unsermake} portdir kde/kdeaccessibility3 description {KDE accessibility tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeaccessibility3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE accessibility tools. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdeaddons3 394
+depends_build {port:autoconf port:unsermake} portdir kde/kdeaddons3 description {KDE addons. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeaddons3 depends_lib {port:doxygen port:kdebase3 port:kdegames3 port:kdepim3} maintainers nomaintainer@macports.org long_description {{KDE addons. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdeartwork3 377
+depends_build {port:autoconf port:unsermake} portdir kde/kdeartwork3 description {KDE additional artwork. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeartwork3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE additional artwork. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdebase3 458
+variants apidox depends_build {port:autoconf port:unsermake} portdir kde/kdebase3 description {Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdebase3 depends_lib {port:cyrus-sasl2 port:kdelibs3 port:libusb} maintainers nomaintainer@macports.org long_description {{Base KDE programs -- e.g. kicker (taskbar). NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdeedu3 393
+depends_build {port:autoconf port:unsermake} portdir kde/kdeedu3 description {KDE educational games and software. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeedu3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE educational games and software. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdegames3 347
+depends_build {port:autoconf port:unsermake} portdir kde/kdegames3 description {KDE games. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdegames3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE games. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdegraphics3 436
+depends_build {port:autoconf port:unsermake} portdir kde/kdegraphics3 description {KDE graphics. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdegraphics3 depends_lib {port:fribidi port:imlib port:kdebase3 port:lcms port:libusb port:sane-backends port:xpdf} maintainers nomaintainer@macports.org long_description {{KDE graphics. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdelibs3 846
+variants {darwin_9 darwin_8 darwin_7 darwin_6 apidox} depends_build {port:autoconf port:unsermake} portdir kde/kdelibs3 description {Essential libraries for KDE applications. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdelibs3 depends_lib {lib:libpoll:poll-emulator lib:libX11.6:XFree86 port:aspell port:bzip2 port:expat port:flex port:fontconfig port:freetype port:gettext port:glib2 port:hicolor-icon-theme port:jasper port:jpeg port:libart_lgpl port:libidn port:libiconv port:libpng port:libxml2 port:libxslt port:lua port:pcre port:tiff port:OpenEXR port:openssl port:perl5.8 port:pkgconfig port:qt3 port:Xft2 port:xrender port:zlib} maintainers nomaintainer@macports.org long_description {{Essential libraries for KDE applications. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdenetwork3 382
+depends_build {port:autoconf port:unsermake} portdir kde/kdenetwork3 description {KDE network tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdenetwork3 depends_lib {port:kdebase3 port:openslp} maintainers nomaintainer@macports.org long_description {{KDE network tools. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdepim3 461
+depends_build {port:autoconf port:unsermake} portdir kde/kdepim3 description {KDE personal information management tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdepim3 depends_lib {port:gpgme port:kdeaccessibility3 port:kdebase3 port:libgpg-error} maintainers nomaintainer@macports.org long_description {{KDE personal information management tools. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdesdk3 396
+depends_build {port:autoconf port:unsermake} portdir kde/kdesdk3 description {KDE SDK. NB No KDE sound support. No SVN support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdesdk3 depends_lib {port:db44 port:kdebase3 port:kdepim3} maintainers nomaintainer@macports.org long_description {{KDE SDK. NB No KDE sound support. No SVN support.}} version 3.5.5 categories kde revision 0
+kdetoys3 343
+depends_build {port:autoconf port:unsermake} portdir kde/kdetoys3 description {KDE toys. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdetoys3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE toys. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdeutils3 366
+depends_build {port:autoconf port:unsermake} portdir kde/kdeutils3 description {KDE utilities. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdeutils3 depends_lib {port:gmp port:kdebase3} maintainers nomaintainer@macports.org long_description {{KDE utilities. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+kdewebdev3 381
+depends_build {port:autoconf port:unsermake} portdir kde/kdewebdev3 description {KDE web development tools. NB No KDE sound support.} homepage http://www.kde.org/ epoch 0 platforms darwin name kdewebdev3 depends_lib port:kdebase3 maintainers nomaintainer@macports.org long_description {{KDE web development tools. NB No KDE sound support.}} version 3.5.5 categories kde revision 0
+koffice 457
+variants darwin_7 depends_build {port:autoconf port:unsermake} portdir kde/koffice description {KDE office suite. NB KDE sound does not work.} homepage http://www.koffice.org/ epoch 0 platforms darwin name koffice depends_lib {port:kdebase3 port:ImageMagick port:lcms port:libwpd port:mysql4 port:ruby port:wv2} maintainers nomaintainer@macports.org long_description {{KDE office suite. NB KDE sound does not work.}} version 1.6.0 categories kde revision 0
+koffice-i18n-afrikaans 327
+description {KOffice afrikaans language files.} portdir kde/koffice-i18n-afrikaans homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-afrikaans long_description {{KOffice afrikaans language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-arabic 315
+description {KOffice arabic language files.} portdir kde/koffice-i18n-arabic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-arabic long_description {{KOffice arabic language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-basque 315
+description {KOffice basque language files.} portdir kde/koffice-i18n-basque homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-basque long_description {{KOffice basque language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-bengali 284
+portdir kde/koffice-i18n-bengali description {KOffice bengali language files.} platforms darwin name koffice-i18n-bengali depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KOffice bengali language files.}}
+koffice-i18n-bosnian 319
+description {KOffice bosnian language files.} portdir kde/koffice-i18n-bosnian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-bosnian long_description {{KOffice bosnian language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-brazilian-portugese 367
+description {KOffice brazilian-portugese language files.} portdir kde/koffice-i18n-brazilian-portugese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-brazilian-portugese long_description {{KOffice brazilian-portugese language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-breton 315
+description {KOffice breton language files.} portdir kde/koffice-i18n-breton homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-breton long_description {{KOffice breton language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-bulgarian 327
+description {KOffice bulgarian language files.} portdir kde/koffice-i18n-bulgarian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-bulgarian long_description {{KOffice bulgarian language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-catalan 319
+description {KOffice catalan language files.} portdir kde/koffice-i18n-catalan homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-catalan long_description {{KOffice catalan language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-chinese 319
+description {KOffice chinese language files.} portdir kde/koffice-i18n-chinese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-chinese long_description {{KOffice chinese language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-chinese-simplified 363
+description {KOffice chinese-simplified language files.} portdir kde/koffice-i18n-chinese-simplified homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-chinese-simplified long_description {{KOffice chinese-simplified language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-czech 311
+description {KOffice czech language files.} portdir kde/koffice-i18n-czech homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-czech long_description {{KOffice czech language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-danish 315
+description {KOffice danish language files.} portdir kde/koffice-i18n-danish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-danish long_description {{KOffice danish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-dutch 311
+description {KOffice dutch language files.} portdir kde/koffice-i18n-dutch homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-dutch long_description {{KOffice dutch language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-esperanto 327
+description {KOffice esperanto language files.} portdir kde/koffice-i18n-esperanto homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-esperanto long_description {{KOffice esperanto language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-estonian 323
+description {KOffice estonian language files.} portdir kde/koffice-i18n-estonian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-estonian long_description {{KOffice estonian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-finnish 319
+description {KOffice finnish language files.} portdir kde/koffice-i18n-finnish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-finnish long_description {{KOffice finnish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-french 315
+description {KOffice french language files.} portdir kde/koffice-i18n-french homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-french long_description {{KOffice french language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-frisian 284
+portdir kde/koffice-i18n-frisian description {KOffice frisian language files.} platforms darwin name koffice-i18n-frisian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KOffice frisian language files.}}
+koffice-i18n-german 315
+description {KOffice german language files.} portdir kde/koffice-i18n-german homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-german long_description {{KOffice german language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-greek 311
+description {KOffice greek language files.} portdir kde/koffice-i18n-greek homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-greek long_description {{KOffice greek language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-hebrew 315
+description {KOffice hebrew language files.} portdir kde/koffice-i18n-hebrew homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hebrew long_description {{KOffice hebrew language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-hindi 311
+description {KOffice hindi language files.} portdir kde/koffice-i18n-hindi homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hindi long_description {{KOffice hindi language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-hungarian 327
+description {KOffice hungarian language files.} portdir kde/koffice-i18n-hungarian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-hungarian long_description {{KOffice hungarian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-icelandic 327
+description {KOffice icelandic language files.} portdir kde/koffice-i18n-icelandic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-icelandic long_description {{KOffice icelandic language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-irish-gaelic 339
+description {KOffice irish-gaelic language files.} portdir kde/koffice-i18n-irish-gaelic homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-irish-gaelic long_description {{KOffice irish-gaelic language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-italian 319
+description {KOffice italian language files.} portdir kde/koffice-i18n-italian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-italian long_description {{KOffice italian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-japanese 323
+description {KOffice japanese language files.} portdir kde/koffice-i18n-japanese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-japanese long_description {{KOffice japanese language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-latvian 319
+description {KOffice latvian language files.} portdir kde/koffice-i18n-latvian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-latvian long_description {{KOffice latvian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-lithuanian 331
+description {KOffice lithuanian language files.} portdir kde/koffice-i18n-lithuanian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-lithuanian long_description {{KOffice lithuanian language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-low-saxon 292
+portdir kde/koffice-i18n-low-saxon description {KOffice low-saxon language files.} platforms darwin name koffice-i18n-low-saxon depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KOffice low-saxon language files.}}
+koffice-i18n-macedonian 331
+description {KOffice macedonian language files.} portdir kde/koffice-i18n-macedonian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-macedonian long_description {{KOffice macedonian language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-malay 311
+description {KOffice malay language files.} portdir kde/koffice-i18n-malay homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-malay long_description {{KOffice malay language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-northern-sami 343
+description {KOffice northern-sami language files.} portdir kde/koffice-i18n-northern-sami homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-northern-sami long_description {{KOffice northern-sami language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-norwegian-bokmaal 359
+description {KOffice norwegian-bokmaal language files.} portdir kde/koffice-i18n-norwegian-bokmaal homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-norwegian-bokmaal long_description {{KOffice norwegian-bokmaal language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-norwegian-nynorsk 359
+description {KOffice norwegian-nynorsk language files.} portdir kde/koffice-i18n-norwegian-nynorsk homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-norwegian-nynorsk long_description {{KOffice norwegian-nynorsk language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-polish 315
+description {KOffice polish language files.} portdir kde/koffice-i18n-polish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-polish long_description {{KOffice polish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-portugese 327
+description {KOffice portugese language files.} portdir kde/koffice-i18n-portugese homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-portugese long_description {{KOffice portugese language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-punjabi 284
+portdir kde/koffice-i18n-punjabi description {KOffice punjabi language files.} platforms darwin name koffice-i18n-punjabi depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KOffice punjabi language files.}}
+koffice-i18n-romanian 323
+description {KOffice romanian language files.} portdir kde/koffice-i18n-romanian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-romanian long_description {{KOffice romanian language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-russian 319
+description {KOffice russian language files.} portdir kde/koffice-i18n-russian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-russian long_description {{KOffice russian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-serbian 319
+description {KOffice serbian language files.} portdir kde/koffice-i18n-serbian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-serbian long_description {{KOffice serbian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-serbian-latin-script 371
+description {KOffice serbian-latin-script language files.} portdir kde/koffice-i18n-serbian-latin-script homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-serbian-latin-script long_description {{KOffice serbian-latin-script language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-slovak 315
+description {KOffice slovak language files.} portdir kde/koffice-i18n-slovak homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-slovak long_description {{KOffice slovak language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-slovenian 327
+description {KOffice slovenian language files.} portdir kde/koffice-i18n-slovenian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-slovenian long_description {{KOffice slovenian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-spanish 319
+description {KOffice spanish language files.} portdir kde/koffice-i18n-spanish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-spanish long_description {{KOffice spanish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-swedish 319
+description {KOffice swedish language files.} portdir kde/koffice-i18n-swedish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-swedish long_description {{KOffice swedish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-tajik 311
+description {KOffice tajik language files.} portdir kde/koffice-i18n-tajik homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-tajik long_description {{KOffice tajik language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-tamil 311
+description {KOffice tamil language files.} portdir kde/koffice-i18n-tamil homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-tamil long_description {{KOffice tamil language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-turkish 319
+description {KOffice turkish language files.} portdir kde/koffice-i18n-turkish homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-turkish long_description {{KOffice turkish language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-uk-english 331
+description {KOffice uk-english language files.} portdir kde/koffice-i18n-uk-english homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-uk-english long_description {{KOffice uk-english language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-ukranian 323
+description {KOffice ukranian language files.} portdir kde/koffice-i18n-ukranian homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-ukranian long_description {{KOffice ukranian language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+koffice-i18n-upper-sorbian 308
+portdir kde/koffice-i18n-upper-sorbian description {KOffice upper-sorbian language files.} platforms darwin name koffice-i18n-upper-sorbian depends_lib port:koffice version 1.5 categories kde revision 0 epoch 0 maintainers nomaintainer@macports.org long_description {{KOffice upper-sorbian language files.}}
+koffice-i18n-uzbek 311
+description {KOffice uzbek language files.} portdir kde/koffice-i18n-uzbek homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-uzbek long_description {{KOffice uzbek language files.}} maintainers nomaintainer@macports.org categories kde version 1.5.2 revision 0
+koffice-i18n-welsh 311
+description {KOffice welsh language files.} portdir kde/koffice-i18n-welsh homepage http://www.koffice.org/ epoch 0 platforms darwin depends_lib port:koffice name koffice-i18n-welsh long_description {{KOffice welsh language files.}} maintainers nomaintainer@macports.org categories kde version 1.6.0 revision 0
+konversation 401
+depends_build {port:autoconf port:unsermake} portdir kde/konversation description {KDE IRC client. NB No KDE sound support.} homepage http://konversation.kde.org/ epoch 0 platforms darwin name konversation depends_lib {port:kdebase3 port:doxygen port:graphviz} maintainers nomaintainer@macports.org long_description {{KDE IRC client. NB No KDE sound support.}} version 1.0.1 categories kde revision 0
 4th 558
 portdir lang/4th platforms darwin description {very small Forth compiler} name 4th version 34e categories lang homepage http://www.xs4all.nl/~thebeez/4tH/foldtree.html revision 0 epoch 0 maintainers mww@opendarwin.org long_description {4tH is a very small Forth compiler that can create bytecode, C-embeddable bytecode, standalone executables, but also works fine as a scripting language. It supports over 85% of the ANS Forth CORE wordset and features conditional compilation, pipes, files, assertions, forward declarations, recursion, include files, etc.}
 xotcl 439
@@ -3310,6 +3312,8 @@ bcv 310
 portdir math/bcv platforms darwin description {command line number converter} name bcv version 2.2 categories math homepage http://gbarbier.free.fr/prj/dev/#bcv revision 0 epoch 0 maintainers mww@opendarwin.org long_description {Converts number to/from decimal, hex, bin, octal and ascii on the command line.}
 blitz 438
 variants darwin_8 description {A C++ class library for scientific computing} portdir math/blitz homepage http://www.oonumerics.org/blitz/ epoch 0 platforms darwin name blitz long_description {Blitz++ is a C++ class library for scientific computing which provides performance on par with Fortran 77/90. It uses template techniques to achieve high performance.} maintainers mww@opendarwin.org categories {math devel} version 0.9 revision 0
+cadabra 729
+portdir math/cadabra description {A field theory approach to symbolic computer algebra} homepage http://www.aei.mpg.de/~peekas/cadabra/ epoch 0 depends_run port:TeXmacs platforms darwin name cadabra depends_lib {port:modglue port:expect port:pcre port:pcre++ port:gmp port:LiE} maintainers gwright@macports.org long_description {Cadabra is a computer algebra system for the manipulation of what could loosely be called tensorial expressions. It is aimed at, though not necessarily restricted to, theoretical high energy physicists. Because of its target audience, the program's interface, storage system and underlying philosophy differ substantially from other computer algebra systems.} version 0.92 categories math revision 0
 calc 759
 portdir math/calc description {Arbitrary precision calculator} platforms darwin name calc version 2.11.11 categories math homepage http://www.isthe.com/chongo/tech/comp/calc/ revision 0 epoch 0 maintainers toby@opendarwin.org long_description {Calc is an interactive calculator which provides for easy large numeric calculations, but which also can be easily programmed for difficult or long calculations. It can accept a command line argument, in which case it executes that single command and exits. Otherwise, it enters interactive mode. There are a great number of pre-defined functions. The calculator can calculate transcendental functions, and accept and display numbers in real or exponential format. The calculator also knows about complex numbers.}
 cln 353
@@ -6728,8 +6732,8 @@ wbxml2 362
 portdir textproc/wbxml2 description {converts between XML and Wireless Binary XML (WBXML)} name wbxml2 depends_lib {lib:libexpat:expat bin:glibtoolize:libtool} version 0.9.0 categories {textproc devel} homepage http://libwbxml.aymerick.com/ revision 0 epoch 0 maintainers glasser@mit.edu long_description {{converts between XML and Wireless Binary XML (WBXML)}}
 wdiff 525
 portdir textproc/wdiff description {Display word differences between text files} name wdiff version 0.5 categories textproc revision 0 epoch 0 maintainers fenner@research.att.com long_description {wdiff compares two files, finding which words have been deleted or added to old_file to get new_file. A word is anything between whitespace. The output is collected and used to produce an annotated copy of new_file on standard output. Suitable annotations produce a nice display of word differences between the original files.}
-wv2 327
-description {A library for reading Microsoft Word files.} portdir textproc/wv2 homepage wvware.sf.net epoch 0 platforms darwin depends_lib {port:pkgconfig port:glib2 port:libgsf} name wv2 maintainers ben@macports.org long_description {{A library for reading Microsoft Word files.}} categories textproc version 0.2.2 revision 0
+wv2 336
+description {A library for reading Microsoft Word files.} portdir textproc/wv2 homepage wvware.sf.net epoch 0 platforms darwin depends_lib {port:pkgconfig port:glib2 port:libgsf} name wv2 maintainers nomaintainer@macports.org long_description {{A library for reading Microsoft Word files.}} categories textproc version 0.2.2 revision 0
 wyrd 561
 portdir textproc/wyrd description {an ncurses based front-end for remind.} name wyrd depends_lib {port:ocaml port:remind lib:libncurses:ncurses} version 1.4.1 categories {textproc pim} homepage http://www.eecs.umich.edu/~pelzlpj/wyrd/ revision 0 epoch 0 maintainers henry@hjst.org long_description {Wyrd is a text-based front-end to Remind, a sophisticated calendar and alarm program. Wyrd is designed to make you more efficient at editing your reminder files directly. It also offers a scrollable timetable suitable for visualizing your schedule at a glance.}
 xalanc 562
