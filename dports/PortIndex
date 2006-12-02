@@ -4775,7 +4775,7 @@ description {Simple word wrapping routine} portdir perl/p5-text-wrapper homepage
 p5-tie-ixhash 393
 description {Module that preserves order in perl associative arrays.} portdir perl/p5-tie-ixhash homepage http://search.cpan.org/dist/Tie-IxHash/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8}} name p5-tie-ixhash long_description {{Module that preserves order in perl associative arrays.}} maintainers nomaintainer@macports.org categories perl version 1.21 revision 0
 p5-time-hires 406
-description {perl5 module implementing High resolution time, sleep, and alarm} portdir perl/p5-time-hires homepage http://search.cpan.org/dist/Time-HiRes/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8}} name p5-time-hires long_description {{perl5 module implementing High resolution time, sleep, and alarm}} maintainers narf_tm@macports.org categories perl version 1.96 revision 0
+description {perl5 module implementing High resolution time, sleep, and alarm} portdir perl/p5-time-hires homepage http://search.cpan.org/dist/Time-HiRes/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8}} name p5-time-hires long_description {{perl5 module implementing High resolution time, sleep, and alarm}} maintainers narf_tm@macports.org categories perl version 1.97 revision 0
 p5-time-modules 366
 description {Set of modules for time manipulation} portdir perl/p5-time-modules homepage http://search.cpan.org/dist/Time-modules/ epoch 0 platforms darwin depends_lib {{path:${prefix}/bin/perl:perl5.8}} name p5-time-modules long_description {{Set of modules for time manipulation}} maintainers nomaintainer@macports.org categories perl version 2006.0814 revision 0
 p5-time-piece 339
