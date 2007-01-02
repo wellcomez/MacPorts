@@ -6532,6 +6532,10 @@ docbook-xml-scrollkeeper 243
 portdir textproc/docbook-xml-scrollkeeper description {the docbook xml dtds} platforms darwin name docbook-xml-scrollkeeper version 4.2 categories textproc depends_build bin:unzip:unzip revision 0 epoch 0 maintainers nomaintainer@macports.org
 docbook-xsl 227
 portdir textproc/docbook-xsl description {the docbook xsl stylesheets} platforms darwin name docbook-xsl version 1.69.1 categories textproc homepage http://docbook.sf.net/ revision 0 epoch 0 maintainers michaelm@opendarwin.org
+docbook2X 555
+description {Converts DocBook documents into the traditional Unix man page format and the GNU Texinfo format.} portdir textproc/docbook2X homepage http://docbook2x.sourceforge.net/ epoch 0 platforms darwin depends_lib {port:perl5.8 port:p5-xml-namespacesupport port:p5-xml-sax port:p5-xml-parser port:p5-xml-sax-expat port:libiconv port:libxml2} name docbook2X long_description {{Converts DocBook documents into the traditional Unix man page format and the GNU Texinfo format.}} maintainers markd@macports.org categories textproc version 0.8.7 revision 0
+doclifter 374
+description {troff macro to DocBook translater.} portdir textproc/doclifter homepage http://catb.org/~esr/doclifter/ epoch 0 platforms darwin depends_lib port:python24 name doclifter long_description {A troff macro to DocBook translater. For example, it may be used to convert man pages to DocBook.} maintainers markd@macports.org categories textproc version 2.3 revision 0
 dos2unix 184
 portdir textproc/dos2unix description {Convert text between dos, unix, and mac formats} name dos2unix version 3.1 categories textproc revision 0 epoch 0 maintainers waqar@macports.org
 doxygen 1160
