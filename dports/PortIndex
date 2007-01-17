@@ -1597,7 +1597,7 @@ portdir games/dominion description {world simulation RPG} platforms darwin name 
 dopewars 494
 variants darwin_6 portdir games/dopewars description {Rewrite of a game originally based on {"Drug} Wars\"} homepage http://dopewars.sourceforge.net/ epoch 0 platforms darwin name dopewars depends_lib {lib:libgtk.2:gtk2 lib:libesd.0:esound} maintainers mij@macports.org long_description {The idea of dopewars is to deal drugs on the streets of New York, amassing a huge fortune and paying off the loan shark, while avoiding the ever annoying police.} version 1.5.10 categories games revision 0
 eboard 547
-depends_build {port:imlib port:gtk2 port:perl5.8} description {eboard is a chess interface just like xboard.} portdir games/eboard homepage http://eboard.sourceforge.net epoch 0 platforms darwin name eboard long_description {eboard is a chess interface for Unix-like systems (GNU/Linux, FreeBSD, Solaris, etc.) based on the GTK+ GUI toolkit. It provides a chess board interface to ICS (Internet Chess Servers) like FICS and to chess engines like GNU Chess, Sjeng and Crafty.} maintainers pmq@macports.org version 1.0.1 categories games revision 0
+depends_build {port:imlib port:gtk2 port:perl5.8} description {eboard is a chess interface just like xboard.} portdir games/eboard homepage http://eboard.sourceforge.net epoch 0 platforms darwin name eboard long_description {eboard is a chess interface for Unix-like systems (GNU/Linux, FreeBSD, Solaris, etc.) based on the GTK+ GUI toolkit. It provides a chess board interface to ICS (Internet Chess Servers) like FICS and to chess engines like GNU Chess, Sjeng and Crafty.} maintainers pmq@macports.org version 1.0.2 categories games revision 0
 euchre 347
 variants darwin_8 description {euchre, a common card game} portdir games/euchre homepage http://www.cs.umd.edu/~bender/ epoch 0 depends_lib {port:gtk1 port:gettext port:glib1} name euchre long_description {Implementation of the card game euchre in C++ with GUI in GTK.} maintainers abender@gmail.com categories {games x11} version 0.7c revision 0
 fbg 507
@@ -6147,7 +6147,7 @@ variants {darwin_8 dp_completion utf8} portdir shells/zsh-devel description {Zsh
 DarwinPortsStartup 238
 portdir sysutils/DarwinPortsStartup description {System startup item to start things installed from darwinports} platforms darwin name DarwinPortsStartup version 1.1 categories sysutils revision 0 epoch 0 maintainers kevin@opendarwin.org
 FDclone 375
-variants {nojpnmes emacs vim lv less jless autosort} description {File & Directory Maintenance Tool} portdir sysutils/FDclone homepage http://hp.vector.co.jp/authors/VA012337/soft/fd/index.html epoch 0 platforms darwin name FDclone long_description {{File & Directory Maintenance Tool}} maintainers takanori@macports.org categories {sysutils shells} version 2.09b revision 0
+variants {nojpnmes emacs vim lv less jless autosort} description {File & Directory Maintenance Tool} portdir sysutils/FDclone homepage http://hp.vector.co.jp/authors/VA012337/soft/fd/index.html epoch 0 platforms darwin name FDclone long_description {{File & Directory Maintenance Tool}} maintainers takanori@macports.org categories {sysutils shells} version 2.09c revision 0
 RCng 324
 portdir sysutils/RCng description {NetBSD-based RCng system for starting daemons installed by DarwinPorts.} platforms {darwin freebsd} name RCng version 1.0 categories sysutils revision 0 epoch 0 maintainers landonf@opendarwin.org long_description {{NetBSD-based RCng system for starting daemons installed by DarwinPorts.}}
 agrep 324
