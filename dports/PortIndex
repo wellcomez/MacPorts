@@ -216,8 +216,8 @@ ppmd 498
 portdir archivers/ppmd platforms darwin description {A fast archiver with a good compression ratio} name ppmd version 20050811 categories archivers homepage http://packages.debian.org/unstable/utils/ppmd revision 0 epoch 0 maintainers mww@opendarwin.org long_description {PPMD is a fast archiver with a good compression ratio. It is written for embedding in user programs mainly it is not intended for immediate use. Speed and performance improvements of abstract PPM model 1-6 are the main goal.}
 rzip 498
 variants darwin_8 description {Compression program similar to gzip or bzip2} portdir archivers/rzip homepage http://rzip.samba.org/ epoch 0 platforms darwin name rzip long_description {rzip is a compression program, similar in functionality to gzip or bzip2, but able to take advantage from long distance redundancies in files, which can sometimes allow rzip to produce much better compression ratios than other programs.} maintainers mww@opendarwin.org categories archivers version 2.1 revision 0
-sharutils 320
-portdir archivers/sharutils description {Shell archiver utilities} name sharutils depends_lib port:gettext version 4.2.1 categories archivers homepage http://www.gnu.org/software/sharutils/sharutils.html revision 2 epoch 0 maintainers nomaintainer@macports.org long_description {Creates and helps unpack shell archives}
+sharutils 301
+portdir archivers/sharutils description {Shell archiver utilities} name sharutils depends_lib port:gettext version 4.6.3 categories archivers homepage http://www.gnu.org/software/sharutils/ revision 0 epoch 0 maintainers pipping@macports.org long_description {Creates and helps unpack shell archives}
 star 394
 portdir archivers/star platforms darwin description {fastest and most POSIX 1003.1 conformant tar implementation} name star version 1.4.3 categories archivers homepage http://www.fokus.fraunhofer.de/research/cc/berlios/employees/joerg.schilling/private/star.html revision 0 epoch 0 maintainers mww@opendarwin.org long_description {{fastest and most POSIX 1003.1 conformant tar implementation}}
 szip 735
@@ -2958,6 +2958,8 @@ gcc41 422
 variants {darwin darwin_8 powerpc} portdir lang/gcc41 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc41 depends_lib {port:gmp port:mpfr port:libiconv port:odcctools} maintainers mww@macports.org long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} version 4.1.1 categories lang revision 0
 gcc42 464
 variants {darwin_8 powerpc} portdir lang/gcc42 description {The GNU compiler collection, prerelease BETA} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc42 depends_lib {port:gmp port:mpfr port:libiconv port:odcctools} maintainers mww@macports.org long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95, prerelease BETA version.} version 4.2-20070124 categories lang revision 0
+gcc43 411
+variants {darwin_8 powerpc} portdir lang/gcc43 description {The GNU compiler collection, prerelease BETA} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc43 depends_lib {port:gmp port:mpfr port:libiconv port:odcctools} maintainers mww@macports.org long_description {The GNU compiler collection, including front ends for C, prerelease BETA version.} version 4.3-20070126 categories lang revision 0
 gccxml 344
 depends_build port:cmake-devel description {generates XML description of C++ code} portdir lang/gccxml homepage http://www.gccxml.org/ epoch 0 platforms darwin name gccxml long_description {generates an XML description of a C++ program from GCC's internal representation} maintainers mww@opendarwin.org categories lang version 0.6.0 revision 0
 gcj34 531
@@ -6618,8 +6620,8 @@ dumpasn1 398
 portdir textproc/dumpasn1 description {an ASN.1 decoder and pretty-printer} platforms darwin name dumpasn1 version 20060622 categories {textproc security} homepage http://www.cs.auckland.ac.nz/~pgut001/ revision 0 epoch 0 maintainers cjr@macports.org long_description {The dumpasn1 program decodes BER and DER-encoded ASN.1 data, and is configured with knowledge of many security-related objects.}
 enca 406
 description {character set analyser} portdir textproc/enca homepage http://trific.ath.cx/software/enca/ epoch 0 platforms darwin depends_lib bin:iconv:libiconv name enca long_description {Enca is an Extremely Naive Charset Analyser. It detects character set and encoding of text files and can also convert them to other encodings.} maintainers mww@opendarwin.org categories textproc version 1.4 revision 0
-expat 309
-variants no_static description {XML 1.0 parser written in C} portdir textproc/expat homepage http://expat.sourceforge.net/ epoch 0 platforms {darwin freebsd} name expat long_description {{XML 1.0 parser written in C}} maintainers nomaintainer@macports.org categories {textproc devel} version 2.0.0 revision 1
+expat 334
+variants no_static description {XML 1.0 parser written in C} portdir textproc/expat homepage http://expat.sourceforge.net/ epoch 0 platforms {darwin freebsd} name expat long_description {{XML 1.0 parser written in C}} maintainers {pipping@macports.org openmaintainer@macports.org} categories {textproc devel} version 2.0.0 revision 1
 figlet 261
 portdir textproc/figlet description {banner-like program prints strings as ASCII art} platforms {darwin freebsd} name figlet version 2.2.2 categories {textproc amusements} homepage http://www.figlet.org/ revision 0 epoch 0 maintainers nomaintainer@macports.org
 firemime 687
