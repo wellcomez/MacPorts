@@ -6610,8 +6610,8 @@ gkrellm 342
 variants universal portdir sysutils/gkrellm description {A GTK based system monitor} homepage http://members.dslextreme.com/users/billw/gkrellm/gkrellm.html epoch 0 platforms darwin name gkrellm depends_lib port:gtk2 maintainers markd@macports.org long_description {{A GTK based system monitor}} version 2.2.10 categories sysutils revision 0
 gnuregex 286
 variants universal description {GNU regex library} portdir sysutils/gnuregex homepage http://www.gnu.org/directory/regex.html epoch 0 platforms darwin name gnuregex long_description {{GNU regex library}} maintainers nomaintainer@macports.org categories sysutils version 0.12 revision 2
-grep 479
-variants universal portdir sysutils/grep description {GNU grep, the {"fastest} grep in the west\" (we hope).} homepage http://www.gnu.org/software/grep/grep.html epoch 0 platforms darwin name grep depends_lib {port:gettext port:libiconv port:pcre} maintainers waqar@macports.org long_description {Grep searches one or more input files for lines containing a match to a specified pattern. By default, grep prints the matching lines.} version 2.5.1a categories sysutils revision 0
+grep 456
+variants {universal nls} portdir sysutils/grep description {GNU grep, the {"fastest} grep in the west\" (we hope).} homepage http://www.gnu.org/software/grep/grep.html epoch 0 platforms darwin name grep depends_lib port:pcre maintainers waqar@macports.org long_description {Grep searches one or more input files for lines containing a match to a specified pattern. By default, grep prints the matching lines.} version 2.5.1a categories sysutils revision 1
 groff 434
 variants universal description {GNU Troff (Groff)} portdir sysutils/groff homepage http://www.gnu.org/software/groff/ epoch 0 platforms darwin name groff long_description {The groff (GNU Troff) software is a typesetting package which reads plain text mixed with formatting commands and produces formatted output. Groff now supports HTML.} maintainers nomaintainer@macports.org categories {sysutils textproc} version 1.19.2 revision 1
 gtime 597
