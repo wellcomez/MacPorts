@@ -7076,10 +7076,10 @@ docbook-xml-4.4 321
 variants universal description {Version 4.4 of the DocBook XML DTDs} portdir textproc/docbook-xml-4.4 homepage http://www.docbook.org/xml/4.4/ depends_run port:xmlcatmgr epoch 0 platforms darwin name docbook-xml-4.4 maintainers {boeyms@macports.org openmaintainer@macports.org} categories textproc version 4.4 revision 0
 docbook-xml-4.5 321
 variants universal description {Version 4.5 of the DocBook XML DTDs} portdir textproc/docbook-xml-4.5 homepage http://www.docbook.org/xml/4.5/ depends_run port:xmlcatmgr epoch 0 platforms darwin name docbook-xml-4.5 maintainers {boeyms@macports.org openmaintainer@macports.org} categories textproc version 4.5 revision 0
-docbook-xml-412 315
-portdir textproc/docbook-xml-412 variants universal description {This port is depreciated in favor of port:docbook-xml-4.1.2t} platforms darwin name docbook-xml-412 depends_lib port:docbook-xml-4.1.2 version 4.1.2 categories textproc revision 1 epoch 0 maintainers {rhwood@macports.org openmaintainer@macports.org}
-docbook-xml-scrollkeeper 262
-portdir textproc/docbook-xml-scrollkeeper variants universal description {the docbook xml dtds} platforms darwin name docbook-xml-scrollkeeper version 4.2 categories textproc depends_build bin:unzip:unzip revision 0 epoch 0 maintainers nomaintainer@macports.org
+docbook-xml-412 314
+portdir textproc/docbook-xml-412 variants universal description {This port is depreciated in favor of port:docbook-xml-4.1.2} platforms darwin name docbook-xml-412 depends_lib port:docbook-xml-4.1.2 version 4.1.2 categories textproc revision 1 epoch 0 maintainers {rhwood@macports.org openmaintainer@macports.org}
+docbook-xml-scrollkeeper 302
+portdir textproc/docbook-xml-scrollkeeper variants universal description {This port is depreciated in favor of port:docbook-xml-4.2} platforms darwin name docbook-xml-scrollkeeper depends_lib port:docbook-xml-4.2 version 4.2 categories textproc revision 1 epoch 0 maintainers nomaintainer@macports.org
 docbook-xsl 308
 variants universal description {the docbook xsl stylesheets} portdir textproc/docbook-xsl homepage http://docbook.sourceforge.net/ depends_run port:xmlcatmgr epoch 0 platforms darwin name docbook-xsl maintainers {boeyms@macports.org openmaintainer@macports.org} categories textproc version 1.72.0 revision 0
 docbook2X 574
