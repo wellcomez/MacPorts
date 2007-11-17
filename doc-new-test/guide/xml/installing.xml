@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="installing">
+  <title>Installing MacPorts</title>
+
+  <para>This chapter show you how to install MacPorts and its prerequisites
+  step-by-step. Note that sections 1 through 3 are Mac OS X specific. If you
+  wish to install MacPorts on another platform, first make sure you have X11
+  and gcc installed, and then perform a <ulink
+  url="installing.source">MacPorts install from source code</ulink>.</para>
+
+  <section id="installing.x11">
+    <title>Install X11</title>
+
+    <para>It is recommended that you install the X Window System (X11) even if
+    you don't plan to run X11 applications immediately. Apple's X11 is
+    preferred over the MacPorts X11 port, and ports with an X11 dependency
+    will be satisfied by Apple's X11. If Apple's X11 wasn't installed at the
+    same time the OS X was installed, follow these steps.</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Insert the "Mac OS X Install Disk" and run the package named
+        "Optional Installs".</para>
+      </listitem>
+
+      <listitem>
+        <para>At the software selection window expand the Applications
+        category and click the check box beside X11 (and nothing else).</para>
+      </listitem>
+
+      <listitem>
+        <para>Click <guibutton>Install</guibutton> to install X11.</para>
+      </listitem>
+
+      <listitem>
+        <para>Drag the <filename>/Applications/Utilities/X11</filename> icon
+        to your dock —you must open X11 before launching an X11
+        application.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>If you're using OS X 10.3 then you can download the X11 installer
+    from the Apple <ulink
+    url="http://apple.com/support/downloads/x11formacosx.html">download
+    page</ulink>.</para>
+
+    <note>
+      <para>X11 and the X11SDK (from Xcode Tools) are both required for X11
+      apps. To verify the presence of both, check for files
+      <filename>com.apple.pkg.X11User.bom</filename> &amp;
+      <filename>com.apple.pkg.X11SDKLeo.bom</filename> in
+      <filename>/Library/Receipts/boms/</filename>. On OS X 10.4, look for
+      files <filename>X11User.pkg</filename> &amp;
+      <filename>X11SDK.pkg</filename> in
+      <filename>/Library/Receipts/</filename>.</para>
+    </note>
+
+    <section id="installing.x11.settings">
+      <title>Optional X11 Settings</title>
+
+      <para>To launch X11 applications directly from an X11 window (instead of
+      a terminal window), you need to have the MacPorts paths imported into
+      X11 sessions when they are opened. This is a two step process.</para>
+
+      <para>First, tell X11 about the <filename>~/.profile</filename> file
+      that will be created after you install MacPorts. Do this by editing the
+      file <filename>/etc/X11/xinit/xinitrc</filename> and adding this line
+      near the top.</para>
+
+      <programlisting>source ~/.profile</programlisting>
+
+      <para>Now finish the process by making subsequent X11 sessions opened
+      using the menu bar respect your <filename>.profile</filename>
+      file.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Open X11 and select "Customize Menu ..." from the Applications
+          menu.</para>
+        </listitem>
+
+        <listitem>
+          <para>Double-click the menu item "Terminal" and change: "xterm" to
+          "xterm -ls"</para>
+        </listitem>
+
+        <listitem>
+          <para>Click "Done" to save the change.</para>
+        </listitem>
+      </orderedlist>
+    </section>
+  </section>
+
+  <section id="installing.xcode">
+    <title>Install Xcode Tools</title>
+
+    <para>To install Xcode Tools and the X11 SDK, follow these steps.</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Download and install the latest version of <ulink
+        url="http://developer.apple.com/tools/xcode/">Xcode Tools</ulink> from
+        Apple's developer site—do not install it from an OS X install disk
+        unless you've already checked for a more recent version on Apple's
+        site; older versions of Xcode Tools often cause port install
+        failures.</para>
+      </listitem>
+
+      <listitem>
+        <para>Run the Xcode Tools package installer.</para>
+      </listitem>
+
+      <listitem>
+        <para>Click the button <guibutton>Customize</guibutton>, expand the
+        Applications category and click the check box beside <guibutton>X11
+        SDK</guibutton> to add it to the default items.</para>
+      </listitem>
+
+      <listitem>
+        <para>Click <guibutton>Install</guibutton> to install Xcode Tools and
+        the X11 SDK.</para>
+      </listitem>
+    </orderedlist>
+
+    <note>
+      <para>Xcode Tools are not updated via OS X's Software Update
+      utility.</para>
+    </note>
+  </section>
+
+  <section>
+    <title>Install MacPorts</title>
+
+    <para>If you are using OS X, you should install MacPorts using the OS X
+    package installer unless you do not wish to install it to
+    <filename>/opt/local/</filename>, the default MacPorts location, or if you
+    wish to install a pre-release version of MacPorts base. However, if you
+    wish to install <ulink url="installing.source.multiple">multiple copies of
+    MacPorts</ulink> or install MacPorts on another OS platform, you must
+    <link linkend="installing.source">install MacPorts from the source
+    code</link>.</para>
+
+    <note>
+      <para>Though a distinction is made between pre-release and release
+      versions of MacPorts base, the ports collection supports no versioning;
+      a <link linkend="installing.selfupdate">selfupdate</link> installs the
+      latest commits from subversion (at a slight delay).</para>
+    </note>
+
+    <section id="installing.binary">
+      <title>OS X Package Install</title>
+
+      <para>To install MacPorts with the OS X package installer, follow these
+      steps.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Download the latest MacPorts .dmg disk image from the <ulink
+          url="http://svn.macports.org/repository/macports/downloads/">MacPorts
+          download directory</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Double-click the .pkg package installer on the disk
+          image.</para>
+        </listitem>
+
+        <listitem>
+          <para>Perform the default “easy” install.</para>
+        </listitem>
+      </orderedlist>
+
+      <note>
+        <para>Use the MacPorts <link
+        linkend="installing.selfupdate">selfupdate</link> operation
+        immediately after installing MacPorts. If a newer MacPorts base point
+        revision has been released before a new package installer has been
+        made, it is automatically updated.</para>
+      </note>
+    </section>
+
+    <section id="installing.source">
+      <title>Source Install</title>
+
+      <para>If you installed MacPorts using the package installer, skip this
+      section. To install MacPorts from the source code, follow these
+      steps.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Download and unzip the latest MacPorts tarball from the <ulink
+          url="http://svn.macports.org/repository/macports/downloads/">MacPorts
+          download directory</ulink>.</para>
+        </listitem>
+
+        <listitem>
+          <para>Perform these commands in a terminal window, substituting a
+          real path for NEW_PREFIX if you wish to use a path other than
+          <filename>/opt/local/</filename>.</para>
+
+          <programlisting><prompt>%%</prompt> <userinput>cd ~/MacPorts-1.x.x/</userinput>
+<prompt>%%</prompt> <userinput>./configure</userinput> --prefix=NEW_PREFIX  (setting prefix is optional)
+<prompt>%%</prompt> <userinput>make</userinput>
+<prompt>%%</prompt> <userinput>sudo make install</userinput></programlisting>
+        </listitem>
+      </orderedlist>
+
+      <section id="installing.source.multiple">
+        <title>Install Multiple MacPorts Copies</title>
+
+        <para>Occasionally a MacPorts developer may wish to install more than
+        one copy of MacPorts on the same host, possibly to test two different
+        versions of MacPorts. But only one copy of MacPorts may use the
+        default MacPorts Tcl library path <filename>/Library/Tcl/</filename>,
+        so for a second installation use the
+        <literal>--with-tclpackage</literal> switch set to any newly created
+        (empty) directory, say /Library/Tcl/macports-new. Also, the standard
+        MacPorts binary path must not be present during the installation of
+        the second instance. To install a second instance of MacPorts, follow
+        these steps.</para>
+
+        <programlisting><prompt>%%</prompt> <userinput>export PATH=/bin:/sbin:/usr/bin:/usr/sbin</userinput>
+<prompt>%%</prompt> <userinput>cd ~/MacPorts-1.x.x/</userinput>
+<prompt>%%</prompt> <userinput>./configure --prefix=NEW_PREFIX --with-tcl-package=NEW_TCLPACKAGE</userinput>
+<prompt>%%</prompt> <userinput>make</userinput>
+<prompt>%%</prompt> <userinput>sudo make install</userinput>
+</programlisting>
+      </section>
+    </section>
+
+    <section id="installing.uninstalling">
+      <title>Uninstall</title>
+
+      <para>To uninstall MacPorts from the default location
+      <filename>/opt/local/</filename>, perform these commands from a terminal
+      window.</para>
+
+      <programlisting><prompt>%%</prompt> <userinput>sudo rm -rf /opt/local/</userinput>
+<prompt>%%</prompt> <userinput>sudo rm -rf /Applications/MacPorts/</userinput>
+<prompt>%%</prompt> <userinput>sudo rm -rf /Library/Tcl/macports1.0/</userinput>
+<prompt>%%</prompt> <userinput>sudo rm -rf /Library/LaunchDaemons/org.macports.*</userinput></programlisting>
+    </section>
+  </section>
+
+  <section id="installing.shell">
+    <title>Set the Bash Shell</title>
+
+    <para>The MacPorts installer (from OS X package or source) places a
+    <filename>.profile</filename> file in your home directory (view files with
+    a dot using <command>ls -a</command>). The contents of the
+    <filename>~/.profile</filename> adds the MacPorts paths in front of the
+    standard Unix paths for the default Bash shell so that MacPorts libraries
+    will take precedence over vendor-supplied libraries if both are
+    present.</para>
+
+    <para>The path statement in the MacPorts-installed .profile is set as
+    shown.</para>
+
+    <programlisting>export PATH=/opt/local/bin:/opt/local/sbin:$PATH</programlisting>
+
+    <para>You must add this <varname>DISPLAY</varname> variable for
+    X11.</para>
+
+    <programlisting>export DISPLAY=:0.0</programlisting>
+
+    <para>Add the <varname>EDITOR</varname> variable to use your favorite text
+    editor. A complete <filename>~/.profile</filename> file with the added
+    variables is shown below.</para>
+
+    <programlisting>export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export DISPLAY=:0.0
+export EDITOR=/usr/bin/pico
+</programlisting>
+
+    <para>Changes to <filename>~/.profile</filename> do not take effect until
+    a new terminal session is opened. Type <command>env</command> in the
+    terminal to verify the current environment settings. Example output of
+    <command>env</command> is below.</para>
+
+    <screen>TERM_PROGRAM=Apple_Terminal
+TERM=xterm-color
+SHELL=/bin/bash
+TERM_PROGRAM_VERSION=133
+USER=joebob
+__CF_USER_TEXT_ENCODING=0x1FC:0:0
+PATH=/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin
+PWD=/Users/joebob
+EDITOR=/usr/bin/pico
+SHLVL=1
+HOME=/Users/joebob
+LOGNAME=joebob
+DISPLAY=:0.0
+SECURITYSESSIONID=b0cea0
+_=/usr/bin/env</screen>
+
+    <note>
+      <para>If you have either a <filename>.bash_login</filename> or a
+      <filename>.bash_profile</filename> file in your home directory, they may
+      take precedence over <filename>.profile</filename>. You may either
+      remove the previously used file, or add the contents of
+      <filename>.profile</filename> to it.</para>
+    </note>
+  </section>
+
+  <section id="installing.selfupdate">
+    <title>Selfupdate MacPorts</title>
+
+    <para>You must always execute a <quote>selfupdate</quote> after a new
+    MacPorts install, and you should also do it frequently thereafter. See
+    <link linkend="using.port.selfupdate">selfupdate</link> —one of several
+    <link linkend="using.port">port commands</link>.</para>
+  </section>
+</chapter>

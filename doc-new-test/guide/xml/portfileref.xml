@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="reference">
+  <title>Portfile Reference</title>
+
+  <para>This chapter serves as a reference for the major elements of a
+  Portfile: port phases, dependencies, StartupItems, variables, keywords, and
+  Tcl extensions.</para>
+
+  <section id="reference.portfile">
+    <title>Portfile</title>
+
+    <xi:include href="../../man/xml/portfile.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.portfile.global">
+    <title>Portfile Global</title>
+
+    <xi:include href="../../man/xml/portfile-global.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.phase">
+    <title>Portfile Phase</title>
+
+    <xi:include href="../../man/xml/portfile-phase.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.startupitem">
+    <title>Portfile Startupitem</title>
+
+    <xi:include href="../../man/xml/portfile-startupitem.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.tcl">
+    <title>Portfile Tcl</title>
+
+    <xi:include href="../../man/xml/portfile-tcl.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.portgroup">
+    <title>PortGroup</title>
+
+    <xi:include href="../../man/xml/portgroup.7.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  </section>
+
+  <section id="reference.phases">
+    <title>Port Phases</title>
+
+    <para>A MacPorts port has ten distinct phases. The MacPorts base is set to
+    perform default steps for applications that use the standard
+    <command>configure</command>, <command>make</command>, and <command>make
+    install</command> steps, but for applications that do not conform to this
+    behavior, installation phases may be declared in a Portfile to <link
+    linkend="development.examples.augment">augment</link> or <link
+    linkend="development.examples.override">override</link> the default
+    behavior as described in the <link linkend="development">Portfile
+    Development</link> chapter.</para>
+
+    <section id="reference.phases.fetch">
+      <title>Fetch</title>
+
+      <para>Overview: Fetch the <varname>${distfiles}</varname> from
+      <varname>${master_sites}</varname> and place it in
+      <filename>${prefix}/var/macports/distfiles</filename>.</para>
+    </section>
+
+    <section id="reference.phases.checksum">
+      <title>Checksum</title>
+
+      <para>Overview: Compare <varname>${checksums}</varname> specified in a
+      <filename>Portfile</filename> to the checksums of the fetched
+      ${distfiles}.</para>
+    </section>
+
+    <section id="reference.phases.extract">
+      <title>Extract</title>
+
+      <para>Overview: Unzip and untar the <varname>${distfiles}</varname> into
+      the path ${prefix}/var/macports/build/..../work</para>
+    </section>
+
+    <section id="reference.phases.patch">
+      <title>Patch</title>
+
+      <para>Overview: Apply optional <ulink
+      url="http://en.wikipedia.org/wiki/Patch_(Unix)">patch</ulink> files
+      specified in <varname>${patchfiles}</varname> to modify a port's source
+      code file(s).</para>
+
+      <para>Details: Patch files are made using the <ulink
+      url="http://en.wikipedia.org/wiki/Diff">diff</ulink> command, and
+      MacPorts patches should be created as <ulink
+      url="http://en.wikipedia.org/wiki/Diff#Unified_format">unified
+      diffs</ulink>.</para>
+    </section>
+
+    <section id="reference.phases.configure">
+      <title>Configure</title>
+
+      <para>Overview: Execute the command "configure" in
+      <varname>${workpath}</varname>.</para>
+    </section>
+
+    <section id="reference.phases.build">
+      <title>Build</title>
+
+      <para>Overview: Execute the command "make" in
+      <varname>${workpath}</varname>.</para>
+    </section>
+
+    <section id="reference.phases.destroot">
+      <title>Destroot</title>
+
+      <para>Overview: Execute the command <command>make install
+      DESTDIR=${destroot}</command> in <varname>${workpath}</varname>.</para>
+
+      <para>Details: Understanding the destroot phase is critical to
+      understanding MacPorts, because, unlike some port systems, MacPorts
+      "stages" an installation into an intermediate location —not the final
+      file destination. There are two main advantages to this method.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>A port's files may be cleanly uninstalled because all files
+          and locations are tracked.</para>
+        </listitem>
+
+        <listitem>
+          <para>Since a port's files are not installed into MacPorts directory
+          structure until an activation phase, a port may be deactivated
+          through MacPorts to allow activation of a different version of the
+          same port, thus allowing two versions of a port to be present,
+          though not both active, on a given host.</para>
+        </listitem>
+      </orderedlist>
+
+      <note>
+        <para>The <varname>$(DESTDIR)</varname> variable must be supported in
+        an application's Makefile for the MacPorts destroot phase to work
+        properly. Urge developers to fully support
+        <varname>$(DESTDIR)</varname> in their Makefiles.</para>
+      </note>
+
+      <para>At the beginning of the destroot phase, all the directories in the
+      file <filename>${prefix}/etc/macports/prefix.mtree</filename> are
+      created. Any directories still empty upon completion of the destroot
+      phase are removed unless a directory is listed using a destroot.keepdirs
+      keyword.</para>
+    </section>
+
+    <section id="reference.phases.archive">
+      <title>Archive</title>
+
+      <para>Overview: Use tar to create a tarball of a port's destrooted files
+      and copy it to
+      <filename>${prefix}/var/macports/packages/</filename>.</para>
+    </section>
+
+    <section id="reference.phases.install">
+      <title>Install</title>
+
+      <para>Overview: Copy a port's destrooted files into
+      <filename>${prefix}/var/macports/software</filename>. See <link
+      linkend="internals.images">Port Images</link> in the <link
+      linkend="internals">MacPorts Internals</link> chapter for
+      details.</para>
+    </section>
+
+    <section id="reference.phases.activate">
+      <title>Activate</title>
+
+      <para>Overview: Set <ulink
+      url="http://en.wikipedia.org/wiki/Hard_link">hardlinks</ulink> pointing
+      to <filename>${prefix}/var/macports/software</filename> to point to
+      ${prefix}.</para>
+    </section>
+  </section>
+
+  <section id="reference.tcl-extensions">
+    <title>Tcl Extensions</title>
+
+    <para>A MacPorts Portfile is a Tcl script, so it may contain any arbitrary
+    Tcl code you may learn about in a <ulink
+    url="http://tmml.sourceforge.net/doc/tcl/">Tcl reference manual</ulink>.
+    However, few authors will use arbitrary Tcl code; the vast majority will
+    use Tcl extensions that are coded within MacPorts for performing the most
+    common tasks needed for Portfiles. The list below is a list of Tcl
+    extensions provided by MacPorts base.</para>
+
+    <para><variablelist>
+        <varlistentry>
+          <term>file</term>
+
+          <listitem>
+            <para>Description.</para>
+
+            <variablelist>
+              <varlistentry>
+                <term>file copy</term>
+
+                <listitem>
+                  <para></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>file move</term>
+
+                <listitem>
+                  <para></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>file rename</term>
+
+                <listitem>
+                  <para></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>file delete [-force]</term>
+
+                <listitem>
+                  <para></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>file mkdir</term>
+
+                <listitem>
+                  <para></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>macros</term>
+
+          <listitem>
+            <para>Description.</para>
+
+            <variablelist>
+              <varlistentry>
+                <term>copy</term>
+
+                <listitem>
+                  <para>Shorthand alternative to "file copy".</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>move</term>
+
+                <listitem>
+                  <para>Shorthand alternative to "file rename".</para>
+                </listitem>
+              </varlistentry>
+
+              <varlistentry>
+                <term>delete file ...</term>
+
+                <listitem>
+                  <para>Deletes each of the given files/directories. Behaves
+                  similarly to file delete -force except that file delete
+                  -force will fail to delete directories properly on 10.3
+                  systems.</para>
+                </listitem>
+              </varlistentry>
+
+              <varlistentry>
+                <term>touch</term>
+
+                <listitem>
+                  <para>Mimicks the BSD touch command.</para>
+                </listitem>
+              </varlistentry>
+
+              <varlistentry>
+                <term>ln</term>
+
+                <listitem>
+                  <para>Mimickes the BSD ln command.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>xinstall</term>
+
+          <listitem>
+            <para>xinstall copies files and creates directories; it is
+            intended to be compatible with install(1).</para>
+
+            <variablelist>
+              <varlistentry>
+                <term>xinstall [-o owner] [-g group] [-m mode] [file1 file2
+                ...] directory</term>
+
+                <listitem>
+                  <para>Install the specified file(s) to a destination
+                  directory.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>xinstall [-o owner] [-g group] [-m mode] [-W dir] [file1
+                file2 ...] directory</term>
+
+                <listitem>
+                  <para>Change to <option>dir</option> and install file(s) to
+                  a destination directory.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>eval xinstall [-o owner] [-g group] [-m mode] [glob
+                regexp] directory</term>
+
+                <listitem>
+                  <para>Install the file(s) matching the glob expression to a
+                  destination directory.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>xinstall -d [-o owner] [-g group] [-m mode]
+                directory</term>
+
+                <listitem>
+                  <para>Create a directory.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <para>Defaults:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>owner -</para>
+              </listitem>
+
+              <listitem>
+                <para>group -</para>
+              </listitem>
+
+              <listitem>
+                <para>mode -</para>
+              </listitem>
+            </itemizedlist>
+
+            <para>Examples:</para>
+
+            <programlisting>xinstall -m 640 ${worksrcpath}/doc README \
+       ${destroot}${prefix}/share/doc/${name}</programlisting>
+
+            <programlisting>xinstall -m 640 -W ${worksrcpath}/doc README INSTALL COPY \
+       ${destroot}${prefix}/share/doc/${name}</programlisting>
+
+            <programlisting>eval xinstall -m 640 [glob ${worksrcpath}/doc/*] \
+       ${destroot}${prefix}/share/doc/${name}</programlisting>
+
+            <programlisting>xinstall -d ${destroot}${prefix}/share/doc/${name}</programlisting>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>reinplace</term>
+
+          <listitem>
+            <para>Description.</para>
+
+            <para>Examples:</para>
+
+            <programlisting>example 1</programlisting>
+
+            <programlisting>example 2</programlisting>
+
+            <programlisting>example 3</programlisting>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>user/group</term>
+
+          <listitem>
+            <para></para>
+
+            <variablelist>
+              <varlistentry>
+                <term>adduser username [uid=uid] [gid=gid] [passwd=passwd]
+                [realname=realname] [home=home] [shell=shell]</term>
+
+                <listitem>
+                  <para>Add a new local user to the system with the specified
+                  uid, gid, password, real name, home directory and login
+                  shell.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>existsuser username</term>
+
+                <listitem>
+                  <para>Check if a local user exists.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>nextuid</term>
+
+                <listitem>
+                  <para>Returns the highest used uid plus one.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>addgroup group [gid=gid] [passwd=passwd]
+                [realname=realname] [users=users]</term>
+
+                <listitem>
+                  <para>Add a new local group to the system, with the
+                  specified gid, password, real name, and with a list users as
+                  members.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>existsgroup group</term>
+
+                <listitem>
+                  <para>Check if a local group exists and return the
+                  corresponding gid. This can be used with adduser:</para>
+
+                  <programlisting>addgroup foo
+adduser foo gid=[existsgroup foo]</programlisting>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+
+            <variablelist>
+              <varlistentry>
+                <term>nextgid</term>
+
+                <listitem>
+                  <para>Returns the highest used gid plus one.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>External program execution</term>
+
+          <listitem>
+            <para>Use only when ....</para>
+          </listitem>
+        </varlistentry>
+      </variablelist></para>
+
+    <para></para>
+  </section>
+</chapter>
