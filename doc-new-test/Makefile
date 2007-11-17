@@ -45,14 +45,15 @@ guide:
 
 man:
 	mkdir -p $(MAN-RESULT)
-	xsltproc --output $(MAN-RESULT) $(MAN-XSL) \
+	mkdir -p $(MAN)/tmp
+	cp $(GUIDE)/xml/portfile-*.xml $(MAN)/tmp/
+	sed -i "" 's|<section>|<refsection\>|g' $(MAN)/tmp/*
+	sed -i "" 's|</section>|</refsection>|g' $(MAN)/tmp/*
+	xsltproc --xinclude --output $(MAN-RESULT) $(MAN-XSL) \
 	    $(MAN)/xml/portfile.7.xml \
-	    $(MAN)/xml/portfile-global.7.xml \
-	    $(MAN)/xml/portfile-phase.7.xml \
-	    $(MAN)/xml/portfile-startupitem.7.xml \
-	    $(MAN)/xml/portfile-tcl.7.xml \
 	    $(MAN)/xml/portgroup.7.xml \
 	    $(MAN)/xml/porthier.7.xml
+	rm -r $(MAN)/tmp
 
 clean:
 	rm -rf $(GUIDE-RESULT)
