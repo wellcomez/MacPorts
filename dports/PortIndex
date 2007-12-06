@@ -2728,8 +2728,8 @@ netwalker-ircc 423
 variants universal description {A simple, fast IRC client with an ncurses UI.} portdir irc/netwalker-ircc homepage http://lancelot2k.dyndns.org/projects/netwalker/ epoch 0 platforms darwin name netwalker-ircc long_description {netwalker-ircc is an IRC client which uses the ncurses library to print the screen. The code was written completely from scratch.} maintainers nomaintainer categories irc version 0.5.0 revision 0
 ngircd 403
 variants {universal ident} description {next generation IRC daemon} portdir irc/ngircd homepage http://arthur.ath.cx/~alex/ngircd/ epoch 0 platforms darwin name ngircd long_description {ngIRCd is a free open source daemon for Internet Relay Chat (IRC). It's written from scratch and is not based upon the original IRCd like many others.} maintainers nomaintainer categories irc version 0.9.1 revision 0
-scrollz 278
-variants universal description {ircII-based irc client} portdir irc/scrollz homepage http://www.scrollz.com/ epoch 0 platforms darwin name scrollz long_description {ScrollZ is yet another ircII-based irc client.} maintainers nomaintainer categories irc version 1.9.5 revision 0
+scrollz 279
+variants universal description {ircII-based irc client} portdir irc/scrollz homepage http://www.scrollz.com/ epoch 0 platforms darwin name scrollz long_description {ScrollZ is yet another ircII-based irc client.} maintainers nomaintainer categories irc version 1.9.99 revision 0
 silc-client 495
 variants {universal darwin_7 darwin_8_powerpc} portdir irc/silc-client description {client for the silc-network.} homepage http://silcnet.org/ depends_run bin:perl:perl5.8 epoch 0 platforms darwin name silc-client depends_lib lib:libglib.1:glib1 long_description {silc-client is a client for the SILC (Secure Internet Live Conferencing) protocol. SILC provides secure conferencing services in the Internet over insecure channel.} maintainers nomaintainer version 1.0.3 categories irc revision 0
 silc-server 576
