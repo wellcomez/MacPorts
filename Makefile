@@ -13,3 +13,7 @@ install: all
 	  sed -i .orig -e 's/^rsync/#rsync/' ${SRCS}; \
 	  echo "${SRCS} automatically configured"; \
         fi
+
+clean:
+	@(cd base; [ -f Makefile ] && make clean)
+
