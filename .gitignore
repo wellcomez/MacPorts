@@ -1,0 +1,36 @@
+# .gitignore file for MacPorts
+
+
+# Ignore generated files.
+base/Doxyfile
+base/Makefile
+base/Mk/macports.autoconf.mk
+base/config.log
+base/config.status
+base/doc/macosx.mtree
+base/doc/macports.conf
+base/doc/prefix.mtree
+base/portmgr/fedora/macports.spec
+base/portmgr/freebsd/Makefile
+base/src/Makefile
+base/src/config.h
+base/src/cregistry/cregistry.a
+base/src/macports1.0/macports_autoconf.tcl
+base/src/macports1.0/macports_fastload.tcl
+base/src/pathconf/Makefile
+base/src/pathconf/manpaths
+base/src/pathconf/paths
+base/src/port/port
+base/src/port/portindex
+base/src/port/portmirror
+base/src/port1.0/pkgIndex.tcl
+base/src/port1.0/port_autoconf.tcl
+base/src/programs/Makefile
+base/src/programs/daemondo/Makefile
+base/src/programs/daemondo/build
+base/src/registry1.0/registry_autoconf.tcl
+base/src/tclobjc1.0/Makefile
+pkgIndex.tcl
+
+# Ignore MacPorts work directories.
+work
