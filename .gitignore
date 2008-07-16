@@ -30,6 +30,10 @@ base/src/programs/daemondo/Makefile
 base/src/programs/daemondo/build
 base/src/registry1.0/registry_autoconf.tcl
 base/src/tclobjc1.0/Makefile
+doc-new/guide.tmp.xml
+doc-new/guide/html/
+doc-new/man/man/
+doc-new/man/resources/macports.xsl
 pkgIndex.tcl
 
 # Ignore MacPorts work directories.
