@@ -38,3 +38,6 @@ pkgIndex.tcl
 
 # Ignore MacPorts work directories.
 work
+
+# Ignore quilt series files.
+series
