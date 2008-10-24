@@ -8069,7 +8069,7 @@ variants {universal powerpc i386} portdir science/afni description {Analysis of 
 archimedes 369
 variants universal description {semiconductor design tool} portdir science/archimedes homepage http://www.gnu.org/software/archimedes/ epoch 0 platforms darwin name archimedes long_description {Archimedes is a tool for development of semiconductor devices, incorporating some intensive mathematics.} maintainers nomaintainer categories science version 0.0.4 revision 0
 bkchem 377
-variants universal portdir science/bkchem description {Free chemical drawing program.} homepage http://bkchem.zirael.org/ epoch 0 platforms darwin depends_lib {port:python25 port:py25-tkinter} name bkchem maintainers {simon openmaintainer} long_description {Free chemical drawing program written in Python by Beda Kosata.} categories {science python} version 0.12.3 revision 0
+variants universal portdir science/bkchem description {Free chemical drawing program.} homepage http://bkchem.zirael.org/ epoch 0 platforms darwin depends_lib {port:python25 port:py25-tkinter} name bkchem maintainers {simon openmaintainer} long_description {Free chemical drawing program written in Python by Beda Kosata.} categories {science python} version 0.12.4 revision 0
 cdf 474
 variants {universal darwin_i386 darwin_powerpc} depends_build port:gcc42 portdir science/cdf description {CDF: Common Data Format} homepage http://cdf.gsfc.nasa.gov/ epoch 0 platforms darwin name cdf maintainers gwright@macports.org long_description {The Common Data Format (CDF) is a self-describing data format for the storage and manipulation of scalar and multidimensional data in a platform and discipline independent fashion.} version 32 categories science revision 0
 cdo 485
