@@ -12,6 +12,7 @@ base/doc/macports.conf
 base/doc/prefix.mtree
 base/portmgr/fedora/macports.spec
 base/portmgr/freebsd/Makefile
+base/setupenv.bash
 base/src/Makefile
 base/src/config.h
 base/src/cregistry/cregistry.a
@@ -32,6 +33,7 @@ base/src/registry1.0/registry_autoconf.tcl
 base/src/tclobjc1.0/Makefile
 doc-new/guide.tmp.xml
 doc-new/guide/html/
+doc-new/guide/resources/xsl
 doc-new/man/man/
 doc-new/man/resources/macports.xsl
 pkgIndex.tcl
