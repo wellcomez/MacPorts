@@ -2791,7 +2791,7 @@ variants {universal darwin_9} portdir graphics/glitz description {Glitz is an Op
 gliv 453
 variants universal portdir graphics/gliv description {GLiv is an OpenGL image viewer.} homepage http://guichaz.free.fr/gliv/ epoch 0 platforms darwin name gliv depends_lib port:gtkglext long_description {GLiv is an OpenGL image viewer, image loading is done via Gdk-pixbuf bundled with GTK+-2.4, rendering with OpenGL and the graphical user interface uses GTK+ with GtkGLExt.} maintainers nomaintainer version 1.9.3 categories {graphics x11} revision 0
 glut 500
-variants {universal darwin_9} portdir graphics/glut description {The OpenGL Utility Toolkit (GLUT)} homepage http://www.opengl.org/resources/libraries/glut.html epoch 0 platforms darwin name glut depends_lib {lib:libGL.1:XFree86 lib:libX11.6:XFree86} long_description {An indispensible toolkit for OpenGL programmers, this provides many of the windowing and input management primitives that OpenGL itself does not deal with.} maintainers nomaintainer version 3.7 categories {x11 graphics} revision 1
+variants {universal darwin_9} portdir graphics/glut description {The OpenGL Utility Toolkit (GLUT)} homepage http://www.opengl.org/resources/libraries/glut.html epoch 0 platforms darwin name glut depends_lib {lib:libGL.1:XFree86 lib:libX11.6:XFree86} long_description {An indispensible toolkit for OpenGL programmers, this provides many of the windowing and input management primitives that OpenGL itself does not deal with.} maintainers nomaintainer version 3.7 categories {graphics x11} revision 1
 gocr 422
 variants universal depends_build lib:libnetpbm:netpbm portdir graphics/gocr description {Optical Character Recognition, converts images back to text} homepage http://jocr.sourceforge.net/ epoch 0 platforms darwin name gocr maintainers nomaintainer long_description {GOCR is an OCR (Optical Character Recognition) program. It converts scanned images of text back to text files.} version 0.44 categories graphics revision 0
 gphoto2 504
@@ -4824,8 +4824,8 @@ jabber 401
 variants {universal darwin darwin_6 ssl} description {Online presence and instant messaging server} portdir net/jabber epoch 0 platforms darwin depends_lib {port:libiconv port:expat port:gettext lib:libpth.a:pth} name jabber long_description {The Jabber server (jabberd) is a daemon for Jabber clients to connect and communicate with.} maintainers nomaintainer categories net version 1.4.2 revision 5
 jabberd 354
 variants universal description {online presence and instant messaging server} portdir net/jabberd homepage http://jabberd.jabberstudio.org/ epoch 0 platforms darwin name jabberd long_description {The Jabber server (jabberd) is a daemon for Jabber clients to connect and communicate with.} maintainers nomaintainer categories net version 2.0s9 revision 0
-jigdo 289
-variants universal description {A tool designed to ease the distribution of very large files} portdir net/jigdo depends_run bin:wget:wget epoch 0 platforms darwin depends_lib {port:libwww port:gtk2 port:libiconv} name jigdo maintainers nomaintainer categories net version 0.7.3 revision 0
+jigdo 406
+variants universal portdir net/jigdo description {A tool designed to ease the distribution of very large files} homepage http://atterer.net/jigdo/ epoch 0 depends_run bin:wget:wget platforms darwin depends_lib {port:libwww port:gtk2 port:libiconv} name jigdo maintainers nomaintainer long_description {{A tool designed to ease the distribution of very large files}} version 0.7.3 categories net revision 0
 jlj 348
 variants universal description {A livejournal client} portdir net/jlj homepage http://umlautllama.com/projects/perl/ depends_run port:perl5.8 epoch 0 name jlj long_description {JLJ is a command-line interface for posting to livejournal. Posts are edited in your default editor.} maintainers mstevens@etla.org categories net version 2.12 revision 0
 junkbuster 1031
