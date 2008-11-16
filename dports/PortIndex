@@ -3874,8 +3874,8 @@ python25 396
 variants {universal darwin_7 darwin_8 darwin_9 darwin_10} portdir lang/python25 description {An interpreted, object-oriented programming language} homepage http://www.python.org/ epoch 0 platforms darwin name python25 depends_lib port:gettext maintainers mww long_description {Python is an interpreted, interactive, object-oriented programming language.} version 2.5.2 categories lang revision 5
 python25-doc 443
 variants {universal darwin_7 darwin_8 darwin_9 puredarwin} portdir lang/python25-doc description {HTML documentation for Python 2.5} homepage http://www.python.org/ epoch 0 platforms darwin name python25-doc depends_lib {port:gettext port:python25 port:latex2html} maintainers nomaintainer long_description {HTML documentation for Python 2.5. Use by running 'pydoc2.5 TOPIC', e.g. 'pydoc2.5 NUMBERS'.} version 2.5.2 categories lang revision 0
-python26 393
-variants {universal darwin_7 darwin_8 darwin_9 darwin_10} portdir lang/python26 description {An interpreted, object-oriented programming language} homepage http://www.python.org epoch 0 platforms darwin name python26 depends_lib port:gettext maintainers blb long_description {Python is an interpreted, interactive, object-oriented programming language.} version 2.6 categories lang revision 2
+python26 405
+variants {universal darwin_7 darwin_8 darwin_9 darwin_10} portdir lang/python26 description {An interpreted, object-oriented programming language} homepage http://www.python.org/ epoch 0 platforms darwin name python26 depends_lib port:gettext maintainers {blb mcalhoun} long_description {Python is an interpreted, interactive, object-oriented programming language.} version 2.6 categories lang revision 3
 python30 402
 variants {universal darwin_10} portdir lang/python30 description {An interpreted, object-oriented programming language} homepage http://www.python.org/ epoch 0 platforms darwin name python30 depends_lib port:gettext maintainers mww long_description {Python is an interpreted, interactive, object-oriented programming language. This version is a BETA release!} version 3.0rc1 categories lang revision 0
 python30-doc 292
