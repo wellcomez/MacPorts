@@ -781,7 +781,7 @@ variants universal description {a Perl-compatible regex framework for using the 
 agsocket 863
 variants universal description {yet another BSD sockets framework for use in Cocoa applications} portdir devel/agsocket homepage http://agkit.sourceforge.net/ epoch 0 platforms darwin name agsocket long_description {AGSocket is yet another BSD sockets framework for use in Cocoa applications. The primary class is AGSocket, this can be used for TCP sockets, UDP sockets, raw sockets, whatever. Additionally several socket address classes are included, notably AGInetSocketAddress for vanilla Internet socket addresses. Unlike some of the other excellent sockets frameworks already available, AGSocket is primarily designed for asynchronous I/O thanks to the underlying CFSocket API (though there's nothing stopping you from using it for normal synchronous I/O if you are so inclined).} maintainers nomaintainer version 0.3 categories {devel framework} revision 0
 alex 475
-variants universal depends_build port:ghc portdir devel/alex description {A Lexical Analyzer Generator for Haskell} homepage http://www.haskell.org/alex/ epoch 0 platforms darwin name alex maintainers gwright long_description {Alex is a tool for generating lexical analysers in Haskell, given a description of the tokens to be recognised in the form of regular expressions. It is similar to the tools lex or flex for C/C++.} version 2.2 categories {devel haskell} revision 1
+variants universal depends_build port:ghc portdir devel/alex description {A Lexical Analyzer Generator for Haskell} homepage http://www.haskell.org/alex/ epoch 0 platforms darwin name alex maintainers gwright long_description {Alex is a tool for generating lexical analysers in Haskell, given a description of the tokens to be recognised in the form of regular expressions. It is similar to the tools lex or flex for C/C++.} version 2.3 categories {devel haskell} revision 0
 allegro 432
 variants universal portdir devel/allegro description {A game programming library for C/C++ developers.} homepage http://www.talula.demon.co.uk/allegro/ epoch 0 platforms darwin name allegro depends_lib lib:libX11:XFree86 long_description {Allegro is a game programming library for C/C++ developers distributed freely, supporting many platforms.} maintainers {raimue openmaintainer} version 4.2.2 categories {devel games} revision 0
 apache-ant 570
@@ -10028,8 +10028,8 @@ xonclock 337
 variants universal description {X on-screen analog clock displayer with assignable skins} portdir x11/xonclock homepage http://xonclock.sourceforge.net/ epoch 0 platforms darwin name xonclock long_description {{X on-screen analog clock displayer with assignable skins}} maintainers nomaintainer categories x11 version 0.0.7.5 revision 0
 xorg 573
 variants {universal darwin puredarwin} description {The X Window System} portdir x11/xorg homepage http://www.x.org epoch 0 platforms darwin name xorg long_description {X11, or X, is a vendor-neutral, system-architecture neutral network-transparent window system and user interface standard. In other words, it's a GUI for UNIX. X can use your network -- you may run CPU-intensive programs on high powered workstations and display the user interface (the windows) on inexpensive desktop machines.} maintainers waqar@macports.org categories x11 version X11R6.8.2 revision 0
-xorg-applewmproto 339
-variants universal portdir x11/xorg-applewmproto description {X.org applewmproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-applewmproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for the AppleWM extension to X11} version 1.0.3 categories {x11 devel} revision 0
+xorg-applewmproto 342
+variants universal portdir x11/xorg-applewmproto description {X.org applewmproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-applewmproto depends_lib port:xorg-util-macros maintainers jeremyhu@macports.org long_description {Prototype headers for the AppleWM extension to X11} version 1.1.1 categories {x11 devel} revision 0
 xorg-bigreqsproto 335
 variants universal portdir x11/xorg-bigreqsproto description {X.org bigreqsproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-bigreqsproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for BigReqs extension to X11} version 1.0.2 categories {x11 devel} revision 0
 xorg-cf-files 332
@@ -10050,8 +10050,8 @@ xorg-inputproto 332
 variants universal portdir x11/xorg-inputproto description {X.org inputproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-inputproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for the XInput extension to X11} version 1.4.2 categories {x11 devel} revision 0
 xorg-kbproto 316
 variants universal portdir x11/xorg-kbproto description {X.org kbproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-kbproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for Xkb extension to X11} version 1.0.3 categories {x11 devel} revision 0
-xorg-libX11 568
-variants universal portdir x11/xorg-libX11 description {X.org libX11} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libX11 depends_lib {port:pkgconfig port:xorg-xproto port:xorg-xextproto port:xorg-xtrans port:xorg-libpthread-stubs port:xorg-libXau port:xorg-xcb-proto port:xorg-libxcb port:xorg-xcmiscproto port:xorg-inputproto port:xorg-kbproto} maintainers bbyer@macports.org long_description {libX11 is the main library used by X Window System applications to communicate with the X server.} version 1.1.3 categories {x11 devel} revision 0
+xorg-libX11 571
+variants universal portdir x11/xorg-libX11 description {X.org libX11} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libX11 depends_lib {port:pkgconfig port:xorg-xproto port:xorg-xextproto port:xorg-xtrans port:xorg-libpthread-stubs port:xorg-libXau port:xorg-xcb-proto port:xorg-libxcb port:xorg-xcmiscproto port:xorg-inputproto port:xorg-kbproto} maintainers jeremyhu@macports.org long_description {libX11 is the main library used by X Window System applications to communicate with the X server.} version 1.1.5 categories {x11 devel} revision 0
 xorg-libXau 352
 variants universal portdir x11/xorg-libXau description {X.org libXau} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXau depends_lib {port:xorg-util-macros port:xorg-libpthread-stubs port:xorg-xproto} maintainers bbyer@macports.org long_description {X Authorization Routines library} version 1.0.3 categories devel revision 0
 xorg-libXdmcp 295
@@ -10110,8 +10110,8 @@ xorg-xineramaproto 339
 variants universal portdir x11/xorg-xineramaproto description {X.org xineramaproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-xineramaproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for Xinerama extension to X11} version 1.1.2 categories {x11 devel} revision 0
 xorg-xproto 289
 portdir x11/xorg-xproto description {X.org xproto} platforms darwin name xorg-xproto version 7.0.14 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers bbyer@macports.org long_description {The X.org xproto package contains miscellaneous X11 prototype headers.}
-xorg-xtrans 283
-variants universal description {X.org xtrans} portdir x11/xorg-xtrans homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-xtrans long_description {X Network Transport layer shared code} maintainers bbyer@macports.org categories {x11 devel} version 1.0.4 revision 0
+xorg-xtrans 286
+variants universal description {X.org xtrans} portdir x11/xorg-xtrans homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-xtrans long_description {X Network Transport layer shared code} maintainers jeremyhu@macports.org categories {x11 devel} version 1.2.2 revision 0
 xping 267
 portdir x11/xping variants universal description {'ping' an Xserver} name xping depends_lib lib:libX11.6:XFree86 version 1.9 categories x11 revision 0 epoch 0 maintainers jdputsch@comcast.net long_description {A simple tool to determine if an X11 server is running.}
 xplanet 673
