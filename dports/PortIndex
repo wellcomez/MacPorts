@@ -8693,7 +8693,7 @@ variants {universal darwin} description {a fork of cdrtools DVD writer support} 
 dvdrw-tools 374
 variants universal portdir sysutils/dvdrw-tools description {Tool for mastering DVD media, including +R/RW and -R/RW} homepage http://fy.chalmers.se/~appro/linux/DVD+RW/ epoch 0 depends_run port:cdrtools platforms darwin name dvdrw-tools maintainers blb long_description {{Tool for mastering DVD media, including +R/RW and -R/RW}} version 7.1 categories sysutils revision 0
 e2fsprogs 398
-variants universal description {Utilities used for the second extended (ext2) filesystem} portdir sysutils/e2fsprogs homepage http://e2fsprogs.sourceforge.net/ epoch 0 platforms darwin name e2fsprogs long_description {Utilities to create, check and manipulate extended 2 and 3 filesystem quite common in the Linux world.} maintainers misc@mandriva.org categories sysutils version 1.40.6 revision 0
+variants universal description {Utilities used for the second extended (ext2) filesystem} portdir sysutils/e2fsprogs homepage http://e2fsprogs.sourceforge.net/ epoch 0 platforms darwin name e2fsprogs long_description {Utilities to create, check and manipulate extended 2 and 3 filesystem quite common in the Linux world.} maintainers misc@mandriva.org categories sysutils version 1.41.3 revision 0
 endian 404
 variants universal description {Report endianness of a system.} portdir sysutils/endian homepage http://personalpages.tds.net/~jwbacon/Ports/ epoch 0 platforms darwin name endian long_description {Accurately determine the endianness of a system by placing a longword into memory and checking the order of the bytes at that address.} maintainers tds.net:jwbacon categories sysutils version 1.0 revision 0
 erni 356
