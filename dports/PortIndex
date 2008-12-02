@@ -9868,8 +9868,8 @@ gtk-theme-switch 399
 variants universal description {command-line theme switcher for gtk2} portdir x11/gtk-theme-switch homepage http://www.muhri.net/nav.php3?node=gts epoch 0 platforms darwin name gtk-theme-switch long_description {Command-line replacement for gnomecc theme switcher with optional GUI (if passed the --preview or --dock switch)} maintainers jbenninghoff@mac.com categories x11 version 2.0.4 revision 1
 gtk-thinice-engine 412
 variants universal portdir x11/gtk-thinice-engine description {A simple, clean theme engine} homepage http://www.gnome.org/ epoch 0 platforms darwin name gtk-thinice-engine depends_lib {lib:libX11.6:XFree86 path:lib/pkgconfig/glib-2.0.pc:glib2 lib:libgtk.2:gtk2} long_description {gtk-thinice-engine is a simple, clean engine for GTK+-2.} maintainers nomaintainer version 2.0.2 categories {x11 gnome} revision 0
-gtk1 443
-variants {universal sunos} portdir x11/gtk1 description {Gimp Tool Kit} homepage http://www.gtk.org/ epoch 0 platforms {darwin freebsd sunos} name gtk1 depends_lib {port:gettext port:glib1 lib:libX11.6:XFree86} maintainers nomaintainer long_description {This is GTK+ version 1.2.10. GTK+, which stands for the Gimp ToolKit, is a library for creating graphical user interfaces for the X Window System.} version 1.2.10 categories x11 revision 7
+gtk1 431
+variants sunos portdir x11/gtk1 description {Gimp Tool Kit} homepage http://www.gtk.org/ epoch 0 platforms {darwin freebsd sunos} name gtk1 depends_lib {port:gettext port:glib1 lib:libX11.6:XFree86} maintainers nomaintainer long_description {This is GTK+ version 1.2.10. GTK+, which stands for the Gimp ToolKit, is a library for creating graphical user interfaces for the X Window System.} version 1.2.10 categories x11 revision 7
 gtk2 809
 variants {universal darwin_7 darwin_8 no_x11 quartz x11} depends_build port:pkgconfig variant_desc {no_x11 {Same as +quartz} quartz {Enable Quartz rendering} x11 {Enable rendering in X11 (default)}} portdir x11/gtk2 description {Gimp ToolKit version 2} homepage http://www.gtk.org/ depends_run port:shared-mime-info epoch 0 platforms darwin depends_lib {port:cairo port:fontconfig port:freetype path:lib/pkgconfig/glib-2.0.pc:glib2 port:jpeg port:tiff port:libiconv port:libpng port:jasper port:atk path:lib/pkgconfig/pango.pc:pango port:gettext port:zlib port:xrender lib:libX11:xorg} name gtk2 maintainers {nox openmaintainer} long_description {This is GTK+ version 2.x. GTK+, which stands for Gimp ToolKit, is a library for creating GUIs for the X Windows System.} categories x11 version 2.14.4 revision 1
 gtk2-aurora 499
@@ -10104,8 +10104,8 @@ xorg-fontcacheproto 338
 variants universal portdir x11/xorg-fontcacheproto description {X.org fontcacheproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-fontcacheproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for the Fontcache library} version 0.1.2 categories {x11 devel} revision 0
 xorg-fontsproto 326
 variants universal portdir x11/xorg-fontsproto description {X.org fontsproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-fontsproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Font-related prototype header files for X11} version 2.0.2 categories {x11 devel} revision 0
-xorg-inputproto 332
-variants universal portdir x11/xorg-inputproto description {X.org inputproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-inputproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for the XInput extension to X11} version 1.4.2 categories {x11 devel} revision 0
+xorg-inputproto 288
+variants universal description {X.org inputproto} portdir x11/xorg-inputproto homepage http://www.x.org epoch 0 platforms darwin name xorg-inputproto long_description {Prototype headers for the XInput extension to X11} maintainers jeremyhu categories {x11 devel} version 1.5.0 revision 0
 xorg-kbproto 316
 variants universal portdir x11/xorg-kbproto description {X.org kbproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-kbproto depends_lib port:xorg-util-macros maintainers bbyer@macports.org long_description {Prototype headers for Xkb extension to X11} version 1.0.3 categories {x11 devel} revision 0
 xorg-libX11 571
