@@ -10182,8 +10182,8 @@ xorg-util-macros 291
 portdir x11/xorg-util-macros description {X.org util-macros} platforms darwin name xorg-util-macros version 1.2.0 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Miscellaneous utility macros required by the Modular X.org codebase.}
 xorg-videoproto 269
 portdir x11/xorg-videoproto description {X.org videoproto} platforms darwin name xorg-videoproto version 2.2.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the XVideo extension to X11}
-xorg-xcb-proto 422
-variants {python25 python30} variant_desc {python25 {Use python 2.5 for xcbgen} python30 {Use python 3.0 for xcbgen}} portdir x11/xorg-xcb-proto description {X.org xcb-proto} homepage http://xcb.freedesktop.org epoch 0 depends_run {port:libxml2 port:python26} platforms {darwin macosx} name xorg-xcb-proto maintainers jeremyhu long_description {XML-XCB protocol descriptions} version 1.2 categories {x11 devel} revision 0
+xorg-xcb-proto 468
+variants {python25 python26 python30} variant_desc {python25 {Use python 2.5 for xcbgen} python26 {Use python 2.6 for xcbgen} python30 {Use python 3.0 for xcbgen}} portdir x11/xorg-xcb-proto description {X.org xcb-proto} homepage http://xcb.freedesktop.org epoch 0 depends_run {port:libxml2 port:python26} platforms {darwin macosx} name xorg-xcb-proto maintainers jeremyhu long_description {XML-XCB protocol descriptions} version 1.2 categories {x11 devel} revision 0
 xorg-xcb-util 355
 variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-xcb-util description {X.org xcb-util} homepage http://xcb.freedesktop.org/ epoch 0 platforms {darwin macosx} depends_lib port:xorg-libxcb name xorg-xcb-util maintainers jeremyhu long_description {Utility libraries for XCB} version 0.3.1 categories {x11 devel} revision 0
 xorg-xcmiscproto 272
