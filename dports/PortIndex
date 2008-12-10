@@ -10212,8 +10212,8 @@ xorg-libXext 351
 variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXext description {X.org libXext} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXext maintainers jeremyhu long_description {{X.org libXext}} version 1.0.4 categories {x11 devel} revision 0
 xorg-libXfixes 380
 variants universal depends_build {port:pkgconfig port:xorg-fixesproto port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXfixes description {X.org libXfixes} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXfixes maintainers jeremyhu long_description {{X.org libXfixes}} version 4.0.3 categories {x11 devel} revision 0
-xorg-libXfont 558
-variants universal portdir x11/xorg-libXfont description {X.org libXfont} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXfont depends_lib {port:pkgconfig port:freetype port:xorg-xproto port:xorg-xextproto port:xorg-xtrans port:xorg-libpthread-stubs port:xorg-libXau port:xorg-xcb-proto port:xorg-libfontenc port:xorg-libxcb port:xorg-xcmiscproto port:xorg-inputproto port:xorg-kbproto} maintainers bbyer@macports.org long_description {X font handling library for server & utilities} version 1.3.1 categories {x11 devel} revision 0
+xorg-libXfont 448
+variants universal depends_build {port:pkgconfig port:xorg-fontcacheproto port:xorg-fontsproto port:xorg-xproto port:xorg-xtrans} portdir x11/xorg-libXfont description {X.org libXfont} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:freetype port:xorg-libfontenc} name xorg-libXfont maintainers jeremyhu long_description {X font handling library for server & utilities} version 1.3.3 categories {x11 devel} revision 0
 xorg-libXinerama 400
 variants universal depends_build {port:pkgconfig port:xorg-xineramaproto port:xorg-xextproto} portdir x11/xorg-libXinerama description {X.org libXinerama} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libX11 port:xorg-libXext} name xorg-libXinerama maintainers jeremyhu long_description {Xinerama protocol library} version 1.0.3 categories {x11 devel} revision 0
 xorg-libXmu 404
@@ -10226,8 +10226,8 @@ xorg-libXres 340
 variants universal depends_build {port:pkgconfig port:xorg-xextproto} portdir x11/xorg-libXres description {X.org libXres} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXres maintainers jeremyhu long_description {X Resource extension} version 1.0.3 categories {x11 devel} revision 0
 xorg-libXt 540
 variants universal depends_build {port:pkgconfig port:xorg-kbproto port:xorg-xproto} portdir x11/xorg-libXt description {X.org libXt} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libsm port:xorg-libX11} name xorg-libXt maintainers jeremyhu long_description {X Toolkit Intrinsics, an abstract widget library upon which other toolkits are based. Xt is the basis for many toolkits, including the Athena widgets (Xaw), and LessTif (a Motif implementation).} version 1.0.5 categories {x11 devel} revision 0
-xorg-libfontenc 504
-variants universal portdir x11/xorg-libfontenc description {X.org libfontenc} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libfontenc depends_lib {port:pkgconfig port:xorg-xproto port:xorg-xextproto port:xorg-xtrans port:xorg-libpthread-stubs port:xorg-libXau port:xorg-xcb-proto port:xorg-libxcb port:xorg-xcmiscproto port:xorg-inputproto port:xorg-kbproto} maintainers bbyer@macports.org long_description {Font encoding library} version 1.0.4 categories {x11 devel} revision 0
+xorg-libfontenc 339
+variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libfontenc description {X.org libfontenc} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:zlib name xorg-libfontenc maintainers jeremyhu long_description {Font encoding library} version 1.0.4 categories {x11 devel} revision 0
 xorg-libice 347
 variants universal portdir x11/xorg-libice description {X.org libice} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} name xorg-libice depends_lib {port:pkgconfig port:xorg-xproto port:xorg-xtrans} maintainers gmail.com:mvfranz long_description {X Inter-Client Exchange (ICE) Protocol} version 1.0.4 categories {x11 devel} revision 0
 xorg-libpthread-stubs 354
@@ -10236,8 +10236,8 @@ xorg-libsm 334
 variants universal portdir x11/xorg-libsm description {X.org libSM} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} name xorg-libsm depends_lib {port:pkgconfig port:xorg-libice port:xorg-xproto} maintainers gmail.com:mvfranz long_description {X Session Management Library} version 1.0.3 categories {x11 devel} revision 0
 xorg-libxcb 438
 variants universal depends_build {port:pkgconfig port:xorg-xcb-proto port:libtool port:automake port:autoconf port:xorg-util-macros} portdir x11/xorg-libxcb description {X.org libxcb} homepage http://xcb.freedesktop.org/ epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXau port:xorg-libXdmcp} name xorg-libxcb maintainers jeremyhu long_description {The X C Binding (XCB) library} version 1.1 categories {x11 devel} revision 0
-xorg-libxkbfile 338
-variants universal portdir x11/xorg-libxkbfile description {X.org libxbfile} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libxkbfile depends_lib {port:xorg-util-macros port:xorg-libXdmcp} maintainers bbyer@macports.org long_description {XKB file handling routines} version 1.0.4 categories {x11 devel} revision 0
+xorg-libxkbfile 351
+variants universal depends_build {port:pkgconfig port:xorg-kbproto} portdir x11/xorg-libxkbfile description {X.org libxbfile} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libxkbfile maintainers jeremyhu long_description {XKB file handling routines} version 1.0.5 categories {x11 devel} revision 0
 xorg-printproto 250
 portdir x11/xorg-printproto description {X.org xproto} platforms darwin name xorg-printproto version 1.0.4 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {X.org PrintProto protocol headers.}
 xorg-proto 895
