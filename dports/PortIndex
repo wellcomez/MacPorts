@@ -10214,6 +10214,8 @@ xorg-libXfixes 380
 variants universal depends_build {port:pkgconfig port:xorg-fixesproto port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXfixes description {X.org libXfixes} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXfixes maintainers jeremyhu long_description {{X.org libXfixes}} version 4.0.3 categories {x11 devel} revision 0
 xorg-libXfont 448
 variants universal depends_build {port:pkgconfig port:xorg-fontcacheproto port:xorg-fontsproto port:xorg-xproto port:xorg-xtrans} portdir x11/xorg-libXfont description {X.org libXfont} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:freetype port:xorg-libfontenc} name xorg-libXfont maintainers jeremyhu long_description {X font handling library for server & utilities} version 1.3.3 categories {x11 devel} revision 0
+xorg-libXi 371
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-inputproto port:xorg-xproto} portdir x11/xorg-libXi description {X.org libXi} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXi maintainers jeremyhu long_description {X11 Input Extension} version 1.2.0 categories {x11 devel} revision 0
 xorg-libXinerama 400
 variants universal depends_build {port:pkgconfig port:xorg-xineramaproto port:xorg-xextproto} portdir x11/xorg-libXinerama description {X.org libXinerama} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libX11 port:xorg-libXext} name xorg-libXinerama maintainers jeremyhu long_description {Xinerama protocol library} version 1.0.3 categories {x11 devel} revision 0
 xorg-libXmu 404
