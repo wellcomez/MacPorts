@@ -10226,8 +10226,8 @@ xorg-libXinerama 400
 variants universal depends_build {port:pkgconfig port:xorg-xineramaproto port:xorg-xextproto} portdir x11/xorg-libXinerama description {X.org libXinerama} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libX11 port:xorg-libXext} name xorg-libXinerama maintainers jeremyhu long_description {Xinerama protocol library} version 1.0.3 categories {x11 devel} revision 0
 xorg-libXmu 352
 variants universal depends_build {port:pkgconfig port:xorg-xextproto} portdir x11/xorg-libXmu description {X.org libXmu} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXt} name xorg-libXmu maintainers jeremyhu long_description {X.org Xmu library} version 1.0.4 categories {x11 devel} revision 0
-xorg-libXp 409
-variants universal depends_build {port:pkgconfig port:xorg-printproto port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXp description {X.org libXp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXau port:xorg-libX11} name xorg-libXp maintainers jeremyhu long_description {Xprint client library} version 1.0.0 categories {x11 devel} revision 0
+xorg-libXp 373
+variants universal depends_build {port:pkgconfig port:xorg-printproto port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXp description {X.org libXp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXp maintainers jeremyhu long_description {Xprint client library} version 1.0.0 categories {x11 devel} revision 0
 xorg-libXrandr 457
 variants universal depends_build {port:pkgconfig port:xorg-randrproto port:xorg-renderproto port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXrandr description {X.org libXrandr} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libX11 port:xorg-libXext port:xrender} name xorg-libXrandr maintainers jeremyhu long_description {X Resize and Rotate Extension C Library} version 1.2.3 categories {x11 devel} revision 0
 xorg-libXres 340
@@ -10236,12 +10236,12 @@ xorg-libXt 540
 variants universal depends_build {port:pkgconfig port:xorg-kbproto port:xorg-xproto} portdir x11/xorg-libXt description {X.org libXt} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libsm port:xorg-libX11} name xorg-libXt maintainers jeremyhu long_description {X Toolkit Intrinsics, an abstract widget library upon which other toolkits are based. Xt is the basis for many toolkits, including the Athena widgets (Xaw), and LessTif (a Motif implementation).} version 1.0.5 categories {x11 devel} revision 0
 xorg-libfontenc 339
 variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libfontenc description {X.org libfontenc} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:zlib name xorg-libfontenc maintainers jeremyhu long_description {Font encoding library} version 1.0.4 categories {x11 devel} revision 0
-xorg-libice 347
-variants universal portdir x11/xorg-libice description {X.org libice} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} name xorg-libice depends_lib {port:pkgconfig port:xorg-xproto port:xorg-xtrans} maintainers gmail.com:mvfranz long_description {X Inter-Client Exchange (ICE) Protocol} version 1.0.4 categories {x11 devel} revision 0
+xorg-libice 349
+variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xtrans} portdir x11/xorg-libice description {X.org libice} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} name xorg-libice maintainers gmail.com:mvfranz long_description {X Inter-Client Exchange (ICE) Protocol} version 1.0.4 categories {x11 devel} revision 0
 xorg-libpthread-stubs 354
 portdir x11/xorg-libpthread-stubs description {X.org/Xcb libpthread stubs} platforms {darwin macosx} name xorg-libpthread-stubs version 0.1 categories {x11 devel} homepage http://xcb.freedesktop.org revision 0 epoch 0 maintainers jeremyhu long_description {Library that provides pthread stubs that are missing from your platform libc. (used for libxcb)}
-xorg-libsm 334
-variants universal portdir x11/xorg-libsm description {X.org libSM} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} name xorg-libsm depends_lib {port:pkgconfig port:xorg-libice port:xorg-xproto} maintainers gmail.com:mvfranz long_description {X Session Management Library} version 1.0.3 categories {x11 devel} revision 0
+xorg-libsm 365
+variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xtrans} portdir x11/xorg-libsm description {X.org libSM} homepage http://www.x.org/ epoch 0 platforms {darwin macosx} depends_lib port:xorg-libice name xorg-libsm maintainers gmail.com:mvfranz long_description {X Session Management Library} version 1.1.0 categories {x11 devel} revision 0
 xorg-libxcb 438
 variants universal depends_build {port:pkgconfig port:xorg-xcb-proto port:libtool port:automake port:autoconf port:xorg-util-macros} portdir x11/xorg-libxcb description {X.org libxcb} homepage http://xcb.freedesktop.org/ epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXau port:xorg-libXdmcp} name xorg-libxcb maintainers jeremyhu long_description {The X C Binding (XCB) library} version 1.1 categories {x11 devel} revision 0
 xorg-libxkbfile 351
@@ -10275,11 +10275,11 @@ variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/x
 xorg-xcmiscproto 272
 portdir x11/xorg-xcmiscproto description {X.org xcmiscproto} platforms darwin name xorg-xcmiscproto version 1.1.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the XCMisc extension to X11}
 xorg-xextproto 243
-portdir x11/xorg-xextproto description {X.org xextproto} platforms darwin name xorg-xextproto version 7.0.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for Xext}
+portdir x11/xorg-xextproto description {X.org xextproto} platforms darwin name xorg-xextproto version 7.0.3 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for Xext}
 xorg-xf86bigfontproto 282
 portdir x11/xorg-xf86bigfontproto description {X.org xf86bigfontproto} platforms darwin name xorg-xf86bigfontproto version 1.1.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers gmail.com:myschizobuddy long_description {XF86BigFont extension headers}
 xorg-xf86dgaproto 276
-portdir x11/xorg-xf86dgaproto description {X.org xf86dgaproto} platforms darwin name xorg-xf86dgaproto version 2.0.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the XF86DGA extension to X11}
+portdir x11/xorg-xf86dgaproto description {X.org xf86dgaproto} platforms darwin name xorg-xf86dgaproto version 2.0.3 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the XF86DGA extension to X11}
 xorg-xf86miscproto 283
 portdir x11/xorg-xf86miscproto description {X.org xf86miscproto} platforms darwin name xorg-xf86miscproto version 0.9.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Miscellaneous legacy XFree86 prototype headers for X11}
 xorg-xf86vidmodeproto 292
