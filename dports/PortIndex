@@ -8411,7 +8411,7 @@ variants universal variant_desc {universal {Build for multiple architectures}} p
 libdap 548
 variants universal variant_desc {universal {Build for multiple architectures}} portdir science/libdap description {A C++ SDK which contains an implementation of DAP 2.0} homepage http://www.opendap.org/ epoch 0 platforms darwin name libdap depends_lib {port:curl port:libiconv port:libxml2 port:openssl port:zlib} maintainers takeshi@macports.org long_description {A C++ SDK which contains an implementation of DAP 2.0, Client- and Server-side support classes and a prototype implementation of the AIS.} version 3.8.2 categories science revision 0
 libframe 541
-variants universal variant_desc {universal {Build for multiple architectures}} portdir science/libframe description {LIGO/VIRGO Frame Library} homepage http://lappweb.in2p3.fr/virgo/FrameL/ epoch 0 platforms darwin name libframe depends_lib port:zlib maintainers ram long_description {A Common Data Frame Format for Interferometric Gravitational Wave Detector has been developed by VIRGO and LIGO. The Frame Library is a software dedicated to the frame manipulation including file input/output.} version 6.24-8 categories science revision 1
+variants universal variant_desc {universal {Build for multiple architectures}} portdir science/libframe description {LIGO/VIRGO Frame Library} homepage http://lappweb.in2p3.fr/virgo/FrameL/ epoch 1 platforms darwin name libframe depends_lib port:zlib maintainers ram long_description {A Common Data Frame Format for Interferometric Gravitational Wave Detector has been developed by VIRGO and LIGO. The Frame Library is a software dedicated to the frame manipulation including file input/output.} version 6.24-5 categories science revision 0
 libghemical 385
 variants universal variant_desc {universal {Build for multiple architectures}} portdir science/libghemical description {Library for the ghemical port.} homepage http://www.bioinformatics.org/ghemical/libghemical/ epoch 0 platforms darwin name libghemical maintainers {simon openmaintainer} long_description {{Library for the ghemical port.}} version 2.98 categories science revision 0
 libnc-dap 796
@@ -10334,8 +10334,8 @@ xorg-xineramaproto 276
 portdir x11/xorg-xineramaproto description {X.org xineramaproto} platforms darwin name xorg-xineramaproto version 1.1.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for Xinerama extension to X11}
 xorg-xproto 289
 portdir x11/xorg-xproto description {X.org xproto} platforms darwin name xorg-xproto version 7.0.14 categories {x11 devel} homepage http://www.x.org revision 1 epoch 0 maintainers bbyer@macports.org long_description {The X.org xproto package contains miscellaneous X11 prototype headers.}
-xorg-xtrans 346
-variants universal variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-xtrans description {X.org xtrans} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-xtrans maintainers jeremyhu@macports.org long_description {X Network Transport layer shared code} version 1.2.2 categories {x11 devel} revision 0
+xorg-xtrans 267
+portdir x11/xorg-xtrans description {X.org xtrans} platforms {darwin macosx} name xorg-xtrans version 1.2.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu@macports.org long_description {X Network Transport layer shared code}
 xping 240
 portdir x11/xping description {'ping' an Xserver} name xping depends_lib lib:libX11.6:XFree86 version 1.9 categories x11 revision 0 epoch 0 maintainers nomaintainer long_description {A simple tool to determine if an X11 server is running.}
 xplanet 889
