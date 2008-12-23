@@ -7976,26 +7976,26 @@ py26-tz 425
 description {World Timezone Definitions for Python} portdir python/py26-tz homepage http://pytz.sourceforge.net/ epoch 0 platforms darwin depends_lib port:python26 name py26-tz maintainers {ram openmaintainer} long_description {pytz brings the Olson tz database into Python. This library allows accurate and cross platform timezone calculations using Python 2.3 or higher.} categories {python devel} version 2008i revision 0
 py26-zopeinterface 338
 description {Python interfaces for Zope} portdir python/py26-zopeinterface homepage http://www.zope.org/Products/ZopeInterface epoch 0 platforms darwin depends_lib port:python26 name py26-zopeinterface maintainers {mcalhoun openmaintainer} long_description {{Python interfaces for Zope}} categories {python zope} version 3.3.0 revision 0
-py30-bsddb 346
-description {Python bindings to the db46 library} portdir python/py30-bsddb homepage http://www.python.org/doc/current/lib/module-dbm.html epoch 0 platforms darwin depends_lib {port:python30 port:db46} name py30-bsddb maintainers mww long_description {{Python bindings to the db46 library}} categories {python databases} version 3.0b3 revision 0
-py30-bz2 309
-description {Python bindings to bzip2} portdir python/py30-bz2 homepage http://www.python.org/doc/current/lib/module-bz2.html epoch 0 platforms darwin depends_lib {port:python25 port:bzip2} name py30-bz2 maintainers mww long_description {{Python bindings to bzip2}} categories python version 3.0b3 revision 0
-py30-curses 335
-description {Python bindings to ncurses} portdir python/py30-curses homepage http://www.python.org/doc/current/lib/module-curses.html epoch 0 platforms darwin depends_lib {port:python30 port:ncursesw} name py30-curses maintainers mww long_description {Python modules curses and curses-panel} categories python version 3.0b3 revision 0
-py30-gdbm 351
-description {Python bindings to the GNU dbm library} portdir python/py30-gdbm homepage http://www.python.org/doc/current/lib/module-gdbm.html epoch 0 platforms darwin depends_lib {port:python30 port:gdbm} name py30-gdbm maintainers mww long_description {{Python bindings to the GNU dbm library}} categories {python databases} version 3.0b3 revision 0
-py30-hashlib 403
-description {Python secure hash and message digest module} portdir python/py30-hashlib homepage http://www.python.org/doc/current/lib/module-hashlib.html epoch 0 platforms darwin depends_lib {port:python30 port:openssl} name py30-hashlib maintainers mww long_description {Python secure hash and message digest module MD5, SHA1, SHA224, SHA256, SHA384, SHA512} categories python version 3.0b3 revision 0
-py30-readline 301
-description {readline extension for Python} portdir python/py30-readline homepage http://www.python.org/ epoch 0 platforms darwin depends_lib {port:python30 port:readline} name py30-readline maintainers mww long_description {{readline extension for Python}} categories python version 3.0b3 revision 0
-py30-socket-ssl 344
-description {Python secure sockets via OpenSSL} portdir python/py30-socket-ssl homepage http://www.python.org/doc/current/lib/ssl-objects.html epoch 0 platforms darwin depends_lib {port:python30 port:openssl} name py30-socket-ssl maintainers mww long_description {{Python secure sockets via OpenSSL}} categories python version 3.0b3 revision 0
-py30-sqlite3 339
-description {Python bindings to sqlite3} portdir python/py30-sqlite3 homepage http://www.python.org/doc/current/lib/module-sqlite3.html epoch 0 platforms darwin depends_lib {port:python30 port:sqlite3} name py30-sqlite3 maintainers mww long_description {{Python bindings to sqlite3}} categories {python databases} version 3.0b3 revision 0
-py30-tkinter 362
-description {Python bindings to the Tk widget set} portdir python/py30-tkinter homepage http://www.python.org/doc/current/lib/module-Tkinter.html epoch 0 platforms darwin depends_lib {port:python30 port:tcl port:tk} name py30-tkinter maintainers mww long_description {{Python bindings to the Tk widget set}} categories {python graphics} version 3.0b3 revision 1
-py30-zlib 309
-description {Python bindings to zlib} portdir python/py30-zlib homepage http://www.python.org/doc/current/lib/module-zlib.html epoch 0 platforms darwin depends_lib {port:python30 port:zlib} name py30-zlib maintainers mww long_description {{Python bindings to zlib}} categories python version 3.0b3 revision 0
+py30-bsddb 344
+description {Python bindings to the db46 library} portdir python/py30-bsddb homepage http://www.python.org/doc/current/lib/module-dbm.html epoch 0 platforms darwin depends_lib {port:python30 port:db46} name py30-bsddb maintainers mww long_description {{Python bindings to the db46 library}} categories {python databases} version 3.0 revision 0
+py30-bz2 307
+description {Python bindings to bzip2} portdir python/py30-bz2 homepage http://www.python.org/doc/current/lib/module-bz2.html epoch 0 platforms darwin depends_lib {port:python25 port:bzip2} name py30-bz2 maintainers mww long_description {{Python bindings to bzip2}} categories python version 3.0 revision 0
+py30-curses 333
+description {Python bindings to ncurses} portdir python/py30-curses homepage http://www.python.org/doc/current/lib/module-curses.html epoch 0 platforms darwin depends_lib {port:python30 port:ncursesw} name py30-curses maintainers mww long_description {Python modules curses and curses-panel} categories python version 3.0 revision 0
+py30-gdbm 349
+description {Python bindings to the GNU dbm library} portdir python/py30-gdbm homepage http://www.python.org/doc/current/lib/module-gdbm.html epoch 0 platforms darwin depends_lib {port:python30 port:gdbm} name py30-gdbm maintainers mww long_description {{Python bindings to the GNU dbm library}} categories {python databases} version 3.0 revision 0
+py30-hashlib 401
+description {Python secure hash and message digest module} portdir python/py30-hashlib homepage http://www.python.org/doc/current/lib/module-hashlib.html epoch 0 platforms darwin depends_lib {port:python30 port:openssl} name py30-hashlib maintainers mww long_description {Python secure hash and message digest module MD5, SHA1, SHA224, SHA256, SHA384, SHA512} categories python version 3.0 revision 0
+py30-readline 299
+description {readline extension for Python} portdir python/py30-readline homepage http://www.python.org/ epoch 0 platforms darwin depends_lib {port:python30 port:readline} name py30-readline maintainers mww long_description {{readline extension for Python}} categories python version 3.0 revision 0
+py30-socket-ssl 342
+description {Python secure sockets via OpenSSL} portdir python/py30-socket-ssl homepage http://www.python.org/doc/current/lib/ssl-objects.html epoch 0 platforms darwin depends_lib {port:python30 port:openssl} name py30-socket-ssl maintainers mww long_description {{Python secure sockets via OpenSSL}} categories python version 3.0 revision 0
+py30-sqlite3 337
+description {Python bindings to sqlite3} portdir python/py30-sqlite3 homepage http://www.python.org/doc/current/lib/module-sqlite3.html epoch 0 platforms darwin depends_lib {port:python30 port:sqlite3} name py30-sqlite3 maintainers mww long_description {{Python bindings to sqlite3}} categories {python databases} version 3.0 revision 0
+py30-tkinter 360
+description {Python bindings to the Tk widget set} portdir python/py30-tkinter homepage http://www.python.org/doc/current/lib/module-Tkinter.html epoch 0 platforms darwin depends_lib {port:python30 port:tcl port:tk} name py30-tkinter maintainers mww long_description {{Python bindings to the Tk widget set}} categories {python graphics} version 3.0 revision 0
+py30-zlib 307
+description {Python bindings to zlib} portdir python/py30-zlib homepage http://www.python.org/doc/current/lib/module-zlib.html epoch 0 platforms darwin depends_lib {port:python30 port:zlib} name py30-zlib maintainers mww long_description {{Python bindings to zlib}} categories python version 3.0 revision 0
 rdiff-backup 1109
 description {backs up one directory to another, possibly over a network} portdir python/rdiff-backup homepage http://www.nongnu.org/rdiff-backup/ epoch 0 platforms darwin depends_lib {port:python24 port:librsync} name rdiff-backup maintainers nomaintainer long_description {rdiff-backup backs up one directory to another, possibly over a network. The target directory ends up a copy of the source directory, but extra reverse diffs are stored in a special subdirectory of that target directory, so you can still recover files lost some time ago. The idea is to combine the best features of a mirror and an incremental backup. rdiff-backup also preserves subdirectories, hard links, dev files, permissions, uid/gid ownership, and modification times. Also, rdiff-backup can operate in a bandwidth efficient manner over a pipe, like rsync. Thus you can use rdiff-backup and ssh to securely back a hard drive up to a remote location, and only the differences will be transmitted. Finally, rdiff-backup is easy to use and settings have sensical defaults.} categories {python net sysutils} version 1.2.1 revision 0
 rdiff-backup-devel 1176
