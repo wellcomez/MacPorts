@@ -10160,8 +10160,6 @@ pcb 763
 variants universal variant_desc {universal {Build for multiple architectures}} portdir x11/pcb description {Printed Circuit Board Layout Tool} homepage http://pcb.sourceforge.net epoch 0 platforms darwin name pcb depends_lib {lib:libX11.6:XFree86 bin:wish:tk} maintainers adam@megacz.com long_description {PCB is an interactive printed circuit board editor for the X11 window system. PCB includes a rats nest feature, design rule checking, and can provide industry standard RS-274-X (Gerber), NC drill, and centroid data (X-Y data) output for use in the board fabrication and assembly process. PCB offers high end features such as an autorouter and trace optimizer which can tremendously reduce layout time.} version 20060321 categories {x11 graphics} revision 0
 php5-gtk 559
 variants {extra html libsexy sourceview spell universal} variant_desc {universal {Build for multiple architectures}} portdir x11/php5-gtk description {PHP-GTK: Gtk+ bindings for PHP 5.} homepage http://gtk.php.net/ epoch 0 platforms {darwin freebsd} name php5-gtk depends_lib {port:glib2 port:gtk2 port:php5 port:libglade2} maintainers anant@kix.in long_description {PHP-GTK is a Gtk+ bindings for the PHP 5 scripting language, allowing you to build rich, cross-platform desktop applications using PHP.} version 2.0.1 categories {x11 lang php www} revision 0
-printproto 284
-portdir x11/printproto platforms {darwin macosx} description {X.Org Print extension headers} name printproto version 1.0.3 categories {x11 devel} homepage http://xorg.freedesktop.org/ revision 0 epoch 0 maintainers gmail.com:mvfranz long_description {{X.Org Print extension headers}}
 qt3 750
 variants {darwin_9 darwin_8 darwin_7 darwin_6 mysql odbc psql universal} variant_desc {darwin_9 {Platform variant, do not select manually} darwin_8 {Platform variant, do not select manually} darwin_7 {Platform variant, do not select manually} darwin_6 {Platform variant, do not select manually} universal {Build for multiple architectures}} portdir x11/qt3 description {Qt Tool Kit} homepage http://www.trolltech.com/products/qt/index.html epoch 0 platforms darwin name qt3 depends_lib {lib:libGL.1:XFree86 port:jpeg port:libpng path:bin/perl:perl5 lib:libXft.2:Xft2 lib:libXrender.1:xrender port:zlib} maintainers nomaintainer long_description {Qt 3 is a multiplatform C++ application development framework.} version 3.3.8 categories x11 revision 3
 qt4-x11 493
@@ -10290,6 +10288,8 @@ xorg-damageproto 272
 portdir x11/xorg-damageproto description {X.org damageproto} platforms darwin name xorg-damageproto version 1.1.0 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the Damage extension to X11}
 xorg-dmxproto 246
 portdir x11/xorg-dmxproto description {X.org dmxproto} platforms darwin name xorg-dmxproto version 2.2.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {X.org DMXProto protocol headers.}
+xorg-dri2proto 241
+portdir x11/xorg-dri2proto description {X.org dri2proto} platforms darwin name xorg-dri2proto version 1.1 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for DRI2}
 xorg-evieproto 264
 portdir x11/xorg-evieproto description {X.org evieproto} platforms darwin name xorg-evieproto version 1.0.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the evie extension to X11}
 xorg-fixesproto 268
@@ -10360,6 +10360,8 @@ xorg-libXxf86misc 456
 variants universal depends_build {port:pkgconfig port:xorg-xf86miscproto port:xorg-xproto port:xorg-xextproto} variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-libXxf86misc description {X.org libXxf86misc} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXxf86misc depends_lib port:xorg-libXext maintainers jeremyhu long_description {{X.org libXxf86misc}} categories {x11 devel} version 1.0.1 revision 0
 xorg-libXxf86vm 451
 variants universal depends_build {port:pkgconfig port:xorg-xf86vidmodeproto port:xorg-xproto port:xorg-xextproto} variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-libXxf86vm description {X.org libXxf86vm} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXxf86vm depends_lib port:xorg-libXext maintainers jeremyhu long_description {{X.org libXxf86vm}} categories {x11 devel} version 1.0.2 revision 0
+xorg-libdmx 417
+variants universal depends_build {port:pkgconfig port:xorg-dmxproto port:xorg-xextproto} variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-libdmx description {X.org libdmx} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libdmx depends_lib port:xorg-libXext maintainers jeremyhu long_description {X.org libdmx library.} categories {x11 devel} version 1.0.2 revision 0
 xorg-libfontenc 399
 variants universal depends_build {port:pkgconfig port:xorg-xproto} variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-libfontenc description {X.org libfontenc} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libfontenc depends_lib port:zlib maintainers jeremyhu long_description {Font encoding library} categories {x11 devel} version 1.0.4 revision 0
 xorg-libice 409
@@ -10380,8 +10382,8 @@ xorg-libxkbui 386
 variants universal depends_build port:pkgconfig variant_desc {universal {Build for multiple architectures}} portdir x11/xorg-libxkbui description {X.org libxbui} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libxkbui depends_lib port:xorg-libxkbfile maintainers jeremyhu long_description {X.org libxkbui library.} categories {x11 devel} version 1.0.2 revision 0
 xorg-printproto 250
 portdir x11/xorg-printproto description {X.org xproto} platforms darwin name xorg-printproto version 1.0.4 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {X.org PrintProto protocol headers.}
-xorg-proto 914
-description {X.org proto meta-package} portdir x11/xorg-proto homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-proto depends_lib {port:xorg-applewmproto port:xorg-bigreqsproto port:xorg-compositeproto port:xorg-damageproto port:xorg-dmxproto port:xorg-evieproto port:xorg-fixesproto port:xorg-fontcacheproto port:xorg-fontsproto port:xorg-inputproto port:xorg-kbproto port:xorg-printproto port:xorg-randrproto port:xorg-recordproto port:xorg-renderproto port:xorg-resourceproto port:xorg-scrnsaverproto port:xorg-trapproto port:xorg-videoproto port:xorg-xcb-proto port:xorg-xcmiscproto port:xorg-xextproto port:xorg-xf86bigfontproto port:xorg-xf86dgaproto port:xorg-xf86miscproto port:xorg-xf86vidmodeproto port:xorg-xineramaproto port:xorg-xproto} maintainers jeremyhu long_description {This package builds all of the x.org proto packages.} version 20081228 categories {x11 devel} revision 0
+xorg-proto 992
+description {X.org proto meta-package} portdir x11/xorg-proto homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-proto depends_lib {port:xorg-applewmproto port:xorg-bigreqsproto port:xorg-compositeproto port:xorg-damageproto port:xorg-dmxproto port:xorg-dri2proto port:xorg-evieproto port:xorg-fixesproto port:xorg-fontcacheproto port:xorg-fontsproto port:xorg-inputproto port:xorg-kbproto port:xorg-printproto port:xorg-randrproto port:xorg-recordproto port:xorg-renderproto port:xorg-resourceproto port:xorg-scrnsaverproto port:xorg-trapproto port:xorg-videoproto port:xorg-xcb-proto port:xorg-xcmiscproto port:xorg-xextproto port:xorg-xf86bigfontproto port:xorg-xf86dgaproto port:xorg-xf86driproto port:xorg-xf86miscproto port:xorg-xf86vidmodeproto port:xorg-xineramaproto port:xorg-xproto port:xorg-xproxymanagementprotocol} maintainers jeremyhu long_description {This package builds all of the x.org proto packages.} version 20081229 categories {x11 devel} revision 0
 xorg-randrproto 387
 portdir x11/xorg-randrproto description {X.org randrproto} platforms darwin name xorg-randrproto version 1.2.1 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {The pkg-config program is used to retrieve information about installed libraries in the system. It is typically used to compile and link against one or more libraries.}
 xorg-recordproto 273
@@ -10412,6 +10414,8 @@ xorg-xf86bigfontproto 282
 portdir x11/xorg-xf86bigfontproto description {X.org xf86bigfontproto} platforms darwin name xorg-xf86bigfontproto version 1.1.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers gmail.com:myschizobuddy long_description {XF86BigFont extension headers}
 xorg-xf86dgaproto 276
 portdir x11/xorg-xf86dgaproto description {X.org xf86dgaproto} platforms darwin name xorg-xf86dgaproto version 2.0.3 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for the XF86DGA extension to X11}
+xorg-xf86driproto 255
+portdir x11/xorg-xf86driproto description {X.org xf86driproto} platforms darwin name xorg-xf86driproto version 2.0.4 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for xf86dri}
 xorg-xf86miscproto 283
 portdir x11/xorg-xf86miscproto description {X.org xf86miscproto} platforms darwin name xorg-xf86miscproto version 0.9.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Miscellaneous legacy XFree86 prototype headers for X11}
 xorg-xf86vidmodeproto 292
@@ -10420,6 +10424,8 @@ xorg-xineramaproto 276
 portdir x11/xorg-xineramaproto description {X.org xineramaproto} platforms darwin name xorg-xineramaproto version 1.1.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for Xinerama extension to X11}
 xorg-xproto 289
 portdir x11/xorg-xproto description {X.org xproto} platforms darwin name xorg-xproto version 7.0.14 categories {x11 devel} homepage http://www.x.org revision 1 epoch 0 maintainers bbyer@macports.org long_description {The X.org xproto package contains miscellaneous X11 prototype headers.}
+xorg-xproxymanagementprotocol 300
+portdir x11/xorg-xproxymanagementprotocol description {X.org xproxymanagementprotocol} platforms darwin name xorg-xproxymanagementprotocol version 1.0.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu long_description {Prototype headers for xproxymanagement}
 xorg-xtrans 267
 portdir x11/xorg-xtrans description {X.org xtrans} platforms {darwin macosx} name xorg-xtrans version 1.2.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers jeremyhu@macports.org long_description {X Network Transport layer shared code}
 xping 240
