@@ -9,7 +9,7 @@ all:
 install: all
 	@(cd base; make install)
 	@if egrep -q ^rsync ${SRCS}; then \
-	  echo file://`pwd`/dports/ >> ${SRCS}; \
+	  echo file://`pwd`/dports/ [default] >> ${SRCS}; \
 	  sed -i .orig -e 's/^rsync/#rsync/' ${SRCS}; \
 	  echo "${SRCS} automatically configured"; \
         fi
