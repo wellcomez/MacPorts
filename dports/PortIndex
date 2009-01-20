@@ -3738,6 +3738,8 @@ koffice-i18n-uzbek 298
 description {KOffice uzbek language files.} portdir kde/koffice-i18n-uzbek homepage http://www.koffice.org/ epoch 0 platforms darwin name koffice-i18n-uzbek depends_lib port:koffice maintainers nomaintainer long_description {{KOffice uzbek language files.}} version 1.5.2 categories kde revision 0
 koffice-i18n-welsh 298
 description {KOffice welsh language files.} portdir kde/koffice-i18n-welsh homepage http://www.koffice.org/ epoch 0 platforms darwin name koffice-i18n-welsh depends_lib port:koffice maintainers nomaintainer long_description {{KOffice welsh language files.}} version 1.6.3 categories kde revision 0
+koffice2-devel 533
+variants {universal debug} depends_build {port:cmake port:automoc} variant_desc {universal {Build for multiple architectures} debug {Enable debug binaries}} portdir kde/koffice2-devel description {A variety of games made with the KDE4 platform} homepage http://www.kde.org epoch 0 platforms darwin name koffice2-devel depends_lib {port:kdelibs4-devel port:kdebase4-devel port:eigen2-devel} maintainers nomaintainer long_description {{A variety of games made with the KDE4 platform}} categories {kde kde4} version 1.9.98.5 revision 0
 konversation 394
 depends_build {port:autoconf port:unsermake} portdir kde/konversation description {KDE IRC client. NB No KDE sound support.} homepage http://konversation.kde.org/ epoch 0 platforms darwin name konversation depends_lib {port:kdebase3 port:doxygen path:bin/dot:graphviz} maintainers nomaintainer long_description {{KDE IRC client. NB No KDE sound support.}} version 1.1 categories kde revision 0
 ktorrent 539
