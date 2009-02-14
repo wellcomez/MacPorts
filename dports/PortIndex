@@ -10885,7 +10885,7 @@ variants {macosx universal} depends_build {port:pkgconfig port:xorg-applewmproto
 xorg-trapproto 282
 portdir x11/xorg-trapproto description {X.org trapproto} platforms darwin name xorg-trapproto version 3.4.3 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers {jeremyhu openmaintainer} long_description {Prototype headers for the XTrap extension to X11}
 xorg-util-macros 308
-portdir x11/xorg-util-macros description {X.org util-macros} platforms darwin name xorg-util-macros version 1.2.1 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers {jeremyhu openmaintainer} long_description {Miscellaneous utility macros required by the Modular X.org codebase.}
+portdir x11/xorg-util-macros description {X.org util-macros} platforms darwin name xorg-util-macros version 1.2.1 categories {x11 devel} homepage http://www.x.org revision 1 epoch 0 maintainers {jeremyhu openmaintainer} long_description {Miscellaneous utility macros required by the Modular X.org codebase.}
 xorg-videoproto 286
 portdir x11/xorg-videoproto description {X.org videoproto} platforms darwin name xorg-videoproto version 2.2.2 categories {x11 devel} homepage http://www.x.org revision 0 epoch 0 maintainers {jeremyhu openmaintainer} long_description {Prototype headers for the XVideo extension to X11}
 xorg-xcb-proto 485
