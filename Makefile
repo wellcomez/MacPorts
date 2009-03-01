@@ -4,7 +4,7 @@ SRCS=	${PREFIX}/etc/macports/sources.conf
 default: all
 
 all:
-	@(cd base; [ ! -f Makefile ] && ./configure ; make all)
+	@(cd base; [ ! -f Makefile ] && ./configure --prefix=${PREFIX} ; make all)
 
 install: all
 	@(cd base; make install)
