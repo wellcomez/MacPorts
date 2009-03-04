@@ -5283,7 +5283,7 @@ variants universal variant_desc {universal {Build for multiple architectures}} p
 nsping 493
 portdir net/nsping description {DNS ping} platforms darwin name nsping version 0.8 categories net revision 3 epoch 0 maintainers nomaintainer long_description {Nsping uses DNS queries to monitor reachability and operation of nameservers, as well as the latency of DNS queries. It does this by sending random recursive DNS queries to the nameserver (avoiding the effects of DNS caching) and measuring the amount of time between the sending of the query and the receipt of the response packet.}
 nss 313
-description {Network Security Service libraries.} portdir net/nss homepage http://www.mozilla.org/projects/security/pki/nss/ epoch 0 platforms darwin name nss depends_lib port:nspr maintainers reiffert@macports.org long_description {{Network Security Service libraries.}} version 3.11.9 categories net revision 0
+description {Network Security Service libraries.} portdir net/nss homepage http://www.mozilla.org/projects/security/pki/nss/ epoch 0 platforms darwin name nss depends_lib port:nspr maintainers reiffert@macports.org long_description {{Network Security Service libraries.}} version 3.11.9 categories net revision 1
 ntop 482
 variants universal depends_build port:gawk variant_desc {universal {Build for multiple architectures}} portdir net/ntop description {network traffic probe} homepage http://www.ntop.org/ epoch 0 platforms darwin name ntop depends_lib {port:libpcap port:gd2 port:libpng port:gdbm port:rrdtool} maintainers markd long_description {ntop is a network traffic probe that shows the network usage, similar to what the popular top Unix command does.} categories net version 3.3.8 revision 0
 nylon 506
