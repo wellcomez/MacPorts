@@ -4924,8 +4924,8 @@ ccxstream 383
 portdir net/ccxstream description {Stream media files to XBox Media Center via XBMSP} platforms darwin name ccxstream version 1.0.15 categories net homepage http://www.xboxmediacenter.de/ revision 0 epoch 0 maintainers yunzheng.hu@gmail.com long_description {Server to stream music and video files from your UNIX server to a XBox running XBox Media Player using the XBMSP protocol.}
 cdpd 385
 variants universal depends_build lib:libnet:libnet variant_desc {universal {Build for multiple architectures}} description {Sends Cisco Discovery Protocol announcements} portdir net/cdpd epoch 0 name cdpd long_description {cdpd periodically sends Cisco Discovery Protocol announcements on configured interfaces.} maintainers andrew@ugh.net.au categories net version 1.0.2.1 revision 0
-cdpr 377
-description {Cisco Discovery Protocol Reporter} portdir net/cdpr homepage http://www.monkeymental.com/ epoch 0 platforms darwin name cdpr depends_lib port:libpcap maintainers markd long_description {CDPR will show which switch and port the machine running it is connected to. It also supports sending cdp data back to a central server.} version 2.2.1 categories net revision 1
+cdpr 375
+description {Cisco Discovery Protocol Reporter} portdir net/cdpr homepage http://www.monkeymental.com/ epoch 0 platforms darwin name cdpr depends_lib port:libpcap maintainers markd long_description {CDPR will show which switch and port the machine running it is connected to. It also supports sending cdp data back to a central server.} version 2.3 categories net revision 0
 centericq 367
 variants universal variant_desc {universal {Build for multiple architectures}} portdir net/centericq description {Console multi-im client.} homepage http://konst.org.ua/en/centericq/ epoch 0 platforms darwin name centericq maintainers neowolf@freeshell.org long_description {Console client for AIM/ICQ/Yahoo/IRC/LiveJournal.} version 4.21.0 categories net revision 1
 centerim 435
