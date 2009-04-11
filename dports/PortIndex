@@ -9811,7 +9811,7 @@ portdir tex/texlive_texmf-full description {full texmf tree for texlive} homepag
 texlive_texmf-minimal 570
 portdir tex/texlive_texmf-minimal description {texmf tree for texlive} homepage http://www.tug.org/texlive/ epoch 0 platforms darwin name texlive_texmf-minimal maintainers nomaintainer long_description {TeX Live is an easy way to get up and running with TeX. It provides a comprehensive TeX system with binaries for most flavors of Unix, including GNU/Linux, and also Windows. It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world.} version 2007 categories tex revision 2
 agree 315
-portdir textproc/agree description {command line tool that agrees on any opinion} homepage http://www.fstab.de/agree.html epoch 0 platforms {darwin freebsd} name agree maintainers nomaintainer long_description {{command line tool that agrees on any opinion}} version 0.1 categories {textproc amusements} revision 0
+portdir textproc/agree description {command line tool that agrees on any opinion} homepage http://code.google.com/p/agree epoch 0 platforms {darwin freebsd} name agree maintainers nomaintainer long_description {{command line tool that agrees on any opinion}} version 0.3 categories {textproc amusements} revision 0
 antiword 368
 variants universal portdir textproc/antiword description {Utility to read Microsoft Word (.doc) files} homepage http://www.winfield.demon.nl/index.html epoch 0 platforms darwin name antiword maintainers nomaintainer long_description {Antiword is a utility that can read binary files from Microsoft Word 6, 7, 97, and 2000.} categories textproc version 0.37 revision 0
 ascii 420
