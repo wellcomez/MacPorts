@@ -9876,6 +9876,8 @@ aspell-dict-uk 312
 depends_build port:aspell portdir textproc/aspell-dict-uk description {uk dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-uk maintainers {pguyot@kallisys.net openmaintainer} long_description {{uk dictionary for aspell}} version 1.4.0-0 categories textproc revision 0
 aspell-dict-uz 310
 depends_build port:aspell portdir textproc/aspell-dict-uz description {uz dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-uz maintainers {pguyot@kallisys.net openmaintainer} long_description {{uz dictionary for aspell}} version 0.6-0 categories textproc revision 0
+backward 370
+portdir textproc/backward description {command line tool that reverses lineorder of stdin or any given file(s)} homepage http://code.google.com/p/backward/ epoch 0 platforms {darwin freebsd} name backward maintainers phw long_description {{command line tool that reverses lineorder of stdin or any given file(s)}} version 0.1 categories {textproc amusements} revision 0
 barcode 609
 variants universal portdir textproc/barcode description {convert text strings to printed barcodes} homepage http://www.gnu.org/software/barcode/ epoch 0 platforms darwin name barcode maintainers nomaintainer long_description {Main features of GNU Barcode: - Available as both a library and an executable program - Supports UPC, EAN, ISBN, CODE39 and other encoding standards - Postscript and Encapsulated Postscript output - Accepts sizes and positions as inches, centimeters, millimeters - Can create tables of barcodes (to print labels on sticker pages)} categories {textproc print} version 0.98 revision 0
 bibledit 709
