@@ -7034,8 +7034,6 @@ p5-yaml-syck 359
 variants universal portdir perl/p5-yaml-syck description {A fast, lightweight YAML loader and dumper} homepage http://search.cpan.org/dist/YAML-Syck/ epoch 0 platforms darwin name p5-yaml-syck depends_lib path:bin/perl:perl5 long_description {{A fast, lightweight YAML loader and dumper}} maintainers ged@FaerieMUD.org categories perl version 0.99 revision 0
 p5-yaml-tiny 421
 variants universal portdir perl/p5-yaml-tiny description {Read/Write YAML files with as little code as possible} homepage http://search.cpan.org/dist/YAML-Tiny/ epoch 0 platforms darwin name p5-yaml-tiny depends_lib {path:bin/perl:perl5 port:p5-yaml port:p5-yaml-syck} long_description {{Read/Write YAML files with as little code as possible}} maintainers {narf_tm openmaintainer} categories perl version 1.36 revision 0
-php5-yaz 412
-variants universal portdir php/php5-yaz description {PHP/PECL extension for the Z39.50 protocol} homepage http://pecl.php.net/package/yaz/ epoch 0 platforms darwin name php5-yaz depends_lib {path:bin/phpize:php5 port:re2c port:yaz} long_description {This extension implements a Z39.50 client for PHP using the YAZ toolkit.} maintainers nomaintainer categories {php net databases devel} version 1.0.14 revision 0
 a2ps 427
 variants universal depends_build bin:psnup:psutils portdir print/a2ps description {an Any to PostScript filter.} homepage http://www.gnu.org/software/a2ps/ epoch 0 platforms darwin name a2ps long_description {a2ps is a utilty that allows the user to do PostScript manipulations. It is able to pass on processing to other filters, such as gzip and dvips.} maintainers mike@pentangle.net categories print version 4.14 revision 0
 a2ps-j 483
