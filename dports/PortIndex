@@ -5404,8 +5404,8 @@ ns-2 364
 variants universal depends_build {port:autoconf port:automake} portdir net/ns-2 description {The Network Simulator} homepage http://www.isi.edu/nsnam/ns/ epoch 0 platforms darwin name ns-2 depends_lib port:tclcl long_description {Ns is a discrete event simulator targeted at networking research} maintainers nomaintainer categories net version 20050728 revision 0
 nsca 483
 variants universal depends_build port:libmcrypt portdir net/nsca description {Nagios Service Check Acceptor} homepage http://nagios.org epoch 0 platforms darwin name nsca long_description {The NSCA addon is designed to accept passive host and service check results from clients that use the send_nsca utility (also included in this package) and pass them along to the Nagios process by using the external command interface.} maintainers markd categories net version 2.7.2 revision 0
-nsd 371
-variants universal portdir net/nsd description {authoritative only, high performance, simple name server} homepage http://www.nlnetlabs.nl/nsd/ epoch 0 platforms darwin name nsd depends_lib port:openssl long_description {NSD is an authoritative only, high performance, simple and open source name server.} maintainers nomaintainer categories net version 2.3.5 revision 0
+nsd 391
+variants {stats rootserver universal} portdir net/nsd description {Authoritative only, high performance, simple name server.} homepage http://www.nlnetlabs.nl/nsd/ epoch 0 platforms darwin name nsd depends_lib port:openssl long_description {NSD is an authoritative only, high performance, simple and open source name server.} maintainers nomaintainer categories net version 3.2.1 revision 0
 nslint 256
 variants universal portdir net/nslint description {Lint program for dns files} homepage http://ee.lbl.gov/ epoch 0 platforms {darwin sunos} name nslint maintainers blb long_description {{Lint program for dns files}} categories net version 2.1a9 revision 0
 nsping 493
