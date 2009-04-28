@@ -2740,8 +2740,8 @@ linsmith 442
 variants universal portdir gnome/linsmith description {linSmith is a Smith Charting program, mainly designed for educational use.} homepage http://linsmith.sf.net epoch 0 platforms darwin name linsmith depends_lib {bin:gnome-session:gnome-session port:libgnomeprintui} maintainers nomaintainer long_description {{linSmith is a Smith Charting program, mainly designed for educational use.}} categories {gnome science} version 0.9.2 revision 0
 mergeant 355
 variants {darwin_8_powerpc universal} portdir gnome/mergeant description {A GNOME SQL database admin tool.} homepage http://www.gnome-db.org/ epoch 0 platforms darwin name mergeant depends_lib lib:libgnomedb-2:libgnomedb maintainers nomaintainer long_description {{A GNOME SQL database admin tool.}} categories {gnome databases} version 0.12.1 revision 0
-metacity 422
-variants universal depends_build {port:gnome-doc-utils port:pkgconfig} portdir gnome/metacity description {A window manager for the adult in you.} homepage http://www.gnome.org epoch 0 platforms darwin name metacity depends_lib {port:gconf port:startup-notification port:gnome-themes} maintainers nomaintainer long_description {{A window manager for the adult in you.}} categories {gnome x11-wm} version 2.26.0 revision 0
+metacity 434
+variants universal depends_build {port:gnome-doc-utils port:pkgconfig} portdir gnome/metacity description {A window manager for the adult in you.} homepage http://www.gnome.org epoch 0 platforms darwin name metacity depends_lib {port:gconf port:startup-notification port:gnome-themes port:zenity} maintainers nomaintainer long_description {{A window manager for the adult in you.}} categories {gnome x11-wm} version 2.26.0 revision 0
 mlview 393
 variants universal portdir gnome/mlview description {XML-editor for GNOME.} homepage http://www.freespiders.org/projects/gmlview/ epoch 0 platforms darwin name mlview depends_lib lib:libgnomeprintui-2-2:libgnomeprintui maintainers nomaintainer long_description {The MlView project is an ongoing effort to develop an xml editor for GNOME environment.} categories gnome version 0.7.1 revision 0
 monster-masher 614
