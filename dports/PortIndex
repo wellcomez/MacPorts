@@ -5009,7 +5009,7 @@ variants universal portdir net/c-ares description {asynchronous DNS library} hom
 cacti 422
 variants {server plugins} portdir net/cacti description {Cacti is a complete RRDtool network graphing solution.} homepage http://www.cacti.net epoch 0 platforms darwin name cacti depends_lib {port:mysql5 port:rrdtool} long_description {Cacti is a complete network graphing solution designed to harness the power of RRDtool's data storage and graphing functions.} maintainers markd categories net version 0.8.7b revision 4
 cclive 365
-variants universal portdir net/cclive description {A command line video extraction utility.} homepage http://code.google.com/p/cclive/ epoch 0 platforms darwin name cclive maintainers {openmaintainer snc} long_description {cclive is a command line video extraction utility similar to clive but with lower requirements} categories {net www} version 0.3.1 revision 0
+variants universal portdir net/cclive description {A command line video extraction utility.} homepage http://code.google.com/p/cclive/ epoch 0 platforms darwin name cclive maintainers {openmaintainer snc} long_description {cclive is a command line video extraction utility similar to clive but with lower requirements} categories {net www} version 0.4.0 revision 0
 ccxstream 383
 portdir net/ccxstream description {Stream media files to XBox Media Center via XBMSP} homepage http://www.xboxmediacenter.de/ epoch 0 platforms darwin name ccxstream maintainers yunzheng.hu@gmail.com long_description {Server to stream music and video files from your UNIX server to a XBox running XBox Media Player using the XBMSP protocol.} version 1.0.15 categories net revision 0
 cdpd 325
