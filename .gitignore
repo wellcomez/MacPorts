@@ -22,11 +22,15 @@ base/setupenv.bash
 base/src/Makefile
 base/src/config.h
 base/src/cregistry/cregistry.a
+base/src/macports1.0/portconf.o
 base/src/macports1.0/macports_autoconf.tcl
 base/src/macports1.0/macports_fastload.tcl
+base/src/macports1.0/session.o
+base/src/macports1.0/util.o
 base/src/pathconf/Makefile
 base/src/pathconf/manpaths
 base/src/pathconf/paths
+base/src/pextlib1.0/compat.o
 base/src/port/port
 base/src/port/portindex
 base/src/port/portmirror
