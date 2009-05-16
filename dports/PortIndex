@@ -9998,8 +9998,8 @@ aspell 486
 variants {nls nonls macosx universal} depends_build port:texinfo portdir textproc/aspell description {Spell checker with better logic than ispell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell long_description {Aspell is a spell checker designed to eventually replace ispell. Aspell's main feature is that it does a much better job of coming up with possible suggestions than ispell.} maintainers {openmaintainer jochen} categories textproc version 0.60.6 revision 1
 aspell-dict-ar 310
 depends_build port:aspell portdir textproc/aspell-dict-ar description {ar dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ar maintainers {kallisys.net:pguyot openmaintainer} long_description {{ar dictionary for aspell}} categories textproc version 1.2-0 revision 0
-aspell-dict-bg 277
-variants universal depends_build port:aspell portdir textproc/aspell-dict-bg description {Bulgarian dictionary for aspell} epoch 0 platforms darwin name aspell-dict-bg long_description description maintainers gmail.com:sava.chankov categories textproc version 4.0-0 revision 0
+aspell-dict-bg 335
+variants universal depends_build bin:aspell:aspell portdir textproc/aspell-dict-bg description {Bulgarian dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-bg long_description {{Bulgarian dictionary for aspell}} maintainers gmail.com:sava.chankov categories textproc version 4.1-0 revision 0
 aspell-dict-bn 313
 depends_build port:aspell portdir textproc/aspell-dict-bn description {bn dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-bn maintainers {kallisys.net:pguyot openmaintainer} long_description {{bn dictionary for aspell}} categories textproc version 0.01.1-1 revision 0
 aspell-dict-de 455
