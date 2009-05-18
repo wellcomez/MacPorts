@@ -10204,6 +10204,8 @@ iso8879 348
 variants universal depends_build bin:unzip:unzip portdir textproc/iso8879 description {Character entity sets from ISO 8879:1986 (SGML)} epoch 0 depends_run bin:mkcatalog:mkcatalog platforms darwin name iso8879 long_description {{Character entity sets from ISO 8879:1986 (SGML)}} maintainers nomaintainer categories textproc version 1986 revision 0
 ispell 465
 variants universal portdir textproc/ispell description {An interactive spelling checker for multiple languages} homepage http://ficus-www.cs.ucla.edu/geoff/ispell.html epoch 0 platforms {darwin freebsd} name ispell depends_lib port:ncurses long_description {International Ispell is an interactive spell-checking program for Unix which supports a large number of European languages.} maintainers nomaintainer categories {textproc spelling} version 3.3.02 revision 2
+ispell-dict-it 368
+depends_build port:ispell portdir textproc/ispell-dict-it description {Italian dictionary for ispell.} homepage http://members.xoom.virgilio.it/trasforma/ispell/ epoch 0 platforms darwin name ispell-dict-it maintainers gmail.com:bardellie long_description {Ispell Italian dictionary. Based on Loris Palmerini's dictionary.} categories textproc version 2001 revision 0
 jive 187
 variants universal portdir textproc/jive description {Convert English text to Jive} epoch 0 platforms darwin name jive maintainers nomaintainer categories textproc version 1.1 revision 1
 json-c 464
