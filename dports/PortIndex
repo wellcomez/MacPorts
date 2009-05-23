@@ -1642,6 +1642,8 @@ mhash 374
 variants universal portdir devel/mhash description {provides easy access strong hashes} homepage http://mhash.sourceforge.net/ epoch 0 platforms {darwin freebsd} name mhash long_description {Libmhash is a library which implements some hash algorithms like crc32, md5 and sha-1.} maintainers {ryandesign openmaintainer} categories {devel security} version 0.9.9.9 revision 0
 mico 433
 variants {powerpc universal} portdir devel/mico description {Fully compliant CORBA implementation} homepage http://www.mico.org/ epoch 0 platforms darwin name mico depends_lib {port:openssl lib:libncurses:ncurses} maintainers {student.ethz.ch:roederja schiebel.us:darrell} long_description {MICO is a mature, secure, robust, fully standards-compliant implementation of the CORBA standard.} categories devel version 2.3.12 revision 0
+midgard2-core 395
+variants universal portdir devel/midgard2-core description {A content repository system} homepage http://www.midgard-project.org/ epoch 0 platforms darwin name midgard2-core depends_lib {port:glib2 port:dbus port:libxml2 port:libgda3} long_description {Midgard is a content repository system platform with bindings in PHP, Python etc.} maintainers jwa categories devel version 9.03.0 revision 0
 missingh 388
 variants universal depends_build port:ghc portdir devel/missingh description {Haskell utility functions} homepage http://quux.org/devel/missingh epoch 0 platforms darwin name missingh long_description {MissingH is a library of Haskell utility functions, including ones for working with lists, logging, I/O and strings.} maintainers nomaintainer categories devel version 0.16.3 revision 0
 ml-pnet 471
@@ -7108,6 +7110,8 @@ php5-intl 399
 variants universal portdir php/php5-intl description {Internationalization extension for PHP 5} homepage http://pecl.php.net/package/intl/ epoch 0 platforms darwin name php5-intl depends_lib {path:bin/phpize:php5 port:icu} long_description {Internationalization extension implements ICU library functionality in PHP.} maintainers {nox openmaintainer} categories {php devel} version 1.0.2 revision 0
 php5-memcache 605
 variants universal portdir php/php5-memcache description {PHP5 bindings for memcache} homepage http://pecl.php.net/package/memcache/ epoch 0 platforms {darwin freebsd openbsd} name php5-memcache depends_lib {path:bin/phpize:php5 port:memcached port:zlib} long_description {Memcached is a caching daemon designed especially for dynamic web applications to decrease database load by storing objects in memory. This extension allows you to work with memcached through handy OO and procedural interfaces.} maintainers {gmail.com:emory.smith openmaintainer} categories {php net devel} version 2.2.5 revision 0
+php5-midgard2 368
+variants universal portdir php/php5-midgard2 description {A content management system} homepage http://www.midgard-project.org/ epoch 0 platforms darwin name php5-midgard2 depends_lib {port:midgard2-core port:php5} long_description {Midgard is a content management system platform using Apache, PHP and MySQL.} maintainers jwa categories php version 9.03.0 revision 0
 php5-sqlite3 380
 variants universal portdir php/php5-sqlite3 description {SQLite 3 bindings for PHP 5} homepage http://pecl.php.net/package/sqlite3/ epoch 0 platforms darwin name php5-sqlite3 depends_lib path:bin/phpize:php5 long_description {SQLite3 is a PHP extension for use with the SQLite 3 database system.} maintainers {nox openmaintainer} categories {php databases} version 0.6 revision 1
 php5-syck 500
