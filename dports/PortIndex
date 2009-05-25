@@ -2052,8 +2052,8 @@ leafpad 346
 variants universal portdir editors/leafpad description {A simple GTK texteditor.} homepage http://tarot.freeshell.org/leafpad/ epoch 0 platforms darwin name leafpad depends_lib {lib:libgtk.2:gtk2 lib:libfreetype:freetype} maintainers nomaintainer long_description {{A simple GTK texteditor.}} categories {editors gnome} version 0.8.14 revision 0
 ledit 629
 variants universal depends_build port:ocaml portdir editors/ledit description {A line editor to be used with interactive commands.} homepage http://cristal.inria.fr/~ddr/ epoch 0 name ledit depends_lib bin:camlp5:camlp5 long_description {The command ledit allows to edit lines one by one when running an interactive command. When typing a line, some keys with control or meta are interpreted: it is possible to insert characters in the middle of the line, go to the beginning or the end of the line, get a previous line, search for a line with a pattern, etc.} maintainers nomaintainer categories editors version 2.00 revision 0
-mg 374
-variants universal portdir editors/mg description {small Emacs-like editor} homepage http://www.xs4all.nl/~hanb/software/mg epoch 0 platforms darwin name mg maintainers kerbit.net:lfk long_description {Micro GNU/Emacs: a small, fast, lightweight, emacs-like editor. No extension language, just a basic editor for text & code.} categories editors version 20081211 revision 0
+mg 369
+variants universal portdir editors/mg description {small Emacs-like editor} homepage http://www.han.dds.nl/software/mg epoch 0 platforms darwin name mg maintainers kerbit.net:lfk long_description {Micro GNU/Emacs: a small, fast, lightweight, emacs-like editor. No extension language, just a basic editor for text & code.} categories editors version 20090107 revision 0
 minimumprofit 344
 variants universal portdir editors/minimumprofit description {Programmer Text Editor.} homepage http://www.triptico.com/software/mp.html epoch 0 platforms darwin name minimumprofit depends_lib {port:gtk2 port:pcre port:ncurses} maintainers nomaintainer long_description {{Programmer Text Editor.}} categories editors version 3.3.18b revision 0
 nano 577
