@@ -4603,7 +4603,7 @@ portdir math/gexpr description {A shell calculator} homepage http://gexpr.source
 glpk 574
 variants {universal examples doc odbc mysql} portdir math/glpk description {GNU Linear Programming Kit} homepage http://www.gnu.org/software/glpk/ epoch 0 platforms darwin depends_lib {port:gmp port:zlib} name glpk maintainers fastmail.fm:lutz.horn long_description {The GLPK (GNU Linear Programming Kit) package is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. It is a set of routines written in ANSI C and organized in the form of a callable library.} categories {math lang} version 4.37 revision 0
 gmp-ecm 368
-variants universal portdir math/gmp-ecm description {Factor integers using the Elliptic Curve Method} homepage http://gforge.inria.fr/projects/ecm/ epoch 0 platforms darwin name gmp-ecm depends_lib port:gmp long_description {Free implementation of the Elliptic Curve Method (ECM) for integer factorization.} maintainers vinc17 categories math version 6.2.2 revision 0
+variants universal portdir math/gmp-ecm description {Factor integers using the Elliptic Curve Method} homepage http://gforge.inria.fr/projects/ecm/ epoch 0 platforms darwin name gmp-ecm depends_lib port:gmp long_description {Free implementation of the Elliptic Curve Method (ECM) for integer factorization.} maintainers vinc17 categories math version 6.2.3 revision 0
 gmtl 303
 depends_build port:scons portdir math/gmtl description {a lightweight math library} homepage http://ggt.sourceforge.net/ epoch 0 name gmtl maintainers iastate.edu:mccdo long_description {The math library used by vrjuggler. It is implemented with c++ templates.} version 0.5.4 categories math revision 0
 gnudatalanguage 650
