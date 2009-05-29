@@ -9202,8 +9202,8 @@ h4h5tools 376
 variants universal portdir science/h4h5tools description {HDF4 to HDF5 conversion tools.} homepage http://hdf.ncsa.uiuc.edu/h4toh5/ epoch 0 platforms darwin name h4h5tools depends_lib {port:hdf5 port:hdf4 port:netcdf} long_description {Provides the h4toh5 conversion utility and library.} maintainers {dal.ca:tom.duck openmaintainer} categories science version 2.0 revision 0
 hdf4 394
 variants {szip g95 gfortran universal} portdir science/hdf4 description {file format for storing scientific data and utilities} homepage http://www.hdfgroup.org/products/hdf4/index.html epoch 0 platforms darwin name hdf4 depends_lib {port:zlib port:jpeg} long_description {{file format for storing scientific data and utilities}} maintainers takeshi categories science version 4.2r3 revision 1
-hdf5 449
-variants {fortran szip threadsafe gcc42 gcc43 g95 optimized universal} portdir science/hdf5 description {HDF5 general purpose library and file format for storing scientific data} homepage http://www.hdfgroup.org/HDF5/ epoch 0 platforms darwin name hdf5 depends_lib port:zlib long_description {{HDF5 general purpose library and file format for storing scientific data}} maintainers {openmaintainer jochen} categories science version 1.6.8 revision 0
+hdf5 446
+variants {fortran szip threadsafe gcc42 gcc43 g95 optimized x86_64} portdir science/hdf5 description {HDF5 general purpose library and file format for storing scientific data} homepage http://www.hdfgroup.org/HDF5/ epoch 0 platforms darwin name hdf5 depends_lib port:zlib long_description {{HDF5 general purpose library and file format for storing scientific data}} maintainers {openmaintainer jochen} categories science version 1.6.8 revision 0
 hdf5-18 414
 variants universal portdir science/hdf5-18 description {HDF5 general purpose library and file format for storing scientific data} homepage http://www.hdfgroup.org/HDF5/ epoch 0 platforms darwin name hdf5-18 depends_lib {port:zlib port:szip} long_description {{HDF5 general purpose library and file format for storing scientific data}} maintainers {mmoll openmaintainer} categories science version 1.8.3 revision 0
 irsim 325
