@@ -1965,7 +1965,7 @@ variants universal portdir devel/uriparser description {a strictly RFC 3986 comp
 ustl 399
 variants universal portdir devel/ustl description {micro-STL is a partial implementation of the STL specification} homepage http://ustl.sourceforge.net/ epoch 0 platforms darwin name ustl long_description {uSTL (micro-STL) is a partial implementation of the STL specification intended to reduce code size of the derivative programs.} maintainers nomaintainer categories devel version 0.8 revision 0
 uthash 291
-portdir devel/uthash description {easy-to-use hash implementation for C programmers.} homepage http://uthash.sourceforge.net/ epoch 0 platforms darwin name uthash maintainers mww long_description {{easy-to-use hash implementation for C programmers.}} version 1.6 categories devel revision 0
+portdir devel/uthash description {easy-to-use hash implementation for C programmers.} homepage http://uthash.sourceforge.net/ epoch 0 platforms darwin name uthash maintainers mww long_description {{easy-to-use hash implementation for C programmers.}} version 1.7 categories devel revision 0
 vcheck 547
 portdir devel/vcheck description {latest program package version checker and auto-downloader} homepage http://www.tu-ilmenau.de/~gomar/stuff/vcheck/ depends_run port:p5-libwww-perl epoch 0 platforms darwin name vcheck depends_lib path:bin/perl:perl5 maintainers {afb openmaintainer} long_description {vcheck is a tool for checking for latest versions of programs at HTTP and FTP locations given a list of URLs and (Perl-style) regular expressions to match, and to optionally download them automatically.} categories devel version 1.2.1 revision 0
 vexus-cdk 702
