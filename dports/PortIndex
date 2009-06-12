@@ -239,7 +239,7 @@ portdir archivers/makeself description {A small shell script that generates a se
 mgzip 446
 variants universal portdir archivers/mgzip description {a multi-processor capable .gz file creator.} homepage http://lemley.net/mgzip.html epoch 0 platforms darwin name mgzip depends_lib port:zlib long_description {mgzip is a program that makes use of SMP machines and zlib to use as many processors as you have to quickly compress files into gzip compatible format.} maintainers {snc openmaintainer} categories archivers version 1.2c revision 1
 p7zip 326
-variants universal portdir archivers/p7zip description {7-Zip implementation} homepage http://p7zip.sourceforge.net/ epoch 0 platforms darwin name p7zip long_description {p7zip is a port of 7-Zip, a file archiver with highest compression ratio.} maintainers {simon openmaintainer} categories archivers version 4.65 revision 0
+variants universal portdir archivers/p7zip description {7-Zip implementation} homepage http://p7zip.sourceforge.net/ epoch 0 platforms darwin name p7zip long_description {p7zip is a port of 7-Zip, a file archiver with highest compression ratio.} maintainers {simon openmaintainer} categories archivers version 9.04 revision 0
 packddir 346
 portdir archivers/packddir description {creates and unpacks PackdDir archives} homepage http://www.nongnu.org/packddir/ epoch 0 platforms darwin name packddir maintainers nomaintainer long_description {packddir creates and unpacks PackdDir archives, which are used in Quake (I and II) and others.} version 0.0.6-1 categories archivers revision 0
 paq8 531
