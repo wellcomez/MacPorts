@@ -11353,7 +11353,7 @@ portdir x11/xorg-damageproto description {X.org damageproto} homepage http://www
 xorg-dmxproto 263
 portdir x11/xorg-dmxproto description {X.org dmxproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-dmxproto maintainers {jeremyhu openmaintainer} long_description {X.org DMXProto protocol headers.} version 2.2.2 categories {x11 devel} revision 0
 xorg-dri2proto 258
-portdir x11/xorg-dri2proto description {X.org dri2proto} homepage http://www.x.org epoch 0 platforms darwin name xorg-dri2proto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for DRI2} version 2.0 categories {x11 devel} revision 0
+portdir x11/xorg-dri2proto description {X.org dri2proto} homepage http://www.x.org epoch 0 platforms darwin name xorg-dri2proto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for DRI2} version 2.1 categories {x11 devel} revision 0
 xorg-encodings 335
 variants universal depends_build {port:mkfontscale bin:gzip:gzip} portdir x11/xorg-encodings description {X.org font encodings} homepage http://www.x.org/ epoch 0 platforms darwin name xorg-encodings long_description {{X.org font encodings}} maintainers {blb openmaintainer} categories {x11 x11-font graphics} version 1.0.2 revision 0
 xorg-evieproto 281
