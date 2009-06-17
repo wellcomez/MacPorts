@@ -8780,6 +8780,12 @@ py26-yaml 523
 variants libyaml portdir python/py26-yaml description {YAML 1.1 parser and emitter for Python} homepage http://pyyaml.org/wiki/PyYAML epoch 0 platforms darwin depends_lib port:python26 name py26-yaml long_description {PyYAML is a YAML parser and emitter for Python, which supports YAML 1.1, unicode input and output, low-level event-based parser and emitter API, high-level API for serializing and deserializing native Python objects.} maintainers {akitada openmaintainer} version 3.08 categories {python devel} revision 0
 py26-zopeinterface 338
 portdir python/py26-zopeinterface description {Python interfaces for Zope} homepage http://www.zope.org/Products/ZopeInterface epoch 0 platforms darwin depends_lib port:python26 name py26-zopeinterface maintainers {mcalhoun openmaintainer} long_description {{Python interfaces for Zope}} version 3.3.0 categories {python zope} revision 0
+py30-blist 428
+portdir python/py30-blist description {a list-like type with better asymptotic performance and similar performance on small lists} homepage http://stutzbachenterprises.com/ epoch 0 platforms darwin depends_lib port:python30 name py30-blist maintainers {phw openmaintainer} long_description {{a list-like type with better asymptotic performance and similar performance on small lists}} version 1.0.1 categories python revision 1
+py30-crcmod 408
+portdir python/py30-crcmod description {Python module for creating functions computing the Cyclic Redundancy Check (CRC).} homepage http://crcmod.sourceforge.net/ epoch 0 platforms darwin depends_lib port:python30 name py30-crcmod maintainers {phw openmaintainer} long_description {{Python module for creating functions computing the Cyclic Redundancy Check (CRC).}} version 1.5 categories python revision 1
+py30-ply 370
+portdir python/py30-ply description {PLY is an implementation of lex and yacc parsing tools for Python} homepage http://crcmod.sourceforge.net/ epoch 0 platforms darwin depends_lib port:python30 name py30-ply maintainers {phw openmaintainer} long_description {{PLY is an implementation of lex and yacc parsing tools for Python}} version 3.2 categories python revision 1
 py30-tc 339
 portdir python/py30-tc description {Python bindings to the tokyocabinet library} homepage http://github.com/rsms/tc epoch 0 platforms darwin depends_lib {port:python30 port:tokyocabinet} name py30-tc maintainers rasmus long_description {{Python bindings to the tokyocabinet library}} version 0.7.2 categories {python databases} revision 0
 rdiff-backup 1125
