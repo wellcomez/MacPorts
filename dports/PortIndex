@@ -2590,8 +2590,6 @@ gnome-audio 448
 portdir gnome/gnome-audio description {Audio files for GNOME events} homepage http://www.gnome.org epoch 0 platforms darwin name gnome-audio maintainers nomaintainer long_description {If you use the GNOME desktop environment, you may want to install this package of complementary sounds. This package contains extra sound files useful for customizing the sounds that the GNOME desktop environment makes.} version 2.22.2 categories gnome revision 0
 gnome-backgrounds 324
 depends_build port:intltool portdir gnome/gnome-backgrounds description {A collection of backgrounds for GNOME 2.} homepage http://www.gnome.org/ epoch 0 platforms darwin name gnome-backgrounds maintainers nomaintainer long_description {{A collection of backgrounds for GNOME 2.}} categories gnome version 2.24.1 revision 0
-gnome-build 413
-variants universal depends_build port:pkgconfig portdir gnome/gnome-build description {GNOME Build Framework.} homepage http://www.anjuta.org/ epoch 0 platforms darwin depends_lib {port:libgnome port:libgnomeui port:libglade2 port:libbonoboui port:libxml2 port:gtk2 port:gdl} name gnome-build long_description {{GNOME Build Framework.}} maintainers nomaintainer categories {gnome devel} version 2.24.1 revision 0
 gnome-common 355
 depends_build port:pkgconfig portdir gnome/gnome-common description {Files that should be in pretty much every GNOME application.} homepage http://www.gnome.org/ epoch 0 platforms darwin name gnome-common maintainers nomaintainer long_description {{Files that should be in pretty much every GNOME application.}} categories gnome version 2.26.0 revision 0
 gnome-control-center 473
