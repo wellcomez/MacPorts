@@ -180,8 +180,8 @@ afio 600
 variants universal portdir archivers/afio description {Archiver & backup program with builtin compression} homepage http://freshmeat.net/projects/afio/ epoch 0 platforms darwin name afio long_description {Afio makes cpio-format archives. It deals somewhat gracefully with input data corruption, supports multi-volume archives during interactive operation, and can make compressed archives that are much safer than compressed tar or cpio archives. Afio is best used as an `archive engine' in a backup script.} maintainers puffin.lb.shuttle.de:michael.klein categories archivers version 2.5 revision 1
 arc 325
 variants universal portdir archivers/arc description {create and extract files from dos .arc archives} homepage http://arc.sourceforge.net/ epoch 0 platforms darwin name arc long_description {{create and extract files from dos .arc archives}} maintainers crazic.ru:jc categories {archivers sysutils} version 5.21o revision 1
-arj 423
-variants universal depends_build {port:autoconf port:autoconf port:automake port:libtool} portdir archivers/arj description {create and extract files from dos .arj archives} homepage http://arj.sourceforge.net/ epoch 0 platforms darwin depends_lib port:libtool name arj long_description {{create and extract files from dos .arj archives}} maintainers crazic.ru:jc categories {archivers sysutils} version 3.10.22 revision 0
+arj 431
+variants universal depends_build {port:autoconf port:autoconf port:automake port:libtool} portdir archivers/arj description {create and extract files from dos .arj archives} homepage http://arj.sourceforge.net/ epoch 0 platforms darwin depends_lib port:libtool name arj long_description {{create and extract files from dos .arj archives}} maintainers {snc openmaintainer} categories {archivers sysutils} version 3.10.22 revision 0
 atool 377
 depends_build port:gsed portdir archivers/atool description {An archival front-end} homepage http://www.nongnu.org/atool/ epoch 0 platforms darwin depends_lib path:bin/perl:perl5 name atool maintainers devils.com:expiation long_description {atool is a script for managing file archives of various types (tar, tar+gzip, zip etc).} categories archivers version 0.35.0 revision 0
 bzip2 401
@@ -9976,6 +9976,8 @@ mdf2iso 254
 variants universal portdir sysutils/mdf2iso description {Tool to convert mdf (Alchol 120% images) images to iso images.} homepage http://mdf2iso.berlios.de/ epoch 0 name mdf2iso maintainers gmail.com:mellon85 categories sysutils version 0.3.0 revision 0
 memcached 513
 variants {dtrace threads universal} portdir sysutils/memcached description {A high performance, distributed memory object caching system.} homepage http://www.danga.com/memcached/ epoch 0 platforms darwin name memcached depends_lib port:libevent maintainers brett long_description {Memcached is a high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.} categories sysutils version 1.2.8 revision 0
+memtester 357
+portdir sysutils/memtester description {A userspace utility for testing the memory subsystem for faults.} homepage http://pyropus.ca/software/memtester/ epoch 0 platforms darwin name memtester maintainers hostwizard.com:scott long_description {{A userspace utility for testing the memory subsystem for faults.}} version 4.0.8 categories sysutils revision 0
 mkpwd 272
 portdir sysutils/mkpwd description {mkpwd is a scalable password generator} homepage http://www.o-schroeder.de/ epoch 0 platforms darwin name mkpwd maintainers alakazam long_description {{mkpwd is a scalable password generator}} version 0.7 categories sysutils revision 0
 mmv 283
