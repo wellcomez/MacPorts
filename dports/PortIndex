@@ -8998,6 +8998,8 @@ rb-devel-logger 300
 portdir ruby/rb-devel-logger description {Lightweight logging utility} homepage http://rrr.jin.gr.jp/doc/devel-logger/ epoch 0 platforms darwin name rb-devel-logger depends_lib port:ruby maintainers nomaintainer long_description {Lightweight logging utility} categories ruby version 1.2.2 revision 0
 rb-devel-which 376
 portdir ruby/rb-devel-which description {Locates a symbol/library in the user's namespace/path} homepage http://www.notwork.org/~gotoken/ruby/p/devel/which/ epoch 0 platforms darwin name rb-devel-which depends_lib port:ruby maintainers nomaintainer long_description {Devel::Which locates a symbol/library in the user's namespace/path} categories ruby version 0.2.0 revision 0
+rb-div 545
+portdir ruby/rb-div description {Div can write Web application like GUI programming. This package provides Div::Div and Tofu.} homepage http://www2a.biglobe.ne.jp/~seki/ruby/div.en.html epoch 0 platforms darwin name rb-div depends_lib port:ruby maintainers {kimuraw openmaintainer} long_description {This package provides Div::Div and Tofu. Div abstracts Web Application like GUI programming. Tofu is a session manager using cookie. Tofu can be used with WEBrick. (Of course, it can use also with CGI.)} categories ruby version 1.3.2 revision 0
 rb-dnssd 340
 portdir ruby/rb-dnssd description {DNS Service Discovery (aka Bonjour) API for Ruby} homepage http://rubyforge.org/projects/dnssd/ epoch 0 platforms darwin name rb-dnssd depends_lib {port:ruby port:rb-rubygems} maintainers kimuraw long_description {DNS Service Discovery (aka Bonjour) API for Ruby} categories ruby version 0.7.1 revision 0
 rb-drb 358
