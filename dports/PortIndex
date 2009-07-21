@@ -1634,8 +1634,8 @@ libupnp 508
 variants universal portdir devel/libupnp description {A portable open source UPnP development kit} homepage http://pupnp.sourceforge.net epoch 0 platforms darwin name libupnp long_description {The portable SDK for UPnP(tm) Devices (libupnp) provides developers with an API and open source code for building control points, devices, and bridges that are compliant with Version 1.0 of the Universal Plug and Play Device Architecture Specification.} maintainers sfiera categories devel version 1.6.6 revision 0
 libusb 368
 variants universal portdir devel/libusb description {Library providing access to USB devices} homepage http://libusb.sourceforge.net/ epoch 0 platforms darwin name libusb long_description {A library originally developed under Linux to give userland programs an API to access to USB hardware.} maintainers wilcoxd.com:rwilcox categories devel version 0.1.12 revision 1
-libusb1 323
-variants universal portdir devel/libusb1 description {library for USB device access} homepage http://libusb.sourceforge.net/ epoch 0 platforms darwin name libusb1 maintainers toby long_description {library for use by user level applications to access USB devices regardless of OS} categories devel version 1.0.2 revision 0
+libusb1 328
+variants universal portdir devel/libusb1 description {library for USB device access} homepage http://libusb.wiki.sourceforge.net/ epoch 0 platforms darwin name libusb1 maintainers toby long_description {library for use by user level applications to access USB devices regardless of OS} categories devel version 1.0.2 revision 0
 libut 501
 variants universal portdir devel/libut description {library for writing Unix servers or daemon processes} homepage http://libut.sourceforge.net/ epoch 0 platforms darwin name libut long_description {libut is a C library for writing Unix servers or daemon processes. It invokes callbacks for I/O, signals, or timer activity. It supports logging, profiling, configuration, and runtime administration through an interactive control port.} maintainers nomaintainer categories devel version 2.0 revision 0
 libyaml 340
