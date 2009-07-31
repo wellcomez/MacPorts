@@ -10073,7 +10073,7 @@ variants universal portdir sysutils/mdf2iso description {Tool to convert mdf (Al
 memcached 513
 variants {dtrace threads universal} portdir sysutils/memcached description {A high performance, distributed memory object caching system.} homepage http://www.danga.com/memcached/ epoch 0 platforms darwin name memcached depends_lib port:libevent maintainers brett long_description {Memcached is a high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.} categories sysutils version 1.2.8 revision 0
 memtester 357
-portdir sysutils/memtester description {A userspace utility for testing the memory subsystem for faults.} homepage http://pyropus.ca/software/memtester/ epoch 0 platforms darwin name memtester maintainers hostwizard.com:scott long_description {{A userspace utility for testing the memory subsystem for faults.}} version 4.0.8 categories sysutils revision 0
+portdir sysutils/memtester description {A userspace utility for testing the memory subsystem for faults.} homepage http://pyropus.ca/software/memtester/ epoch 0 platforms darwin name memtester maintainers hostwizard.com:scott long_description {{A userspace utility for testing the memory subsystem for faults.}} version 4.1.2 categories sysutils revision 0
 mkpwd 272
 portdir sysutils/mkpwd description {mkpwd is a scalable password generator} homepage http://www.o-schroeder.de/ epoch 0 platforms darwin name mkpwd maintainers alakazam long_description {{mkpwd is a scalable password generator}} version 0.7 categories sysutils revision 0
 mmv 283
