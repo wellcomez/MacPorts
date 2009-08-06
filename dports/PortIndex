@@ -11986,8 +11986,8 @@ xfce4-dev-tools 369
 variants universal portdir xfce/xfce4-dev-tools description {A collection of tools and macros for Xfce developer} homepage http://www.xfce.org/ epoch 0 platforms darwin name xfce4-dev-tools depends_lib {port:gtk-doc port:intltool} long_description {{A collection of tools and macros for Xfce developer}} maintainers afb categories {xfce devel} version 4.6.0 revision 0
 xfce4-icon-theme 268
 variants universal portdir xfce/xfce4-icon-theme description {Rodent vector icon theme} homepage http://www.xfce.org/ epoch 0 platforms darwin name xfce4-icon-theme long_description {{Rodent vector icon theme}} maintainers afb categories xfce version 4.4.3 revision 0
-xfce4-panel 419
-variants {darwin universal} portdir xfce/xfce4-panel description {The panel of the Xfce Desktop Environment} homepage http://www.xfce.org/ epoch 0 platforms darwin name xfce4-panel depends_lib {port:xfconf port:exo port:libxml2 port:cairo port:libwnck port:hicolor-icon-theme port:gnome-icon-theme} long_description {{The panel of the Xfce Desktop Environment}} maintainers afb categories xfce version 4.6.1 revision 1
+xfce4-panel 442
+variants {darwin universal} portdir xfce/xfce4-panel description {The panel of the Xfce Desktop Environment} homepage http://www.xfce.org/ epoch 0 platforms darwin name xfce4-panel depends_lib {port:xfconf port:exo port:libxml2 path:lib/pkgconfig/cairo.pc:cairo port:libwnck port:hicolor-icon-theme port:gnome-icon-theme} long_description {{The panel of the Xfce Desktop Environment}} maintainers afb categories xfce version 4.6.1 revision 1
 xfce4-session 393
 variants universal portdir xfce/xfce4-session description {Session manager for the Xfce desktop environment.} homepage http://www.xfce.org/ epoch 0 platforms darwin name xfce4-session depends_lib {port:libxfce4util port:libxfcegui4 port:p5-xml-parser port:libwnck} long_description {{Session manager for the Xfce desktop environment.}} maintainers afb categories xfce version 4.6.1 revision 0
 xfce4-settings 435
