@@ -4366,8 +4366,6 @@ sml-mode.el 350
 variants docs portdir lang/sml-mode.el description {An EMACS major mode for editing Standard ML} homepage http://www.iro.umontreal.ca/~monnier/elisp/ epoch 0 platforms darwin name sml-mode.el depends_lib port:emacs long_description {{An EMACS major mode for editing Standard ML}} maintainers mcalhoun categories {lang editors} version 4.0 revision 0
 smlnj 444
 variants {powerpc i386 universal} portdir lang/smlnj description {Standard ML of New Jersey} homepage http://www.smlnj.org/ epoch 0 platforms darwin name smlnj long_description {Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML '97 programming language with associated libraries, tools, and documentation. SML/NJ is free, open source software.} maintainers bfulgham categories {lang ml} version 110.68 revision 1
-smlnj-dev 458
-variants universal portdir lang/smlnj-dev description {Standard ML of New Jersey (Development Branch)} homepage http://www.smlnj.org/ epoch 0 platforms darwin name smlnj-dev long_description {Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML '97 programming language with associated libraries, tools, and documentation. SML/NJ is free, open source software.} maintainers bfulgham categories {lang ml} version 110.65 revision 0
 spidermonkey 341
 variants fileobject depends_build port:readline portdir lang/spidermonkey description {JavaScript-C Engine} homepage http://www.mozilla.org/js/spidermonkey/ epoch 1 platforms darwin depends_lib port:nspr name spidermonkey long_description {{JavaScript-C Engine}} maintainers {akitada openmaintainer} categories lang version 1.7.0 revision 4
 squeak 821
