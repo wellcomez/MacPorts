@@ -4540,8 +4540,8 @@ py26-webob 2477976
 py26-werkzeug 2478531
 py26-wordaxe 2480479
 py26-wxpython 2481114
-py25-xlrd 2481782
-py25-xlwrt 2482220
+py26-xlrd 2481782
+py26-xlwrt 2482220
 py26-xml 2482790
 py26-yaml 2483165
 py26-zopeinterface 2483702
