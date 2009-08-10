@@ -4258,8 +4258,8 @@ oorexx 426
 variants universal portdir lang/oorexx description {Open Object Rexx is an interpreter for the Rexx language} homepage http://oorexx.sourceforge.net/ epoch 0 platforms darwin name oorexx long_description {ooRexx is an object orientated extension to the Rexx language. Rexx is designed to be an easily readable, but powerful scripting and embedded macro language.} maintainers krischik categories lang version 3.2.0 revision 0
 openmcl 482
 variants universal portdir lang/openmcl description {The OpenMCL Common Lisp Implementation} homepage http://www.openmcl.com epoch 0 platforms darwin name openmcl long_description {OpenMCL is an opensourced Common Lisp implementation, derived from Digitool's Macintosh Common Lisp product. OpenMCL currently runs under LinuxPPC and, as of version 0.10, under Darwin, the BSD/Mach layer on which Mac OS X is based.} maintainers {waqar gwright} categories lang version 1.0 revision 1
-opensaml 373
-variants universal portdir lang/opensaml description {OpenSAML 2 library for C++} homepage http://www.opensaml.org/ epoch 0 platforms darwin name opensaml depends_lib {port:xmltooling port:xml-security-c port:xercesc3 port:log4shib} long_description {SAML 2.0/1.x toolkit} maintainers {snc osu.edu:cantor.2} categories {lang shibboleth security xml} version 2.2 revision 1
+opensaml 364
+variants universal portdir lang/opensaml description {OpenSAML 2 library for C++} homepage http://www.opensaml.org/ epoch 0 platforms darwin name opensaml depends_lib {port:xmltooling port:xml-security-c port:xercesc3 port:log4shib} long_description {SAML 2.0/1.x toolkit} maintainers {snc scantor} categories {lang shibboleth security xml} version 2.2 revision 1
 otcl 399
 variants universal depends_build {port:autoconf port:automake} portdir lang/otcl description {MIT Object Tcl} homepage http://otcl-tclcl.sourceforge.net/otcl/ epoch 0 platforms darwin depends_lib {port:tcl port:tk} name otcl long_description {OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming.} maintainers nomaintainer categories lang version 1.9 revision 1
 parrot 634
