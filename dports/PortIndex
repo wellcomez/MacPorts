@@ -11896,8 +11896,8 @@ xorg-libXau 343
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXau description {X.org libXau} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-xproto name xorg-libXau long_description {X Authorization Routines library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.4 revision 1
 xorg-libXaw 500
 variants universal depends_build {port:pkgconfig port:libtool port:autoconf port:automake port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXaw description {X.org libXaw} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libsm port:xorg-libXext port:xorg-libXmu port:xpm port:xorg-libXt} name xorg-libXaw long_description {Athena Widgets toolkit} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.6 revision 0
-xorg-libXcomposite 399
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXcomposite description {X.org libXcomposite} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xorg-libXext port:xorg-compositeproto} name xorg-libXcomposite long_description {Composite extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 0.4.0 revision 1
+xorg-libXcomposite 421
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-compositeproto} portdir x11/xorg-libXcomposite description {X.org libXcomposite} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xorg-libXext} name xorg-libXcomposite long_description {Composite extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 0.4.0 revision 1
 xorg-libXcursor 359
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXcursor description {X.org libXcursor} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xrender} name xorg-libXcursor long_description {{X.org libXcursor}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.9 revision 1
 xorg-libXdamage 366
