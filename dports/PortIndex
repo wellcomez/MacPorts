@@ -10283,7 +10283,7 @@ variants darwin_9 portdir sysutils/gkrellm description {A GTK based system monit
 gnuregex 273
 variants universal portdir sysutils/gnuregex description {GNU regex library} homepage http://www.gnu.org/directory/regex.html epoch 0 platforms darwin name gnuregex long_description {{GNU regex library}} maintainers nomaintainer categories sysutils version 0.12 revision 2
 grep 451
-variants universal portdir sysutils/grep description {GNU grep, the {"fastest} grep in the west\" (we hope).} homepage http://www.gnu.org/software/grep/grep.html epoch 0 platforms darwin name grep depends_lib {port:pcre port:gettext} long_description {Grep searches one or more input files for lines containing a match to a specified pattern. By default, grep prints the matching lines.} maintainers waqar categories sysutils version 2.5.3 revision 0
+variants universal portdir sysutils/grep description {GNU grep, the {"fastest} grep in the west\" (we hope).} homepage http://www.gnu.org/software/grep/grep.html epoch 0 platforms darwin name grep depends_lib {port:pcre port:gettext} long_description {Grep searches one or more input files for lines containing a match to a specified pattern. By default, grep prints the matching lines.} maintainers waqar categories sysutils version 2.5.4 revision 0
 groff 421
 variants universal portdir sysutils/groff description {GNU Troff (Groff)} homepage http://www.gnu.org/software/groff/ epoch 0 platforms darwin name groff long_description {The groff (GNU Troff) software is a typesetting package which reads plain text mixed with formatting commands and produces formatted output. Groff now supports HTML.} maintainers nomaintainer categories {sysutils textproc} version 1.20.1 revision 1
 gtime 584
