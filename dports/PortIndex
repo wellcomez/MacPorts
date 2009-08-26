@@ -8208,8 +8208,8 @@ py-xlib 612
 portdir python/py-xlib description {python module for the X protocol} homepage http://python-xlib.sourceforge.net/ epoch 0 platforms darwin depends_lib port:python24 name py-xlib maintainers nomaintainer long_description {The Python X Library is intended to be a fully functional X client library for Python programs. It is written entirely in Python. This is possible to do since X client programs communicate with the X server via the X protocol. The communication takes place over TCP/IP, Unix sockets, DECnet or any other suitable streaming network protocol.} version 0.12 categories {python x11} revision 1
 py-xlrd 317
 depends_build port:py25-xlrd portdir python/py-xlrd description {stub project. py-xlwriter is now installed by py25-xlrd} homepage {} epoch 0 platforms darwin name py-xlrd maintainers nomaintainer long_description {{stub project. py-xlwriter is now installed by py25-xlrd}} categories python version 0.5.2 revision 1
-py-xlwriter 332
-depends_build port:py25-xlwrt portdir python/py-xlwriter description {stub package. py-xlwriter is now installed with py25-xlwrt} homepage {} epoch 0 platforms darwin name py-xlwriter maintainers nomaintainer long_description {{stub package. py-xlwriter is now installed with py25-xlwrt}} categories python version 0.4a3 revision 1
+py-xlwriter 331
+depends_build port:py25-xlwt portdir python/py-xlwriter description {stub package. py-xlwriter is now installed with py25-xlwrt} homepage {} epoch 0 platforms darwin name py-xlwriter maintainers nomaintainer long_description {{stub package. py-xlwriter is now installed with py25-xlwrt}} categories python version 0.4a3 revision 1
 py-xml 364
 portdir python/py-xml description {XML Tools for Python} homepage http://pyxml.sourceforge.net/ epoch 0 platforms darwin depends_lib {port:python24 port:expat} name py-xml maintainers mac.com:ryanwilcox long_description {A package of all the tools required for writing basic XML applications in Python.} version 0.8.4 categories {python devel textproc} revision 0
 py-xmldiff 575
