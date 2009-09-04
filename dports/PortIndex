@@ -7161,7 +7161,7 @@ portdir perl/p5-test-pod-coverage description {Check for pod coverage in a distr
 p5-test-portability-files 464
 portdir perl/p5-test-portability-files description {Check file names portability} homepage http://search.cpan.org/dist/Test-Portability-Files/ epoch 0 platforms darwin name p5-test-portability-files depends_lib path:bin/perl:perl5 maintainers {narf_tm openmaintainer} long_description {This module is used to check the portability across operating systems of the names of the files present in the distribution of a module.} categories perl version 0.05 revision 0
 p5-test-simple 343
-portdir perl/p5-test-simple description {Basic utilities for writing perl tests} homepage http://search.cpan.org/dist/Test-Simple/ epoch 0 platforms darwin name p5-test-simple depends_lib path:bin/perl:perl5 maintainers email.arc.nasa.gov:sal long_description {{Basic utilities for writing perl tests}} categories perl version 0.86 revision 0
+portdir perl/p5-test-simple description {Basic utilities for writing perl tests} homepage http://search.cpan.org/dist/Test-Simple/ epoch 0 platforms darwin name p5-test-simple depends_lib path:bin/perl:perl5 maintainers email.arc.nasa.gov:sal long_description {{Basic utilities for writing perl tests}} categories perl version 0.94 revision 0
 p5-test-subcalls 357
 portdir perl/p5-test-subcalls description {Track the number of times subs are called} homepage http://search.cpan.org/dist/Test-SubCalls/ epoch 0 platforms darwin name p5-test-subcalls depends_lib path:bin/perl:perl5 maintainers {narf_tm openmaintainer} long_description {{Track the number of times subs are called}} categories perl version 1.09 revision 0
 p5-test-taint 304
