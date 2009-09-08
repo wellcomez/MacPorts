@@ -5960,8 +5960,8 @@ p5-appconfig-std 452
 portdir perl/p5-appconfig-std description {Perl class providing standard command-line arguments} homepage http://search.cpan.org/dist/AppConfig-Std/ epoch 0 platforms darwin name p5-appconfig-std depends_lib {path:bin/perl:perl5 port:p5-appconfig} maintainers vinc17 long_description {AppConfig::Std is a subclass of Andy Wardley's AppConfig module, to provide standard command-line arguments for tool scripts.} categories perl version 1.07 revision 0
 p5-archive-tar 429
 portdir perl/p5-archive-tar description {Creation and in-memory manipulation of tar files} homepage http://search.cpan.org/dist/Archive-Tar/ epoch 0 platforms darwin name p5-archive-tar depends_lib {path:bin/perl:perl5 port:p5-io-compress port:p5-io-zlib port:p5-package-constants} maintainers {narf_tm openmaintainer} long_description {{Creation and in-memory manipulation of tar files}} categories perl version 1.52 revision 0
-p5-archive-zip 385
-portdir perl/p5-archive-zip description {Interface to zip archive files} homepage http://search.cpan.org/dist/Archive-Zip/ epoch 0 platforms darwin name p5-archive-zip depends_lib {path:bin/perl:perl5 port:p5-compress-raw-zlib} maintainers markd long_description {Allows a Perl program to create, manipulate, read, and write Zip archive files.} categories perl version 1.23 revision 0
+p5-archive-zip 379
+portdir perl/p5-archive-zip description {Interface to zip archive files} homepage http://search.cpan.org/dist/Archive-Zip/ epoch 0 platforms darwin name p5-archive-zip depends_lib {path:bin/perl:perl5 port:p5-io-compress} maintainers markd long_description {Allows a Perl program to create, manipulate, read, and write Zip archive files.} categories perl version 1.23 revision 0
 p5-array-compare 398
 portdir perl/p5-array-compare description {Perl module which allows you to compare two arrays} homepage http://search.cpan.org/dist/Array-Compare/ epoch 0 platforms darwin name p5-array-compare depends_lib {path:bin/perl:perl5 port:p5-module-build} maintainers {narf_tm openmaintainer} long_description {{Perl module which allows you to compare two arrays}} categories perl version 2.01 revision 0
 p5-astro-fits-cfitsio 413
