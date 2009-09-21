@@ -1,5 +1,5 @@
-AppHack 430
-variants universal portdir aqua/AppHack description {Program for hacking application bundles.} homepage http://www.sveinbjorn.org/ epoch 0 platforms darwin name AppHack long_description {AppHack is a developer and theming tool to alter, replace or extract the property lists or icons of Mac OS X application bundle packages.} maintainers nomaintainer depends_extract bin:unzip:unzip version 1.1 categories {aqua devel} revision 0
+AppHack 437
+variants universal portdir aqua/AppHack description {Program for hacking application bundles.} homepage http://www.sveinbjorn.org/apphack epoch 0 platforms darwin name AppHack long_description {AppHack is a developer and theming tool to alter, replace or extract the property lists or icons of Mac OS X application bundle packages.} maintainers nomaintainer depends_extract bin:unzip:unzip version 1.1 categories {aqua devel} revision 0
 AppKiDo 492
 variants darwin_8 portdir aqua/AppKiDo description {Provides a powerful interface to Apple's Cocoa documentation} homepage http://homepage.mac.com/aglee/downloads/ epoch 0 platforms darwin name AppKiDo long_description {AppKiDo is a free reference tool for Cocoa Objective-C programmers. It parses the header files and HTML documentation files provided by Developer Tools and presents the results in a powerful interface.} maintainers eridius categories {aqua devel} version 0.971 revision 0
 AquaLess 618
