@@ -5909,7 +5909,7 @@ variants universal portdir news/nget description {nget is a command line nntp fi
 nnap 448
 variants universal portdir news/nnap description {Nnap is a lightweight NNTP authentication proxy} epoch 0 platforms darwin name nnap maintainers freebsdcluster.org:mich long_description {A small program that implements just enough of the NNTP protocol to authenticate client requests. After authentication client requests. After authentication nnap bounces the client TCP connection to an open NNTP server.} categories news version 1.0 revision 0
 pan2 380
-variants universal portdir news/pan2 description {News reader for gtk2} homepage http://pan.rebelbase.com/ epoch 0 platforms darwin name pan2 depends_lib {port:pcre port:gmime port:gtk2 port:gtkspell2} long_description {Pan2 is a newsreader for GTK2/GNOME2 that is based on the Agent newsreader for Windows OSes.} maintainers nomaintainer categories news version 0.133 revision 0
+variants universal portdir news/pan2 description {News reader for gtk2} homepage http://pan.rebelbase.com/ epoch 0 platforms darwin name pan2 depends_lib {port:pcre port:gmime port:gtk2 port:gtkspell2} long_description {Pan2 is a newsreader for GTK2/GNOME2 that is based on the Agent newsreader for Windows OSes.} maintainers nomaintainer categories news version 0.133 revision 1
 slrn 508
 variants {pull ssl universal} portdir news/slrn description {A powerful console-based newsreader} homepage http://slrn.sourceforge.net/ epoch 0 platforms darwin name slrn depends_lib {lib:libslang.a:slang lib:libiconv:libiconv} long_description {slrn is an easy to use but powerful NNTP/spool based newsreader. It is highly customizable, supports scoring, free key bindings, and can be extended using the SLang macro language.} maintainers foellinger.de:olaf categories {news net} version 0.9.8.1 revision 1
 slrn-devel 506
@@ -12208,6 +12208,8 @@ xorg-xproxymanagementprotocol 317
 portdir x11/xorg-xproxymanagementprotocol description {X.org xproxymanagementprotocol} homepage http://www.x.org epoch 0 platforms darwin name xorg-xproxymanagementprotocol maintainers {jeremyhu openmaintainer} long_description {Prototype headers for xproxymanagement} version 1.0.2 categories {x11 devel} revision 0
 xorg-xtrans 271
 portdir x11/xorg-xtrans description {X.org xtrans} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-xtrans maintainers {jeremyhu openmaintainer} long_description {X Network Transport layer shared code} version 1.2.4 categories {x11 devel} revision 0
+xournal 544
+variants universal depends_build {port:autoconf port:automake port:intltool port:libtool} portdir x11/xournal description {notetaking, sketching and journal app for use with a stylus} homepage http://xournal.sourceforge.net/ epoch 0 platforms darwin depends_lib port:libgnomeprintui name xournal long_description {xournal is an application for notetaking, sketching, and keeping a journal using a stylus. It's similar to other applications such as Jarnal, Gournal, and NoteLab.} maintainers ryandesign categories x11 version 0.4.2.1 revision 0
 xping 253
 portdir x11/xping description {'ping' an Xserver} epoch 0 platforms darwin name xping depends_lib port:xorg-libX11 maintainers nomaintainer long_description {A simple tool to determine if an X11 server is running.} version 1.9 categories x11 revision 2
 xplanet 674
