@@ -2059,7 +2059,7 @@ portdir devel/tpasm description {A cross assembler for a variety of common micro
 trac 544
 variants {postgres mysql} portdir devel/trac description {Wiki and issue tracking system.} homepage http://projects.edgewall.com/trac/ epoch 0 platforms darwin depends_lib {port:subversion-python26bindings port:python26 port:sqlite3 port:py26-pygments port:py26-genshi} name trac long_description {Trac is an enhanced wiki and issue tracking system for software development projects. Trac uses a minimalistic approach to web-based software project management.} maintainers geeklair.net:dluke version 0.11.5 categories {devel python} revision 0
 tre 369
-variants universal portdir devel/tre description {TRE is a lightweight POSIX compliant regular expression library} homepage http://laurikari.net/tre/ epoch 0 platforms darwin name tre depends_lib {port:gettext port:libiconv} long_description {TRE is a lightweight POSIX compliant regular expression library} maintainers erickt categories devel version 0.7.6 revision 0
+variants universal portdir devel/tre description {TRE is a lightweight POSIX compliant regular expression library} homepage http://laurikari.net/tre/ epoch 0 platforms darwin name tre depends_lib {port:gettext port:libiconv} long_description {TRE is a lightweight POSIX compliant regular expression library} maintainers erickt categories devel version 0.8.0 revision 0
 treecc 467
 variants universal portdir devel/treecc description {Manages generation of code to handle syntax trees.} homepage http://www.gnu.org/software/dotgnu/ epoch 0 platforms darwin name treecc long_description {The treecc program is designed to assist in the development of compilers and other language-based tools. It manages the generation of code to handle abstract syntax trees and operations upon the trees.} maintainers mww categories devel version 0.3.10 revision 1
 trio 482
@@ -12112,8 +12112,8 @@ xorg-libXcursor 405
 variants universal depends_build {port:pkgconfig port:xorg-fixesproto port:xorg-renderproto} portdir x11/xorg-libXcursor description {X.org libXcursor} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xrender} name xorg-libXcursor long_description {{X.org libXcursor}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.10 revision 0
 xorg-libXdamage 366
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXdamage description {X.org libXdamage} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xorg-damageproto} name xorg-libXdamage long_description {Damage extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.1 revision 1
-xorg-libXdmcp 360
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXdmcp description {X.org libXdmcp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-xproto name xorg-libXdmcp long_description {X Display Manager Control Protocol routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 1
+xorg-libXdmcp 350
+variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libXdmcp description {X.org libXdmcp} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXdmcp long_description {X Display Manager Control Protocol routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.3 revision 0
 xorg-libXevie 423
 variants universal depends_build {port:pkgconfig port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXevie description {X.org llibXevie} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-evieproto} name xorg-libXevie long_description {{X.org llibXevie}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 2
 xorg-libXext 371
@@ -12129,7 +12129,7 @@ variants universal depends_build port:pkgconfig portdir x11/xorg-libXi descripti
 xorg-libXinerama 401
 variants universal depends_build {port:pkgconfig port:xorg-xineramaproto port:xorg-xextproto} portdir x11/xorg-libXinerama description {X.org libXinerama} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXinerama long_description {Xinerama protocol library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.99.1 revision 0
 xorg-libXmu 347
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXmu description {X.org libXmu} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXt} name xorg-libXmu long_description {X.org Xmu library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.4 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xorg-libXmu description {X.org libXmu} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXt} name xorg-libXmu long_description {X.org Xmu library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.5 revision 0
 xorg-libXp 418
 variants universal depends_build {port:pkgconfig port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXp description {X.org libXp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-printproto} name xorg-libXp long_description {Xprint client library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.0 revision 3
 xorg-libXrandr 413
@@ -12215,7 +12215,7 @@ portdir x11/xorg-xf86vidmodeproto description {X.org xf86vidmodeproto} homepage 
 xorg-xineramaproto 296
 portdir x11/xorg-xineramaproto description {X.org xineramaproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-xineramaproto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for Xinerama extension to X11} version 1.1.99.1 categories {x11 devel} revision 0
 xorg-xproto 296
-portdir x11/xorg-xproto description {X.org xproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-xproto maintainers {jeremyhu openmaintainer} long_description {The X.org xproto package contains miscellaneous X11 prototype headers.} version 7.0.15 categories {x11 devel} revision 0
+portdir x11/xorg-xproto description {X.org xproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-xproto maintainers {jeremyhu openmaintainer} long_description {The X.org xproto package contains miscellaneous X11 prototype headers.} version 7.0.16 categories {x11 devel} revision 0
 xorg-xproxymanagementprotocol 317
 portdir x11/xorg-xproxymanagementprotocol description {X.org xproxymanagementprotocol} homepage http://www.x.org epoch 0 platforms darwin name xorg-xproxymanagementprotocol maintainers {jeremyhu openmaintainer} long_description {Prototype headers for xproxymanagement} version 1.0.2 categories {x11 devel} revision 0
 xorg-xtrans 271
