@@ -494,11 +494,11 @@ buildbot 276830
 byacc 277257
 byaccj 277664
 bzr 278093
-bzr-gtk 278908
-bzr-pager 279282
-bzr-rebase 279599
-bzr-svn 280202
-bzrtools 280851
+bzr-gtk 278909
+bzr-pager 279283
+bzr-rebase 279600
+bzr-svn 280203
+bzrtools 280852
 c2hs 281493
 c_count 282100
 cableswig 282493
