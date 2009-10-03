@@ -12108,8 +12108,8 @@ xorg-bigreqsproto 289
 portdir x11/xorg-bigreqsproto description {X.org bigreqsproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-bigreqsproto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for BigReqs extension to X11} version 1.1.0 categories {x11 devel} revision 0
 xorg-cf-files 326
 portdir x11/xorg-cf-files description {Build files for discontinued imake build system.} homepage http://xorg.freedesktop.org epoch 0 platforms darwin name xorg-cf-files maintainers {mcalhoun openmaintainer} long_description {{Build files for discontinued imake build system.}} version 1.0.2 categories {x11 devel} revision 3
-xorg-compositeproto 295
-portdir x11/xorg-compositeproto description {X.org compositeproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-compositeproto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for Composite extension to X11} version 0.4 categories {x11 devel} revision 0
+xorg-compositeproto 297
+portdir x11/xorg-compositeproto description {X.org compositeproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-compositeproto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for Composite extension to X11} version 0.4.1 categories {x11 devel} revision 0
 xorg-damageproto 289
 portdir x11/xorg-damageproto description {X.org damageproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-damageproto maintainers {jeremyhu openmaintainer} long_description {Prototype headers for the Damage extension to X11} version 1.2.0 categories {x11 devel} revision 0
 xorg-dmxproto 261
