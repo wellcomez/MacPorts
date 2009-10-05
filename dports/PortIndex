@@ -12188,8 +12188,8 @@ xorg-libXres 361
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXres description {X.org libXres} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-resourceproto} name xorg-libXres long_description {X Resource extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.3 revision 1
 xorg-libXt 583
 variants universal depends_build {port:pkgconfig port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXt description {X.org libXt} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libsm port:xorg-libX11} name xorg-libXt long_description {X Toolkit Intrinsics, an abstract widget library upon which other toolkits are based. Xt is the basis for many toolkits, including the Athena widgets, Xaw, and LessTif, a Motif implementation.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.6 revision 0
-xorg-libXtst 378
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXtst description {X.org libXt} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXi port:xorg-recordproto} name xorg-libXtst long_description {X.org libXtst library.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.99.2 revision 0
+xorg-libXtst 418
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-inputproto port:xorg-recordproto} portdir x11/xorg-libXtst description {X.org libXt} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXi} name xorg-libXtst long_description {X.org libXtst library.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.0 revision 0
 xorg-libXv 376
 variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-videoproto} portdir x11/xorg-libXv description {X.org libXv} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXv long_description {Xvideo extension library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.5 revision 0
 xorg-libXvMC 361
@@ -12198,10 +12198,10 @@ xorg-libXxf86dga 406
 variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xextproto port:xorg-xf86dgaproto} portdir x11/xorg-libXxf86dga description {X.org libXxf86dga} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXxf86dga long_description {{X.org libXxf86dga}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1 revision 1
 xorg-libXxf86misc 376
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXxf86misc description {X.org libXxf86misc} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-xf86miscproto} name xorg-libXxf86misc long_description {{X.org libXxf86misc}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.1 revision 2
-xorg-libXxf86vm 371
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXxf86vm description {X.org libXxf86vm} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-xf86vidmodeproto} name xorg-libXxf86vm long_description {{X.org libXxf86vm}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 1
-xorg-libdmx 354
-variants universal depends_build port:pkgconfig portdir x11/xorg-libdmx description {X.org libdmx} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-dmxproto} name xorg-libdmx long_description {X.org libdmx library.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 2
+xorg-libXxf86vm 391
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-xf86vidmodeproto} portdir x11/xorg-libXxf86vm description {X.org libXxf86vm} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libXxf86vm long_description {{X.org libXxf86vm}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.0 revision 0
+xorg-libdmx 374
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-dmxproto} portdir x11/xorg-libdmx description {X.org libdmx} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXext name xorg-libdmx long_description {X.org libdmx library.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.0 revision 0
 xorg-libfontenc 356
 variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libfontenc description {X.org libfontenc} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:zlib name xorg-libfontenc long_description {Font encoding library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.5 revision 0
 xorg-libice 334
