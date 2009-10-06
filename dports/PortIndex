@@ -12158,8 +12158,8 @@ xorg-libXcomposite 399
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXcomposite description {X.org libXcomposite} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xorg-compositeproto port:xorg-libXext} name xorg-libXcomposite long_description {Composite extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 0.4.0 revision 1
 xorg-libXcursor 405
 variants universal depends_build {port:pkgconfig port:xorg-fixesproto port:xorg-renderproto} portdir x11/xorg-libXcursor description {X.org libXcursor} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xrender} name xorg-libXcursor long_description {{X.org libXcursor}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.10 revision 0
-xorg-libXdamage 366
-variants universal depends_build port:pkgconfig portdir x11/xorg-libXdamage description {X.org libXdamage} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXfixes port:xorg-damageproto} name xorg-libXdamage long_description {Damage extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.1 revision 1
+xorg-libXdamage 407
+variants universal depends_build {port:pkgconfig port:xorg-xextproto port:xorg-fixesproto port:xorg-damageproto} portdir x11/xorg-libXdamage description {X.org libXdamage} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libXfixes name xorg-libXdamage long_description {Damage extension} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.2 revision 0
 xorg-libXdmcp 350
 variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libXdmcp description {X.org libXdmcp} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXdmcp long_description {X Display Manager Control Protocol routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.3 revision 0
 xorg-libXevie 423
