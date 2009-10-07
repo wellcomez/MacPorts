@@ -12213,7 +12213,7 @@ variants universal depends_build {port:pkgconfig port:xorg-xtrans} portdir x11/x
 xorg-libxcb 478
 variants {python25 python26 python31 universal} depends_build {port:pkgconfig port:xorg-libpthread-stubs} portdir x11/xorg-libxcb description {X.org libxcb} homepage http://xcb.freedesktop.org/ depends_run port:python26 epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXau port:xorg-libXdmcp port:xorg-xcb-proto} name xorg-libxcb long_description {The X C Binding {\(XCB\)} library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.4 revision 0
 xorg-libxkbfile 348
-variants universal depends_build port:pkgconfig portdir x11/xorg-libxkbfile description {X.org libxbfile} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libxkbfile long_description {XKB file handling routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.5 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xorg-libxkbfile description {X.org libxbfile} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libxkbfile long_description {XKB file handling routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.6 revision 0
 xorg-libxkbui 361
 variants universal depends_build port:pkgconfig portdir x11/xorg-libxkbui description {X.org libxbui} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXt port:xorg-libxkbfile} name xorg-libxkbui long_description {X.org libxkbui library.} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 0
 xorg-printproto 271
