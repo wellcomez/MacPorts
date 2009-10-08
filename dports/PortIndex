@@ -2604,8 +2604,8 @@ libkml 473
 variants universal depends_build port:curl portdir gis/libkml description {library to parse, generate and operate on KML} homepage http://code.google.com/p/libkml/ epoch 0 platforms darwin depends_lib {port:expat port:zlib} name libkml long_description {libkml is Google's library for use with applications that want to parse, generate and operate on KML. It is an implementation of the OGC KML 2.2 standard.} maintainers ryandesign categories gis version 1.0.1 revision 0
 mapserver 444
 variants {gdalogr proj apache apache2 apache_apple universal} portdir gis/mapserver description mapserver homepage http://mapserver.gis.umn.edu/ depends_run port:apache2 epoch 0 platforms darwin name mapserver depends_lib {port:gd2 port:geos} long_description {MapServer is an Open Source development environment for building spatially-enabled internet applications.} maintainers googlemail.com:mbarchfe categories gis version 5.2.0 revision 0
-proj 337
-variants universal portdir gis/proj description {PROJ.4 - Cartographic Projections Library} homepage http://trac.osgeo.org/proj/ epoch 0 platforms darwin name proj long_description {PROJ.4 is a library for converting data between cartographic projections.} maintainers gmail.com:seanasy categories {gis science} version 4.6.1 revision 1
+proj 327
+variants universal portdir gis/proj description {PROJ.4 - Cartographic Projections Library} homepage http://trac.osgeo.org/proj/ epoch 0 platforms darwin name proj long_description {PROJ.4 is a library for converting data between cartographic projections.} maintainers gmail.com:seanasy categories gis version 4.7.0 revision 0
 qlandkarte 385
 variants universal portdir gis/qlandkarte description {Use your Garmin GPS with Linux/Mac OS X} homepage http://qlandkarte.sourceforge.net/ epoch 0 platforms darwin name qlandkarte depends_lib {port:proj port:libusb-compat port:qt4-mac} long_description {{QLandkarte is a QT Application similar to Garmin's MapSource.}} maintainers nomaintainer version 0.7.3 categories gis revision 2
 alacarte 403
