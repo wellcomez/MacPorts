@@ -4086,8 +4086,8 @@ koffice-i18n-welsh 298
 portdir kde/koffice-i18n-welsh description {KOffice welsh language files.} homepage http://www.koffice.org/ epoch 0 platforms darwin name koffice-i18n-welsh depends_lib port:koffice maintainers nomaintainer long_description {{KOffice welsh language files.}} categories kde version 1.6.3 revision 0
 koffice2-devel 468
 variants {universal debug docs} depends_build {port:cmake port:automoc} portdir kde/koffice2-devel description {The KDE Office suite. KOffice is built on the KDE4 platform} homepage http://www.kde.org epoch 0 platforms darwin depends_lib {port:qt4-mac port:kdelibs4 port:kdebase4 port:eigen} name koffice2-devel maintainers nomaintainer long_description {{The KDE Office suite. KOffice is built on the KDE4 platform}} categories {kde kde4} version 1.9.98.7 revision 0
-konversation 364
-variants {universal debug docs} depends_build {port:cmake port:automoc} portdir kde/konversation description {KDE IRC client.} homepage http://konversation.kde.org/ epoch 0 platforms darwin depends_lib {port:kdelibs4 port:kdepimlibs4} name konversation maintainers {snc sharky} long_description {{KDE IRC client.}} categories {kde kde4} version 1.2-rc1 revision 0
+konversation 360
+variants {universal debug docs} depends_build {port:cmake port:automoc} portdir kde/konversation description {KDE IRC client.} homepage http://konversation.kde.org/ epoch 0 platforms darwin depends_lib {port:kdelibs4 port:kdepimlibs4} name konversation maintainers {snc sharky} long_description {{KDE IRC client.}} categories {kde kde4} version 1.2 revision 0
 konversation11 408
 depends_build {port:autoconf263 port:unsermake} portdir kde/konversation11 description {KDE IRC client. NB No KDE sound support.} homepage http://konversation.kde.org/ epoch 0 platforms darwin depends_lib {port:kdebase3 port:doxygen path:bin/dot:graphviz} name konversation11 maintainers nomaintainer long_description {{KDE IRC client. NB No KDE sound support.}} categories {kde kde3} version 1.1 revision 1
 krusader 668
