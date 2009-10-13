@@ -12101,7 +12101,7 @@ depends_build port:imake portdir x11/xearth description {Draws the planet Earth 
 xedit 330
 variants universal depends_build port:pkgconfig portdir x11/xedit description {Simple text editor for X11} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xedit long_description {{Simple text editor for X11}} maintainers {blb openmaintainer} categories {x11 editors} version 1.1.2 revision 1
 xev 700
-variants universal depends_build port:pkgconfig portdir x11/xev description {Print contents of X11 events} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libX11 name xev long_description {xev creates a window and then asks the X server to send it events whenever anything happens to the window (such as it being moved, resized, typed in, clicked in, etc.). You can also attach it to an existing window. It is useful for seeing what causes events to occur and to display the information that they contain. It is essentially a debugging and development tool, and should not be needed in normal usage.} maintainers {blb openmaintainer} categories x11 version 1.0.3 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xev description {Print contents of X11 events} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libX11 name xev long_description {xev creates a window and then asks the X server to send it events whenever anything happens to the window (such as it being moved, resized, typed in, clicked in, etc.). You can also attach it to an existing window. It is useful for seeing what causes events to occur and to display the information that they contain. It is essentially a debugging and development tool, and should not be needed in normal usage.} maintainers {blb openmaintainer} categories x11 version 1.0.4 revision 0
 xeyes 296
 variants universal depends_build port:pkgconfig portdir x11/xeyes description {X11 xeyes demo app} homepage http://www.x.org epoch 0 platforms darwin depends_lib port:xorg-libXmu name xeyes long_description {xeyes defies description.} maintainers jeremyhu categories x11 version 1.0.1 revision 1
 xfd 358
@@ -12137,13 +12137,13 @@ variants universal depends_build port:pkgconfig portdir x11/xkbutils description
 xkeyboard-config 319
 variants universal depends_build {port:pkgconfig port:gettext} portdir x11/xkeyboard-config description {X11 XKB keyboard descriptions} homepage http://www.x.org epoch 0 platforms darwin name xkeyboard-config long_description {{X11 XKB keyboard descriptions}} maintainers jeremyhu categories x11 version 1.7 revision 0
 xkill 334
-variants universal depends_build port:pkgconfig portdir x11/xkill description {Kill a client by its X11 resource} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xkill long_description {{Kill a client by its X11 resource}} maintainers {blb openmaintainer} categories x11 version 1.0.1 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xkill description {Kill a client by its X11 resource} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xkill long_description {{Kill a client by its X11 resource}} maintainers {blb openmaintainer} categories x11 version 1.0.2 revision 0
 xload 338
 variants universal depends_build port:pkgconfig portdir x11/xload description {System load average display for X11} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xload long_description {{System load average display for X11}} maintainers {blb openmaintainer} categories x11 version 1.0.2 revision 1
 xlogo 324
 variants universal depends_build port:pkgconfig portdir x11/xlogo description {X11 Window System logo} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib {port:xorg-libXaw port:Xft2} name xlogo long_description {{X11 Window System logo}} maintainers {blb openmaintainer} categories x11 version 1.0.1 revision 1
 xlsatoms 362
-variants universal depends_build port:pkgconfig portdir x11/xlsatoms description {List interned atoms defined on an X11 server} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xlsatoms long_description {{List interned atoms defined on an X11 server}} maintainers {blb openmaintainer} categories x11 version 1.0.1 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xlsatoms description {List interned atoms defined on an X11 server} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xlsatoms long_description {{List interned atoms defined on an X11 server}} maintainers {blb openmaintainer} categories x11 version 1.0.2 revision 0
 xlsclients 378
 variants universal depends_build port:pkgconfig portdir x11/xlsclients description {List client applications running on an X11 display} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xlsclients long_description {{List client applications running on an X11 display}} maintainers {blb openmaintainer} categories x11 version 1.0.1 revision 1
 xlsfonts 348
@@ -12397,7 +12397,7 @@ variants universal depends_build port:pkgconfig portdir x11/xwd description {Dum
 xwininfo 343
 variants universal depends_build port:pkgconfig portdir x11/xwininfo description {Window information utility for X11} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXext name xwininfo long_description {{Window information utility for X11}} maintainers {blb openmaintainer} categories x11 version 1.0.5 revision 0
 xwud 323
-variants universal depends_build port:pkgconfig portdir x11/xwud description {Image displayer for X11} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libX11 name xwud long_description {{Image displayer for X11}} maintainers {blb openmaintainer} categories {x11 graphics} version 1.0.1 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xwud description {Image displayer for X11} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libX11 name xwud long_description {{Image displayer for X11}} maintainers {blb openmaintainer} categories {x11 graphics} version 1.0.2 revision 0
 Terminal 466
 variants universal portdir xfce/Terminal description {Terminal is a modern terminal emulator for the Unix/Linux desktop.} homepage http://www.os-cillation.com/index.php?id=42&L=5 epoch 0 platforms darwin name Terminal depends_lib {port:exo port:vte port:dbus port:gtk2 port:startup-notification port:hicolor-icon-theme} long_description {{Terminal is a modern terminal emulator for the Unix/Linux desktop.}} maintainers afb categories xfce version 0.2.12 revision 0
 Thunar 453
