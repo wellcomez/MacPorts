@@ -12282,8 +12282,8 @@ xorg-libXdmcp 350
 variants universal depends_build {port:pkgconfig port:xorg-xproto} portdir x11/xorg-libXdmcp description {X.org libXdmcp} homepage http://www.x.org epoch 0 platforms {darwin macosx} name xorg-libXdmcp long_description {X Display Manager Control Protocol routines} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.3 revision 0
 xorg-libXevie 423
 variants universal depends_build {port:pkgconfig port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXevie description {X.org llibXevie} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-evieproto} name xorg-libXevie long_description {{X.org llibXevie}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.2 revision 2
-xorg-libXext 366
-variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXext description {X.org libXext} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXext long_description {{X.org libXext}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1 revision 0
+xorg-libXext 368
+variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xextproto} portdir x11/xorg-libXext description {X.org libXext} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXext long_description {{X.org libXext}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1.1 revision 0
 xorg-libXfixes 397
 variants universal depends_build {port:pkgconfig port:xorg-xproto port:xorg-xextproto port:xorg-fixesproto} portdir x11/xorg-libXfixes description {X.org libXfixes} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib port:xorg-libX11 name xorg-libXfixes long_description {{X.org libXfixes}} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 4.0.4 revision 0
 xorg-libXfont 526
