@@ -9367,7 +9367,7 @@ portdir python/py26-rdflib description {Python library for working with RDF} hom
 py26-reportlab 485
 portdir python/py26-reportlab description {python library for creating pdf files} homepage http://www.reportlab.org/rl_toolkit.html epoch 0 platforms {darwin freebsd} depends_lib {port:python26 port:py26-numeric port:py26-pil} name py26-reportlab maintainers nomaintainer long_description {ReportLab is a software library that lets you directly create documents in Adobe's Portable Document Format (PDF) using the python programming language.} version 2.3 categories python revision 0
 py26-robotframework 290
-portdir python/py26-robotframework description {ATDD framework} homepage http://robotframework.org/ epoch 0 platforms darwin depends_lib port:python26 name py26-robotframework maintainers jwa long_description {ATDD framework with plugins} version 2.1.1 categories {python devel} revision 1
+portdir python/py26-robotframework description {ATDD framework} homepage http://robotframework.org/ epoch 0 platforms darwin depends_lib port:python26 name py26-robotframework maintainers jwa long_description {ATDD framework with plugins} version 2.1.2 categories {python devel} revision 0
 py26-robotframework-ride 374
 portdir python/py26-robotframework-ride description {Robot Framework test case editor} homepage http://code.google.com/p/robotframework-ride epoch 0 platforms darwin depends_lib {port:py26-robotframework port:py26-wxpython} name py26-robotframework-ride maintainers jwa long_description {{Robot Framework test case editor}} version 0.19 categories {python devel} revision 0
 py26-robotframework-seleniumlibrary 457
