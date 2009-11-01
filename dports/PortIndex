@@ -11289,7 +11289,7 @@ variants {lesslikeslash universal} portdir textproc/lv description {Powerful Mul
 man2html 333
 portdir textproc/man2html description {Convert nroff man pages to HTML} homepage http://www.oac.uci.edu/indiv/ehood/man2html.html epoch 0 platforms darwin name man2html maintainers nomaintainer long_description {man2html is a utility to convert UNIX nroff manual pages into HTML format.} version 3.0.1 categories textproc revision 1
 mecab 435
-variants {darwin_7 darwin_8 sjis utf8 utf8only universal} portdir textproc/mecab description {MeCab is a yet another part-of-speech and morphological analyzer.} homepage http://mecab.sourceforge.net/ epoch 0 platforms darwin name mecab depends_lib port:libiconv long_description {{MeCab is a yet another part-of-speech and morphological analyzer.}} maintainers gmail.com:rsky0711 categories {textproc japanese} version 0.96 revision 0
+variants {darwin_7 darwin_8 sjis utf8 utf8only universal} portdir textproc/mecab description {MeCab is a yet another part-of-speech and morphological analyzer.} homepage http://mecab.sourceforge.net/ epoch 0 platforms darwin name mecab depends_lib port:libiconv long_description {{MeCab is a yet another part-of-speech and morphological analyzer.}} maintainers gmail.com:rsky0711 categories {textproc japanese} version 0.98 revision 0
 mecab-ipadic-eucjp 391
 variants universal portdir textproc/mecab-ipadic-eucjp description {Alternate dictionary for MeCab (ipadic/euc-jp)} homepage http://mecab.sourceforge.net/ epoch 0 platforms darwin name mecab-ipadic-eucjp depends_lib port:mecab long_description {{Alternate dictionary for MeCab (ipadic/euc-jp)}} maintainers gmail.com:rsky0711 categories {textproc japanese} version 2.7.0-20070610 revision 0
 mecab-ipadic-sjis 395
