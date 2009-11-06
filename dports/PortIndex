@@ -10757,7 +10757,7 @@ variants {darwin freebsd} portdir sysutils/mdate description {utility that conve
 mdf2iso 271
 variants universal portdir sysutils/mdf2iso description {Tool to convert mdf (Alchol 120% images) images to iso images.} homepage http://mdf2iso.berlios.de/ epoch 0 platforms darwin name mdf2iso maintainers gmail.com:mellon85 categories sysutils version 0.3.0 revision 0
 memcached 496
-variants universal portdir sysutils/memcached description {A high performance, distributed memory object caching system.} homepage http://www.danga.com/memcached/ epoch 0 platforms darwin name memcached depends_lib port:libevent maintainers brett long_description {Memcached is a high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.} categories sysutils version 1.4.1 revision 0
+variants universal portdir sysutils/memcached description {A high performance, distributed memory object caching system.} homepage http://www.danga.com/memcached/ epoch 0 platforms darwin name memcached depends_lib port:libevent maintainers brett long_description {Memcached is a high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.} categories sysutils version 1.4.2 revision 0
 memtester 357
 portdir sysutils/memtester description {A userspace utility for testing the memory subsystem for faults.} homepage http://pyropus.ca/software/memtester/ epoch 0 platforms darwin name memtester maintainers hostwizard.com:scott long_description {{A userspace utility for testing the memory subsystem for faults.}} version 4.1.2 categories sysutils revision 0
 mkpwd 272
