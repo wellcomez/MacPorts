@@ -360,12 +360,12 @@ ices0 444
 variants {python perl universal} depends_build bin:pkg-config:pkgconfig portdir audio/ices0 description {Stream audio to an icecast server} homepage http://icecast.org/ices.php epoch 0 platforms darwin depends_lib {port:libxml2 lib:libmp3lame.0:lame lib:libshout.3:libshout2} name ices0 long_description {source client for broadcasting in MP3 format to an icecast2 server} maintainers nomaintainer categories {audio net} version 0.4 revision 0
 ices2 419
 variants universal depends_build bin:pkg-config:pkgconfig portdir audio/ices2 description {Stream audio to an icecast server} homepage http://www.icecast.org/ices.php epoch 0 platforms darwin depends_lib {lib:libshout:libshout2 port:libxml2} name ices2 long_description {source client for broadcasting in Ogg Vorbis format to an icecast2 server} maintainers nomaintainer categories {audio net} version 2.0.1 revision 0
-id3lib 342
-variants universal portdir audio/id3lib description {ID3 tag manipulation} homepage http://id3lib.sourceforge.net/ epoch 0 platforms darwin name id3lib depends_lib {port:libiconv port:zlib} long_description {id3lib provides an API for manipulation of ID3 tags in MP3 files.} maintainers nomaintainer categories audio version 3.8.3 revision 1
+id3lib 369
+variants universal depends_build port:libtool portdir audio/id3lib description {ID3 tag manipulation} homepage http://id3lib.sourceforge.net/ epoch 0 platforms darwin name id3lib depends_lib {port:libiconv port:zlib} long_description {id3lib provides an API for manipulation of ID3 tags in MP3 files.} maintainers nomaintainer categories audio version 3.8.3 revision 2
 id3tool 346
 variants universal portdir audio/id3tool description {ID3 editing tool} homepage http://nekohako.xware.cx/id3tool/ epoch 0 platforms darwin name id3tool long_description {id3tool is a command line utility for easy manipulation of the ID3 tags present in MPEG Layer 3 audio files.} maintainers nomaintainer categories audio version 1.2 revision 0
-id3v2 354
-variants universal portdir audio/id3v2 description {ID3v2 editing tool} homepage http://id3v2.sourceforge.net/ epoch 0 platforms darwin name id3v2 depends_lib lib:libid3.3:id3lib long_description {A command line editor for ID3v2 tags, based on id3lib. Written by Myers Carpenter.} maintainers nordist.net:brent categories audio version 0.1.11 revision 1
+id3v2 327
+portdir audio/id3v2 description {ID3v2 editing tool} homepage http://id3v2.sourceforge.net/ epoch 0 platforms darwin name id3v2 depends_lib port:id3lib maintainers nordist.net:brent long_description {A command line editor for ID3v2 tags, based on id3lib. Written by Myers Carpenter.} categories audio version 0.1.11 revision 1
 jack 425
 variants universal portdir audio/jack description {Jack Audio Connection Kit} homepage http://jackaudio.org/ epoch 0 platforms darwin name jack depends_lib {port:libxml2 port:libxslt port:zlib port:libsndfile} long_description {JACK is a low-latency audio server, written for POSIX conformant operating systems such as GNU/Linux and Apple's OS X.} maintainers martinvazquez.net:eu categories audio version 0.116.2 revision 0
 lame 582
