@@ -2531,7 +2531,7 @@ variants {darwin_8 darwin_9 gdbm guile python universal} depends_build path:bin/
 gnuchess 401
 variants universal portdir games/gnuchess description {The GNU chess program} homepage http://www.gnu.org/software/chess epoch 0 platforms {darwin freebsd} name gnuchess long_description {GNU Chess is a chess program. It enables you to play against an automated and skillful chess opponent on virtually any computer platform. Master strength.} maintainers pmq categories games version 5.07 revision 1
 gnugo 286
-variants universal portdir games/gnugo description {GNU Go} homepage http://www.gnu.org/software/gnugo/gnugo.html epoch 0 platforms darwin name gnugo long_description {GNU Go is a free program that plays the game of Go.} maintainers nomaintainer categories games version 3.6 revision 0
+variants universal portdir games/gnugo description {GNU Go} homepage http://www.gnu.org/software/gnugo/gnugo.html epoch 0 platforms darwin name gnugo long_description {GNU Go is a free program that plays the game of Go.} maintainers nomaintainer categories games version 3.8 revision 0
 gnushogi 411
 variants universal portdir games/gnushogi description {GNU version of Shogi, a game of Japanese chess.} homepage http://www.cs.caltech.edu/~mvanier/hacking/gnushogi/gnushogi.html epoch 0 platforms darwin name gnushogi depends_lib {port:xorg-libXaw port:ncurses} long_description {{GNU version of Shogi, a game of Japanese chess.}} maintainers {takanori openmaintainer} categories games version 1.3.2 revision 2
 greed 321
