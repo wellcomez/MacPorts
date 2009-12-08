@@ -1038,6 +1038,8 @@ caml-camlzip 335
 portdir devel/caml-camlzip description {Automated code generation for converting OCaml-values to S-expressions} homepage http://cristal.inria.fr/~xleroy/software.html epoch 0 platforms darwin name caml-camlzip depends_lib {port:ocaml port:caml-findlib} maintainers {erickt openmaintainer} version 1.04 categories {devel ml} revision 0
 caml-camomile 323
 variants universal portdir devel/caml-camomile description {OCaml module to convert strings to and from various encodings} homepage http://camomile.sf.net/ epoch 0 platforms darwin name caml-camomile depends_lib {port:ocaml port:caml-findlib} maintainers toots@rastageeks.org categories {devel ml} version 0.7.2 revision 0
+caml-core 447
+portdir devel/caml-core description {Jane Street's alternative to the standard OCaml library} homepage http://www.janestreet.com/ocaml/ epoch 0 platforms darwin name caml-core depends_lib {port:ocaml port:caml-findlib port:caml-sexplib port:caml-res port:caml-bin-prot port:caml-fieldslib} maintainers {mww openmaintainer} long_description {{Jane Street's alternative to the standard OCaml library}} categories {devel ml} version 0.6.0 revision 0
 caml-csv 435
 portdir devel/caml-csv description {CSV file parser for OCaml.} homepage http://merjis.com/developers/csv epoch 0 platforms darwin name caml-csv depends_lib {port:ocaml port:caml-findlib} maintainers {landonf openmaintainer} long_description {This library can read and write CSV files, including all extensions used by Excel - eg. quotes, newlines, 8 bit characters in fields, {"0} etc.} categories {devel ml} version 1.1.6 revision 1
 caml-extlib 363
