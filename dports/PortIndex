@@ -7637,7 +7637,7 @@ portdir perl/p5-yaml-libyaml description {Perl YAML Serialization using XS and l
 p5-yaml-syck 340
 portdir perl/p5-yaml-syck description {A fast, lightweight YAML loader and dumper} homepage http://search.cpan.org/dist/YAML-Syck/ epoch 0 platforms darwin name p5-yaml-syck depends_lib path:bin/perl:perl5 maintainers FaerieMUD.org:ged long_description {{A fast, lightweight YAML loader and dumper}} categories perl version 0.99 revision 0
 p5-yaml-tiny 402
-portdir perl/p5-yaml-tiny description {Read/Write YAML files with as little code as possible} homepage http://search.cpan.org/dist/YAML-Tiny/ epoch 0 platforms darwin name p5-yaml-tiny depends_lib {path:bin/perl:perl5 port:p5-yaml port:p5-yaml-syck} maintainers {narf_tm openmaintainer} long_description {{Read/Write YAML files with as little code as possible}} categories perl version 1.40 revision 0
+portdir perl/p5-yaml-tiny description {Read/Write YAML files with as little code as possible} homepage http://search.cpan.org/dist/YAML-Tiny/ epoch 0 platforms darwin name p5-yaml-tiny depends_lib {path:bin/perl:perl5 port:p5-yaml port:p5-yaml-syck} maintainers {narf_tm openmaintainer} long_description {{Read/Write YAML files with as little code as possible}} categories perl version 1.41 revision 0
 php5-apc 392
 variants {debug universal} portdir php/php5-apc description {Alternative PHP Cache} homepage http://pecl.php.net/package/apc/ epoch 0 platforms darwin name php5-apc depends_lib path:bin/phpize:php5 maintainers {nox openmaintainer} long_description {APC is a free, open, and robust framework for caching and optimizing PHP intermediate code.} categories {php devel} version 3.1.3p1 revision 2
 php5-calendar 405
