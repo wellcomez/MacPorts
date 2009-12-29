@@ -5466,8 +5466,8 @@ darkstat 441
 variants universal portdir net/darkstat description {network traffic analyzer} homepage http://dmr.ath.cx/net/darkstat/ epoch 0 platforms darwin name darkstat long_description {darkstat is a network traffic analyzer. It's basically a packet sniffer which runs as a background process on a cable/DSL router and gathers all sorts of useless but interesting statistics.} maintainers foellinger.de:olaf categories net version 3.0.707 revision 0
 dcd 366
 variants universal portdir net/dcd description {Direct Connect Hub clone} homepage http://www.dc.ds.pg.gda.pl epoch 0 platforms darwin name dcd long_description {DConnect Daemon is a Direct Connect Hub clone for Unix. It allow people to share their resources, i.e.: programs, graphics, all files ...} maintainers nomaintainer categories net version 0.3.4 revision 0
-ddclient 390
-variants universal portdir net/ddclient description {Update dynamic DNS entries} homepage http://ddclient.sourceforge.net/ epoch 0 depends_run path:bin/perl:perl5 platforms darwin name ddclient long_description {ddclient is a Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services.} maintainers {snc openmaintainer} categories net version 3.8.0 revision 0
+ddclient 424
+variants universal portdir net/ddclient description {Update dynamic DNS entries} homepage http://ddclient.sourceforge.net/ depends_run path:bin/perl:perl5 epoch 0 platforms darwin name ddclient depends_lib port:p5-io-socket-ssl long_description {ddclient is a Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services.} maintainers {snc openmaintainer} categories net version 3.8.0 revision 1
 ddnsu 403
 portdir net/ddnsu description {simple, reliable and small updating client for dynamic DNS} homepage http://psydev.sourceforge.net/new/ddnsu/ epoch 0 platforms darwin name ddnsu maintainers nomaintainer long_description {ddnsu is a dynamic DNS updating client that aims to be simple, reliable, and above all very small. It works with services such as DynDNS.org.} version 0.3.0 categories net revision 0
 deluge 479
