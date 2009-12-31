@@ -2073,7 +2073,7 @@ portdir devel/slib-guile description {Wrapper port to properly set up slib and g
 slib-guile16 357
 portdir devel/slib-guile16 description {Wrapper port to properly set up slib and guile16 together} epoch 0 platforms darwin name slib-guile16 depends_lib {port:slib port:guile16} maintainers nomaintainer long_description {Create two symbolic links and a catalog file so that guile16 can find the slib library files.} version 1.0 categories devel revision 2
 smake 393
-portdir devel/smake description {highly portable make program with automake features} homepage http://cdrecord.berlios.de/old/private/smake.html epoch 0 platforms darwin name smake maintainers mww long_description {Smake is a highly portable make program with automake features. It is currently mainly targeted to be used with the makefiles system.} version 1.2a48 categories devel revision 0
+portdir devel/smake description {highly portable make program with automake features} homepage http://cdrecord.berlios.de/old/private/smake.html epoch 0 platforms darwin name smake maintainers mww long_description {Smake is a highly portable make program with automake features. It is currently mainly targeted to be used with the makefiles system.} version 1.2a49 categories devel revision 0
 soprano 477
 variants {debug docs universal} depends_build {port:cmake port:automoc} portdir devel/soprano description {The Qt-based RDF framework.} homepage http://soprano.sourceforge.net epoch 0 platforms darwin depends_lib {path:libexec/qt4-mac:qt4-mac port:clucene port:strigi port:redland} name soprano maintainers nomaintainer long_description {Soprano is a software library that provides an object-oriented C++/Qt4 framework for RDF data.} categories devel version 2.3.70 revision 0
 spatialindex 562
