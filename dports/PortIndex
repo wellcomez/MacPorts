@@ -6199,7 +6199,7 @@ portdir perl/p5-apache-session-wrapper description {A simple wrapper around Apac
 p5-apache-test 337
 portdir perl/p5-apache-test description {Facilitates testing of Apache::* modules} homepage http://search.cpan.org/dist/Apache-Test/ epoch 0 platforms darwin name p5-apache-test depends_lib path:bin/perl:perl5 maintainers nomaintainer long_description {{Facilitates testing of Apache::* modules}} categories perl version 1.28 revision 0
 p5-app-ack 428
-portdir perl/p5-app-ack description {A grep replacement that ignores .svn/CVS/blib directories} homepage http://search.cpan.org/dist/ack/ epoch 0 platforms darwin name p5-app-ack depends_lib {path:bin/perl:perl5 port:p5-file-next} maintainers {gkg.net:mschout openmaintainer} long_description {ack is a tool like grep, aimed at programmers with large trees of heterogeneous source code.} categories perl version 1.90 revision 0
+portdir perl/p5-app-ack description {A grep replacement that ignores .svn/CVS/blib directories} homepage http://search.cpan.org/dist/ack/ epoch 0 platforms darwin name p5-app-ack depends_lib {path:bin/perl:perl5 port:p5-file-next} maintainers {gkg.net:mschout openmaintainer} long_description {ack is a tool like grep, aimed at programmers with large trees of heterogeneous source code.} categories perl version 1.92 revision 0
 p5-app-cli 422
 portdir perl/p5-app-cli description {Dispatcher module for command line interface programs.} homepage http://search.cpan.org/~clkao/ epoch 0 platforms darwin name p5-app-cli depends_lib {path:bin/perl:perl5 port:p5-locale-maketext-simple port:p5-pod-simple} maintainers nomaintainer long_description {App::CLI provides a simple interface for dispatching command line applications.} categories perl version 0.07 revision 0
 p5-appconfig 576
