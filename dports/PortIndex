@@ -2168,8 +2168,8 @@ tcl-tls 392
 variants universal portdir devel/tcl-tls description {TLS OpenSSL extension to TCL.} homepage http://tls.sourceforge.net epoch 0 platforms darwin name tcl-tls depends_lib port:openssl long_description {TLS is an OpenSSL / RSA-bsafe Tcl extension that provides secure connections on top of the Tcl socket mechanism.} maintainers {jmpp openmaintainer} categories devel version 1.5.0 revision 0
 tclcurl 474
 variants universal portdir devel/tclcurl description {Tcl binding for libcurl} homepage http://personal1.iddeo.es/andresgarci/tclcurl/english/ epoch 0 platforms darwin name tclcurl depends_lib {port:curl port:tcl} long_description {The TclCurl extension gives Tcl programmers access to the libcurl library written by Daniel Stenberg, with it you can download urls, upload them and many other neat tricks.} maintainers nomaintainer categories devel version 7.17.1 revision 0
-tcllib 387
-variants universal portdir devel/tcllib description {tcllib standardized library} homepage http://tcllib.sf.net/ epoch 0 platforms darwin name tcllib depends_lib {port:tcl path:bin/dot:graphviz port:tk} long_description {tcllib is a set of pure-Tcl extensions that you can use to become even more productive with Tcl.} maintainers nomaintainer categories devel version 1.11.1 revision 0
+tcllib 385
+variants universal portdir devel/tcllib description {tcllib standardized library} homepage http://tcllib.sf.net/ epoch 0 platforms darwin name tcllib depends_lib {port:tcl path:bin/dot:graphviz port:tk} long_description {tcllib is a set of pure-Tcl extensions that you can use to become even more productive with Tcl.} maintainers nomaintainer categories devel version 1.12 revision 0
 tclsqlite2 410
 variants universal portdir devel/tclsqlite2 description {TCL bindings for the SQLite embedded database engine} homepage http://www.sqlite.org/ epoch 0 platforms darwin name tclsqlite2 depends_lib port:sqlite2 long_description {TCL bindings for the SQLite embedded database engine. This port contains bindings for sqlite 2.x.} maintainers nomaintainer categories {devel databases tcl} version 2.8.17 revision 0
 tig 345
