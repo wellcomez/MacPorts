@@ -8841,7 +8841,7 @@ portdir python/py25-htmltemplate description {HTML template engine for python} h
 py25-htmltmpl 334
 portdir python/py25-htmltmpl description {A Python templating engine} homepage http://htmltmpl.sourceforge.net/ epoch 0 platforms darwin depends_lib port:python25 name py25-htmltmpl maintainers nomaintainer long_description {A Python based templating engine for separation of code and HTML.} version 1.22 categories python revision 0
 py25-httplib2 397
-portdir python/py25-httplib2 description {A comprehensive HTTP client library in Python} homepage http://code.google.com/p/httplib2/ epoch 0 platforms darwin depends_lib port:python25 name py25-httplib2 maintainers akitada long_description {A comprehensive HTTP client library that supports many features left out of other HTTP libraries.} version 2-0.5.0 categories {python devel net} revision 0
+portdir python/py25-httplib2 description {A comprehensive HTTP client library in Python} homepage http://code.google.com/p/httplib2/ epoch 0 platforms darwin depends_lib port:python25 name py25-httplib2 maintainers akitada long_description {A comprehensive HTTP client library that supports many features left out of other HTTP libraries.} version 2-0.6.0 categories {python devel net} revision 0
 py25-hypy 430
 portdir python/py25-hypy description {Fulltext search interface for Python applications} homepage http://goonmill.org/hypy/ epoch 0 platforms darwin depends_lib {port:python25 port:hyperestraier} name py25-hypy maintainers nomaintainer long_description {Hypy is a fulltext search interface for Python applications. Use it to index and search your documents from Python code.} version 0.8.3 categories {python textproc} revision 0
 py25-icalendar 639
