@@ -12712,8 +12712,8 @@ xorg-libXinerama 376
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXinerama description {X.org libXinerama} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-xineramaproto} name xorg-libXinerama long_description {Xinerama protocol library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.1 revision 0
 xorg-libXmu 347
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXmu description {X.org libXmu} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-libXt} name xorg-libXmu long_description {X.org Xmu library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.5 revision 0
-xorg-libXp 418
-variants universal depends_build {port:pkgconfig port:xorg-util-macros port:autoconf port:automake port:libtool} portdir x11/xorg-libXp description {X.org libXp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-printproto} name xorg-libXp long_description {Xprint client library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.0 revision 3
+xorg-libXp 445
+variants universal depends_build {port:pkgconfig port:xorg-util-macros port:xorg-libpthread-stubs port:autoconf port:automake port:libtool} portdir x11/xorg-libXp description {X.org libXp} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libXext port:xorg-printproto} name xorg-libXp long_description {Xprint client library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.0.0 revision 3
 xorg-libXrandr 413
 variants universal depends_build port:pkgconfig portdir x11/xorg-libXrandr description {X.org libXrandr} homepage http://www.x.org epoch 0 platforms {darwin macosx} depends_lib {port:xorg-libX11 port:xorg-libXext port:xrender port:xorg-randrproto} name xorg-libXrandr long_description {X Resize and Rotate Extension C Library} maintainers {jeremyhu openmaintainer} categories {x11 devel} version 1.3.0 revision 1
 xorg-libXres 361
