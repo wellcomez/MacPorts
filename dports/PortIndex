@@ -11190,6 +11190,8 @@ sdd 302
 portdir sysutils/sdd description {fast replacement for dd} homepage http://www.fokus.fraunhofer.de/research/cc/berlios/employees/joerg.schilling/private/ epoch 0 platforms darwin name sdd maintainers nomaintainer long_description {{fast replacement for dd}} version 1.52 categories sysutils revision 0
 sfind 380
 depends_build port:smake portdir sysutils/sfind description {POSIX.1-2001 compliant implementation of find} homepage http://developer.berlios.de/projects/sfind/ epoch 0 platforms darwin name sfind maintainers nomaintainer long_description {sfind is a highly portable and fully POSIX.1-2001 compliant implementation of the find utility.} categories sysutils version 1.2 revision 0
+sispmctl 362
+variants universal portdir sysutils/sispmctl description {tool for usingthe GEMBIRD SiS-PM device family} homepage http://sispmctl.sourceforge.net/ epoch 0 platforms darwin name sispmctl depends_lib port:libusb-compat long_description {{tool for usingthe GEMBIRD SiS-PM device family}} maintainers {mww openmaintainer} categories sysutils version 2.7 revision 0
 skey 275
 variants universal portdir sysutils/skey description {OpenBSD One Time Passwords (OTP)} epoch 0 platforms {darwin freebsd netbsd} name skey maintainers nomaintainer long_description {{OpenBSD One Time Passwords (OTP)}} categories {sysutils security} version 1.1.5 revision 1
 sleepnow 540
