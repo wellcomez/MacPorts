@@ -3648,8 +3648,8 @@ insub 328
 portdir irc/insub description {extra cowsay cows and irssi script} homepage http://gruntle.org/projects/irssi/insub/ epoch 0 platforms darwin name insub maintainers nomaintainer long_description {Handy tools for being obnoxious on IRC. Warning: some of the cows are potentially offensive.} version 9.8 categories irc revision 0
 ircii 424
 variants universal portdir irc/ircii description {an IRC and ICB client} homepage http://www.eterna.com.au/ircii/ epoch 0 platforms darwin name ircii long_description {The ircII program is a full screen, termcap based interface to Internet Relay Chat. It gives full access to all of the normal IRC functions, plus a variety of additional options.} maintainers {jwa openmaintainer} categories irc version 20081115 revision 0
-ircii-classic 180
-portdir irc/ircii-classic homepage http://www.irchelp.org/irchelp/ircii/ epoch 0 platforms darwin name ircii-classic maintainers ryandesign categories irc version 2.8.2 revision 0
+ircii-classic 404
+portdir irc/ircii-classic description {a text-based IRC and ICB client} homepage http://www.irchelp.org/irchelp/ircii/ epoch 0 platforms darwin name ircii-classic maintainers ryandesign long_description {ircII is a text-based interface to Internet Relay Chat. This port is for version 2.8.2 from 1995, since some consider later versions buggier and more bloated.} version 2.8.2 categories irc revision 1
 irctree 399
 portdir irc/irctree description {show a tree representing the structure of an IRC network in ASCII} homepage http://www.habets.pp.se/synscan/programs.php?prog=irctree epoch 0 depends_run {bin:nc:netcat bin:perl:perl5} platforms darwin name irctree maintainers nomaintainer long_description {{show a tree representing the structure of an IRC network in ASCII}} categories irc version 0.10 revision 0
 irssi 684
