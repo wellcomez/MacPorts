@@ -12775,7 +12775,7 @@ variants universal depends_build port:pkgconfig portdir x11/xkbprint description
 xkbutils 392
 variants universal depends_build port:pkgconfig portdir x11/xkbutils description {XKB utilities xkbbell, xkbvleds, and xkbwatch} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib {port:xorg-libXaw port:xorg-libxkbfile} name xkbutils long_description {{XKB utilities xkbbell, xkbvleds, and xkbwatch}} maintainers {jeremyhu openmaintainer} categories x11 version 1.0.2 revision 0
 xkeyboard-config 346
-variants universal depends_build {port:pkgconfig port:gettext port:intltool port:xkbcomp} portdir x11/xkeyboard-config description {X11 XKB keyboard descriptions} homepage http://www.x.org epoch 0 platforms darwin name xkeyboard-config long_description {{X11 XKB keyboard descriptions}} maintainers jeremyhu categories x11 version 1.7 revision 0
+variants universal depends_build {port:pkgconfig port:gettext port:intltool port:xkbcomp} portdir x11/xkeyboard-config description {X11 XKB keyboard descriptions} homepage http://www.x.org epoch 0 platforms darwin name xkeyboard-config long_description {{X11 XKB keyboard descriptions}} maintainers jeremyhu categories x11 version 1.8 revision 0
 xkill 339
 variants universal depends_build port:pkgconfig portdir x11/xkill description {Kill a client by its X11 resource} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXmu name xkill long_description {{Kill a client by its X11 resource}} maintainers {jeremyhu openmaintainer} categories x11 version 1.0.2 revision 0
 xload 343
@@ -12793,7 +12793,7 @@ variants universal depends_build port:pkgconfig portdir x11/xmag description {Ma
 xman 377
 variants universal depends_build port:pkgconfig portdir x11/xman description {Manual page display program for the X11 Window System} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xman long_description {{Manual page display program for the X11 Window System}} maintainers {jeremyhu openmaintainer} categories x11 version 1.1.0 revision 0
 xmessage 399
-variants universal depends_build port:pkgconfig portdir x11/xmessage description {Display a message or query in a window (X11-based /bin/echo)} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xmessage long_description {{Display a message or query in a window (X11-based /bin/echo)}} maintainers {jeremyhu openmaintainer} categories x11 version 1.0.2 revision 1
+variants universal depends_build port:pkgconfig portdir x11/xmessage description {Display a message or query in a window (X11-based /bin/echo)} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xmessage long_description {{Display a message or query in a window (X11-based /bin/echo)}} maintainers {jeremyhu openmaintainer} categories x11 version 1.0.3 revision 0
 xmh 368
 variants universal depends_build port:pkgconfig portdir x11/xmh description {Send and read mail with an X11 interface to MH} homepage http://www.x.org/ epoch 0 platforms darwin depends_lib port:xorg-libXaw name xmh long_description {{Send and read mail with an X11 interface to MH}} maintainers {jeremyhu openmaintainer} categories {x11 mail} version 1.0.1 revision 2
 xmodmap 491
