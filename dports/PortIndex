@@ -1103,7 +1103,7 @@ portdir devel/caml-res description {OCaml library for automatically resizing con
 caml-sexplib 449
 portdir devel/caml-sexplib description {Automated code generation for converting OCaml-values to S-expressions} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-sexplib depends_lib {port:ocaml port:caml-findlib port:caml-type-conv} maintainers {erickt openmaintainer} long_description {{Automated code generation for converting OCaml-values to S-expressions}} categories {devel ml} version 4.2.16 revision 0
 caml-sqlite3 394
-variants universal portdir devel/caml-sqlite3 description {OCaml bindings for SQLite 3} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-sqlite3 depends_lib {port:ocaml port:caml-findlib port:sqlite3} long_description {{OCaml bindings for SQLite 3}} maintainers {landonf stechert openmaintainer} categories {devel ml databases} version 1.5.6 revision 0
+variants universal portdir devel/caml-sqlite3 description {OCaml bindings for SQLite 3} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-sqlite3 depends_lib {port:ocaml port:caml-findlib port:sqlite3} long_description {{OCaml bindings for SQLite 3}} maintainers {landonf stechert openmaintainer} categories {devel ml databases} version 1.5.7 revision 0
 caml-ssl 349
 variants universal portdir devel/caml-ssl description {SSL bindings for OCaml} homepage http://savonet.sf.net epoch 0 platforms darwin name caml-ssl depends_lib {port:ocaml port:caml-findlib} long_description {SSL bindings for OCaml to use secure connections via the OpenSSL library.} maintainers avsm categories {devel ml} version 0.4.3 revision 0
 caml-text 398
