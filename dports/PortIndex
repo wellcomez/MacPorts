@@ -11027,7 +11027,7 @@ variants universal portdir sysutils/daemon description {Daemon turns other proce
 daemontools 464
 portdir sysutils/daemontools description {collection of tools for managing UNIX services} homepage http://cr.yp.to/daemontools.html epoch 0 platforms darwin name daemontools maintainers {blb openmaintainer} long_description {daemontools is an extensive collection of tools for managing UNIX services. It includes tools for starting, restarting, stopping, monitoring and logging any services that you might wish to run.} version 0.76 categories sysutils revision 2
 dc3dd 287
-variants universal portdir sysutils/dc3dd description {Enhanced GNU dd} homepage http://dc3dd.sourceforge.net/ epoch 0 platforms darwin name dc3dd depends_lib {port:gettext port:libiconv} long_description {Enhanced GNU dd} maintainers ricci categories sysutils version 6.9.91 revision 0
+variants universal portdir sysutils/dc3dd description {Enhanced GNU dd} homepage http://dc3dd.sourceforge.net/ epoch 0 platforms darwin name dc3dd depends_lib {port:gettext port:libiconv} long_description {Enhanced GNU dd} maintainers ricci categories sysutils version 6.12.3 revision 0
 dcfldd 301
 variants universal portdir sysutils/dcfldd description {Enhanced dd with md5 checksums} homepage http://dcfldd.sourceforge.net/ epoch 0 platforms darwin name dcfldd long_description {Enhanced dd with md5 checksums} maintainers darkart.com:opendarwin.org categories sysutils version 1.3.4-1 revision 1
 dd_rescue 376
