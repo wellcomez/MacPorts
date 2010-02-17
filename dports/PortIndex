@@ -5485,7 +5485,7 @@ portdir net/ccxstream description {Stream media files to XBox Media Center via X
 cdpd 342
 variants universal depends_build lib:libnet:libnet portdir net/cdpd description {Sends Cisco Discovery Protocol announcements} epoch 0 platforms darwin name cdpd long_description {cdpd periodically sends Cisco Discovery Protocol announcements on configured interfaces.} maintainers ugh.net.au:andrew categories net version 1.0.2.1 revision 0
 cdpr 375
-portdir net/cdpr description {Cisco Discovery Protocol Reporter} homepage http://www.monkeymental.com/ epoch 0 platforms darwin name cdpr depends_lib port:libpcap maintainers markd long_description {CDPR will show which switch and port the machine running it is connected to. It also supports sending cdp data back to a central server.} categories net version 2.3 revision 0
+portdir net/cdpr description {Cisco Discovery Protocol Reporter} homepage http://www.monkeymental.com/ epoch 0 platforms darwin name cdpr depends_lib port:libpcap maintainers markd long_description {CDPR will show which switch and port the machine running it is connected to. It also supports sending cdp data back to a central server.} categories net version 2.4 revision 0
 centerim 381
 variants {msn universal} portdir net/centerim description {Console multi-IM client.} homepage http://www.centerim.org/ epoch 0 platforms darwin name centerim depends_lib {port:libiconv port:gettext port:ncurses port:openssl port:jpeg port:gpgme} long_description {Console client for AIM/ICQ/Yahoo/IRC/LiveJournal.} maintainers nomaintainer categories net version 4.22.7 revision 1
 centerim-devel 402
