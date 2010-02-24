@@ -179,7 +179,7 @@ variants universal portdir archivers/arc description {create and extract files f
 arj 417
 variants universal depends_build {port:autoconf port:automake port:libtool} portdir archivers/arj description {create and extract files from dos .arj archives} homepage http://arj.sourceforge.net/ epoch 0 platforms darwin name arj depends_lib port:libtool long_description {{create and extract files from dos .arj archives}} maintainers {snc openmaintainer} categories {archivers sysutils} version 3.10.22 revision 0
 atool 377
-depends_build port:gsed portdir archivers/atool description {An archival front-end} homepage http://www.nongnu.org/atool/ epoch 0 platforms darwin depends_lib path:bin/perl:perl5 name atool maintainers devils.com:expiation long_description {atool is a script for managing file archives of various types (tar, tar+gzip, zip etc).} categories archivers version 0.35.0 revision 0
+depends_build port:gsed portdir archivers/atool description {An archival front-end} homepage http://www.nongnu.org/atool/ epoch 0 platforms darwin depends_lib path:bin/perl:perl5 name atool maintainers devils.com:expiation long_description {atool is a script for managing file archives of various types (tar, tar+gzip, zip etc).} categories archivers version 0.37.0 revision 0
 bzip2 372
 variants {darwin universal} portdir archivers/bzip2 description {compression library and tools} homepage http://www.bzip.org/ epoch 0 platforms {darwin freebsd linux sunos} name bzip2 long_description {bzip2 is a freely available, patent free, high-quality data compressor.} maintainers {ryandesign openmaintainer} categories {archivers sysutils} version 1.0.5 revision 3
 cabextract 493
