@@ -1824,8 +1824,8 @@ mhash 374
 variants universal portdir devel/mhash description {provides easy access strong hashes} homepage http://mhash.sourceforge.net/ epoch 0 platforms {darwin freebsd} name mhash long_description {Libmhash is a library which implements some hash algorithms like crc32, md5 and sha-1.} maintainers {ryandesign openmaintainer} categories {devel security} version 0.9.9.9 revision 0
 mico 433
 variants {powerpc universal} portdir devel/mico description {Fully compliant CORBA implementation} homepage http://www.mico.org/ epoch 0 platforms darwin name mico depends_lib {port:openssl lib:libncurses:ncurses} maintainers {student.ethz.ch:roederja schiebel.us:darrell} long_description {MICO is a mature, secure, robust, fully standards-compliant implementation of the CORBA standard.} categories devel version 2.3.13 revision 0
-midgard2-core 468
-variants universal depends_build port:pkgconfig portdir devel/midgard2-core description {A content repository system} homepage http://www.midgard-project.org/ epoch 0 platforms darwin depends_lib {port:gettext path:lib/pkgconfig/glib-2.0.pc:glib2 port:dbus-glib port:libxml2 port:libgda3} name midgard2-core long_description {Midgard is a content repository system platform with bindings in PHP, Python etc.} maintainers jwa categories devel version 9.09.2 revision 0
+midgard2-core 470
+variants universal depends_build port:pkgconfig portdir devel/midgard2-core description {A content repository system} homepage http://www.midgard-project.org/ epoch 0 platforms darwin depends_lib {port:gettext path:lib/pkgconfig/glib-2.0.pc:glib2 port:dbus-glib port:libxml2 port:libgda3} name midgard2-core long_description {Midgard is a content repository system platform with bindings in PHP, Python etc.} maintainers jwa categories devel version 9.09.2.1 revision 0
 mimetic 321
 variants universal portdir devel/mimetic description {Email library (MIME) written in C++} homepage http://codesink.org/mimetic_mime_library.html epoch 0 platforms darwin name mimetic long_description {{Email library (MIME) written in C++}} maintainers {stromnov openmaintainer} categories devel version 0.9.6 revision 0
 missingh 388
