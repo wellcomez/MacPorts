@@ -11007,7 +11007,7 @@ variants universal depends_build {bin:grep:grep bin:bison:bison} portdir shells/
 fish 546
 variants {darwin xsel universal} depends_build {bin:doxygen:doxygen port:autoconf port:automake port:libtool} portdir shells/fish description {user friendly command line shell for UNIX-like operating systems} homepage http://www.fishshell.org/ epoch 0 platforms darwin depends_lib {lib:libiconv:libiconv lib:libncurses:ncurses lib:libintl:gettext} name fish long_description {fish is a user friendly command line shell for UNIX-like operating systems like Darwin.} maintainers {eridius openmaintainer} categories shells version 1.23.1 revision 0
 ksh93 300
-portdir shells/ksh93 description {The AT&T Korn shell} homepage http://www.research.att.com/sw/download/ epoch 0 platforms {darwin freebsd} name ksh93 maintainers brett long_description {The official version of ksh-93, by David Korn and AT&T research} version 2009-05-05 categories shells revision 0
+portdir shells/ksh93 description {The AT&T Korn shell} homepage http://www.research.att.com/sw/download/ epoch 0 platforms {darwin freebsd} name ksh93 maintainers brett long_description {The official version of ksh-93, by David Korn and AT&T research} version 2010-03-09 categories shells revision 0
 luash 330
 portdir shells/luash description {shell written in Lua/C++} homepage http://luaforge.net/projects/luash/ epoch 0 platforms darwin name luash maintainers {and.damore openmaintainer} long_description {luash is a shell written in Lua/C++ that allow you to run command using Lua syntax} version 0.9 categories {shells lua} revision 0
 osh 546
@@ -11692,8 +11692,8 @@ docbook2X 568
 variants universal portdir textproc/docbook2X description {Converts DocBook documents into the traditional Unix man page format and the GNU Texinfo format.} homepage http://docbook2x.sourceforge.net/ epoch 0 platforms darwin name docbook2X depends_lib {path:bin/perl:perl5 port:p5-xml-namespacesupport port:p5-xml-sax port:p5-xml-parser port:p5-xml-sax-expat port:libiconv port:libxml2} long_description {{Converts DocBook documents into the traditional Unix man page format and the GNU Texinfo format.}} maintainers markd categories textproc version 0.8.8 revision 1
 doclifter 361
 portdir textproc/doclifter description {troff macro to DocBook translater.} homepage http://catb.org/~esr/doclifter/ epoch 0 platforms darwin name doclifter depends_lib port:python26 maintainers markd long_description {A troff macro to DocBook translater. For example, it may be used to convert man pages to DocBook.} categories textproc version 2.3 revision 1
-dos2unix 355
-variants universal portdir textproc/dos2unix description {Convert text between dos, unix, and mac formats} homepage http://www.xs4all.nl/~waterlan/dos2unix.html epoch 0 platforms darwin name dos2unix depends_lib port:gettext long_description {{Convert text between dos, unix, and mac formats}} maintainers waqar categories textproc version 4.1 revision 0
+dos2unix 357
+variants universal portdir textproc/dos2unix description {Convert text between dos, unix, and mac formats} homepage http://www.xs4all.nl/~waterlan/dos2unix.html epoch 0 platforms darwin name dos2unix depends_lib port:gettext long_description {{Convert text between dos, unix, and mac formats}} maintainers waqar categories textproc version 4.1.2 revision 0
 dosmacux 461
 variants universal portdir textproc/dosmacux description {convert text file line endings between DOS, Mac and UNIX standards} homepage http://www.math.utah.edu/pub/dosmacux/ epoch 0 platforms darwin name dosmacux long_description {dosmacux provides six utilities for converting text file end-of-line characters from one operating system convention to another, while retaining file time stamps.} maintainers ryandesign categories textproc version 1.5 revision 0
 doxygen 1193
