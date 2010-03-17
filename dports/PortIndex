@@ -1421,7 +1421,7 @@ variants universal portdir devel/gtgt description {General (or GNU) template gen
 gtk2hs 521
 variants {no_x11 universal} portdir devel/gtk2hs description {Portable and native GUI library for Haskell} homepage http://www.haskell.org/gtk2hs epoch 0 platforms darwin depends_lib {port:ghc port:gtk2 port:gvfs path:lib/pkgconfig/cairo.pc:cairo port:librsvg port:libglade2 port:gtkglext port:gtksourceview2} name gtk2hs long_description {gtk2hs is a Haskell binding to GTK, a comprehensive C GUI library that is portable across many platforms.} maintainers gwright categories {devel graphics} version 0.10.1 revision 0
 gtkglext 346
-variants universal portdir devel/gtkglext description {OpenGL Extension to GTK} homepage http://sourceforge.net/projects/gtkglext/ epoch 0 platforms {macosx darwin} depends_lib {port:gtk2 port:mesa port:xorg-libXmu} name gtkglext maintainers lifehertz.com:jd long_description {{OpenGL Extension to GTK}} categories devel version 1.2.0 revision 3
+variants universal portdir devel/gtkglext description {OpenGL Extension to GTK} homepage http://sourceforge.net/projects/gtkglext/ epoch 0 platforms {macosx darwin} depends_lib {port:gtk2 port:mesa port:xorg-libXmu} name gtkglext maintainers lifehertz.com:jd long_description {{OpenGL Extension to GTK}} categories devel version 1.2.0 revision 4
 gtkglextmm 349
 variants universal portdir devel/gtkglextmm description {OpenGL Extension to GTK, C++ bindings} homepage http://sourceforge.net/projects/gtkglext/ epoch 0 platforms darwin depends_lib {port:gtkglext port:gtkmm} name gtkglextmm long_description {{OpenGL Extension to GTK, C++ bindings}} maintainers billitch categories devel version 1.2.0 revision 0
 gtkimageview 423
