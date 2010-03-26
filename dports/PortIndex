@@ -5607,7 +5607,7 @@ variants {mono test universal} depends_build port:pkgconfig portdir net/avahi de
 axel 536
 variants universal portdir net/axel description {A light Unix download accelerator} homepage http://axel.alioth.debian.org/ epoch 0 platforms darwin name axel depends_lib {port:libiconv port:gettext} long_description {Axel does the same thing any other accelerator does: it opens more than one HTTP/FTP connection per download and each connection transfers its own, separate, part of the file. It may sound weird, but it works very well in practice.} maintainers nomaintainer license unknown categories {net www} version 2.4 revision 0
 balance 437
-portdir net/balance description {simple but powerful generic TCP proxy} homepage http://balance.sourceforge.net/ epoch 0 platforms darwin name balance license unknown maintainers nomaintainer long_description {Balance is a simple but powerful generic TCP proxy with round-robin load balancing and failover mechanisms. Its behaviour can be controlled at runtime using a simple command line syntax.} version 3.34 categories net revision 0
+portdir net/balance description {simple but powerful generic TCP proxy} homepage http://balance.sourceforge.net/ epoch 0 platforms darwin name balance license unknown maintainers nomaintainer long_description {Balance is a simple but powerful generic TCP proxy with round-robin load balancing and failover mechanisms. Its behaviour can be controlled at runtime using a simple command line syntax.} version 3.52 categories net revision 0
 bind9 722
 variants dlz_mysql5 portdir net/bind9 description {Domain Name System server} homepage http://www.isc.org epoch 0 platforms {darwin freebsd sunos} name bind9 depends_lib {port:openssl port:libxml2} long_description {The BIND DNS Server is used on the vast majority of name serving machines on the Internet, providing a robust and stable architecture on top of which an organization's naming architecture can be built. The resolver library included in the BIND distribution provides the standard APIs for translation between domain names and Internet addresses and is intended to be linked with applications requiring name service.} maintainers geeklair.net:dluke license unknown categories net version 9.7.0-P1 revision 0
 bing 525
@@ -11739,7 +11739,7 @@ portdir textproc/ascii description {provides conversion between ASCII character 
 asciidoc 807
 variants {darwin universal} portdir textproc/asciidoc description {Formatter/translator for text files to numerous formats} homepage http://www.methods.co.nz/asciidoc/ epoch 0 depends_run {port:python26 port:docbook-xml-4.5 port:fop} platforms darwin name asciidoc long_description {AsciiDoc is a text document format for writing short documents, articles, books and UNIX man pages. AsciiDoc files can be translated to HTML (with or without stylesheets), DocBook and LinuxDoc markup using the asciidoc(1) command. AsciiDoc is highly configurable: both the AsciiDoc source file syntax and the backend output markups (which can be almost any type of SGML/XML markup) can be customized and extended by the user.} maintainers {boeyms openmaintainer} license unknown categories textproc version 8.5.3 revision 0
 aspell 527
-variants {nls nonls macosx universal} depends_build port:texinfo portdir textproc/aspell description {Spell checker with better logic than ispell} homepage http://aspell.net/ epoch 0 platforms darwin depends_lib port:gettext name aspell long_description {Aspell is a spell checker designed to eventually replace ispell. Aspell's main feature is that it does a much better job of coming up with possible suggestions than ispell.} maintainers {openmaintainer jochen} license unknown categories textproc version 0.60.6 revision 2
+variants {nls nonls macosx universal} depends_build port:texinfo portdir textproc/aspell description {Spell checker with better logic than ispell} homepage http://aspell.net/ epoch 0 platforms darwin depends_lib port:gettext name aspell long_description {Aspell is a spell checker designed to eventually replace ispell. Aspell's main feature is that it does a much better job of coming up with possible suggestions than ispell.} maintainers {openmaintainer jochen} license unknown categories textproc version 0.60.6 revision 3
 aspell-dict-af 303
 depends_build port:aspell portdir textproc/aspell-dict-af description {af dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-af license unknown maintainers nomaintainer long_description {{af dictionary for aspell}} categories textproc version 0.50-0 revision 0
 aspell-dict-ar 302
@@ -11781,7 +11781,7 @@ depends_build bin:aspell:aspell portdir textproc/aspell-dict-fr description {Fre
 aspell-dict-he 302
 depends_build port:aspell portdir textproc/aspell-dict-he description {he dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-he license unknown maintainers nomaintainer long_description {{he dictionary for aspell}} categories textproc version 1.0-0 revision 0
 aspell-dict-hi 303
-depends_build port:aspell portdir textproc/aspell-dict-hi description {hi dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-hi license unknown maintainers nomaintainer long_description {{hi dictionary for aspell}} categories textproc version 0.02-0 revision 0
+depends_build port:aspell portdir textproc/aspell-dict-hi description {hi dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-hi license unknown maintainers nomaintainer long_description {{hi dictionary for aspell}} categories textproc version 0.02-0 revision 1
 aspell-dict-hr 303
 depends_build port:aspell portdir textproc/aspell-dict-hr description {hr dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-hr license unknown maintainers nomaintainer long_description {{hr dictionary for aspell}} categories textproc version 0.51-0 revision 0
 aspell-dict-hu 307
@@ -11800,6 +11800,8 @@ aspell-dict-mg 303
 depends_build port:aspell portdir textproc/aspell-dict-mg description {mg dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-mg license unknown maintainers nomaintainer long_description {{mg dictionary for aspell}} categories textproc version 0.03-0 revision 0
 aspell-dict-mk 303
 depends_build port:aspell portdir textproc/aspell-dict-mk description {mk dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-mk license unknown maintainers nomaintainer long_description {{mk dictionary for aspell}} categories textproc version 0.50-0 revision 0
+aspell-dict-mr 303
+depends_build port:aspell portdir textproc/aspell-dict-mr description {mr dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-mr license unknown maintainers nomaintainer long_description {{mr dictionary for aspell}} categories textproc version 0.10-0 revision 0
 aspell-dict-ms 303
 depends_build port:aspell portdir textproc/aspell-dict-ms description {ms dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ms license unknown maintainers nomaintainer long_description {{ms dictionary for aspell}} categories textproc version 0.50-0 revision 0
 aspell-dict-nb 305
@@ -11816,6 +11818,8 @@ aspell-dict-ro 302
 depends_build port:aspell portdir textproc/aspell-dict-ro description {ro dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ro license unknown maintainers nomaintainer long_description {{ro dictionary for aspell}} categories textproc version 3.3-2 revision 0
 aspell-dict-ru 319
 depends_build bin:aspell:aspell portdir textproc/aspell-dict-ru description {Russian dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ru license unknown maintainers nomaintainer long_description {Aspell with Russian dictionary.} categories textproc version 0.99f7 revision 0
+aspell-dict-rw 303
+depends_build port:aspell portdir textproc/aspell-dict-rw description {rw dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-rw license unknown maintainers nomaintainer long_description {{rw dictionary for aspell}} categories textproc version 0.50-0 revision 0
 aspell-dict-sk 303
 depends_build port:aspell portdir textproc/aspell-dict-sk description {sk dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-sk license unknown maintainers nomaintainer long_description {{sk dictionary for aspell}} categories textproc version 2.01-2 revision 0
 aspell-dict-sr 301
@@ -11826,6 +11830,8 @@ aspell-dict-sw 303
 depends_build port:aspell portdir textproc/aspell-dict-sw description {sw dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-sw license unknown maintainers nomaintainer long_description {{sw dictionary for aspell}} categories textproc version 0.50-0 revision 0
 aspell-dict-ta 307
 depends_build port:aspell portdir textproc/aspell-dict-ta description {ta dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ta license unknown maintainers nomaintainer long_description {{ta dictionary for aspell}} categories textproc version 20040424-1 revision 0
+aspell-dict-tl 303
+depends_build port:aspell portdir textproc/aspell-dict-tl description {tl dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-tl license unknown maintainers nomaintainer long_description {{tl dictionary for aspell}} categories textproc version 0.02-1 revision 0
 aspell-dict-tr 303
 depends_build port:aspell portdir textproc/aspell-dict-tr description {tr dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-tr license unknown maintainers nomaintainer long_description {{tr dictionary for aspell}} categories textproc version 0.50-0 revision 0
 aspell-dict-uk 304
