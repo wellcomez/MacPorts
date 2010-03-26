@@ -11746,6 +11746,8 @@ aspell-dict-ar 302
 depends_build port:aspell portdir textproc/aspell-dict-ar description {ar dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-ar license unknown maintainers nomaintainer long_description {{ar dictionary for aspell}} categories textproc version 1.2-0 revision 0
 aspell-dict-az 303
 depends_build port:aspell portdir textproc/aspell-dict-az description {az dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-az license unknown maintainers nomaintainer long_description {{az dictionary for aspell}} categories textproc version 0.02-0 revision 0
+aspell-dict-be 301
+depends_build port:aspell portdir textproc/aspell-dict-be description {be dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-be license unknown maintainers nomaintainer long_description {{be dictionary for aspell}} categories textproc version 0.01 revision 0
 aspell-dict-bg 345
 variants universal depends_build port:aspell portdir textproc/aspell-dict-bg description {Bulgarian dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-bg long_description {{Bulgarian dictionary for aspell}} maintainers gmail.com:sava.chankov license unknown categories textproc version 4.1-0 revision 0
 aspell-dict-bn 305
@@ -11768,6 +11770,8 @@ aspell-dict-eo 312
 depends_build port:aspell portdir textproc/aspell-dict-eo description {eo dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-eo license unknown maintainers nomaintainer long_description {{eo dictionary for aspell}} categories textproc version 2.1.20000225a-2 revision 0
 aspell-dict-es 311
 depends_build port:aspell portdir textproc/aspell-dict-es description {Spanish dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-es license unknown maintainers nomaintainer long_description {Aspell with Spanish dictionary.} categories textproc version 1.9a revision 0
+aspell-dict-et 305
+depends_build port:aspell portdir textproc/aspell-dict-et description {et dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-et license unknown maintainers nomaintainer long_description {{et dictionary for aspell}} categories textproc version 0.1.21-1 revision 0
 aspell-dict-fa 303
 depends_build port:aspell portdir textproc/aspell-dict-fa description {fa dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-fa license unknown maintainers nomaintainer long_description {{fa dictionary for aspell}} categories textproc version 0.11-0 revision 0
 aspell-dict-fi 302
@@ -11788,6 +11792,10 @@ aspell-dict-is 305
 depends_build port:aspell portdir textproc/aspell-dict-is description {is dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-is license unknown maintainers nomaintainer long_description {{is dictionary for aspell}} categories textproc version 0.51.1-0 revision 0
 aspell-dict-it 317
 depends_build bin:aspell:aspell portdir textproc/aspell-dict-it description {Italian dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-it license unknown maintainers nomaintainer long_description {Aspell with Italian dictionary.} categories textproc version 0.53 revision 0
+aspell-dict-lt 304
+depends_build port:aspell portdir textproc/aspell-dict-lt description {lt dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-lt license unknown maintainers nomaintainer long_description {{lt dictionary for aspell}} categories textproc version 1.2.1-0 revision 0
+aspell-dict-lv 304
+depends_build port:aspell portdir textproc/aspell-dict-lv description {lv dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-lv license unknown maintainers nomaintainer long_description {{lv dictionary for aspell}} categories textproc version 0.5.5-1 revision 0
 aspell-dict-mg 303
 depends_build port:aspell portdir textproc/aspell-dict-mg description {mg dictionary for aspell} homepage http://aspell.net/ epoch 0 platforms darwin name aspell-dict-mg license unknown maintainers nomaintainer long_description {{mg dictionary for aspell}} categories textproc version 0.03-0 revision 0
 aspell-dict-mk 303
