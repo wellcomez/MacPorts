@@ -11165,7 +11165,7 @@ variants universal portdir security/prelude-manager description {Prelude Univers
 putty 453
 variants universal portdir security/putty description {a free implementation of Telnet and SSH, along with an xterm terminal emulator} homepage http://www.chiark.greenend.org.uk/~sgtatham/putty/ epoch 0 platforms darwin name putty depends_lib port:gtk1 long_description {PuTTY is {a free implementation of Telnet and SSH, along with an xterm terminal emulator}} maintainers nomaintainer license unknown categories {security net} version 0.60 revision 0
 pwman 498
-variants universal portdir security/pwman description {curses based password management program} homepage http://sourceforge.net/projects/pwman epoch 0 platforms darwin name pwman depends_lib {port:ncurses port:libxml2 port:gnupg} long_description {PWman is a curses based password storage application. It uses GnuPG to encrypt and decrypt the password file. The interface was inspired by Jaako Heinonen's abook.} maintainers oaf.dk:mni license unknown categories security version 0.3.8 revision 0
+variants universal portdir security/pwman description {curses based password management program} homepage http://sourceforge.net/projects/pwman epoch 0 platforms darwin name pwman depends_lib {port:ncurses port:libxml2 port:gnupg} long_description {PWman is a curses based password storage application. It uses GnuPG to encrypt and decrypt the password file. The interface was inspired by Jaako Heinonen's abook.} maintainers oaf.dk:mni license unknown categories security version 0.4.0 revision 0
 pwsafe 420
 variants universal portdir security/pwsafe description {manage encrypted password databases} homepage http://nsd.dyndns.org/pwsafe/ epoch 0 platforms darwin name pwsafe depends_lib {port:readline port:openssl port:ncurses port:xorg-libXmu} long_description {pwsafe is a command-line program that manages encrypted password databases} maintainers nomaintainer license unknown categories security version 0.2.0 revision 2
 rats 530
@@ -13365,7 +13365,7 @@ variants {macosx universal} depends_build {port:pkgconfig port:mesa port:xorg-ap
 xorg-trapproto 298
 portdir x11/xorg-trapproto description {X.org trapproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-trapproto license unknown maintainers {jeremyhu openmaintainer} long_description {Prototype headers for the XTrap extension to X11} version 3.4.3 categories {x11 devel} revision 0
 xorg-util-macros 324
-portdir x11/xorg-util-macros description {X.org util-macros} homepage http://www.x.org epoch 0 platforms darwin name xorg-util-macros license unknown maintainers {jeremyhu openmaintainer} long_description {Miscellaneous utility macros required by the Modular X.org codebase.} version 1.6.1 categories {x11 devel} revision 0
+portdir x11/xorg-util-macros description {X.org util-macros} homepage http://www.x.org epoch 0 platforms darwin name xorg-util-macros license unknown maintainers {jeremyhu openmaintainer} long_description {Miscellaneous utility macros required by the Modular X.org codebase.} version 1.7.0 categories {x11 devel} revision 0
 xorg-videoproto 302
 portdir x11/xorg-videoproto description {X.org videoproto} homepage http://www.x.org epoch 0 platforms darwin name xorg-videoproto license unknown maintainers {jeremyhu openmaintainer} long_description {Prototype headers for the XVideo extension to X11} version 2.3.0 categories {x11 devel} revision 0
 xorg-xcb-proto 366
