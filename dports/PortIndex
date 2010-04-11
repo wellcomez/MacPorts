@@ -12049,7 +12049,7 @@ portdir textproc/hunspell-dict-cs_CZ description {Czech (Czech Republic) diction
 hunspell-dict-cy_GB 392
 portdir textproc/hunspell-dict-cy_GB description {Welsh (Wales) dictionary for hunspell} homepage http://wiki.services.openoffice.org/wiki/Dictionaries epoch 0 platforms darwin name hunspell-dict-cy_GB license unknown long_description {{Welsh (Wales) dictionary for hunspell}} maintainers {nox openmaintainer} depends_extract bin:unzip:unzip categories textproc version 2004-04-25 revision 0
 hunspell-dict-de_DE 382
-portdir textproc/hunspell-dict-de_DE description {English (US) dictionary for hunspell} homepage http://wiki.services.openoffice.org/wiki/Dictionaries epoch 0 platforms darwin name hunspell-dict-de_DE license unknown maintainers nomaintainer long_description {{English (US) dictionary for hunspell}} depends_extract bin:unzip:unzip categories textproc version 2006-02-07 revision 0
+portdir textproc/hunspell-dict-de_DE description {English (US) dictionary for hunspell} homepage http://wiki.services.openoffice.org/wiki/Dictionaries epoch 0 platforms darwin name hunspell-dict-de_DE license unknown maintainers nomaintainer long_description {{English (US) dictionary for hunspell}} depends_extract bin:unzip:unzip categories textproc version 2006-02-07 revision 1
 hunspell-dict-el_GR 394
 portdir textproc/hunspell-dict-el_GR description {Greek (Greece) dictionary for hunspell} homepage http://wiki.services.openoffice.org/wiki/Dictionaries epoch 0 platforms darwin name hunspell-dict-el_GR license unknown long_description {{Greek (Greece) dictionary for hunspell}} maintainers {nox openmaintainer} depends_extract bin:unzip:unzip categories textproc version 2004-12-20 revision 0
 hunspell-dict-en_CA 398
