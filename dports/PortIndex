@@ -11265,7 +11265,7 @@ variants universal depends_build {bin:grep:grep bin:bison:bison} portdir shells/
 fish 555
 variants {xsel universal} depends_build {bin:doxygen:doxygen port:autoconf port:automake port:libtool} portdir shells/fish description {user friendly command line shell for UNIX-like operating systems} homepage http://www.fishshell.org/ epoch 0 platforms darwin depends_lib {lib:libiconv:libiconv lib:libncurses:ncurses lib:libintl:gettext} name fish long_description {fish is a user friendly command line shell for UNIX-like operating systems like Darwin.} maintainers {eridius openmaintainer} license unknown categories shells version 1.23.1 revision 0
 ksh93 316
-portdir shells/ksh93 description {The AT&T Korn shell} homepage http://www.research.att.com/sw/download/ epoch 0 platforms {darwin freebsd} name ksh93 license unknown maintainers brett long_description {The official version of ksh-93, by David Korn and AT&T research} version 2010-03-09 categories shells revision 0
+portdir shells/ksh93 description {The AT&T Korn shell} homepage http://www.research.att.com/sw/download/ epoch 0 platforms {darwin freebsd} name ksh93 license unknown maintainers brett long_description {The official version of ksh-93, by David Korn and AT&T research} version 2010-03-09 categories shells revision 1
 luash 346
 portdir shells/luash description {shell written in Lua/C++} homepage http://luaforge.net/projects/luash/ epoch 0 platforms darwin name luash license unknown maintainers {and.damore openmaintainer} long_description {luash is a shell written in Lua/C++ that allow you to run command using Lua syntax} version 0.9 categories {shells lua} revision 0
 osh 562
