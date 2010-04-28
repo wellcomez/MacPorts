@@ -7614,8 +7614,8 @@ p5-pod-tests 367
 portdir perl/p5-pod-tests description {Extracts embedded tests and code examples from POD} homepage http://search.cpan.org/dist/Pod-Tests/ epoch 0 platforms darwin name p5-pod-tests depends_lib path:bin/perl:perl5 license unknown maintainers nomaintainer long_description {{Extracts embedded tests and code examples from POD}} categories perl version 0.18 revision 0
 p5-podlators 401
 portdir perl/p5-podlators description {podlators contains Pod::Man and Pod::Text modules.} homepage http://search.cpan.org/dist/podlators/ epoch 0 platforms darwin name p5-podlators depends_lib {path:bin/perl:perl5 port:p5-pod-simple} license unknown maintainers {narf_tm openmaintainer} long_description {{podlators contains Pod::Man and Pod::Text modules.}} categories perl version 2.3.1 revision 0
-p5-podtohtml 400
-variants universal portdir perl/p5-podtohtml description {convert POD documentation to HTML.} homepage http://search.cpan.org/dist/PodToHTML/ epoch 0 platforms darwin name p5-podtohtml depends_lib {path:bin/perl:perl5 port:p5-html-tree port:p5-html-format} long_description {{convert POD documentation to HTML.}} maintainers geeklair.net:dluke license unknown categories perl version 0.05 revision 0
+p5-podtohtml 432
+variants universal portdir perl/p5-podtohtml description {Deprecated program convert POD documentation to HTML.} homepage http://search.cpan.org/dist/PodToHTML/ epoch 0 platforms darwin name p5-podtohtml depends_lib {path:bin/perl:perl5 port:p5-html-tree port:p5-html-format} long_description {{Deprecated program convert POD documentation to HTML.}} maintainers nomaintainer license unknown categories perl version 0.08 revision 0
 p5-postscript-font 432
 portdir perl/p5-postscript-font description {Module to fetch data from PostScript fonts} homepage http://search.cpan.org/~msergeant/PostScript-Font-1.10/ epoch 0 platforms darwin name p5-postscript-font depends_lib path:bin/perl:perl5 license unknown maintainers email.arc.nasa.gov:sal long_description {This package reads PostScript font files and stores the information in memory.} categories {perl print} version 1.10 revision 0
 p5-postscript-simple 582
