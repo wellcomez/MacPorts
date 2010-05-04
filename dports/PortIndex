@@ -4631,7 +4631,7 @@ variants odcctools portdir lang/gcc42 description {The GNU compiler collection} 
 gcc43 373
 portdir lang/gcc43 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc43 depends_lib {port:gmp port:mpfr port:libiconv} license GPLv3 maintainers mww long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} categories lang version 4.3.4 revision 0
 gcc44 392
-variants odcctools portdir lang/gcc44 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 1 platforms darwin name gcc44 depends_lib {port:gmp port:mpfr port:libiconv} long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} maintainers mww license GPLv3 categories lang version 4.4.4 revision 0
+variants odcctools portdir lang/gcc44 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 1 platforms darwin name gcc44 depends_lib {port:gmp port:mpfr port:libiconv} long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} maintainers mww license GPLv3 categories lang version 4.4.4 revision 1
 gcc45 383
 portdir lang/gcc45 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 1 platforms darwin name gcc45 depends_lib {port:gmp port:mpfr port:libiconv port:libmpc} license GPLv3 maintainers mww long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Fortran and Java.} categories lang version 4.5.0 revision 2
 gcc46 512
