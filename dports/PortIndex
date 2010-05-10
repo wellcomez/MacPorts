@@ -1140,6 +1140,8 @@ caml-text 414
 portdir devel/caml-text description {library for Unicode text in OCaml} homepage http://forge.ocamlcore.org/projects/ocaml-text/ epoch 0 platforms darwin name caml-text depends_lib {port:ocaml port:caml-findlib} license unknown maintainers avsm long_description {OCaml-Text is a library for dealing with text, i.e. sequence of unicode characters, in a convenient way.} categories {devel ml} version 0.2 revision 0
 caml-type-conv 370
 portdir devel/caml-type-conv description {Mini library required for some other preprocessing libraries (OCaml 3.10 and newer)} homepage http://www.ocaml.info/home/ocaml_sources.html epoch 0 platforms darwin name caml-type-conv depends_lib {port:ocaml port:caml-findlib} license unknown maintainers {erickt openmaintainer} version 1.6.10 categories {devel ml} revision 0
+caml-ulex 399
+portdir devel/caml-ulex description {lexer generator for Unicode and OCaml} homepage http://www.cduce.org/download.html epoch 0 platforms darwin name caml-ulex depends_lib {port:ocaml port:caml-findlib} license unknown maintainers {avsm openmaintainer} long_description {ulex is a lexer generator for Unicode and OCaml written by Alain Frisch.} categories {devel textproc ml} version 1.1 revision 0
 caml-uuidm 498
 portdir devel/caml-uuidm description {RFC 4122-compliant UUID library for OCaml} homepage http://erratique.ch/software/uuidm/ epoch 0 platforms darwin name caml-uuidm depends_lib {port:ocaml port:caml-findlib} license unknown maintainers {avsm openmaintainer} long_description {Uuidm is an OCaml module implementing 128 bits universally unique identifiers version 3, 5 (name based with MD5, SHA-1 hashing) and 4 (random based) according to RFC 4122.} categories {devel ml} version 0.9.3 revision 0
 caml-xmlm 716
