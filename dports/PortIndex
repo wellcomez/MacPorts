@@ -928,6 +928,8 @@ MacPorts_Framework 432
 variants universal portdir devel/MacPorts_Framework description {Cocoa framework for MacPorts.} depends_fetch port:subversion homepage http://www.macports.org epoch 0 platforms macosx name MacPorts_Framework long_description {MacPorts.framework is a framework for linking Cocoa applications to the MacPorts infrastructure.} maintainers {juanger armahg} license unknown version 1.2.0 categories {devel macports framework} revision 0
 PIDA 377
 portdir devel/PIDA description {The Python Integrated Development Application} homepage http://pida.co.uk/ epoch 0 platforms darwin depends_lib {port:py26-gtk port:py26-gnome port:kiwi port:librsvg port:vte} name PIDA license unknown long_description {{The Python Integrated Development Application}} maintainers nomaintainer version 0.5.1 categories {devel python} revision 4
+acpica 304
+depends_build port:bison portdir devel/acpica description {ACPI compiler} homepage http://www.acpica.org/downloads/ epoch 0 platforms darwin name acpica license unknown maintainers coresystems.de:stepan long_description {A compiler for ACPI DSDT .asl files.} categories devel version 20100428 revision 0
 activewire 547
 variants {awdriver awconfig doc dev universal} portdir devel/activewire description {This is an independent project focusing on the development of drivers for the ActiveWire board on osx. (REALbasic Plugin not included)} homepage http://activewire-osx.sourceforge.net/ epoch 0 platforms darwin name activewire long_description {{This is an independent project focusing on the development of drivers for the ActiveWire board on osx. (REALbasic Plugin not included)}} license unknown maintainers nomaintainer version 4.0 categories devel revision 0
 aegis 788
