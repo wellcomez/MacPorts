@@ -180,8 +180,8 @@ afio 616
 variants universal portdir archivers/afio description {Archiver & backup program with builtin compression} homepage http://freshmeat.net/projects/afio/ epoch 0 platforms darwin name afio long_description {Afio makes cpio-format archives. It deals somewhat gracefully with input data corruption, supports multi-volume archives during interactive operation, and can make compressed archives that are much safer than compressed tar or cpio archives. Afio is best used as an `archive engine' in a backup script.} license unknown maintainers puffin.lb.shuttle.de:michael.klein categories archivers version 2.5 revision 1
 arc 341
 variants universal portdir archivers/arc description {create and extract files from dos .arc archives} homepage http://arc.sourceforge.net/ epoch 0 platforms darwin name arc long_description {{create and extract files from dos .arc archives}} license unknown maintainers crazic.ru:jc categories {archivers sysutils} version 5.21o revision 1
-arj 433
-variants universal depends_build {port:autoconf port:automake port:libtool} portdir archivers/arj description {create and extract files from dos .arj archives} homepage http://arj.sourceforge.net/ epoch 0 platforms darwin name arj depends_lib port:libtool long_description {{create and extract files from dos .arj archives}} maintainers {snc openmaintainer} license unknown categories {archivers sysutils} version 3.10.22 revision 0
+arj 414
+depends_build {port:autoconf port:automake port:libtool} portdir archivers/arj description {create and extract files from dos .arj archives} homepage http://arj.sourceforge.net/ epoch 0 platforms darwin name arj depends_lib port:libtool license unknown maintainers {snc openmaintainer} long_description {{create and extract files from dos .arj archives}} categories {archivers sysutils} version 3.10.22 revision 0
 atool 393
 depends_build port:gsed portdir archivers/atool description {An archival front-end} homepage http://www.nongnu.org/atool/ epoch 0 platforms darwin depends_lib path:bin/perl:perl5 name atool license unknown maintainers devils.com:expiation long_description {atool is a script for managing file archives of various types (tar, tar+gzip, zip etc).} categories archivers version 0.37.0 revision 0
 bzip2 375
@@ -4669,7 +4669,7 @@ variants odcctools portdir lang/gcc41 description {The GNU compiler collection} 
 gcc42 392
 variants odcctools portdir lang/gcc42 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc42 depends_lib {port:gmp port:mpfr port:libiconv} long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} license GPLv3 maintainers mww categories lang version 4.2.4 revision 1
 gcc43 373
-portdir lang/gcc43 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc43 depends_lib {port:gmp port:mpfr port:libiconv} license GPLv3 maintainers mww long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} categories lang version 4.3.4 revision 0
+portdir lang/gcc43 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 0 platforms darwin name gcc43 depends_lib {port:gmp port:mpfr port:libiconv} license GPLv3 maintainers mww long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} categories lang version 4.3.5 revision 0
 gcc44 392
 variants odcctools portdir lang/gcc44 description {The GNU compiler collection} homepage http://gcc.gnu.org/ epoch 1 platforms darwin name gcc44 depends_lib {port:gmp port:mpfr port:libiconv} long_description {The GNU compiler collection, including front ends for C, C++, Objective-C, Objective-C++, Java and Fortran95.} maintainers mww license GPLv3 categories lang version 4.4.4 revision 1
 gcc45 383
