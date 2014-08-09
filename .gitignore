@@ -47,6 +47,7 @@ doc-new/guide/resources/xsl
 doc-new/man/man/
 doc-new/man/resources/macports.xsl
 pkgIndex.tcl
+PortIndex*
 
 # Ignore MacPorts work directories.
 work
