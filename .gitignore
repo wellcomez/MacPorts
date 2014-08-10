@@ -1,14 +1,13 @@
 # .gitignore file for MacPorts
 
-
-# Ignore generated files.
+# Base
 *.[ao]
 *_autoconf.tcl
-base/Doxyfile
-base/Mk/macports.autoconf.mk
 base/doc/*.gz
 base/doc/*.mtree
 base/doc/macports.conf
+base/Doxyfile
+base/Mk/macports.autoconf.mk
 base/setupenv.bash
 base/src/config.h
 base/src/port/port
@@ -17,16 +16,18 @@ base/src/port/portmirror
 base/src/programs/daemondo/build/
 config.log
 config.status
+Makefile
+pkgIndex.tcl
+
+# Docs
 doc-new/guide.tmp.xml
 doc-new/guide/html/
 doc-new/guide/resources/xsl
 doc-new/man/man/
 doc-new/man/resources/macports.xsl
-Makefile
-pkgIndex.tcl
-PortIndex*
 
-# Ignore MacPorts work directories.
+# Ports
+PortIndex*
 work
 
 # Ignore quilt series files.
