@@ -1,19 +1,29 @@
 # .gitignore file for MacPorts
 
 # Base
+*.dylib
 *.[ao]
 *_autoconf.tcl
 base/doc/*.gz
 base/doc/*.mtree
+base/doc/.dep
 base/doc/macports.conf
+base/doc/pubkeys.conf
 base/Doxyfile
 base/Mk/macports.autoconf.mk
+base/portmgr/dmg/postflight
 base/setupenv.bash
 base/src/config.h
+base/src/cregistry/macports.sqlext
+base/src/pkg_mkindex.sh
 base/src/port/port
 base/src/port/portindex
 base/src/port/portmirror
 base/src/programs/daemondo/build/
+base/src/*.tcl
+base/tests/**/test.tcl
+base/tests/test/library.tcl
+base/vendor/*/
 config.log
 config.status
 Makefile
