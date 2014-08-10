@@ -6,6 +6,7 @@
 *_autoconf.tcl
 base/doc/*.gz
 base/doc/*.mtree
+base/doc/*.xml
 base/doc/.dep
 base/doc/macports.conf
 base/doc/pubkeys.conf
