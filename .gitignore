@@ -39,6 +39,3 @@ doc-new/man/resources/macports.xsl
 # Ports
 PortIndex*
 work
-
-# Ignore quilt series files.
-series
