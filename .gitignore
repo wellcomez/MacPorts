@@ -22,8 +22,9 @@ base/src/port/portindex
 base/src/port/portmirror
 base/src/programs/daemondo/build/
 base/src/*.tcl
-base/tests/**/test.tcl
 base/tests/test/library.tcl
+base/tests/test/trace/test.tcl
+base/tests/test.tcl
 base/vendor/*/
 config.log
 config.status
