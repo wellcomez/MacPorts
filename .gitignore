@@ -1,6 +1,7 @@
 # .gitignore file for MacPorts
 
 # Base
+*.dSYM
 *.dylib
 *.[ao]
 *_autoconf.tcl
@@ -16,6 +17,7 @@ base/portmgr/dmg/postflight
 base/setupenv.bash
 base/src/config.h
 base/src/cregistry/macports.sqlext
+base/src/machista1.0/tests/libmachista-test
 base/src/pkg_mkindex.sh
 base/src/port/port
 base/src/port/portindex
