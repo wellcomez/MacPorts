@@ -19,7 +19,7 @@
  * 3. Neither the name of Apple Inc. nor the names of its contributors
  *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -593,7 +593,7 @@ int CheckBrokenDNSCmd(ClientData clientData UNUSED, Tcl_Interp *interp, int objc
         if (res) {
             freeaddrinfo(res);
         }
-    
+
         already_checked = 1;
     }
 
@@ -608,7 +608,7 @@ int Pextlib_Init(Tcl_Interp *interp)
         return TCL_ERROR;
 
 	Tcl_CreateObjCommand(interp, "system", SystemCmd, NULL, NULL);
-	Tcl_CreateObjCommand(interp, "flock", FlockCmd, NULL, NULL);
+	Tcl_CreateObjCommand(interp, "flockmp", FlockCmd, NULL, NULL);
 	Tcl_CreateObjCommand(interp, "readdir", ReaddirCmd, NULL, NULL);
 	Tcl_CreateObjCommand(interp, "strsed", StrsedCmd, NULL, NULL);
 	Tcl_CreateObjCommand(interp, "mkstemp", MkstempCmd, NULL, NULL);

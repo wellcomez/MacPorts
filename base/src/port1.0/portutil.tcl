@@ -1759,7 +1759,7 @@ proc open_statefile {args} {
     # de-escalate privileges if MacPorts was started with sudo
     dropPrivileges
 
-    # flock Portfile
+    # flockmp Portfile
     set statefile [file join $workpath .macports.${subport}.state]
     set fresh_build yes
     set checksum_portfile [sha256 file ${portpath}/Portfile]
@@ -1836,10 +1836,10 @@ proc open_statefile {args} {
 
     set fd [open $statefile a+]
     if {![tbool ports_dryrun]} {
-        if {[catch {flock $fd -exclusive -noblock} result]} {
+        if {[catch {flockmp $fd -exclusive -noblock} result]} {
             if {"$result" == "EAGAIN"} {
                 ui_notice "Waiting for lock on $statefile"
-                flock $fd -exclusive
+                flockmp $fd -exclusive
             } elseif {"$result" == "EOPNOTSUPP"} {
                 # Locking not supported, just return
                 return $fd
